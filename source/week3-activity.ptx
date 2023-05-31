@@ -1,0 +1,620 @@
+<section xml:id="section-week3-activity">
+  <title>Week 3 Activity</title>
+  <subsection xml:id="subsection-activity-exponential-regression">
+    <title>Exponential Growth</title>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Just by looking at the dataset, guess
+          the doubling period and write a guess of the appropriate
+          exponential function. Evaluate that exponential function
+          (using a calculator or computer) and compare the values with
+          the data. 
+          <table xml:id="table-data-set-exponential-1">
+            <title>Data Set 1 for Exponential Growth</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>1.0</cell>
+                <cell>1.1</cell>
+                <cell>1.2</cell>
+                <cell>1.5</cell>
+                <cell>1.8</cell>
+                <cell>2.0</cell>
+                <cell>2.3</cell>
+                <cell>2.7</cell>
+                <cell>3.1</cell>
+                <cell>3.5</cell>
+                <cell>4.1</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        It looks like this data doubles about every five years. The
+        starting value is 1. From the notes, I can use the provided
+        structure for this exponential function: if <m>a</m> is the
+        starting value and <m>d</m> is the doubling period, the
+        function should be <m>a2^{\frac{t}{d}}</m>. Using the values from
+        this data, here is the exponential function.
+        <me>
+          p(t) = 2^{\frac{t}{5}}
+        </me>
+        If I wanted, I could change base to write this as an
+        exponential function with base <m>e</m>. (This is useful to do
+        in many cases, since the base <m>e</m> is the most common and
+        most useful base for exponential functions in calculus.) 
+        <me>
+          p(t) =  e^{\frac{t \ln 2}{5}}
+        </me>
+        The following table shows the values of this function to
+        compare with the data set. 
+        </p>
+          <table xml:id="table-data-set-exponential-1-answers">
+            <title>Data Set 1 for Exponential Growth - Values</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>1.0</cell>
+                <cell>1.1</cell>
+                <cell>1.2</cell>
+                <cell>1.5</cell>
+                <cell>1.8</cell>
+                <cell>2.0</cell>
+                <cell>2.3</cell>
+                <cell>2.7</cell>
+                <cell>3.1</cell>
+                <cell>3.5</cell>
+                <cell>4.1</cell>
+              </row>
+              <row>
+                <cell right="medium"><m>2^\frac{t}{5}</m></cell>
+                <cell>1.00</cell>
+                <cell>1.14</cell>
+                <cell>1.32</cell>
+                <cell>1.51</cell>
+                <cell>1.74</cell>
+                <cell>2.00</cell>
+                <cell>2.30</cell>
+                <cell>2.64</cell>
+                <cell>3.03</cell>
+                <cell>3.48</cell>
+                <cell>4.00</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>
+            The function seems reasonably close to the given data.
+          </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Just by looking at the dataset, guess
+          the doubling period and write a guess of the appropriate
+          exponential function. Evaluate that exponential function
+          (using a calculator or computer) and compare the values with
+          the data. 
+          <table xml:id="table-data-set-exponential-2">
+            <title>Data Set 2 for Exponential Growth</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>3.0</cell>
+                <cell>4.2</cell>
+                <cell>6.3</cell>
+                <cell>10.5</cell>
+                <cell>14.7</cell>
+                <cell>22.8</cell>
+                <cell>33.3</cell>
+                <cell>50.1</cell>
+                <cell>73.8</cell>
+                <cell>102.3</cell>
+                <cell>144.6</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        It looks like this data doubles is something a little less
+        than two years. I will guess a doubling period of
+        <m>\frac{9}{5}</m>. The starting value is 3.  From the notes,
+        I can use the provided structure for this exponential
+        function: if <m>a</m> is the starting value and <m>d</m> is
+        the doubling period, the function should be
+        <m>a2^{\frac{t}{d}}</m>. Using the values from this data, here
+        is the exponential function.
+        <me>
+          p(t) = (3) 2^{\frac{5t}{9}}
+        </me>
+        If I wanted, I could change base to write this as an
+        exponential function with base <m>e</m>. (This is useful to do
+        in many cases, since the base <m>e</m> is the most common and
+        most useful base for exponential functions in calculus.) 
+        <me>
+          p(t) =  (3)e^{\frac{t 5\ln 2}{9}}
+        </me>
+        The following table shows the values of this function to
+        compare with the data set. 
+        </p>
+          <table xml:id="table-data-set-exponential-2-answers">
+            <title>Data Set 2 for Exponential Growth - Values</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>3.0</cell>
+                <cell>4.2</cell>
+                <cell>6.3</cell>
+                <cell>10.5</cell>
+                <cell>14.7</cell>
+                <cell>22.8</cell>
+                <cell>33.3</cell>
+                <cell>50.1</cell>
+                <cell>73.8</cell>
+                <cell>102.3</cell>
+                <cell>144.6</cell>
+              </row>
+              <row>
+                <cell right="medium"><m>(3)2^{\frac{5t}{9}}</m></cell>
+                <cell>3.00</cell>
+                <cell>4.40</cell>
+                <cell>6.48</cell>
+                <cell>9.52</cell>
+                <cell>14.00</cell>
+                <cell>20.58</cell>
+                <cell>30.24</cell>
+                <cell>44.44</cell>
+                <cell>65.32</cell>
+                <cell>96.00</cell>
+                <cell>141.09</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>
+            The function produces numbers which are reasonably close
+            to the original, so I can conclude that the guess was a
+            decent one.
+          </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Just by looking at the dataset, guess
+          the doubling period and write a guess of the appropriate
+          exponential function. Evaluate that exponential function
+          (using a calculator or computer) and compare the values with
+          the data. 
+          <table xml:id="table-data-set-exponential-3">
+            <title>Data Set 3 for Exponential Growth</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>5</cell>
+                <cell>10</cell>
+                <cell>17</cell>
+                <cell>32</cell>
+                <cell>62</cell>
+                <cell>118</cell>
+                <cell>212</cell>
+                <cell>383</cell>
+                <cell>698</cell>
+                <cell>1258</cell>
+                <cell>2362</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        It looks like this data doubles every year, perhaps a little
+        bit more than a year in some cases. I guess a doubling period
+        of <m>\frac{11}{10}</m>. The starting value is 5.  From the
+        notes, I can use the provided structure for this exponential
+        function: if <m>a</m> is the starting value and <m>d</m> is
+        the doubling period, the function should be
+        <m>a2^{\frac{t}{d}}</m>. Using the values from this data, here
+        is the exponential function.
+        <me>
+          p(t) = (5) 2^{\frac{10t}{11}}
+        </me>
+        If I wanted, I could change base to write this as an
+        exponential function with base <m>e</m>. (This is useful to do
+        in many cases, since the base <m>e</m> is the most common and
+        most useful base for exponential functions in calculus.) 
+        <me>
+          p(t) = (5)e^{\frac{t 10\ln 2}{11}}
+        </me>
+        The following table shows the values of this function to
+        compare with the data set. 
+        </p>
+          <table xml:id="table-data-set-exponential-3-answers">
+            <title>Data Set 3 for Exponential Growth - Values</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>5</cell>
+                <cell>10</cell>
+                <cell>17</cell>
+                <cell>32</cell>
+                <cell>62</cell>
+                <cell>118</cell>
+                <cell>212</cell>
+                <cell>383</cell>
+                <cell>698</cell>
+                <cell>1258</cell>
+                <cell>2362</cell>
+              </row>
+              <row>
+                <cell right="medium"><m>p(t) = (5)e^{\frac{t 10\ln
+                  2}{11}}</m></cell>
+                <cell>5</cell>
+                <cell>9</cell>
+                <cell>18</cell>
+                <cell>33</cell>
+                <cell>62</cell>
+                <cell>117</cell>
+                <cell>219</cell>
+                <cell>412</cell>
+                <cell>773</cell>
+                <cell>1452</cell>
+                <cell>2727</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>
+            This guess was perhaps a little weaker. The function I
+            produced is similar to the data, but seems to outpace it
+            but a bit. A slightly smaller doubling period might have
+            been more appropriate. 
+          </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Draw a phase line for this differential equation.
+          <me>
+            \frac{dp}{dt} = p^2 - 9p + 18
+          </me>
+          Determine the steady states and trajectories, then classify
+          the steady states. You may assume this is a population
+          model, so that <m>p \geq 0</m> and 0 is always a steady
+          state.
+        </p>
+      </statement>
+      <solution>
+        <figure xml:id="figure-phase-line-activity-1">
+          <caption>Phase Line for <m>p^2 - 9p + 18</m></caption>
+          <image xml:id="figure73" width="100%">
+            <asymptote>
+              size(16cm,0,IgnoreAspect);
+
+              dot("$0$",(0,0),N);
+              dot("$3$",(2,0),N);
+              dot("$6$",(4,0),N);
+              dot("$\infty$",(6,0),N);
+
+              draw((0,0)--(2,0),MidArrow);
+              draw((4,0)--(2,0),MidArrow);
+              draw((4,0)--(6,0),MidArrow);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          To calculate the phase line, I need the zeros of the right
+          side of the equation. This is a quadratic and it factors as
+          <m>(p-6)(p-3)</m>. Therefore, there are steady states at
+          <m>p=3</m> and <m>p=6</m>. I label these points on the phase
+          line. To determine the trajectories, I check the value of
+          the right side of the equation between the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            At <m>p=1</m>, the right side evaluates to 10, which is
+            positive. The trajectory between 0 and 3 is upward. 
+          </li>
+          <li>
+            At <m>p=4</m>, the right side evaluates to -2, which is
+            negative. The trajectory between 3 and 6 is downward. 
+          </li>
+          <li>
+            At <m>p=7</m>, the right side evaluates to 4, which is
+            positive. The trajectory above 6 is upward. 
+          </li>
+        </ul></p>
+        <p>
+          This lets me classify the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            The (imposed) steady state at 0 only has an trajectory
+            pointing away, so this is an unstable steady state. 
+          </li>
+          <li>
+            The steady state at 3 has trajectories pointing toward it,
+            so it is a stable steady state.
+          </li>
+          <li>
+            The steady state at 6 has trajectories pointing away from
+            it, so it is an unstable steady state. 
+          </li>
+        </ul></p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Draw a phase line for the differential equation
+          <me>
+            \frac{dp}{dt} = p^3 - 6p^2 + 11p - 6 
+          </me>
+          Determine the steady states and trajectories, then classify
+          the steady states. You may assume this is a population
+          model, so that <m>p \geq 0</m> and 0 is always a steady
+          state.
+        </p>
+      </statement>
+      <solution>
+        <figure xml:id="figure-phase-line-activity-2">
+          <caption>Phase Line for <m>p^3 - 6p^2 + 11p - 6</m></caption>
+          <image xml:id="figure74" width="100%">
+            <asymptote>
+              size(16cm,0,IgnoreAspect);
+
+              dot("$0$",(0,0),N);
+              dot("$1$",(2,0),N);
+              dot("$2$",(4,0),N);
+              dot("$3$",(6,0),N);
+
+              dot("$\infty$",(8,0),N);
+
+              draw((2,0)--(0,0),MidArrow);
+              draw((2,0)--(4,0),MidArrow);
+              draw((6,0)--(4,0),MidArrow);
+              draw((6,0)--(8,0),MidArrow);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          To calculate the phase line, I need the zeros of the right
+          side of the equation. This is a cubic: I can try to look for
+          the roots by inspection or ask a computer for the roots. In
+          any case, I find that <m>p=1</m>, <m>p=2</m> and <m>p=3</m>
+          are the roots. I label these points on the phase line. To
+          determine the trajectories, I check the value of the right
+          side of the equation between the steady states.
+        </p>
+        <p><ul>
+          <li>
+            At <m>p=\frac{1}{2}</m>, the right side evaluates to
+            <m>\frac{-15}{8}</m>, which is negative. The trajectory
+            between 0 and 1 is downward.
+          </li>
+          <li>
+            At <m>p=\frac{3}{2}</m>, the right side evaluates to
+            <m>\frac{3}{8}</m>, which is positive. The trajectory
+            between 1 and 2 is upward. 
+          </li>
+          <li>
+            At <m>p=\frac{5}{2}</m>, the right side evaluates to
+            <m>\frac{-3}{8}</m>, which is negative. The trajectory
+            between 2 and 3 is downward.
+          </li>
+          <li>
+            At <m>p=4</m>, the right side evaluates to 6,
+            which is positive. The trajectory above 4 is upward. 
+          </li>
+        </ul></p>
+        <p>
+          This lets me classify the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            The (imposed) steady state at 0 only has an trajectory
+            pointing towards, so this is a stable steady state. 
+          </li>
+          <li>
+            The steady state at 1 has trajectories pointing away from
+            it, so it is an unstable steady state. 
+          </li>
+          <li>
+            The steady state at 2 has trajectories pointing toward it,
+            so it is a stable steady state.
+          </li>
+          <li>
+            The steady state at 3 has trajectories pointing away from
+            it, so it is an unstable steady state. 
+          </li>
+        </ul></p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Draw a phase line for the differential equation
+          <me>
+            \frac{dp}{dt} = p^3 - 10p^2 + 32 p - 32 
+          </me>
+          Determine the steady states and trajectories, then classify
+          the steady states. You may assume this is a population
+          model, so that <m>p \geq 0</m> and 0 is always a steady
+          state.
+        </p>
+      </statement>
+      <solution>
+        <figure xml:id="figure-phase-line-activity-3">
+          <caption>
+            Phase Line for <m>p^3 - 10p^2 + 32p - 32</m>
+          </caption>
+          <image xml:id="figure75" width="100%">
+            <asymptote>
+              size(16cm,0,IgnoreAspect);
+
+              dot("$0$",(0,0),N);
+              dot("$2$",(2,0),N);
+              dot("$4$",(4,0),N);
+              dot("$\infty$",(6,0),N);
+
+              draw((2,0)--(0,0),MidArrow);
+              draw((2,0)--(4,0),MidArrow);
+              draw((4,0)--(6,0),MidArrow);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          To calculate the phase line, I need the zeros of the right
+          side of the equation. This is a cubic; I can find the factors
+          by inspection or by asking a computer. The roots are
+          <m>p=2</m> and <m>p=4</m>. I label these points on the phase
+          line. To determine the trajectories, I check the value of the
+          right side of the equation between the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            At <m>p=1</m>, the right side evaluates to -9, which is
+            negative. The trajectory between 0 and 2 is downward. 
+          </li>
+          <li>
+            At <m>p=3</m>, the right side evaluates to 1, which is
+            positive. The trajectory between 2 and 4 is upward. 
+          </li>
+          <li>
+            At <m>p=5</m>, the right side evaluates to 5, which is
+            positive. The trajectory above 4 is upward. 
+          </li>
+        </ul></p>
+        <p>
+          This lets me classify the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            The (imposed) steady state at 0 only has an trajectory
+            pointing towards, so this is a stable steady state. 
+          </li>
+          <li>
+            The steady state at 2 has trajectories pointing away from
+            it, so it is an unstable steady state.
+          </li>
+          <li>
+            The steady state at 4 has one trajectory pointing towards
+            and one pointing away. This is neither stable or
+            unstable; we can call it partially stable. If I want to
+            be more specific, I can say that it is stable from below
+            and unstable from above.
+          </li>
+        </ul></p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week3-concepts">
+    <title>Conceptual Review Questions</title>
+    <p><ul>
+      <li>
+        What is percentage growth? Why does it lead to a graph that
+        looks exponential?
+      </li>
+      <li>
+        What is a differential equation? What is a solution to one?
+      </li>
+      <li>
+        What is a stable point for an autonomous differential
+        equation?
+      </li>
+      <li>
+        What does a phase line represent? How does it carry meaning
+        about the solution of the differential equation?
+      </li>
+    </ul></p>
+  </subsection>
+</section>

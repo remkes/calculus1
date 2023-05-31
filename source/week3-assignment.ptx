@@ -1,0 +1,40 @@
+<!--
+  This assignment was used for the Winter 2023 term.
+-->
+<section xml:id="section-assignment-week3">
+  <title>Week 3 Assignment</title>
+  <p><ol>
+    <li>
+      <p>
+      Translate the following sentences into differential equations.
+      (4) 
+      </p>
+      <p><ol>
+        <li>
+          The rate of change of a function is proportional to the
+          cosine of the function. 
+        </li>
+        <li>
+          The rate of change of a function is proportional to 
+          the reciprocal of the logarithm of the function.
+        </li>
+      </ol></p>
+    </li>
+    <li>
+      Draw a phase line for this differential equation and label the
+      trajectories. You may assume this is a population model and <m>
+      p \geq 0</m>. (5) 
+      <me>
+        \frac{dp}{dt} = (p-4)^2(p-5)(p-8)
+      </me>
+    </li>
+    <li>
+      Draw a phase line for this differential equation and label the
+      trajectories. You may assume this is a population model and <m>
+      p \geq 0</m>. (5) 
+      <me>
+        \frac{dp}{dt} = (p-2)^3(p-3)^3(p-9)
+      </me>
+    </li>
+  </ol></p>
+</section>

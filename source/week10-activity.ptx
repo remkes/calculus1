@@ -1,0 +1,659 @@
+<section xml:id="section-week10-activity">
+  <title>Week 10 Activity</title>
+  <subsection xml:id="subsection-activity-ivps">
+    <title>Initial Value Problems</title>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = x^2 y^2 
+              \amp \amp y(0) = 1
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          x^2</m> and <m>g(y) = y^2</m>.
+          <me>
+            \int \frac{1}{y^2} dy = \int x^2 dx 
+          </me>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <me>
+            \frac{-1}{y} = \frac{x^3}{3} + c= \frac{x^3+3c}{3} 
+          </me>
+          Then I solve for <m>y</m>.
+          <me>
+            y =  \frac{-3}{x^3+3c} 
+          </me>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <me>
+            1 = \frac{-3}{x + 3c} \implies c = -1 
+          </me>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <me>
+            y = \frac{-3}{x^3 -3} = \frac{3}{3-x^3} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = e^x e^{-y} 
+              \amp \amp y(0) = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          e^x</m> and <m>g(y) = e^{-y}</m>.
+          <me>
+            \int e^y dy = \int e^x dx 
+          </me>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <me>
+            e^y = e^x + c 
+          </me>
+          Then I solve for <m>y</m>.
+          <me>
+            y = \ln (e^x + c) 
+          </me>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <me>
+            1 = \ln (e^0 + c) = \ln (1+c) \implies c = e-1 
+          </me>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <me>
+            y = \ln (e^x + e - 1)
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = \frac{y}{x} 
+              \amp \amp y(3) = 1
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          \frac{1}{x}</m> and <m>g(y) = y</m>.
+          <me>
+            \int \frac{1}{y} dy = \int \frac{1}{x} dx 
+          </me>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <me>
+            \ln |y| = \ln |x| + c 
+          </me>
+          Then I solve for <m>y</m>.
+          <me>
+            y = e^{\ln x + c} = (x)(e^c) 
+          </me>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <me>
+            1 = 3(e^c) \implies (e^c) = \frac{1}{3} \implies c = \ln
+            \frac{1}{3} = -\ln 3 
+          </me>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <me>
+            y = x e^{-\ln 3} = \frac{x}{e^{\ln 3}} = \frac{x}{3}
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = \sqrt{\frac{x}{y}} 
+              \amp \amp y(0) = 0 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The expression in the differential equation is not defined
+          for this initial value. Therefore, this IVP cannot be
+          solved. I could do the separable equation, but I won't be
+          able to input the initial conditions.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = y^2 \sin x  
+              \amp \amp y(\pi) = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          \sin x^2</m> and <m>g(y) = y^2</m>.
+          <me>
+            \int \frac{1}{y^2} dy = \int \sin x dx 
+          </me>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <me>
+            \frac{-1}{y} = -\cos x + c 
+          </me>
+          Then I solve for <m>y</m>.
+          <me>
+            y = \frac{-1}{c - \cos x} = \frac{1}{\cos x - c} 
+          </me>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <me>
+            1 = \frac{1}{\cos \pi - c} = \frac{1}{-1 - c} \implies c= -2
+          </me>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <me>
+            y = \frac{1}{\cos x + 2}
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = \frac{(x-1)^2}{y} 
+              \amp \amp y(2) = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          (x-1)2</m> and <m>g(y) = \frac{1}{y}</m>.
+          <me>
+            \int y dy = \int (x-1)^2 dx 
+          </me>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <me>
+            \frac{y^2}{2} = \frac{(x-1)^3}{3} + c 
+          </me>
+          Then I solve for <m>y</m>.
+          <me>
+            \frac{y^2}{2} = \frac{(x-1)^3+3c}{3} \implies y =
+            \sqrt{\frac{2(x-1)^3+6c}{3}} 
+          </me>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <me>
+            1 = \sqrt{\frac{2(2-1)^3+6c}{3}} \implies 3 = 2+6c \implies
+            c = \frac{1}{6}
+          </me>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <me>
+            y = \sqrt{ \frac{2(x-1)^3+1}{3}}
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = x^3 y^4 
+              \amp \amp y(1) = -3 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          x^3</m> and <m>g(y) = y^4</m>.
+          <me>
+            \int \frac{1}{y^4} dy = \int x^3 dx 
+          </me>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <me>
+            \frac{-3}{y^3} = \frac{x^4}{4} + c = \frac{x^4 + 4c}{4}
+          </me>
+          Then I solve for <m>y</m>.
+          <me>
+            \frac{y^3}{-3} = \frac{4}{x^4 + 4x} \implies y^3 =
+            \frac{-12}{x^4+4x} \implies y = \sqrt[3]{\frac{-12}{x^4 +
+            4c}} 
+          </me>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <me>
+            -3 = \sqrt[3]{\frac{-12}{(1)^4+ 4c}} \implies -27 =
+            \frac{-12}{1+4c} 
+          </me>
+          <me>
+            \frac{1}{27} = \frac{1+4c}{12} \implies 1+4c =
+            \frac{12}{27} \implies 4c = \frac{-15}{27} \implies c =
+            \frac{-15}{108} = \frac{-5}{36}
+          </me>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <me>
+            y = \sqrt[3]{\frac{-12}{x^4 + \frac{-60}{27}}} =
+            \sqrt[3]{\frac{324}{60 - 27x^4}} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = y^2 e^x 
+              \amp \amp y(\ln 3) = 2 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          e^x</m> and <m>g(y) = y^2</m>.
+          <me>
+            \int \frac{1}{y^2} dy = \int e^x dx 
+          </me>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <me>
+            \frac{-1}{y} = e^x + c 
+          </me>
+          Then I solve for <m>y</m>.
+          <me>
+            y = \frac{-1}{e^x + c} 
+          </me>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <me>
+            2 = \frac{-1}{3+c} \implies c= \frac{-7}{2} 
+          </me>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <me>
+            y = \frac{-1}{e^x - \frac{7}{2}} = \frac{2}{7 - 2e^x} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-exponential-growth">
+    <title>Exponential Growth</title>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem, where <m>p(t)</m> is
+          population in terms of time. 
+          <md>
+            <mrow>
+              \frac{dp}{dt} \amp = (0.03) p(t) 
+            </mrow>
+            <mrow>
+              p(0) \amp = 14000
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I follow the process for solving separable equations, using
+          <m>g(p) = p</m> and <m>f(t) = 0.03</m>. 
+          <me>
+            \int \frac{1}{p} dp = \int 0.03 dt 
+          </me>
+          I integate both sides; both a direct antiderivatives.
+          <me>
+            \ln |p| = 0.03t + c 
+          </me>
+          Then I solve for <m>p</m>. I can drop the absolute value 
+          since population must be positive. 
+          <me>
+            p(t)  = e^{(0.03t) + c} = e^c e^{0.03t} 
+          </me>
+          Finally, I use the initial value p(0) = 14000.
+          <me>
+            p(0) = e^c e^0 = e^c = 14000
+          </me>
+          Here is the final solution.
+          <me>
+            p(t) = 14000 e^{0.03t} 
+          </me>
+          This is exactly what I expected: population that starts at
+          14000 with a growth rate coefficient of <m>0.03</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem, where <m>p(t)</m> is
+          population in terms of time. 
+          <md>
+            <mrow>
+              \frac{dp}{dt} \amp = (-0.14) p(t) 
+            </mrow>
+            <mrow>
+              p(0) \amp = 150000
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+          I follow the process for solving separable equations, using
+          <m>g(p) = p</m> and <m>f(t) = 0.03</m>. 
+          <me>
+            \int \frac{1}{p} dp = \int -0.14  dt 
+          </me>
+          I integate both sides; both a direct antiderivatives.
+          <me>
+            \ln |p| = (-0.14t) + c 
+          </me>
+          Then I solve for <m>p</m>. I can drop the absolute value 
+          since population must be positive. 
+          <me>
+            p(t) = e^c e^{-0.14t} 
+          </me>
+          Finally, I use the initial value p(0) = 14000.
+          <me>
+            p(0) = e^c e^0 = e^c = 1500000
+          </me>
+          Here is the final solution.
+          <me>
+            p(t) = 150000 e^{-0.14t} 
+          </me>
+          This is exactly what I expect: population that starts at
+          150000 with a growth rate coefficient of <m>-0.14</m>.
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-logistic-growth">
+    <title>Logistic Growth</title>
+    <activity>
+      <statement>
+        <p>
+          Check that the logistic growth function given solves the
+          initial value problem. <m>p(t)</m> is population in terms of
+          time. (First check the initial value. Then calculate the
+          right side and left side of the differential equation and
+          see if you can simpify both expression into the same thing.)
+          <md>
+            <mrow>
+              p(t) \amp = \frac{400000 e^{0.05t}}{600 + 400
+              e^{0.05t}} 
+            </mrow>
+            <mrow>
+              \frac{dp}{dt} \amp = (0.05) p(t) \left( 1 -
+              \frac{p(t)}{1000} \right) 
+            </mrow>
+            <mrow>
+              p(0) \amp = 400
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I have to check two things. First, I can check that the
+          initial value is correct. This is simply evaluating
+          <m>p(0)</m>. 
+          <me>
+            p(0) = \frac{400000 e^0}{600 + 400
+            e^0} = \frac{400000}{600+ 400} =
+            \frac{400000}{1000} = 400
+          </me>
+          This is the correct initial value. Now I need to
+          differentiate <m>p(t)</m> using the quotient rule and check
+          that it is the same as the left side of the differential
+          equation. This calculation is a bit complicated with many
+          pieces, but I'll simplify it step by step. 
+          <md>
+            <mrow>
+              \frac{dp}{dt} \amp = \frac{(600 + 400e^{0.05t}) \left(
+              \frac{d}{dt} 400000 e^{0.05t} \right) - 400000 e^{0.05t}
+              \left( \frac{d}{dt} 600 + 400 e^{0.05t} \right)}{(600 +
+              400 e^{0.05t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{(600 + 400e^{0.05t})((0.05)(400000)e^{0.05t} 
+              - 400000 e^{0.05t}((0.05)400e^{0.05t})}{(600 + 400
+              e^{0.05t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{(600 + 400e^{0.05t})20000 e^{0.05t} - 
+              400000 e^{0.05t} 20 e^{0.05t}}{(600 + 400 e^{0.05t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{12000000e^{0.05t} + 8000000e^{0.1t} - 
+              8000000 e^{0.1t}}{(600 + 400 e^{0.05t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{12000000e^{0.05t}}{(600 + 400 e^{0.05t})^2}
+            </mrow>
+          </md>
+          After all that simplification, I have this expression. This
+          is the left side of the differential equation. I want to
+          compare it to the right side of the differential equation.
+          I'll try to calculate that right side and see if I can
+          simplify it down to the same thing. From the third to the
+          fourth line below, I construct a common denominator for the
+          term in brackets. 
+          <md>
+            <mrow>
+              \amp (0.05) p(t) \left( 1 - \frac{p(t)}{1000} \right) 
+            </mrow>
+            <mrow>
+              \amp = (0.05) \frac{400000 e^{0.05t}}{600 + 400 e^{0.05t}} 
+              \left( 1 - \frac{ \frac{400000 e^{0.05t}}{600 + 400
+              e^{0.05t}}}{1000} \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{20000 e^{0.05t}}{600 + 400 e^{0.05t}} 
+              \left( 1 - \frac{400 e^{0.05t}}{600 + 400
+              e^{0.05t}} \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{20000 e^{0.05t}}{600 + 400 e^{0.05t}} 
+              \left( \frac{600 + 400 e^{0.05t} - 400
+              e^{0.05t}}{600 + 400 e^{0.05t}} \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{20000 e^{0.05t}}{600 + 400 e^{0.05t}} 
+              \left( \frac{600}{600 + 400 e^{0.05t}} \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{12000000 e^{0.05t}}{(600 + 400 e^{0.05t})^2} 
+            </mrow>
+          </md>
+          This produces exactly the same expression. Both
+          the left and ride sides of the equation simplify to the same
+          expression. Therefore, since these simplification have made
+          any actual changes to the function (just to how it is
+          expressed), the right side and left side of the differential
+          equation are equal, and I have confirmed that the given
+          function solves the differential equation.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Check that the logistic growth function given solves the
+          initial value problem. <m>p(t)</m> is population in terms of
+          time.
+          <md>
+            <mrow>
+              p(t) = \frac{240000 e^{0.02t}}{-500 + 800 
+              e^{0.02t}} 
+            </mrow>
+            <mrow>
+              \frac{dp}{dt} = (0.02) p(t) \left( 1 -
+              \frac{p(t)}{300} \right) 
+            </mrow>
+            <mrow>
+              p(0) = 800
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I have to check two things. First, I can check that the
+          initial value is correct. This is simply evaluating
+          <m>p(0)</m>. 
+          <me>
+            p(0) = \frac{240000 e^0}{-500 + 800
+            e^0} = \frac{240000}{-500+ 800} =
+            \frac{240000}{300} = 800
+          </me>
+          This is the correct initial value. Now I need to
+          differentiate <m>p(t)</m> using the quotient rule and check
+          that it is the same as the left side of the differential
+          equation. This calculation is a bit complicated with many
+          pieces, but I'll simplify it step by step. 
+          <md>
+            <mrow>
+              \frac{dp}{dt} \amp = \frac{(-500 + 800e^{0.02t}) \left(
+              \frac{d}{dt} 240000 e^{0.02t} \right) - 240000 e^{0.02t}
+              \left(\frac{d}{dt} \left( -500 + 800 e^{0.02t} \right)
+              \right)}{(-500 + 800 e^{0.02t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{(-500 + 800e^{0.02t})(0.02)(240000)e^{0.02t} 
+              - 240000 e^{0.02t}((0.02)(800)e^{0.02t})}{(-500 + 800
+              e^{0.02t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{(-500 + 800e^{0.02t})(4800)e^{0.02t} 
+              - 240000 e^{0.02t}((16)e^{0.02t})}{(-500 + 800
+              e^{0.02t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{-2400000e^{0.02t} - 3840000e^{0.04t} 
+              + 3840000 e^{0.04t}}{(-500 + 800
+              e^{0.02t})^2}
+            </mrow>
+            <mrow>
+              \amp = \frac{-2400000e^{0.02t}}{(-500 + 800
+              e^{0.02t})^2}
+            </mrow>
+          </md>
+          After all that simplification, I have this expression. This
+          is the left side of the differential equation. I want to
+          compare it to the right side of the differential equation.
+          Let's try to calculate that right side and see if I can
+          simplify it down to the same thing. From the third to the
+          fourth line below, I construct a common denominator for the
+          term in brackets.
+          <md>
+            <mrow>
+              \amp (0.02) p(t) \left( 1 - \frac{p(t)}{300} \right) 
+            </mrow>
+            <mrow>
+              \amp = (0.02) \frac{240000 e^{0.02t}}{-500 + 800 e^{0.02t}} 
+              \left( 1 - \frac{ \frac{240000 e^{0.02t}}{-500 + 800
+              e^{0.02t}}}{300} \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{4800 e^{0.02t}}{-500 + 800 e^{0.02t}} 
+              \left( 1 - \frac{800 e^{0.02t}}{-500 + 800 e^{0.02t}}
+              \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{4800 e^{0.02t}}{-500 + 800 e^{0.02t}} 
+              \left( \frac{-500 + 800e^{0.02t} - 800 e^{0.02t}}{-500 +
+              800 e^{0.02t}} \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{4800 e^{0.02t}}{-500 + 800 e^{0.02t}} 
+              \left( \frac{-500}{-500 + 800 e^{0.02t}} \right)
+            </mrow>
+            <mrow>
+              \amp = \frac{-960000 e^{0.02t}}{(-500 + 800
+              e^{0.02t})^2} 
+            </mrow>
+          </md>
+          This produces exactly the same expression. Both
+          the left and ride sides of the equation simplify to the same
+          expression. Therefore, since these simplification have made
+          any actual changes to the function (just to how it is
+          expressed), the right side and left side of the differential
+          equation are equal, and I have confirmed that the given
+          function solves the differential equation.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-week10-concepts">
+    <title>Conceptual Review Questions</title>
+    <p>
+      <ul>
+        <li>
+          How are exponential growth and logistic growth encoded in
+          differential equations?
+        </li>
+        <li>
+          What does it mean to solve a differential equation?
+        </li>
+        <li>
+          What is an initial condition and why do I need them to
+          solve differential conditions?
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>

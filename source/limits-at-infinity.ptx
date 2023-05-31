@@ -1,0 +1,94 @@
+<section xml:id="section-limits-at-infinity">
+  <title>Limits at Infinity</title>
+  <subsection xml:id="subsection-definitions-at-infinity">
+    <title>Definitions</title>
+    <p>
+      In addition to asking what happens to a function as the input
+      approaches paticular finite values, I can also ask what happens
+      as the input <sq>approaches infinityi</sq>, that is, as the
+      input gets larger and larger.
+    </p>
+    <p>
+      The statement
+      <me>
+        \lim_{x \rightarrow \infty} f(x) = L
+      </me>
+      means that as <m>x</m> gets larger and larger without bound,
+      <m>f(x)</m> gets closer and closer to <m>L</m>. The statement
+      <me>
+        \lim_{x \rightarrow \infty} f(x) = \infty
+      </me>
+      means that as <m>x</m> gets larger and larger without bound,
+      <m>f(x)</m> also gets larger and larger without bound. The
+      statement
+      <me>
+        \lim_{x \rightarrow \infty} f(x) = -\infty
+      </me>
+      means that as <m>x</m> gets larger and larger without bound,
+      <m>f(x)</m> becomes a larger and larger negative number without
+      bound.
+    </p>
+    <p>
+      These statements are defined the same way for <m>x \rightarrow
+      -\infty</m> when the input <m>x</m> becomes a larger and larger
+      negative number without bound.
+    </p>
+    <p>
+      In all of these definitions, the symbol <m>\infty</m> means
+      <sq>getting larger and larger without bound</sq>. It is never a
+      number, never a quantity. It is a convenient shorthand for the
+      idea of unbounded growth. Please keep this in mind, particularly
+      for your algebra and arithmetic. Inifnity is not a number and
+      doing algebra or arithmetic with it doesn't make sense. 
+    </p>
+    <figure xml:id="figure-horizontal-Asymptotes">
+      <caption>Horizontal Asymptotes</caption>
+      <image xml:id="figure20" width="85%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return (sinh(x))/(cosh(x));}
+
+          draw(graph(f,-3,3));
+
+          draw((-3,-1)--(3,-1),dotted);
+          draw((-3,1)--(3,1),dotted);
+        </asymptote>
+      </image>
+    </figure>
+  </subsection>
+  <subsection xml:id="subsection-horizontal-asymptotes">
+    <title>Horizontal Asymptotes</title>
+    <p>
+      When a function <m>f(x)</m> has a finite limit as the input
+      growths with out bound:
+      <me>
+        \lim_{x \rightarrow \infty} f(x) = L
+      </me>,
+      then the graph of the function approaches the line <m>y=L</m>.
+      Such
+      lines are called <em>horizontal asymptotes</em>. Similarly, if
+      the limit is
+      <me>
+        \lim_{x \rightarrow -\infty} f(x) = L
+      </me>,
+      then again the fuction approach the line <m>y=L</m> and
+      such a line is also called a horizontal asymptote. 
+    </p>
+    <p>
+      To search for horizontal asymptotes, I consider limits of a
+      function as <m>x \rightarrow \pm \infty</m>. If such a limit
+      produces a finite result (the number <m>L</m> above), then the
+      line <m>y=L</m> is a horizontal asymptote. Note that there are
+      two possibilities for horizontal asymptotes: in the positive and
+      in the negative directions. It is possible for a function to
+      have a horizontal asymptote in only one direction, or in both
+      directions but at different values. 
+    </p>
+  </subsection>
+</section>

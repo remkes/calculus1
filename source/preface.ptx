@@ -1,0 +1,97 @@
+<preface xml:id="preface">
+  <paragraphs>
+    <title>Organization</title>
+    <p>
+      These notes contains content and activities for a blended or
+      online Calculus 1 course. The course is organized into 12 weeks
+      following a typical 3 month Canadian academic term. Each chapter
+      (week) of the notes includes several sections of content as well
+      as activities and an assignment.
+    </p>
+    <p>
+      This document is not meant to stand alone; instead, it is
+      designed to be the written reference material for a set of videos
+      or lectures. The main purpose of the document is to be a
+      record of the course content to use for reference after watching
+      the videos. There are some examples in the main body, but
+      most examples are presented as activities for the student to
+      first attempt and then compare with the solution.
+    </p>
+    <p>
+      For each week of the course, you are expected to watch the videos
+      for the week and do the activities and assignments presented in
+      this notes. In the activities, material labeled <dq>Extra
+      Practice</dq> is, obviously, extra activities for student who
+      want additional practice; material labeled  <dq>Challenge
+      Problems</dq> is optional material that pushes the ideas of the
+      section in new directions. 
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Other Resources</title>
+    <p>
+      In addition to the notes associated to each lecture, there are a
+      number of other resources which are distributed via the course
+      Moodle site. These resources have been developed to assist you,
+      so please make use of them.
+    </p>
+    <ul>
+      <li>
+        <p>
+          A set of pre-calculus notes and learning modules (currently
+          unfinished). If you struggled with the self-assessment or
+          are otherwise worried about your background mathematical
+          knowledge and skills, these resources are here to help you
+          learn or practice skills which are prerequisite to this
+          course.
+        </p>
+      </li>
+      <li>
+        <p>
+          A complete formula sheet. All of the basic formulas and
+          rules for calculation are included on this sheet. There are
+          sections on algebra, trigonometry, derivatives and
+          integrals.
+        </p>
+      </li>
+      <li>
+        <p>
+          A library of functions. This reference gives descriptions of
+          all of the elementary functions that are used in calculus.
+          There are also small example graphs, so that you can develop
+          a visual intuition for common functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          A notation reference. Though many of the idea in the course
+          have been covered in high-school mathematics, often the
+          notations differ. This reference covers a number of
+          notations used in the course which may be unfamiliar.
+        </p>
+      </li>
+      <li>
+        <p>
+          A course outcomes sheet. This was originally developed as a
+          study aid for students. It summarizes the main definitions
+          and concepts of the course, as well as the types of
+          questions your will encounter on assignments and exams. In
+          particular, it gives a guide to the material on the exam.
+          If you want to know whether a definition, topic or type of
+          problem might show up on the exam, consult this sheet.
+          There will be nothing on the exam that isn't referenced on
+          this sheet.
+        </p>
+      </li>
+    </ul>
+  </paragraphs>
+  <paragraphs>
+    <title>Perspectives and Philosophy</title>
+    <p>
+      In addition to the strictly mathematical material of the course, I
+      will try to share some ideas about the philosophy of mathematics,
+      the aesthetics of mathematics, and how our own worldviews and
+      assumptions influence mathematical thought. 
+    </p>
+  </paragraphs>
+</preface>

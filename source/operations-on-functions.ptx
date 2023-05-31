@@ -1,0 +1,216 @@
+<section xml:id="section-operations-on-functions">
+  <title>Operations on Functions</title>
+  <subsection xml:id="subsection-pointwise-operations">
+    <title>Pointwise Operations</title>
+    <p> 
+      The most familiar way to put functions together is through the
+      conventional operations of arithmetic: addition, subtraction,
+      multiplication, division and exponentiation. If <m>f</m> and
+      <m>g</m> are functions, then <m>f+g</m>, <m>f-g</m>, <m>f \cdot
+      g</m>, <m>\frac{f}{g}</m> and <m>f^g</m> are all functions. They
+      may have additional domain restrictions, such as avoiding the
+      roots of <m>g</m> in <m>\frac{f}{g}</m>. These combinations are
+      called <term>pointwise operations</term> on functions; the name
+      comes from the fact that, in each operations, I can evaluate the
+      two functions at any given <term>point</term> and then do the
+      required arithmetic afterwards. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-composition">
+    <title>Composition</title>
+    <p>
+      A more novel way to combine function is
+      <term>composition</term>.  In pointwise operations, both the
+      functions act seperately on the input and then I combine the
+      result. In composition, I let one function act first and then
+      let the second act on the output of the first. If <m>f</m> and
+      <m>g</m> are functions, I write <m>f \circ g</m> or
+      <m>f(g(x))</m> for their composition.  In this notation,
+      somewhat counterintuitively, the function on the right acts
+      first. <m>f \circ g</m> means: let the function <m>g</m> act
+      first and then let the function <m>f</m> act second. Additional
+      domain restrictions may result from composition, since the
+      output of <m>g</m> must be acceptable input for the function
+      <m>f</m>. In <m>f \circ g</m>, I call <m>g</m> the <term>inside
+      function</term> and <m>f</m> the <term>outside function</term>.
+    </p>
+    <example>
+      <statement>
+        <p>
+          If <m>f(x) = e^x</m> and <m>g(x) = x^2+1</m>, then <m>f
+          \circ g (x) = e^{x^2+1}</m> and <m>g \circ f = (e^x)^2
+          +1</m>.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Often is it important to recognize a composed function and
+          identify the pieces of the composition. The function
+          <m>h(x) = \sqrt{x+7}</m> is a composition with inside
+          function <m>g(x) = x+7</m> and outside function <m>f(x) =
+          \sqrt{x}</m>. For complicated functions, there may be
+          several ways to decompose the function as a composition;
+          finding various decompositions and knowing which composition
+          to use is an important skill.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Composition can be iterated. If <m>f</m>, <m>g</m> and <m>h</m>
+      are functions, <m>f \circ g \circ h(x)</m> is the composition of
+      all three, with <m>h</m> acting first, <m>g</m> second and
+      <m>f</m> third.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-inversion">
+    <title>Inversion</title>
+    <p>
+      The last important operation on functions is inversion.
+      Inversion attempts to undo what a function has accomplished, to
+      go backwards and return the output to the original input. If
+      <m>f(x)</m> is a function, I write <m>f^{-1}(x)</m> for its
+      inverse. This notation <em>does not</em> mean the reciprocal
+      function <m>\frac{1}{f(x)}</m>.
+    </p>
+    <p>
+      In order for a function to be invertible, each output needs to
+      go back to a unique input. This restriction implies that no
+      two inputs can be sent to the same output. This property is
+      called <term>injectivity</term>, but for our purposes, it is enough
+      that a function is <term>monotonic</term>. A function which always
+      increases or decreases can only have one input sent to any
+      particular output; therefore, it is invertible. When I want to
+      invert a function, I must first make sure that it is monotonic.
+    </p>
+    <p>
+      Here are some example pairs of functions and their inverses:
+      notice that each inverse function undoes whatever the original
+      function was doing.
+      <md>
+        <mrow>
+          f(x) \amp = 3x \amp \implies f^{-1}(x) \amp = \amp
+          \frac{x}{3} 
+        </mrow>
+        <mrow>
+          f(x) \amp = \sqrt{x} \amp \implies f^{-1}(x) \amp =
+          \amp x^2
+        </mrow>
+        <mrow>
+          f(x) \amp = \frac{1}{x} \amp \implies f^{-1}(x) \amp =
+          \amp \frac{1}{x}
+        </mrow>
+      </md>
+    </p>
+    <p>
+      When I compose a function and its inverse, I get the original
+      input back. That is <m>f \circ f^{-1}(x) = x</m> and <m>f^{-1}
+      \circ f(x) = x</m> on the approriate domains. This is very
+      useful for manipulating equations, since I can remove any
+      function by composing with its inverse. The following examples
+      go through some common ways of using inverses to solve for
+      variables by undoing functions.
+    </p>
+    <example>
+      <statement>
+        <p>
+          I use the natural logarithm to remove the exponential with
+          base <m>e</m>.
+          <md>
+            <mrow>
+              e^x \amp  = y
+            </mrow>
+            <mrow>
+              \ln e^x \amp  = \ln y
+            </mrow>
+            <mrow>
+              x \amp  = \ln y
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Likewise, I use inverse trig to remove a trig function.
+          <md>
+            <mrow>
+              \sin x \amp  = y
+            </mrow>
+            <mrow>
+              \arcsin (\sin x) \amp = \arcsin y
+            </mrow>
+            <mrow>
+              x \amp  = \arcsin y
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+    <p>
+      For a monotonic functions, the domain of the inverse will be the
+      range of the original function. If I can calculate the range
+      of the original function, I get the domain of the inverse for
+      free. In the first example above, the range of <m>e^x</m> is
+      <m>(0,\infty)</m>, so that becomes the domain of <m>\ln x</m>.
+      In the second second above, <m>\sin x</m> is not monotonic on
+      its whole domain, so I have to make an adjustment before I can
+      understand the range.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-restriction">
+    <title>Restriction of Domain</title>
+    <figure xml:id="figure-restriction">
+      <caption>Restricting the Domain of <m>f(x) = x^2</m></caption>
+      <image xml:id="figure36" width="80%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$",-4,4);
+          yaxis("$y$",-1,5);
+          
+          real f(real x) {return x^2/4;} 
+          real g(real x) {return sqrt(4x);}
+
+          draw(graph(f,-4,4));
+          draw(graph(g,0,4));
+          draw((-1,-1)--(4,4),dashed);
+
+          label("$y=x$",(-0.5,-0.5),NW);
+          label("$f(x)=x^2$",(2,0.8),E);
+          label("$f^{-1}(x)=\sqrt{x}$",(0.2,3),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Many functions are not monotonic, but I would like to invert
+      them anyway. I solve this problem by restricting the domain.
+      A classic example is the quadratic <m>f(x) = x^2</m>. This
+      function has a domain of <m>\RR</m>, but it is not invertible,
+      since both <m>x</m> and <m>-x</m> are sent to <m>x^2</m>. Going
+      backwards, I do not know whether to sent <m>x^2</m> to <m>x</m>
+      or <m>-x</m>. Therefore, I restrict the domain. The function
+      <m>f(x) = x^2</m> on the restricted domain <m>[0, \infty)</m> is
+      increasing, therefore it is invertible. Its inverse is
+      <m>f^{-1}(x) = \sqrt{x}</m>, returning the positive square root.
+      If I had instead restricted to the domain <m>(-\infty, 0]</m>,
+      the inverse would have been the negative square root:
+      <m>f^{-1}(x) = -\sqrt{x}</m>. 
+    </p>
+    <p>
+      The example of <m>\sin x</m> I used above is desperately not
+      monotonic: it oscillates up and down constantly. I have to make
+      a severe restriction to invert it, by choosing a very small
+      piece where it is monotonic. For <m>\sin x</m>, the
+      conventional choice is the interval <m>\left[ \frac{-\pi}{2},
+      \frac{\pi}{2} \right]</m>, where <m>\sin x</m> is an increasing
+      function. On this interval, the range of <m>\sin x</m> is
+      <m>[-1,1]</m>, so the domain of <m>\arcsin x</m> is also
+      <m>[-1,1]</m>.
+    </p>
+  </subsection>
+</section>

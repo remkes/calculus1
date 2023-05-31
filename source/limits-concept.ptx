@@ -1,0 +1,159 @@
+<section xml:id="section-limits-concept">
+  <title>The Concept of a Limit</title>
+  <subsection xml:id="subsection-limit-definition">
+    <title>Limit Definitions</title>
+    <p>
+      In <xref ref="section-differential-equations" />, I said that
+      algebra had a hard time with growth rates. The tools of algebrae
+      don't have the ability to calculate this thing I called a
+      derivative. I need a new mathematical tool. That new tool is
+      something called a limit.
+    </p>
+    <p>
+      Algebra can give approximate answers to a variety of questions
+      like the question of growth rate. It can build an approximation
+      process.  Calculus starts by asking how to somehow calculate
+      the end of the approximation processs. Is there an exact answer
+      at the end of all the approximation? A limit is a way of
+      understanding an infinite process and asking where the process
+      eventually leads. The limit is the key new tool that transcends
+      algebra and creates calculus.
+    </p>
+    <p>
+      The definition of limits will be restricted to limits of
+      functions. In a limit, I want to compare the input and output of
+      a function during an approximation process. The process starts
+      by moving the input towards a specific value and then observing
+      what happens to the output.
+    </p>
+    <p>
+      Let <m>f(x)</m> be a function and <m>a</m> a point either in the
+      domain of the function or on the edge of its domain. Then
+      the statement
+      <me>
+        \lim_{x \rightarrow a} f(x) = L
+      </me>
+      means that as <m>x</m> (the input) gets closer and closer to
+      <m>a</m>, f(x) (the output) gets closer and closer to <m>L</m>.
+      If such an <m>L</m> exists, it is called limit of <m>f(x)</m>
+      at <m>x=a</m>. I can also simply say that the limit at
+      <m>x=a</m> converges. If no such <m>L</m> exists, the limit
+      diverges.
+    </p>
+    <figure xml:id="figure-convergent-limit">
+      <caption>A Convergent Limit</caption>
+      <image xml:id="figure18" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(3,3.4),Arrow);
+          draw((6,3){NW}..{W}(4,5){W}..{SW}(3,3.4),Arrow);
+          draw((0,0)--(3,0),Arrow);
+          draw((6,0)--(3,0),Arrow);
+          draw((3,0)--(3,3.4));
+
+          dot("$x=a$",(3.0),S);
+          dot("$f(a)$",(3,3.4),NW);
+          dot("$x$",(2,0),S);
+          dot("$f(x)$",(2,1.6),N);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      There are several ways in which the limit can diverge. The
+      statement
+      <me>
+        \lim_{x \rightarrow a} f(x) = \infty
+      </me>
+      means that as <m>x</m> gets closer and to <m>a</m>, the function
+      value <m>f(x)</m> gets larger and larger without bound. This is
+      a divergent limit, since <m>\infty</m> is not a number.
+      <m>\infty</m> is just a convenient shorthard for <sq>larger and
+      larger without bound</sq>. Similarly, the statement
+      <me>
+        \lim_{x \rightarrow a} f(x) = -\infty
+      </me>
+      means that as <m>x</m> gets closer and to <m>a</m>, the function
+      value <m>f(x)</m> becomes a larger and larger negative value
+      without bound. Finally, the statement
+      <me>
+        \lim_{x \rightarrow a} f(x) \hspace{1cm} \text{ DNE }
+      </me>
+      means that the limit does not exist; it doesn't approach any
+      number at all. DNE stands for <sq>does not exist</sq>.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-vertical-asymptotes">
+    <title>Vertical Asymptotes</title>
+    <p>
+      For limits which approach <m>\pm \infty</m>, the
+      graph of the function approaches a verticle line. These lines
+      are called <term>vertical asymptotes</term> for the functions.
+      Vertical asymptotes are shown as the dotted lines in the <xref
+      ref="figure-three-divergent-limits" />.
+    </p>
+    <figure xml:id="figure-three-divergent-limits">
+      <caption>Three Divergent Limits</caption>
+      <image xml:id="figure19" width="85%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          label("DNE",(1,2),N);
+          label("$\rightarrow \infty$",(6.2,5),E);
+          label("$\rightarrow -\infty$",(12.2,-1),E);
+
+          draw((-1,1){NE}..{N}(1,2));
+          draw((1,0){NE}..{E}(2,2){E}..{E}(3,0){E}..{N}(6,6));
+          draw((6.1,6){S}..{E}(9,0){E}..{S}(12,-2));
+          draw((12.1,-2){N}..{E}(14,2));
+
+          dot("$a$",(1,0),SW);
+          dot("$b$",(6.05,0),SW);
+          dot("$c$",(12.03,0),SW);
+
+          draw((6.05,6)--(6.05,-2),dotted);
+          draw((12.03,6)--(12.03,-2),dotted);
+        </asymptote>
+      </image>
+    </figure>
+  </subsection>
+  <subsection xml:id="subsection-one-sided">
+    <title>One-Sided Limits</title>
+    <p>
+      In the above definitions, I assumed that <m>x \rightarrow a</m>
+      means <m>x</m> approaches <m>a</m> from both sides, considering
+      <m>x</m> slightly larger and <m>x</m> slightly smaller than
+      <m>a</m>. Sometimes it is convenient to only use one side.
+      These are called one sided limits. If I want to approach from
+      the left (from <m>x</m> slightly smaller than <m>a</m>), I
+      adjust the limit notation slightly by writing <m>a^-</m>.
+      <me>
+        \lim_{x \rightarrow a^-} f(x)
+      </me>
+    </p>
+    <p>
+      If I want to approach from the right (from <m>x</m> slightly
+      larger than <m>a</m>), I write <m>a^+</m>.
+      <me>
+        \lim_{x \rightarrow a^+} f(x)
+      </me>
+    </p>
+    <p>
+      Note that that the notation <m>a^{-1}</m> is <em>not</em>
+      <m>-a</m>. If I write <m>\lim_{x \rightarrow 8^{-1}}</m>, I am
+      interested the behaviour for numbers very slightly smaller than
+      <m>8</m>: for <m>7.9</m>, <m>7.99</m>, <m>7.999</m>, and so on.
+      I am not at all interesting in anything near <m>-8</m>.
+    </p>
+  </subsection>
+</section>

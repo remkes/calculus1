@@ -1,0 +1,146 @@
+<section xml:id="section-derivative-definition">
+  <title>Definition of the Derivative</title>
+  <subsection xml:id="subsection-secant-lines">
+    <title>Limits of Secant Lines</title>
+    <p>
+      In <xref ref="section-population-growth" />, I defined the
+      derivative as the rate of change of a function. In <xref
+      ref="section-two-motivating-problems" />, I connected that
+      definition to the geometry of slopes of tangent lines and
+      constructed a process by which algebra can approximate a tangent
+      line by using secant lines, shown in <xref
+      ref="figure-secant-approximations" />. Finally, since I have
+      defined limits in <xref ref="section-limits-concept" />, I can
+      ask for the limit of that approximation process of secant lines.
+    </p>
+    <p>
+      I want to calculate the slope of the tangent line at a point
+      <m>(a,f(a))</m> on the graph of a function. I can take
+      <m>a</m> as one point to define a secant line and let <m>x</m>
+      be the other point (with <m>x \neq a</m>). Then the slope of
+      the secant line is the difference in output (<m>f(x) - f(a)</m>)
+      dividing by the difference in input (<m>x-a</m>).
+      <me>
+        \frac{f(x) - f(a)}{x-a}
+      </me>
+      I said that the approximation should get closer and closer to 
+      the tangent line as <m>x</m> gets closer to <m>a</m>. Now I
+      can ask for the limit as <m>x \rightarrow a</m>.
+      <me>
+        \lim_{x \rightarrow a} \frac{f(x) - f(a)}{x-a}
+      </me>
+      This limit, if it exists, will be the slope of the tangent line.
+      It is called the derivative and it calculates the rate of change
+      of the function at <m>x=a</m>. 
+      <me> 
+        f^\prime(a) = \frac{df}{dx} (a) = \lim_{x \rightarrow a}
+        \frac{f(x) - f(a)}{x-a}
+      </me>
+      There is a slight variation of this definition, which is useful
+      for some calculations. If I define <m>h = x-a</m>, then I can
+      write the limit in terms of <m>h</m> instead of <m>x</m>.
+      <me>
+        f^\prime(a) = \frac{df}{dx} (a) = \lim_{h \rightarrow 0}
+        \frac{f(a+h) - f(a)}{h}
+      </me>
+      This second definition show that the derivative is
+      an entirely new function. At each point <m>x</m> in the domain
+      of <m>f</m>, I can ask for the slope of the tangent line. That
+      gives a new function which measure the slope of the original. 
+      <me>
+        f^\prime(x) = \frac{df}{dx} = \lim_{h \rightarrow 0}
+        \frac{f(x+h) - f(x)}{h}
+      </me>
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-operators">
+    <title>Differential Operators</title>
+    <p>
+      I can think of the derivative as an operation on functions: it
+      takes a function and gives a new function which measures the
+      rate of change of the previous function. This solves the
+      velocity problem: if <m>x(t)</m> is a position function, then
+      its derivative <m>x^\prime(t)</m> is the velocity function.
+    </p>
+    <p>
+      Leibniz notation is useful for thinking of derivatives as
+      operators. If I seperate the notation slightly, I can write
+      <me>
+        \frac{df}{dx} = \frac{d}{dx} f
+      </me>
+    </p>
+    <p>
+      With this notation, I think of <m>\frac{d}{dx}</m> as the
+      operator: the thing that takes derivatives. Having notation for
+      such an operator is extremely convenient.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-differentiability">
+    <title>Differentiability</title>
+    <p>
+      The limit defining the derivative may not always exist. If it
+      does exist at a point <m>a</m> in the domain, then <m>f</m> is
+      said to be <term>differentiable</term> at the point <m>a</m>. If
+      it exists for all points in the domain of <m>f</m>, then 
+      <m>f</m> is called a differentiable function. Differentiability
+      requires continuity: if a function makes a sudden jump, it
+      doesn't make sense to talk about a rate of change. A tangent
+      line cannot be defined. Differentiability also requires a
+      <sq>smoothness</sq> condition. A function whose graph has sharp
+      corners is not differentiable at the sharp corners, because it
+      doesn't make sense to define a tangent line at a sharp corner.
+      The graph of the function must be smooth. <xref
+      ref="figure-differentiability-problems" /> shows how
+      a jump or sharp corner makes the choice of a tangent line
+      problematic.
+    </p>
+    <figure xml:id="figure-differentiability-problems">
+      <caption>Differentiability Problems</caption>
+      <image xml:id="figure48" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          draw((0,1){E}..{SE}(4,5));
+          draw((4,3){SE}..{E}(6,0){E}..{NE}(9,3));
+          draw((9,3){SE}..{E}(12,1));
+
+          draw((3,4.5)--(5,5.5));
+          draw((3,2.5)--(5,3.5));
+          draw((8,2.5)--(10,3.5));
+          draw((8,3.5)--(10,2.5));
+        </asymptote>
+      </image>
+    </figure>
+  </subsection>
+  <subsection xml:id="subsection-derivative-interpretation">
+    <title>Interpretation</title>
+    <p>
+      Now that I have formally defined the derivative and
+      differentiability, I'll try to review what this all means. The
+      derivative has two major interpretation, one geometric and one
+      applied.
+    </p>
+    <p><ul>
+        <li>
+          The derivative measures the slope of a tangent line to a
+          function.
+        </li>
+        <li>
+          The derivative measures the rate of change of a function.
+        </li>
+    </ul></p>
+    <p>
+      If a function is differentiable on its domain, that means its
+      derivative exists at all points in the domain. In the geometric
+      interpretation, this means that the graph of the function has a
+      well-defined tangent line at all points in its domain. In the
+      applied interpretation, this means that the function has a
+      well-defined rate of change at all points in its domain.
+    </p>
+  </subsection>
+</section>

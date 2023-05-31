@@ -1,0 +1,247 @@
+<section xml:id="section-limits-at-finite-values">
+  <title>Calcluating Limits at Finite Values</title>
+  <subsection xml:id="susection-three-stpes">
+    <title>Three Steps</title>
+    <p>
+      There is a three step procedure to calculating limits.
+      <ul>
+        <li>
+          <p>
+            First, try to evaluate the function at the limit point.
+            For our standard elementary functions (polynomials, roots,
+            trig, exponentials, logarithms, etc.), the limit at a
+            point in the domain is just the value of the function.
+            This is a property called continuity, which I will discuss
+            in more detail in <xref ref="section-continuity" />.
+          </p>
+        </li>
+        <li>
+          <p>
+            If the first method fails, try to analyze the piece of the
+            limit to see if a direct conclusion is possible. Even
+            though all three steps have logic to them, I'll call this
+            the logical analysis step. 
+          </p>
+        </li>
+        <li>
+          <p>
+            If both methods fail, the limit is called an
+            <term>indeterminate form</term>. In this case, I need to
+            use various algebraic tricks (factoring, expanding,
+            multiplying by conjugates, trig identities) and rules for
+            manipulating limits to change the limit into a more
+            approachable form.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-limit-rules">
+    <title>Limit Rules</title>
+    <p>
+      The third step referred to the rules for manipulating limits,
+      which I will now state. These rules mostly tell me that limits
+      work well with the standard operations of arithmetic.  Let
+      <m>f</m> and <m>g</m> be functions with limits defined at
+      <m>x=a</m> and let <m>c</m> be a constant. (In the quotient
+      limit, assume <m>g(x) \neq 0</m>, and in the exponential limit,
+      assume <m>f(x) > 0</m>.)
+      <md>
+        <mrow>
+          \lim_{x \rightarrow a} f(x) + g(x) \amp  = \lim_{x
+          \rightarrow a} f(x) + \lim_{x \rightarrow a} g(x)
+        </mrow>
+        <mrow>
+          \lim_{x \rightarrow a} f(x) - g(x) \amp  = \lim_{x
+          \rightarrow a} f(x) - \lim_{x \rightarrow a} g(x)
+        </mrow>
+        <mrow>
+          \lim_{x \rightarrow a} c f(x) \amp  = c \lim_{x \rightarrow
+          a} f(x)
+        </mrow>
+        <mrow>
+          \lim_{x \rightarrow a} f(x) g(x) \amp  = \lim_{x \rightarrow
+          a} f(x) \lim_{x \rightarrow a} g(x)
+        </mrow>
+        <mrow>
+          \lim_{x \rightarrow a} \frac{f(x)}{g(x)} \amp  =
+          \frac{\lim_{x \rightarrow a} f(x)} {\lim_{x \rightarrow a}
+          g(x)}
+        </mrow>
+        <mrow>
+          \lim_{x \rightarrow a} (f(x))^c \amp  = (\lim_{x \rightarrow
+          a} f(x))^c
+        </mrow>
+      </md>
+    </p>
+    <p>
+      In addition to the limit rules, there are two special limits
+      that are frequently useful. The second limit can be taken as a
+      definition of the exponential base <m>e</m>.
+      <md>
+        <mrow>
+          \lim_{x \rightarrow 0} \frac{\sin x}{x} \amp  = 1
+        </mrow>
+        <mrow>
+          \lim_{x \rightarrow 0^+} \left( 1 + x \right)^{\frac{1}{x}}
+          \amp  = e
+        </mrow>
+      </md>
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-limit-examples">
+    <title>Examples</title>
+    <p>
+      In the examples, I demonstrate each of the three steps in the
+      limit calculation process, as well as the use of the limit rules
+      to splits limits up over arithmetic.
+    </p>
+    <example>
+      <statement>
+        <p>
+          The limit
+          <me>
+            \lim_{x \rightarrow 3} \frac{x^2 + 9x - 15}{x+7}
+          </me>
+          can be directly evaluated. The function is perfectly well
+          defined at <m>x=3</m>. The value of the limit is just the
+          value of the function.
+          <me>
+            \lim_{x \rightarrow 3} \frac{x^2 + 9x - 15}{x+7} =
+            \frac{3^2 + 9(3) - 15}{3 + 7} = \frac{21}{10} 
+          </me>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          The limit 
+          <me>
+            \lim_{x \rightarrow -2} \frac{x+4}{x+2} 
+          </me>
+          cannot be directly evaluated due to division by zero.
+          However, I can work this out logically. The numerator
+          approaches <m>-2 + 4 = 2</m>, so I can think of it as some
+          number very close to <m>2</m>. The denominator is becoming
+          very close to zero. If I take a number very close to
+          <m>2</m> and divide by a very small number, I get a very
+          large number. As I divide by smaller and smaller numbers,
+          I get larger and larger numbers. I conclude that the limit
+          diverges, getting larger and larger without bound. Since
+          <m>x \rightarrow -2</m> comes from both sides of the
+          numberline, the denominator (and hence the whole limit)
+          could be either 
+          positive and negative, depending on the side of
+          approach. I can write this conclusion in a couple ways.
+          First, I can explicitly show that this diverges to either
+          positive or negative infinity (that this grows without bound
+          either in the positive or negative direction depending on
+          which side of the limit is considered). 
+          <me>
+            \lim_{x \rightarrow -2} \frac{x+4}{x+2} = \pm \infty
+          </me>
+          Second, we could also simply write that the limit doesn't
+          exist. This is less precise, but still correct. 
+          <me>
+            \lim_{x \rightarrow -2} \frac{x+4}{x+2} \text{ DNE}
+          </me>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          The limit
+          <me>
+            \lim_{x \rightarrow 7} \frac{x^2 - 4x - 21}{x^2 + 3x - 70}
+          </me>
+          cannot be evaluated due to division by zero. I also can't
+          work this out by just logical analysis of the pieces, since
+          both the numerator and denominator are approaching zero.
+          This is an indeterminate form, so I need to do some algebra
+          to figure it out. I'm going to factor both quadratics. 
+          <me>
+            = \lim_{x \rightarrow 7} \frac{(x-7)(x+3)}{(x-7)(x+10)}
+          </me>
+          Then I can cancel of the <m>(x-7)</m> terms. This is going
+          to remove the division by zero problem, which is my goal.
+          With indeterminate forms, I'm always trying to remove the
+          problem that prevents me from either evaluating directly or
+          using logic analysis of the pieces to determine the limit.
+          <me>
+            = \lim_{x \rightarrow 7} \frac{x+3}{x+10}
+          </me>
+          Now I can just evaluate the limit, since there is no more
+          division by zero.
+          <me>
+            = \frac{10}{17} 
+          </me>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          <me>
+            \lim_{x \rightarrow 1} x \left( \frac{x^2-1}{x-1} -
+            \frac{3}{x-4} \right) 
+          </me>
+          This limit has various pieces combined together with
+          arithmetic. I can use the limit rules to split it up.
+          First, I'll split up the product.
+          <me>
+            = \left( \lim_{x \rightarrow 1} x\right) \lim_{x
+            \rightarrow 1} \left( \frac{x^2-1}{x-1} -
+            \frac{3}{x-4} \right) 
+          </me>
+          Then the first limit evaluates to <m>1</m>. I'll use the
+          limit rules again to split up the difference in the second
+          limit.
+          <me>
+            = 1 \left( \lim_{x \rightarrow 1} \frac{x^2-1}{x-1} -
+            \lim_{x \rightarrow 1} \frac{3}{x-4} \right) 
+          </me>
+          The second limit can be directly evaluated. The first limit
+          needs some work, so I factor its numerator.
+          <me>
+            = \left( \lim_{x \rightarrow 1} \frac{(x-1)(x+1)}{x-1} -
+            \frac{3}{-3} \right) 
+          </me>
+          Then I can cancel the <m>(x-1)</m> term in the remaining limit.
+          <me>
+            = \lim_{x \rightarrow 1} (x + 1) + 1   
+          </me>
+          Finally, I can now evaluate the remaining limit and finish
+          the whole problem. 
+          <me>
+            = 2 + 1 = 3
+          </me>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          The limit
+          <me>
+            \lim_{x \rightarrow 0} \frac{x^2 + \sin x}{x} 
+          </me>
+          is an indeterminate form. I can use the limit rules to break
+          it into two limits. 
+          <me>
+            = \lim_{x \rightarrow 0} \frac{x^2}{x} + 
+            \lim_{x \rightarrow 0} \frac{\sin x}{x} 
+          </me>
+          In the first limit, I can cancel an <m>x</m>. The second is
+          one of the two special limits I mentioned above, so I just
+          use its known value. Then I can evaluate the last remiaining
+          limit to finish the problem. 
+          <me>
+            = \lim_{x \rightarrow 0} x + 1 = 0 + 1 = 1
+          </me>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

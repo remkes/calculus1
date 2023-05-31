@@ -1,0 +1,398 @@
+<section xml:id="section-types-of-functions">
+  <title>Types of Functions</title>
+  <subsection xml:id="subsection-constant-functions">
+    <title>Constant Functions</title>
+    <figure xml:id="figure-constant-function">
+      <caption>A Constant Function</caption>
+      <image xml:id="figure26" width="75%">
+        <asymptote>
+          size(10cm,5cm,IgnoreAspect);
+
+          import graph;
+
+          xaxis("$x$",-2,4);
+          yaxis("$y$",-2,4);
+
+          draw((-2,1)--(4,1));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      The simpliest kind of function is a constant function. Its
+      output is the same regardless of input. The function <m>f(x) =
+      5</m> is constant at 5: it will give the value 5 no matter what
+      value of <m>x</m> we specify. Constant functions have no domain
+      restrictions.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-linear-functions">
+    <title>Linear Functions</title>
+    <figure xml:id="figure-linear-function">
+      <caption>A Linear Function</caption>
+      <image xml:id="figure27" width="75%">
+        <asymptote>
+          size(10cm,5cm,IgnoreAspect);
+
+          import graph;
+
+          xaxis("$x$",-2,4);
+          yaxis("$y$",-2,4);
+
+          draw((-2,-1)--(4,2));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Linear functions have the form <m>f(x) = ax + b</m> for real
+      numbers <m>a</m> and <m>b</m>. Their graphs are straight
+      lines, hence the name <sq>linear</sq>. Linear functions
+      includes constant functions, since we allow <m>a=0</m>. All the
+      tools from analytic geometry for understanding lines are useful
+      for understanding linear functions. Linear functions have no
+      domain restrictions.
+    </p>
+    <p>
+      A particularly important linear function is the function <m>f(x)
+      = x</m>, which is called the <term>Identity Function</term>. It is
+      the unique function which takes any input and gives that input
+      back without any action.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-quadratic-functions">
+    <title>Quadratic Functions</title>
+    <figure xml:id="figure-quadratic-function">
+      <caption>A Quadratic Function</caption>
+      <image xml:id="figure33" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return ((x-2)^2-3)/4;}
+
+          draw(graph(f,-1,5));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Quadratic functions have the form <m>f(x) = ax^2 + bx + c</m>.
+      Their graphs are parabolas. We have a large array of tools to
+      understand parabolas, including the vertex-form (to find the
+      highest/lowest point of the function) and the quadratic equation
+      (to find the roots). Quadratic functions have no domain
+      restrictions.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-polynomials">
+    <title>Polynomial Functions</title>
+    <figure xml:id="figure-polynomial-function">
+      <caption>A Polynomial Function</caption>
+      <image xml:id="figure28" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return (x^3 + 2x^2-x-3)/6;}
+
+          draw(graph(f,-3,1.5));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Polynomial functions have the following form, where the
+      <m>a_i</m> are any real numbers.
+      <me>
+        f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_2x^2 + a_1 x +
+        a_0
+      </me>
+    </p>
+    <p>
+      The number <m>n</m> of the largest power in the polynomial is
+      called the <em>degree</em> of the polynomial. The previous
+      cases are all polynomials: constant functions have degree zero,
+      linear functions have degree one, and quadratics have degree
+      two. We have names for the next few degress as well: cubics
+      have degree three, quartics have degree four and quintics have
+      degree five. Polynomial functions have a familiar standard
+      shape involving a graph that curves up and down some number of
+      times. The maximum number of times the graph of polynomial can
+      change directions is one less than the degree. Polynomials of
+      degree <m>n</m> can have at most <m>n</m> roots, though they may
+      have fewer. Polynomial functions have no domain restrictions.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-rational-functions">
+    <title>Rational Functions</title>
+    <figure xml:id="figure-rational-function">
+      <caption>A Rational Function</caption>
+      <image xml:id="figure29" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return (x^3 + 2x^2-x-3)/(3x^2-9x-12);}
+
+          draw(graph(f,-3,-1.02));
+          draw(graph(f,-0.96,3));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Rational numbers are fractions involving integers, In the same
+      way, rational functions are fractions involving polynomials.
+      Rational functions have the follwoing form, where <m>p(x)</m>
+      and <m>q(x)</m> are polynomials.
+      <me>
+        f(x) = \frac{p(x)}{q(x)}
+      </me>
+    </p>
+    <p>
+      Rational functions may have domain restrictions. In order to
+      avoid dividing by zero, I must avoid any <m>x</m> where <m>q(x)
+      = 0</m>. Rational functions may have <term>vertical
+      asymptotes</term> near their undefined points. A vertical
+      asymptote is a vertical line which the graph of the function
+      approaches near an undefined point; they will be discussed in
+      more detail in <xref ref="subsection-vertical-asymptotes" />.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-algebraic-functions">
+    <title>Algebraic Functions</title>
+    <figure xml:id="figure-algebraic-function">
+      <caption>An Algebraic Function</caption>
+      <image xml:id="figure30" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return sqrt(x^2+7)/(sqrt(x^2+1));}
+
+          draw(graph(f,-3,4));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      I am now moving into much broader categories of functions, where
+      it is impossible to give a simple cohesive sense of the
+      behaviour of the functions. However, terminology is still useful
+      for grouping these functions. Algebraic functions are functions
+      which involve the four basic operations of addition,
+      subtraction, multiplication and division as well as any rational
+      exponent. This includes polynomials and rational functions, but
+      also roots, since roots can be written as fractional exponents.
+      (<m>\sqrt{x} = x^{\frac{1}{2}}</m>). Algebraic functions can be
+      very complicated conglomerations of these operations.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-trig-functions">
+    <title>Trigonometric Functions</title>
+    <figure xml:id="figure-trigonometric-function">
+      <caption>A Trigonometric Function</caption>
+      <image xml:id="figure32" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return sin(pi*x);}
+
+          draw(graph(f,0,6));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      The first type of non-algebraic functions I want to present are
+      trigonometric functions. Sine and cosine have the familiar
+      sinusoidal wave shape: infinitenly many oscillations which repeat
+      perfectly with some period. Sine and cosine waves can be
+      analyzed by their amplitude and period. The other trigonometric
+      functions (tangent, cotangent, secant and cosecant) are also
+      periodic, but they have undefined points and vertical asymptotes
+      at regular intervals.
+    </p>
+    <figure xml:id="figure-trig-circle">
+      <caption>Trigonometry and the Circle</caption>
+      <image xml:id="figure34" width="75%"> 
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$",-1.4,1.4);
+          yaxis("$y$",-1.4,1.4);
+
+          draw(unitcircle);
+
+          draw((0,0)--(.5,.866));
+
+          dot((.5,.866));
+
+          label("$(x,y)$",(.5,.866),NE);
+          label("$\theta$",(0.1,0),NE);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Though the trigonometric functions are usually associated to
+      triangles, it is more natural to define them using the circle.
+      If <m>\theta</m> is the angle from the positive <m>x</m> axis,
+      then <m>\cos \theta</m> is exactly the <m>x</m> coordinate of
+      the point on circle determined by <m>\theta</m> and <m>\sin
+      \theta</m> is exactly the <m>y</m> coordinate. All of the
+      important properties of trigonometric functions can be derived
+      from circle geometry, including the many trigonometric
+      identities. Please see the reference materials for
+      definitions and identities involving trigonometric functions.
+    </p>
+    <p>
+      Each trigonometric function has a inverse function. There are
+      two standard notations; the inverse of <m>\sin(x)</m> is written
+      either as <m>\sin^{-1}(x)</m> or <m>\arcsin(x)</m>. Even though
+      the former notation is familiar from calculators, I will use
+      the latter in these notes to avoid confusions with
+      <m>\frac{1}{\sin(x)}</m>. (The reciprocal of a trig function is
+      not the same as the inverse of a trig function.) 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-exponential-functions">
+    <title>Exponential and Logarithmic Functions</title>
+    <figure xml:id="figure-an-exponential-function">
+      <caption>An Exponential Function</caption>
+      <image xml:id="figure31" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return (2^(x))/3;}
+
+          draw(graph(f,-3,3));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      If <m>a</m> is a positive real number, then functions of the
+      form <m>f(x) = a^x</m> are called exponential functions. They
+      differ from roots and polynomials in that the variable is in the
+      exponent. This distinction is very important but easy to
+      confuse: <m>f(x) = x^a</m> is an algebraic function but <m>f(x)
+      = a^x</m> is an exponential function, which is not algebraic.
+      The laws of exponents (see the reference material) are very
+      useful for working with exponential functions.
+    </p>
+    <p>
+      The exponential bases you've most likely seen to date have been
+      2 and 10. These are useful bases, but in calculus (for reasons
+      that will become clear later) a different base is prefered. The
+      irrational number <m>e</m> is called Euler's number. It has an
+      approximate value <m>e = 2.71828\ldots</m>. It is by far the
+      most common exponential base; you will be seeing the exponential
+      function <m>f(x) = e^x</m> very frequently. It is reasonable to
+      claim that <m>f(x) = e^x</m> is the most important function in
+      calculus.
+    </p>
+    <figure xml:id="figure-a-logarithmic-function">
+      <caption>A Logarithmic Function</caption>
+      <image xml:id="figure85" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return (log(x))/3;}
+
+          draw(graph(f,0.05,6));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      The inverse of the exponential function is the logarithm. If
+      the exponential has base <m>a</m>, its logarithm is written
+      <m>\log_a x</m>. However, the inverse of the exponential
+      <m>f(x) = e^x</m> is instead written <m>\ln x</m> and called the
+      natural logarithm. Like <m>e^x</m> over other exponential
+      functions, the natural logarithm is by far the most commonly
+      used logarithm in calculus. All logarithms have a domain
+      restrictions: they can only act on (strictly) positive numbers. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-hyperbolic-functions">
+    <title>Hyperbolic Functions</title>
+    <p>
+      Though I won't define or investigate these function until
+      Calculus II, it is useful to mention that there is a third
+      important family of non-algebraic functions called the
+      hyperbolic functions. There are a strange family, in some ways
+      similar to trigonometric functions and in some ways similar to
+      exponentials. They have inverse functions as well, called the
+      inverse hyperbolics.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-elementary">
+    <title>Elementary Functions</title>
+    <figure xml:id="figure-universe-of-functions">
+      <caption>The Universe of Functions</caption>
+      <image xml:id="figure35" width="90%">
+        <asymptote>
+          size(16cm);
+
+          import graph;
+
+          draw(unitcircle);
+          draw(scale(2)*unitcircle);
+          draw(scale(3)*unitcircle);
+          draw(scale(4)*unitcircle);
+          draw(scale(5)*unitcircle);
+          draw(scale(6)*unitcircle);
+          draw(scale(7)*unitcircle);
+
+          label("Constant",(0,-.4),N);
+          label("Linear",(0,1),N);
+          label("Quadratic",(0,2),N);
+          label("Polynomial",(0,3),N);
+          label("Rational",(0,4),N);
+          label("Algebraic",(0,5),N);
+          label("Transcendental",(0,6),N);
+          label("\Huge Elementary", (0,-3),S);
+          label("Non-Elementary?",(4.5,5.6),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Everything I've defined so far comes together to form the large
+      family refered to as the elementary functions.  Everything I've
+      defined so far, as well as any combination of these functions,
+      is an elementary function. These functions are sufficient for a
+      wide variety of useful applications, and form the core of
+      calculus and many other parts of applied mathematics. However,
+      calculus also gives tools to create many other kinds of
+      non-elementary functions. Depending how far you progress in the
+      stream of calculus courses, you may encounter some of these
+      non-elementary functions. 
+    </p>
+  </subsection>
+</section>

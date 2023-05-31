@@ -1,0 +1,261 @@
+<section xml:id="section-riemann-integral">
+  <title>The Riemann Integral</title>
+  <subsection xml:id="subsection-integral-definition">
+    <title>Definition</title>
+    <p>
+      Recall the distance travelled problem described in <xref
+      ref="subsection-distance-problem" />, where I tried to
+      understand the distance travelled by an object when I knew its
+      velocity function <m>v(t)</m>. Geometrically, this was
+      equivalent to finding the area under the graph of the function.
+    </p>
+    <p>
+      I set up a process to solve this problem, at least
+      approximately.  That process involved making rectangles under
+      the curve and adding up the area of the rectangles, as in
+      <xref ref="figure-improved-approximation-by-rectangles" />. 
+      Integration will be the limit of this approximation process,
+      just as differentiation was the limit of the approximation
+      process of secant lines approaching the tangent line.
+    </p>
+    <p>
+      Sigma notation is a concice notation for the approximation
+      of areas by rectangles. I am trying to calculate
+      the area under the curve of <m>f(x)</m>, a positive function,
+      defined on an interval <m>[a,b]</m>. I divide the area
+      into <m>n</m> rectangles; if I divide equally, the width of
+      each rectangle will be <m>\frac{b-a}{n}</m>. The height of the
+      rectangle will be the function value <m>f(x^*)</m> where
+      <m>x^*</m> is some particular <m>x</m> in the subinterval.
+    </p>
+    <p>
+      With these notations, the area of a rectangle is width times
+      height, that is <m>\frac{b-a}{n} f(x^*)</m>. To be more
+      specific, if I use <m>k</m> as an index to refer to various
+      rectangles and <m>x_k^*</m> is in the kth interval, the area of
+      the <m>k</m>th rectangle is <m>\frac{b-a}{n} f(x_k^*)</m>. To
+      get the complete approximation, I add up all these rectangles
+      with sigma notation.
+      <me>
+        A \cong \sum_{k=1}^n \frac{b-a}{n} f(x_k^*)
+      </me>
+    </p>
+    <p>
+      This sum is called a <term>Riemann sum</term> approximation for
+      area. If the function is well behaved (continuous guaranteees
+      this), then I can keep taking finer and finer partitions for
+      better and better approximations. This process can be extended
+      into some kind of limit process. In the limit, I hope for a
+      perfect calculation of area.
+      <me>
+        A = \lim_{n \rightarrow \infty} \sum_{k=1}^n f(x_k^*)
+        \frac{b-a}{n}
+      </me>
+    </p>
+    <p>
+      This limit, if it exists, is called a <term>definite
+      integal</term>.  The area under the curve is calculated by a
+      definite integral.  Since this definition uses Riemann sums,
+      this is called the Riemann definiton of the integral, or simply
+      the Riemann integral. It has a new notation.
+      <me>
+        \int_a^b f(x) dx := \lim_{n \rightarrow \infty} \sum_{k=1}^n
+        f(x_k^*) \frac{b-a}{n}
+      </me>
+    </p>
+    <p>
+      I should explain the notation. The sigma of sigma notation gets
+      replaced with <m>\int</m>, which is the integral sign. The
+      bounds <m>k=1</m> and <m>n</m> get replaced with the endpoints
+      of the interval, <m>a</m> and <m>b</m> respectively. The
+      <m>f(x^*_k)</m> just becomes the function <m>f(x)</m>. Finally,
+      the width <m>\frac{b-a}{n}</m> gets infinitesimally small as <m>n
+      \rightarrow \infty</m>, so it becomes the infinitesimal term
+      <m>dx</m>. Like Leibniz notation, this <m>dx</m> is a relic
+      from a different historical presentation of calculus. Its main
+      purpose in the modern notation is to indicate what symbol is the
+      variable. However, as will be seen in <xref
+      ref="section-substitution-rule" />, this <m>dx</m> notation is
+      useful for a variety of integration calculations.
+    </p>
+    <p>
+      The first problem with limit definition is the existence of the
+      limit. Unfortunately, this is an extremely difficult question
+      to solve in general, particularly since it has to work for any
+      possible choices of the values <m>x_k^*</m>. Fortunately, this
+      limit will always exist if <m>f(x)</m> is continuous, a fact
+      that is presented here without proof.
+    </p>
+    <p>
+      I should point out some important observations. First, this
+      integral returns a number: given a function and endpoints, it
+      calculates a fixed area. It isn't (yet) a new function. Second,
+      I need the bounds: the Riemann integral doesn't make any sense
+      without the bounds of the interval <m>[a,b]</m>. Third, I
+      defined this for positive functions. It also works for functions
+      which have negative values, but areas below the <m>x</m> axis
+      are interpreted as negative. If a function has both positive and
+      negative values, the integral will give the difference between
+      the area above the axis (the positive area) and the area below
+      the (the negative area).
+    </p>
+    <p>
+      Recall when I talked about the derivatives, I mentioned that
+      the definition was correct and rigorous but difficult to use.
+      That comment is also true here, but even more severe. The
+      definition of the integral is nearly impossible to use for most
+      functions. I will only try to use the definition for small
+      order polynomials.
+    </p>
+    <example>
+      <statement>
+        <p>
+          <md>
+            <mrow>
+              \int_0^3 x^2 dx \amp = \lim_{n \rightarrow \infty}
+              \sum_{k=1}^n (x^*_k)^2 \frac{b-a}{n}
+            </mrow>
+          </md>
+          I start with the setup of the Riemann integral. I need to
+          make a choice for <m>x_k^*</m>. I'll take the standard
+          choice of <m>x_k^* = a + k \frac{b-a}{n}</m>, which in this
+          case is <m>x_k^* = 0 + k \frac{3}{n} = \frac{3k}{n}</m>.
+          <md>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \sum_{k=1}^n \left(
+              \frac{3k}{n} \right)^2 \frac{3}{n}
+            </mrow>
+          </md>
+          Then I apply the square to each piece of the term in
+          brackets. Anything that doesn't involve <m>k</m> is
+          independent of the sum and can be factored out. 
+          <md>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \frac{27}{n^3}
+              \sum_{k=1}^n k^2
+            </mrow>
+          </md>
+          I evaluate the sum, which is one of the standard sums. 
+          <md>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \frac{27}{n^3}
+              \frac{n(n+1)(2n+1)}{6}
+            </mrow>
+          </md>
+          I simplify the expression by expanding the multiplication.
+          Then I can evaluate this as an asymptotic analysis limit.
+          The asymptotic orders are the same, so the limit is the
+          ratio of the leading terms. This will complete the integral. 
+          <md>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \frac{9}{2}
+              \frac{2n^3+3n^2+n}{n^3} = 9
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <md>
+          <mrow>
+            \int_2^5 (x^3-x) dx \amp = \lim_{n \rightarrow \infty}
+            \sum_{k=1}^n \left( (x^*_k)^3 - x^*_k \right) 
+            \frac{b-a}{n}
+          </mrow>
+        </md>
+        I start with the setup of the Riemann integral. I need to
+        make a choice for <m>x_k^*</m>. I'll take the standard
+        choice of <m>x_k^* = a + k \frac{b-a}{n}</m>, which in this
+        case is <m>x_k^* = 2 + k \frac{3}{n} = 2 + \frac{3k}{n}</m>.
+        The <m>\frac{b-a}{n}</m> terms becomes <m>\frac{3}{n}</m>.
+        This term doesn't involve <m>k</m>, so it can be factored
+        out of the sum. 
+        <md>
+          <mrow>
+            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
+            \sum_{k=1}^n \left( \left(2 + \frac{3k}{n} \right)^3 -
+            \left(2+ \frac{3k}{n} \right) \right)
+          </mrow>
+        </md>
+        Then I'll expand out the cubed binomial. After doing so,
+        I'll combine like terms (based on the power of <m>n</m> in
+        the denominator). 
+        <md>
+          <mrow>
+            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
+            \sum_{k=1}^n \left( 8 + \frac{36k}{n} + \frac{54k^2}{n^2}
+            + \frac{27k^3}{n^3} - 2 - \frac{3k}{n} \right)
+          </mrow>
+          <mrow>
+            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
+            \sum_{k=1}^n \left( 6 + \frac{33k}{n} + \frac{54k^2}{n^2}
+            + \frac{27k^3}{n^3} \right)
+          </mrow>
+          <mrow>
+            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
+            \left( 
+            6 \sum_{k=1}^n 1 + 
+            \frac{33}{n} \sum_{k=1}^n k + 
+            \frac{54}{n^2} \sum_{k=1}^n k^2 + 
+            \frac{27}{n^3} \sum_{k=1}^n k^3 \right) 
+          </mrow>
+        </md>
+        I evaluate all four of the sums, since each is one of the
+        standard sums. 
+        <md>
+          <mrow>
+            \amp = \lim_{n \rightarrow \infty} \frac{3}{n} \left( 6n +
+            \frac{33}{n} \frac{n(n+1)}{2} + \frac{54}{n^2}
+            \frac{n(n+1)(2n+1)}{6} + \frac{27}{n^3} \left(
+            \frac{n(n+1)}{2} \right)^2 \right)
+          </mrow>
+        </md>
+        I simplify the expression by expanding the multiplication in
+        each numerator.  Then I can evaluate this as an asymptotic
+        analysis limit.  The asymptotic orders are the same in each
+        term (and I can treat each term independently, since the
+        limits splits up over addition), so the limit is the ratio
+        of the leading terms in each piece of the sum. Adding the
+        various pieces together completes the integral.
+        <md>
+          <mrow>
+            \amp = 18 + \frac{99}{2} + 54 + \frac{81}{4} = \frac{72+
+            199+ 216+ 81}{4} = \frac{567}{4}
+          </mrow>
+        </md>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="subsection-integral-properties">
+    <title>Properties of the Definite Integral</title>
+    <p>
+      The definite integral is linear.
+      <md>
+        <mrow>
+          \int_a^b (f(x) \pm g(x)) dx \amp = \int_a^b f(x) dx +
+          \int_a^b g(x) dx
+        </mrow>
+        <mrow>
+          \int_a^b c f(x) dx \amp = c \int_a^b f(x) dx
+        </mrow>
+      </md>
+      To integrate a constant, I just calculate the area of a
+      rectangle, since the area under a constant graph is a rectangle. 
+      <me>
+        \int_a^b c dx = c(b-a)
+      </me>
+      If, for some reason, I end up with reversed bounds, I can
+      change them by introducing a negative sign.
+      <me>
+        \int_a^b f(x) dx = - \int_b^a f(x) dx
+      </me>
+      If <m>f</m> is continuous on <m>[a,b]</m> and <m>[b,c]</m>, then
+      the integral over the two pieces is equivalent to the integral
+      over the whole interval <m>[a,c]</m>.
+      <me>
+        \int_a^bf(x) dx + \int_b^c f(x) dx = \int_a^c f(x) dx
+      </me>
+    </p>
+  </subsection>
+</section>

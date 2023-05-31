@@ -1,0 +1,144 @@
+<section xml:id="section-marginal-analysis">
+  <title>Marginal Analysis</title>
+  <subsection xml:id="subsection-economic-model">
+    <title>An Economic Model</title>
+    <p>
+      A nice use of optimization happens in economics and finance
+      through a technique called marginal analysis. Naively, marginal
+      analysis is frequently presented as a sales and production
+      question: <m>C(x)</m> is the cost of producing <m>x</m> units of
+      a product and <m>B(x)</m> is the revenue from selling <m>x</m>
+      units of a product. I'll take a slightly more general
+      interpretation, where we measure cost <m>C(x)</m> and benefit
+      <m>B(x)</m> without specifying exactly what form those costs and
+      benefits can take. 
+    </p>
+    <p>
+      In this context, the derivative <m>C^\prime(x)</m> is called the
+      <em>marginal cost</em> and the derivative <m>B^\prime(x)</m> is
+      called the <em>marginal benefit</em>.
+    </p>
+    <p>
+      I can ask three questions.
+      <ul>
+        <li>
+          First, when is there a maximum net benefit?  That is, when
+          is the difference <m>B(x) - C(x)</m> maximized?  The
+          derivative must be zero, so <m>B^\prime(x) - C^\prime(x) =
+          0</m>, which is <m>B^\prime(x) = C^\prime(x)</m>. I
+          optimize net benefit when the marginal costs are equal.
+          After finding such a point, I will still have to
+          investigate to see if the point is a minimum, maximum or
+          neither.
+        </li>
+        <li>
+          The second question is a local variant of the first
+          question. If production rate is currently at some level 
+          <m>x_0</m> units, would more production increase the net
+          benefit?  That is, is the net benefit currently an
+          increasing function?  Increasing means positive
+          derivative, so I look for <m>B^\prime(x) - C^\prime(x) >
+          0</m>, which is <m>B^\prime(x) > C^\prime(x)</m>.
+          Increasing production increases the net benefit if the
+          marginal benefit is larger than the marginal cost. This
+          leads to a reasonable interpretation of these derivatives:
+          marginal cost is (roughly) the cost to produce <em>the
+          next</em> unit, and marginal benefit is the benefit due to
+          <em>the next</em> unit. I can increase net benefit if
+          the next unit has greater benefit than cost. 
+        </li>
+        <li>
+          Lastly, I can ask a different strategic question.
+          Instead of maximizing net benefit (like profit for a
+          company), what if the motivation is just maximum benefit
+          while still breaking even (more like a non-profit). This
+          is still an optimization question, but with a different
+          approach. Now I want to break even, which mathematically
+          is <m>B(x) = C(x)</m>. The derivatives no longer come
+          into play; I just have to solve this equality of
+          functions and find the solution <m>x</m> with the highest
+          gross benefit.
+        </li>
+      </ul>
+    </p>
+    <p>
+      This certainly isn't an exhaustive list of all possible
+      questions; strategically, there could be many considerations
+      leading to many questions. Perhaps there is a fixed budget, so
+      the cost <m>C(x)</m> cannot, under any circumstances, cross a
+      fixed maximum. If our product is a service, the goal might be
+      maximum usage instead of maximum net benefit. Perhaps I need
+      to minimize average cost of production instead of net benefit.
+      Whenever I use mathematics for strategic reasons in a applied
+      situation, it is important to remember that the mathematics only
+      answers the questions I asked. It doesn't tell me which
+      question I actually want to ask, nor how to compare between the
+      various questions.
+    </p>
+    <figure xml:id="figure-marginal-analysis">
+      <caption>Example of Marginal Analysis</caption>
+      <image xml:id="figure57" width="90%">
+        <asymptote>
+          size(10cm,7cm,IgnoreAspect);
+
+          import graph; 
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f1(real x) {return x^3-x^2+x+1;}
+          real f2(real x) {return 3x;}
+
+          draw(graph(f1,0,2.2));
+          draw(graph(f2,0,3));
+
+          label("$B(x)$",(2.4,7.2),SE);
+          label("$C(x)$",(2,7),NW);
+
+          draw((1.22,2.53)--(1.22,3.65));
+
+          label("Maximum Net Benefit",(1.26,2.53),SE);
+
+          dot("$1.22$",(1.22,0),S);
+          dot("$0.43$",(0.43,0),S);
+          dot("$1.81$",(1.81,0),S);
+          dot("Maximal Break-Even Point",(1.81,5.43),NW);
+        </asymptote>
+      </image>
+    </figure>
+    <example>
+      <statement>
+        <p>
+          Take the cost function <m>C(x) = x^3 - x^2 + x+ 1</m> and
+          the benefit function <m>B(x) = 3x</m>. Assume that this
+          model measures the produce of some objects that are then
+          sold. <m>x</m> can be measured in thousands of units and
+          <m>B</m> and <m>C</m> can be measured in millions of
+          dollars. Notice that <m>C(0) = 1</m>, which could represent
+          an initial start-up cost before the production of a single
+          unit.
+        </p>
+        <p>
+          I calculate the derivatives: <m>C^\prime(x) = 3x^2
+          -2x+1</m> and <m>B^\prime(x) = 3</m>. These are equal when
+          <m>x = \frac{1}{3} (1 \pm \sqrt{7})</m>. Discarding the
+          negative, the other root is approximately <m>1.215</m>, so a
+          production of 1215 units gives the maximum net benefit.
+          Below that point, marginal benefit exceeds cost, so I
+          should increase production. Above that point, marginal cost
+          will exceed benefit, so I should decrease production.
+        </p>
+        <p>
+          The break even points are found by solving the cubic: <m>x^3
+          -x^2-2x+1 - 3x = 0</m>. The cubic doesn't factor nicely,
+          but a computer can give the approximate even <m>x</m>
+          values: <m>-1.25</m>, <m>0.45</m> and <m>1.81</m>. I
+          discard the negative value again. The largest break-even
+          point is at approximately <m>1.81</m>. All these values and
+          the behaviour of the cost and benefit functions are shown in
+          <xref ref="figure-marginal-analysis" />.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

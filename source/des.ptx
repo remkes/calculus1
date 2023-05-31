@@ -1,0 +1,201 @@
+<section xml:id="section-differential-equations">
+  <title>Differential Equations</title>
+  <subsection xml:id="subsection-population-models">
+    <title>Interpreting the Population Regression</title>
+    <p>
+      In <xref ref="section-population-growth" />, I wondered about
+      the connection between percentage growth to exponential
+      functions. Percentage growth is a growth rate, but that's not
+      something I have a good mathematical understanding of <mdash />
+      at least not yet.  Algebraic techniques have a hard time
+      understanding growth rates, or rates of change in general. 
+      Calculus includes a tool called the <term>derivative</term>
+      of a function which measures its rate of change. For now, I
+      am going to avoid the technical definition but work with the
+      idea. 
+      <blockquote>
+        A derivative of a function is a measure of its <em>rate of
+        change</em> or it <em>growth rate</em>.
+      </blockquote>
+      I need some notation. For a function <m>p(t)</m>, there are two
+      common ways of writing the derivative.
+      <md>
+        <mrow> 
+          \amp p^\prime(t) \amp \amp \frac{dp}{dt}
+        </mrow>
+      </md>
+    </p>
+    <p>
+      The first notation is called Newton's notation, and the second is
+      called Leibniz's notation. I will use both in this course but I
+      will rely on Leibniz's notation most of the time. Leibniz's
+      notation has the advantage of including the independent variable
+      (here <m>t</m>) in the notation; this is often very convenient,
+      even though the notation is less succinct. 
+    </p>
+    <p>
+      The derivative is the rate of change of the function, so for a
+      population model, <m>\frac{dp}{dt}</m> is the growth rate of the
+      population. Let me remind you of that data used in the
+      <xref ref="section-population-growth" />.
+    </p>
+    <table xml:id="table-population-data-repeated">
+      <tabular>
+        <row>
+          <cell>Year</cell>
+          <cell>Population</cell>
+          <cell>Growth Rate</cell>
+        </row>
+        <row>
+          <cell>0</cell>
+          <cell>1032</cell>
+          <cell>Not Applicable</cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>1214</cell>
+          <cell>17.6 %</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>1372</cell>
+          <cell>13.0 %</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>1629</cell>
+          <cell>18.7 %</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>2143</cell>
+          <cell>31.6 %</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>2520</cell>
+          <cell>17.6 %</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell>2940</cell>
+          <cell>16.7 %</cell>
+        </row>
+        <row>
+          <cell>7</cell>
+          <cell>3292</cell>
+          <cell>12.0 %</cell>
+        </row>
+        <row>
+          <cell>8</cell>
+          <cell>3813</cell>
+          <cell>15.8 %</cell>
+        </row>
+        <row>
+          <cell>9</cell>
+          <cell>4757</cell>
+          <cell>24.8 %</cell>
+        </row>
+        <row>
+          <cell>10</cell>
+          <cell>5632</cell>
+          <cell>18.4 %</cell>
+        </row>
+        <row>
+          <cell>11</cell>
+          <cell>6842</cell>
+          <cell>21.5 %</cell>
+        </row>
+        <row>
+          <cell>12</cell>
+          <cell>8010</cell>
+          <cell>17.1 %</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      The average annual increase in the data is somewhere near
+      <m>20</m>% growth. That means that the growth rate (the amount
+      of population added in a year) is <m>\frac{20}{100}</m> (or
+      <m>\frac{1}{5}</m>) times the current population. I can express
+      this as an equation.
+      <me>
+        \frac{dp}{dt} = \frac{1}{5} p(t)
+      </me>
+    </p>
+    <p>
+      This is a mathematical translation of the understanding of
+      percentage growth. An equation of this form, involving a function
+      and its derivative, is called a <term>differential
+      equation</term> (a DE, in short). Very often in applied
+      mathematics, it is easier to observe the rate of change of a
+      function than the function itself. This leads to models
+      expressed as differential equations.  Many of the most important
+      mathematical models are expressed as differential equations.
+    </p>
+    <p>
+      The regression provided the function <m>p(t) =
+      2^{\frac{t}{4}}</m>. I will show, later in the course, that the
+      solution to this differential equation is a very similar
+      function.
+      <me>
+        p(t) = e^{\frac{1}{5} t}
+      </me>
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-des-concept">
+    <title>The Concept of a Differential Equation</title>
+    <p>
+      Solving differential equations is one of the major goals of
+      calculus. The solution described above leads to the profound
+      connection between percentage growth rate and exponential growth:
+      if I observe a percentage growth rate, then the quantities I 
+      observe should be described by an exponential function. This is
+      how I know that many populations grow exponentially, as do
+      functions involving resource use, radioactive decay, heat
+      dissipation, debt repayment and investment interest. The
+      importance of the exponential function lies in its use as a
+      solution to a differential equation that covers this wide
+      variety of real world situations.
+    </p>
+    <p>
+      DEs provide a different approach to fiting a function to data.
+      Instead of just using intuition to choose a class of functions and
+      regression to get the specific function, I can look at the growth
+      rates of the function in the data. If I can make a consistent
+      observation about the growth rates, such as the observation that
+      they grow by a consistent percentage, I can write that
+      observation as a differential equation. I can then (hopefully)
+      solve the differential equation to find the appropriate function.
+    </p>
+    <p>
+      Before worring about solving DEs, I simply want to understand
+      what they say. The goal is essentially translation: a
+      differential equation is a mathematical translation of a statement
+      about the growth rate of a quantity. I want to be able to pass
+      both ways between the equation and the associated statement. The
+      example in this section already shows percentage growth with
+      percentage <m>c</m>% translates into an equation.
+      <me>
+        \frac{dp}{dt} = \frac{c}{100} p
+      </me>
+    </p>
+    <p>
+      I can use this example to translate similar sentences as well.
+      Percentage decay says that a quantity looses a
+      percentage <m>c</m>% of the current value  per unit time. This
+      translates into a DE with a negative growth rate.
+      <me>
+        \frac{dp}{dt} = -\frac{c}{100} p
+      </me>
+    </p>
+    <p>
+      Not all differential equations are percentage growth. Perhaps the
+      rate of change of some quantity is proportional to the square of
+      the current value. That could likewise be translated into a DE.
+      <me>
+        \frac{dp}{dt} = c(p(t))^2
+      </me>
+    </p>
+  </subsection>
+</section>

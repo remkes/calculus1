@@ -1,0 +1,197 @@
+<section xml:id="section-population-growth">
+  <title>Population Growth</title>
+  <subsection xml:id="subsection-population-motivation">
+    <title>A Motivating Problem</title>
+    <p>
+      A very natural motivating problem is population growth. Here are
+      some reasonable mathematical questions one might ask about
+      population.
+    </p>
+    <p><ul>
+      <li>
+        How do I encode population growth as a function?
+      </li>
+      <li>
+        What factors affect the growth of population?
+      </li>
+      <li>
+        What is the long-term behaviour of a population?
+      </li>
+      <li>
+        What is the growth rate of a population?
+      </li>
+    </ul> </p>
+    <p>
+      To encode population growth as a function, I chose a function
+      <m>p(t)</m> representing population (<m>p</m>) in terms of the
+      independant variable time (<m>t</m>). Let's say I am given a
+      data set, representing the values of a certain population over a
+      period of time. <xref ref="table-population-data" /> gives some
+      example population data. 
+    </p>
+    <table xml:id="table-population-data">
+      <tabular>
+        <row>
+          <cell>Year</cell>
+          <cell>Population</cell>
+          <cell>Growth Rate</cell>
+        </row>
+        <row>
+          <cell>0</cell>
+          <cell>1032</cell>
+          <cell>Not Applicable</cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>1214</cell>
+          <cell>17.6 %</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>1372</cell>
+          <cell>13.0 %</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>1629</cell>
+          <cell>18.7 %</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>2143</cell>
+          <cell>31.6 %</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>2520</cell>
+          <cell>17.6 %</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell>2940</cell>
+          <cell>16.7 %</cell>
+        </row>
+        <row>
+          <cell>7</cell>
+          <cell>3292</cell>
+          <cell>12.0 %</cell>
+        </row>
+        <row>
+          <cell>8</cell>
+          <cell>3813</cell>
+          <cell>15.8 %</cell>
+        </row>
+        <row>
+          <cell>9</cell>
+          <cell>4757</cell>
+          <cell>24.8 %</cell>
+        </row>
+        <row>
+          <cell>10</cell>
+          <cell>5632</cell>
+          <cell>18.4 %</cell>
+        </row>
+        <row>
+          <cell>11</cell>
+          <cell>6842</cell>
+          <cell>21.5 %</cell>
+        </row>
+        <row>
+          <cell>12</cell>
+          <cell>8010</cell>
+          <cell>17.1 %</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      I can try to match this data with a function, as I did with
+      other functions in <xref ref="subsection-regression" />. The
+      growth of this population is best matched by an exponential
+      function, show in <xref ref="figure-exponential-regression" />. 
+    </p>
+    <figure xml:id="figure-exponential-regression">
+      <caption>An Exponential Regression</caption>
+      <image xml:id="figure40" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          yaxis("popluation (thousands)",0,9);
+          xaxis("time (years)",0,12,Ticks());
+
+          dot((0,1.032));
+          dot((1,1.214));
+          dot((2,1.372));
+          dot((3,1.629));
+          dot((4,2.143));
+          dot((5,2.520));
+          dot((6,2.940));
+          dot((7,3.292));
+          dot((8,3.813));
+          dot((9,4.757));
+          dot((10,5.632));
+          dot((11,6.842));
+          dot((12,8.010));
+
+          real f(real x) {return 2^(x/4);}
+
+          draw(graph(f,0,12));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      So how did I come up with this exponential function? One way to
+      do this regression is to look at doubling periods. By
+      observation, the data looks like it doubles roughly every four
+      years. (This isn't perfect, since over some five year patterns
+      is more than doubles and over other it fall short, but this
+      isn't a bad guess). For doubling, I can think of powers of
+      <m>2</m>, so an exponential function with base <m>2</m> is
+      appropriate. If I double every <m>d</m> units of time, the
+      exponential function is
+      <me>
+        p(t) = a 2^{\frac{1}{d} t} 
+      </me>
+      where <m>a</m> is the starting value of the poluation. In this
+      case, I used the function 
+      <me>
+        p(t) = (1032) 2^{\frac{t}{4}}
+      </me>
+      to do the regression, and it fits reasonably well. 
+    </p>
+    <p>
+      It is conventional to use the base <m>e</m> in calculus. I can
+      change my previous exponential function using the fact that <m>2
+      = e^{\ln 2}</m>. 
+      <me>
+        p(t) = a \left( (e^{\ln 2} \right)^{\frac{1}{d} t} 
+      </me>
+      Successive exponents are simplified by multiplying the
+      exponents.
+      <me>
+        p(t) = a e^{\ln 2\frac{1}{d} t} = ae^{\frac{t \ln 2}{d}}
+      </me>
+      This is a nice general way to write an exponential function with
+      starting value <m>a</m> and doubling period <m>d</m>.
+    </p>
+    <p>
+      In the data, I included the percentage growth for each year.
+      Though there is a lot of variability, there is also some
+      consistency here. The percentage growth varies above and below
+      20%, but remains somewhat nearby that value. This is an
+      important observation: a consistent precentage growth matches
+      with an exponential behaviour.
+    </p>
+    <p>
+      But why? Why does relatively consistent percentage growth
+      require an exponential regression? What's the connection between
+      percentage growth and exponential functions? I'd like to take
+      this as a motivating question for the course. Calculus can
+      understand and describe growth-rates, like percentage growth,
+      and relate them to functions. In the next section, I'll start to
+      sketch out the strategy to try to answer this motivating
+      question.
+    </p>
+  </subsection>
+</section>

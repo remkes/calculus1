@@ -1,0 +1,227 @@
+<section xml:id="section-optimization">
+  <title>Optimization</title>
+  <subsection xml:id="subsection-models-exterme-values">
+    <title>Extreme Values of Models</title>
+    <p>
+      Now that I understand how to find extrema using derivatives, I
+      can use this technique to solve optimization problems. An
+      optimization problem is any problem in applied mathematics where
+      the goal is the optimal value of function, either expressed as a
+      minimum or a maximum. The method for finding extrema is
+      unchagned; most of the challenge in optimization problems is
+      translating the problem into an appropriate function so that we
+      can use derivatives.
+    </p>
+    <example>
+      <statement>
+        <p>
+          A very classic (if somewhat artificial and contrived)
+          example of an optmization problem is maximing the area of a
+          rectangle with fixed perimeter. Let's say that <m>P</m> is
+          the fixed perimeter and the rectangle has height <m>h</m>
+          and length <m>l</m>, as in <xref
+          ref="figure-fixed-perimeter-rectangle" />.
+        </p>
+        <figure xml:id="figure-fixed-perimeter-rectangle">
+          <caption>A Fixed-Perimeter Rectangle</caption>
+          <image xml:id="figure56" width="60%">
+            <asymptote>
+              size(10cm);
+
+              draw((0,0)--(5,0)--(5,3)--(0,3)--(0,0));
+
+              label("$a$",(0,1.5),E);
+              label("$b$",(2.5,0),S);
+              label("Area $A=ab$",(0.5,1),E);
+              label("Perimeter $P=2a+2b$",(0.5,2),E);
+              label("Constant",(3.5,2),E);
+              label("Unknown",(3.5,1),E);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          I want to maximize area, so I will eventually be
+          differentiating an area function. However, the area
+          function is <m>A = ab</m>, which has two variables. I need
+          to use the perimeter restriction to eliminate one of the
+          variables. I know <m>P = 2a + 2b</m> so <m>a = \frac{P}{2}
+          - b</m>. If I substitute for <m>a</m> in the area
+          function, I get a single variable area function <m>A(b)</m>.
+          <me>
+            A(b) = b \left( \frac{P}{2} - b \right)
+          </me>
+        </p>
+        <p>
+          Then I can optimize. The derivative is <m>A^\prime(b) =
+          \frac{P}{2} - 2b</m>. This vanishes when <m>b =
+          \frac{P}{4}</m>. I can test that the critical point is a
+          maximum. Unsurprisingly, the result shows that a square
+          (where both <m>b</m> and <m>a</m> are exactly one quarter of
+          the perimeter) maximizes area.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="subsection-optmized-distances">
+    <title>Optimized Distances</title>
+    <figure xml:id="figure-distance-between-points">
+      <caption>Distance Between Points</caption>
+      <image xml:id="figure65" width="85%">
+            <asymptote>
+              size(10cm);
+              
+              dot("$(a,b)$",(1,1),NW);
+              dot("$(c,d)$",(3,2),NE);
+
+              draw((1,1)--(3,2));
+              draw((1,1)--(3,1)--(3,2));
+
+              label("$h$",(2,1.5),NW);
+              label("$c-a$",(2,1),S);
+              label("$d-b$",(3,1.5),E);
+              label("$h = \sqrt{(c-a)^2 + (b-d)^2}$",(4.5,1.8),E);
+              label("$h^2 = (c-a)^2 + (b-d)^2$",(4.5,1.2),E);
+            </asymptote>
+          </image>
+    </figure>
+    <p>
+      To hopefully get to some less contrived examples, I want to use
+      optimized distances as examples. In this section, I'll be asking
+      for the minimum distance between some fixed point and some
+      locus in the plane. First, let me review distances between
+      points in the plane. If I have points with coordinates 
+      <m>(a,b)</m> and <m>(c,d)</m>, the distance between then is
+      given by the pythagoreaon theorem: <m>\sqrt{(c-a)^2 + (b-d)^2}</m>
+      This is illustrated in <xref
+      ref="figure-distance-between-points" />.
+    </p>
+    <p>
+      The distance function is a well defined function which we can
+      use to do optimization problems. That said, the square root is
+      difficult to work with, particular if I need to differentiate.
+      For distance problems, I am going to make use of a very
+      convenient trick. If two points are at an optimized distance
+      (closest or most distance in some situation), then the  square
+      of the distance will also be smallest or
+      largest. Obviously, the square of the distance is a different
+      number, but it is optimized at the same place that distance is
+      optmized. For this reason, I will optimize the square of
+      distance: <m>(c-a)^2 + (b-d)^2</m>. Having removed the square
+      root, this is a much easier function to work with. 
+    </p>
+    <p>
+      The setup of these distance problems is this: I have a fixed
+      point <m>(a,b)</m> and a locus in the variables <m>x</m> and
+      <m>y</m>. The distance squared function from a point on the
+      locus to the fixed point is 
+      <me>
+        d(x,y)  = (x-a)^2 + (y-b)^2
+      </me>
+      However, this is a function of two variables, which I don't know
+      how to work with. How do I solve this? I use the locus. I solve
+      for one of the two variables (whichever seems more convenient)
+      and then replace that variable in the distance squared function.
+      That will give me a function only in <m>x</m> or <m>y</m>. Then
+      I will proceed to optimze that function, which will give me
+      either the <m>x</m> or <m>y</m> coordinate of the
+      closest/farthest point. Finally, I use the locus to find the
+      other coordinate of these points. I can illustrate this in an
+      example. 
+    </p>
+    <figure xml:id="figure-distance-optimization">
+      <caption>A Distance Optimization</caption>
+      <image xml:id="figure66" width="60%"> 
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          yaxis("$x$",Ticks());
+          xaxis("$y$",Ticks());
+
+          real f(real x) {return (x^2)/4;}
+
+          draw(graph(f,-4,5));
+
+          dot("$(4,2)$",(4,2),SE);
+
+          label("$f(x) = \frac{x^2}{4}$", (-3.8,3.61),NE);
+
+          dot("$\left( \sqrt[3]{32},\frac{(\sqrt[3]{32})^2}{4}
+            \right)$",(3.175,2.52),NW);
+
+          draw((3.175,2.52)--(4,2));
+        </asymptote>
+       </image>
+    </figure>
+    <example>
+      <statement>
+        <p>
+          Let me ask which point on the parabola <m>y =
+          \frac{x^2}{4}</m> is closest to the point <m>(4,2)</m>. The
+          distance squared from a point <m>(x,y)</m> on the parabola
+          to <m>(4,2)</m> is given the distance squared function.
+          <me>
+            d = (4-x)^2 + (2-y)^2
+          </me>
+        </p>
+        <p>
+          I use the locus <m>y = \frac{x^2}{4}</m> to replace
+          <m>y</m> with <m>\frac{x^2}{4}</m>, so that I have only one
+          variable.
+          <md>
+            <mrow>
+              d(x) \amp  = (4-x)^2 + \left(2-\frac{x^2}{4} \right)^2
+            </mrow>
+            <mrow>
+              d(x) \amp  = 16 - 8x + x^2 + 4 - x^2 + \frac{x^4}{16} =
+              20 - 8x + \frac{x^4}{16}
+            </mrow>
+          </md>
+        </p>
+        <p>
+          I then differentiate to find the critical points.
+          <md>
+            <mrow>
+              d^\prime(x) \amp  = -8 + \frac{x^3}{4}
+            </mrow>
+            <mrow>
+              d^\prime(x) \amp  = 0 \implies \frac{x^3}{4} = 8
+              \implies x^3 = 32 \implies x = \sqrt[3]{32}
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Once I have the critical point, I break up the domain
+          (which is all <m>\RR</m> here, since any <m>x</m> value is
+          possible) and look at the intervals.
+          <md>
+            <mrow>
+              \amp \left(-\infty, \sqrt[3]{32} \right) \amp \amp
+              \left( \sqrt[3]{32}, \infty \right) 
+            </mrow>
+            <mrow>
+              \amp d^\prime(0) = -8 \amp \amp d^\prime(4) = 8
+            </mrow>
+            <mrow>
+              \amp d^\prime(x) \lt 0 \amp \amp d^\prime(x) \gt 0 
+            </mrow>
+            <mrow>
+              \amp \text{decreasing} \amp \amp \text{increasing} 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          I conclude that there is a minimum at
+          <m>x=\sqrt[3]{32}</m>. Since <m>y = \frac{x^2}{4}</m>, the
+          corresponding <m>y</m> value is
+          <m>\frac{(\sqrt[3]{32})^2}{4}</m>. The closest point on the
+          parabola to <m>(4,2)</m> is <m>P = \left( \sqrt[3]{32},
+          \frac{(\sqrt[3]{32})^2}{4} \right)</m>. <xref
+          ref="figure-distance-optimization" /> shows the
+          outcome of the optimization.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

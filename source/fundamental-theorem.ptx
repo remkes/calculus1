@@ -1,0 +1,236 @@
+<section xml:id="section-fundamental-theorem">
+  <title>The Fundamental Theorem</title>
+  <subsection xml:id="subsection-integrals-as-functions">
+    <title>Integrals as Functions</title>
+    <p>
+      As mentioned in <xref ref="section-riemann-integral" />, I never
+      actually want to use the definition to calculate integrals. 
+      With derivatives, I developed a series of rules for various
+      types and combinations of functions. That doesn't work as easily
+      or cleanly for integrals. However, there is a very powerful
+      theorem that gives an approach to solving integrals.
+    </p>
+    <p>
+      To state the theorem, I need to consider a strange new function.
+      For <m>g(t)</m> continuous on <m>[a,b]</m> and <m>x \in [a,b)</m>,
+      define a new function <m>f</m>.
+      <me>
+        f(x) := \int_a^x g(t) dt
+      </me>
+    </p>
+    <p>
+      Let me give some interpretation: <m>f(x)</m> is the area under the
+      function <m>g(t)</m> along the <m>t</m> axis between a fixed point
+      <m>t=a</m> and a varying endpoint <m>x</m>. Be careful to keep
+      the variables straight!  The variable <m>t</m> is only inside the
+      integral and the variable <m>x</m> is only outside. <m>x</m> is
+      the endpoint of the interval and <m>t</m> is the variable that
+      goes between <m>a</m> and <m>x</m> on the interval.
+    </p>
+    <p>
+      Though very strange, this definition is a rich source of new and
+      interesting functions in mathematics. Here are some examples of
+      functions that are defined as integrals of other functions. 
+    </p>
+    <example>
+      <statement>
+        <md>
+          <mrow>
+            \text{Fresnel Function} \amp \amp S(x) \amp \defeq
+            \int_0^x \sin \left(\frac{\pi t^2}{2} \right) dt
+          </mrow>
+          <mrow>
+            \text{Logarithmic Integral} \amp \amp li(x) \amp \defeq
+            \int_0^x \frac{1}{\ln t} dt
+          </mrow>
+          <mrow>
+            \text{Sine Integral} \amp \amp Si(x) \amp \defeq \int_0^x
+            \frac{\sin t}{t} dt
+          </mrow>
+        </md>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="subsection-fundamental-theorem">
+    <title>The Fundamental Theorem</title>
+      <p>
+        Now that I've defined the function <m>f(x)</m>, I can look at
+        its derivative. <xref ref="figure-area-function" /> gives a
+        useful visualization. In the figure, I've labelled a point
+        <m>x</m> and a small increase <m>x+h</m>.
+      </p>
+      <figure xml:id="figure-area-function">
+        <caption>The Area Function <m>f(x)</m></caption>
+        <image xml:id="figure53" width="60%">
+          <asymptote>
+            size(10cm);
+
+            import graph;
+
+            xaxis("$t$");
+            yaxis("$y$");
+
+            draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
+
+            label("$g(t)$",(0.8,2.2),NE);
+            label("Area$=f(x)$",(1,1.0),E);
+
+            dot("$x$",(4,0),SW);
+            dot("$g(x)$",(4,4),NW);
+            dot("$x+h$",(4.1,0),SE);
+
+            draw((4,0)--(4,4.0)--(4.1,4.0));
+            draw((4.1,0)--(4.1,4.0));
+
+            label("Height $g(x)$",(4.2,2),E);
+            label("Width $h$",(4.2,1),E);
+          </asymptote>
+        </image>
+      </figure>
+      <p>
+        I use the limit definition of the derivative to calculate this
+        derivative.
+        <me>
+          \frac{d}{dx} f(x) = \lim_{h \rightarrow 0} \frac{f(x+h) -
+          f(x)}{h}
+        </me>
+        Since <m>f</m> measures area under <m>g(t)</m>, the difference
+        <m>f(x+h) - f(x)</m> is just the area of the very thin
+        rectangle in <xref ref="figure-area-function" />. When
+        <m>h</m> is small, this area is roughly the height <m>g(x)</m>
+        times the width <m>h</m>.
+        <me>
+          \frac{d}{dx} f(x) = \lim_{h \rightarrow 0} \frac{g(x) h}{h}
+          = g(x)
+        </me>
+        All this work can be summarized in the following statement, which
+        is called the <em>Fundamental Theorem of Calculus</em>.
+        <me>
+        \frac{d}{dx} f(x) = \frac{d}{dx} \int_a^x g(t) dt = g(x)
+      </me>
+    </p>
+    <p>
+      The important implication of the fundamental theorem is this:
+      integral and derivatives are opposite operations. In the previous
+      statement, I started with a function <m>g</m>, took an integral to
+      get <m>f</m> and then took a derivative to get back to <m>g</m>.
+      Derivatives and integrals are reverse processes.
+    </p>
+    <p>
+      There are several versions of the fundamental theorem, but they
+      all capture this basic idea of reserve processes. The derivative
+      can be inside the integral.
+      <me>
+        \int_a^b f^\prime(t) dt = f(b) - f(a)
+      </me>
+      This version of the fundamental theorem gives a wonderful way
+      to calculate definite integrals. Let <m>F</m> be any function
+      such that <m>F^\prime(x) = f(x)</m>. Such a function <m>F</m> is
+      called an <em>antiderivative</em> for <m>f</m>. I use
+      antiderivatives to evaluate integrals.
+      <me>
+        \int_a^b f(t) dt = F(b) - F(a)
+      </me>
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-indefinite-integral">
+    <title>The Indefinite Integral</title>
+    <p>
+      To calculate antiderivatives, I need to do deriavitves backwards.
+      Fortunately, this is much easier than using the definition of the
+      integral; it is the main strategy for integrals.  Unfortunately,
+      it is still quite difficult for many functions.
+    </p>
+    <p>
+      It's useful to have a notation for antiderivatives. Since
+      integrals are, in some way, the inverse operation, it seems
+      natural to use an integral symbol to indicate an antiderivative.
+      I drop the bounds that I used for definition integrals.
+      <me>
+        \text{ Any antiderivative of f is written }  \int f(x) dx
+      </me>
+      This is called an indefinite integral. Note that the notation
+      means <em>all</em> anti-derivatives, since there may be more than
+      one.
+    </p>
+    <example>
+      <statement>
+        <p>
+          In these examples, I'm using what I know about derivatives to
+          do the operation backwards. The sixth example is just the
+          power rule done backwards. To check any of these is not
+          difficult: just differentiate the right side of the equation.
+          Since they are anti-derivatives, the derivatives of the right
+          side should give the original function on the left (inside the
+          integral sign). The <m>+ c</m> is an arbitrary constant which
+          must be added. It shows up because it would disappear in
+          differentiation.
+          <md>
+            <mrow>
+              \int e^x dx \amp = e^x + c
+            </mrow>
+            <mrow>
+              \int \sin x dx \amp = -\cos x + c
+            </mrow>
+            <mrow>
+              \int \cos x dx \amp = \sin x + c
+            </mrow>
+            <mrow>
+              \int a^x dx \amp = \frac{a^x}{\ln a} + c
+            </mrow>
+            <mrow>
+              \int \frac{1}{1+x^2} dx \amp = \arctan x + c
+            </mrow>
+            <mrow>
+              \int x^n dx \amp = \frac{x^{n+1}}{n+1} + c
+            </mrow>
+            <mrow>
+              \int \frac{1}{x} \amp = \ln |x|
+            </mrow>
+            <mrow>
+              \int \frac{1}{\sqrt{1-x^2}} dx \amp = \arcsin x + c
+            </mrow>
+            <mrow>
+              \int \sec^2 x dx \amp = \tan x + c
+            </mrow>
+            <mrow>
+              \int \csc^2 x dx \amp = \cot x + c
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="subsection-calcluating-definite-integrals">
+  <title>Calculating Definite Integrals</title>
+    <p>
+      I can use the fundamental theorem to calculate definite
+      integrals as well. There is some special notation that is
+      useful here: when I write <m>\left. F(x) \right|_a^b</m>, I
+      mean to evaluate  the function <m>F</m> at <m>a</m> and <m>b</m>
+      and subtract the two evaluations. 
+      <me>
+        F(x) \Big|_a^b = F(b) - F(a)
+      </me>
+      Then the integral is the antiderivative evaluated with this
+      notation.
+      <me>
+        \int_a^b f(x) dx = F(x) \Big|_a^b = F(b) - F(a) 
+      </me>
+    </p>
+    <example>
+      <statement>
+        <p>
+          The antiderivative of <m>x^2</m> is <m>\frac{x^3}{3}</m>.
+          This antiderivative lets me calculate the following
+          integral. 
+          <me>
+            \int_2^4 x^2 dx = \left. \frac{x^3}{3} \right|_2^4 =
+            \frac{4^3}{3} - \frac{2^3}{3} = \frac{64 - 8}{3} =
+            \frac{56}{3}
+          </me>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

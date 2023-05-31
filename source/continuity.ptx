@@ -1,0 +1,235 @@
+<section xml:id="section-continuity">
+  <title>Continuity</title>
+  <subsection xml:id="subsection-continuity-definition">
+    <figure xml:id="figure-continuity">
+      <caption>Continuity</caption>
+      <image xml:id="figure45" width="80%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          draw((0,4){NE}..{NE}(4,3));
+          draw((6,2){SE}..{E}(8,4));
+          draw((8,3){SE}..{NE}(10,1));
+
+          label("Continuous",(2,5),N);
+          label("Discontinuous",(8,5),N);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      A function is continuous at a point <m>a</m> in its domain if
+      <me>
+        f(a) = \lim_{x \rightarrow a} f(x)
+      </me>.
+    </p>
+    <p>
+      I have already mentions these kinds of limit: in the calculation
+      of limits, the first step was to try to evaluate the function at
+      the limit point. In this step, I am implicitly relying on the
+      continuity of the standard functions. Happily, I was
+      justified in doing so: all the standard elementary functions
+      (polynomials, rational function, algebraic functions, trig,
+      exponentials) are continuous on their domains. The phrase
+      <sq>on their domains</sq> is important; where there is a break
+      in the domain, the function cannot be continuous. Continuity
+      only happens inside the domain of a function. Visually, the
+      graph of a continuous function is connected; it can be drawn
+      without lifting your pen (pencil, chalk, etc).
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-ivt">
+    <title>Intermediate Value Theorem</title>
+    <p>
+      Though it has a formal name, the Intermediate Value Theorem is a
+      very sensible and obvious result of continuity. Formally
+      stated, the theorem says that if <m>f</m> is a continuous
+      function on an interval <m>[a,b]</m> and <m>\alpha</m> is a real
+      number with <m>f(a) \lt \alpha \lt f(b)</m> or <m>f(a) > \alpha
+      > f(b)</m>, then there exists a number <m>c \in (a,b)</m> such
+      that <m>f(c) = \alpha</m>.
+    </p>
+    <p>
+      Rephrased, the theorem says that a continuous function cannot
+      skip any values. If <m>f(a) = 0</m> and <m>f(b) = 1</m>, then
+      the function must output all values between <m>0</m> and
+      <m>1</m> as the input goes from <m>a</m> to <m>b</m>.
+      Continuity means the graph is connected; it can't jump over any
+      intermediate values. While this seems like a very obvious
+      result, it is quite useful to have it formally stated. Many
+      other mathematical proofs make use of the Intermediate Value
+      Theroem for continuous functions. 
+    </p>
+    <figure xml:id="figure-ivt">
+      <caption>Intermediate Value Theorem</caption>
+      <image xml:id="figure46" width="80%">
+        <asymptote>
+          size(10cm,5cm,IgnoreAspect);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          draw((2,4){E}..{SE}(3,3){SE}..{E}(4,2));
+
+          dot("$f(a)$",(0,4),SE);
+          dot("$f(b)$",(0,2),SE);
+          dot("$\alpha$",(0,3),SE);
+
+          draw((0,3)--(3,3)--(3,0));
+          draw((0,4)--(2,4)--(2,0),dotted);
+          draw((0,2)--(4,2)--(4,0),dotted);
+
+          dot("c",(3,0),NW);
+          dot("a",(2,0),NW);
+          dot("b",(4,0),NW);
+        </asymptote>
+      </image>
+    </figure>
+  </subsection>
+  <subsection xml:id="subsection-piecewise">
+    <title>Piecewise Functions</title>
+    <figure xml:id="figure-heaviside">
+      <caption>The Heaviside Function</caption>
+      <image xml:id="figure21" width="80%"> 
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$",dotted);
+          yaxis("$y$",dotted);
+
+          draw((-4,0)--(0,0));
+
+          dot((0,1));
+
+          draw((0,1)--(4,1));
+
+          label("$h(x) = 0$ when $x \lt 0$", (-0.5,0.5),W);
+          label("$h(x) = 1$ when $x \geq 0$", (0.5,0.5),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      All of the familiar elementary functions are
+      continuous on their domains. One might ask: why worry
+      about continuity at all? A common place where continuity
+      becomes an issue is in piecewise functions. These are functions
+      which have different expressions or definitions over different
+      pieces of their domain. 
+    </p>
+    <p>
+      Piecewise functions have special notation for their definitions. 
+      Consider a function on <m>\RR</m> which has two definitions, one
+      for <m>x \lt a</m> and another <m>x \geq a</m>. Then the
+      function is written
+      <me>
+        f(x) = \begin{cases} g(x) \amp  x \lt  a \\ h(x) \amp
+        x \geq a \end{cases} 
+      </me>.
+      With this notation, I can easily indicate how the function
+      behaviours on various pieces of its domain.
+    </p>
+    <p>
+      A very well-known example is the Heaviside function.
+      <me>
+        h(x) = \begin{cases} 0 \amp  x \lt  0 \\ 1 \amp  x
+        \geq 0 \end{cases} 
+      </me>
+    </p>
+    <p>
+      The Heaviside function is very frequently used to model
+      switches: it suddenly changes from off (0) to on (1) at
+      <m>x=0</m>. This is a discontinuous change, as the function
+      jumps from <m>0</m> to <m>1</m> without going through any
+      intermediate value.
+    </p>
+    <p>
+      In the definition of a piecewise function, there can be more
+      than two pieces and the conditions on <m>x</m> can be more
+      complicated than inequalities. Here is a piecewise function
+      with three pieces defined on intervals.
+      <me>
+        f(x) = \begin{cases} x^2 -1 \amp  x \in (-5,0) \\ x^2
+        + 1 \amp  x \in [0,3] \\ 3x-5 \amp  x \in (3,7) \end{cases}
+      </me>
+    </p>
+    <p>
+      The domain of this function is <m>(-5,7)</m>, which is the union
+      of all the intervals of definition in the piecewise expression.
+      It's graph is <xref
+      ref="figure-discontinuous-piecewise">Figure</xref>.
+    </p>
+    <p>
+      Piecewise functions can be extremely strange.
+      <me>
+        f(x) = \begin{cases} 1 \amp  x \in \QQ \\ 0 \amp  x
+        \notin \QQ \end{cases} 
+      </me>
+      This function depends on whether its input is rational or
+      irrational, returning one and zero respectively. It is a
+      horendously discontinuous functions, with ones and zeros
+      everywhere and no intermediate values whatsoever. However, it is
+      still a useful function, in that it, somehow, picks our all the
+      rational numbers by assign to them the value <m>1</m>. 
+    </p>
+    <figure xml:id="figure-discontinuous-piecewise">
+      <caption>A Discontinuous Piecewise Function</caption>
+      <image xml:id="figure47" width="80%">
+        <asymptote>
+          size(10cm,5cm,IgnoreAspect);
+
+          import graph;
+
+          xaxis("$x$",dotted);
+          yaxis("$y$",dotted);
+
+          real f1(real x) {return x^2-1;}
+          real f2(real x) {return x^2+1;}
+          real f3(real x) {return 3x-5;}
+
+          draw(graph(f1,-5,0));
+          draw(graph(f2,0,3));
+          draw(graph(f3,3,7));
+
+          dot("$-5$",(-5,0),NW);
+          dot("$0$",(0,0),NW);
+          dot("$3$",(3,0),NW);
+          dot("$7$",(7,0),NW);
+
+          label("$x^2-1$",(-3,8),NE);
+          label("$x^2+1$",(2,5),NW);
+          label("$3x-5$",(5,10),NW);
+        </asymptote>
+      </image>
+    </figure>
+  </subsection>
+  <subsection xml:id="subsection-piecewise-continuity">
+    <title>Continuity of Piecewise Functions</title>
+    <p>
+      It is important to be able to check if a piecewise function is
+      continuous at its crossover point. Consider a piecewise
+      function with a break at <m>x=a</m>.
+      <me>
+        f(x) = \begin{cases} g(x) \amp  x \lt  a \\ h(x) \amp
+        x \geq a \end{cases} 
+      </me>
+    </p>
+    <p>
+      It is natural to ask if <m>f</m> is continuous at <m>x=a</m>.
+      In order to investigate this, I need to look at the function
+      value and the limits from both sides. The function is
+      continuous if all three are the same.
+      <me>
+        \lim_{x \rightarrow a^-} f(x) = \lim_{x \rightarrow a^+} f(x)
+        = f(a)
+      </me>
+    </p>
+  </subsection>
+</section>
