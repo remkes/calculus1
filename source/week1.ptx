@@ -1,6 +1,7 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-week1">
-  <title>Week 1</title>
+  <title>Analytic Geometry</title>
+  <xi:include href="what-is-calculus.ptx" />
   <xi:include href="analytic-geometry.ptx" />
   <xi:include href="lines.ptx" />
   <xi:include href="conics.ptx" />
