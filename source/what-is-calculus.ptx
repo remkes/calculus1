@@ -9,10 +9,10 @@
       studied. 
     </p>
     <p>
-      What is calculus? Calculus is the study of the behaviour of
+      Calculus is the study of the dynamic behaviour of
       functions. Okay, that's a definition, but why does that help?
       What is a function and why is the study of the behaviour of
-      functions so central?
+      functions so central? Why `dynamic'?
     </p>
     <p>
       I am going to spend a whole week in <xref
@@ -31,7 +31,7 @@
       mathematical tool for describing the quantitative world. The
       (quantitative) world is not collection of completely seperated
       and independent measurements; it is a collection of deeply
-      interconnected system. It is full of dependencies. The function
+      interconnected systems. It is full of dependencies. The function
       is the tool that describes the reality of the (quantitative)
       world. 
     </p>
@@ -43,7 +43,7 @@
     </p>
     <p>
       In this way, mathematicians use functions to model the world. To
-      be able to do so, we need a theory of functions and their
+      be able to do so, they need a theory of functions and their
       behaviour. That theory is calculus. 
     </p>
     <p>
@@ -59,10 +59,10 @@
     </p>
     <p>
       This is why we need the new techniques of calculus. Functions
-      are dynamic: they are constantly change, constantly in flux. The
-      represented systems where nothing is static. The new tools in
+      are dynamic: they are constantly change, constantly in flux.
+      They represented systems where nothing is static. The new tools in
       calculus (the derivative, the integral, the infinite series) are
-      all ways to understand dynamic systems, while the change is
+      all ways to understand dynamic systems, where the change is
       happening all around. 
     </p>
     <p>
