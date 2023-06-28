@@ -35,6 +35,7 @@
           </shortlicense>
         </copyright>
       </colophon>
+      <xi:include href="what-is-calculus.ptx"/>
     </frontmatter>
     
     <xi:include href="./week1.ptx" />

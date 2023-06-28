@@ -4,13 +4,54 @@
     <title>Slicing a Cone</title>
     <p>
       The conics are the second important class of loci. Unlike lines,
-      conic equations involve the squares of the variables.  Conics
+      conic equations involve the squares of the variables. Conics
       are a very old topic in mathematics; their names and definitions
       come from ancient Greece. They are called conics (short for
       conic sections) since they can be formed by taking slices of a
-      hollow cone at various angles. I will give three equivalent
+      hollow cone at various angles, as show in <xref
+      ref="figure-slicing-a-cone" />. In that figure, there are four
+      slices, each steeper than the next. The first horizontal slice
+      gives a perfect circle. The second, slightly tilted slice gives
+      an ellipse. The third slice, precisely at the angle of the cone,
+      give a parabolic. The four slice, steeper than the cone itself,
+      gives a hpyerbolc.
+    </p>
+    <figure xml:id="figure-slicing-a-cone">
+      <caption>Four Slices of a Cone</caption>
+      <image xml:id="image-slicing-a-cone" width="80%">
+        <asymptote>
+          unitsize(1cm);
+          import solids;
+
+          currentprojection=orthographic(1,10,1);
+
+          real r=4, h=7;
+          triple O=(0,0,0);
+          triple Oprime=(0,0,3);
+          triple pS=(0,0,h);
+          triple pA=(r*sqrt(2)/2,r*sqrt(2)/2,0);
+          revolution rC=cone(O,r,h,axis=Z,n=1);
+
+          draw(surface(rC),grey+opacity(0.2));
+
+          pen bg=gray(0.9)+opacity(0.5);
+
+          draw(surface((4,4,5)--(4,-4,5)--(-4,-4,5)--(-4,4,5)--cycle),
+            bg,bg);
+          draw(surface((4,4,4)--(4,-4,4)--(-4,-4,3)--(-4,4,3)--cycle),
+            bg,bg);
+          draw(surface((4,4,6)--(4,-4,6)--(0,-4,0)--(0,4,0)--cycle),
+            bg,bg);
+          draw(surface((-1,4,6)--(-1,-4,6)--(-2,-4,0)--(-2,4,0)--cycle),
+            bg,bg);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Those are the four shapes: circle, ellipse, parabola and
+      hyperbola. I will give two other equivalent
       definitions for each conic: one instrinsically geometric
-      definition, one as a the slice of a cone, and one by algebraic
+      definition, and one by algebraic
       equation. For the algebraic equations, I will assume that the
       conic is centred at the origin. (More general conics can be
       formed by shifting the conics centered at the origin. <xref
@@ -18,11 +59,12 @@
     </p>
   </subsection>
   <subsection xml:id="subsection-description-of-conics">
+    <title>Descriptions of Conics</title>
     <figure xml:id="figure-circle">
       <caption>The Circle</caption>
-      <image xml:id="figure03" width="60%">
+      <image xml:id="image-circle" width="90%">
         <asymptote>
-          size(10cm);
+          size(10cm,0);
 
           import graph;
 
@@ -35,7 +77,10 @@
           draw(graph(f1,-1,1));
           draw(graph(f2,-1,1));
           
-          label("$x^2+y^2=1$", (0.7,-0.7),SE);
+          label("$x^2+y^2=r^2$", (0.7,-0.7),SE);
+
+          draw((0,0)--(0.71,0.71));
+          label("$r$",(0.3,0.3),SE);
         </asymptote>
       </image>
     </figure>
@@ -65,9 +110,9 @@
     </ul></p>
     <figure xml:id="figure-ellipse">
       <caption>The Ellipse</caption>
-      <image xml:id="figure06" width="90%">
+      <image xml:id="image-ellipse" width="90%">
         <asymptote>
-          size(10cm);
+          size(10cm,0);
 
           import graph;
 
@@ -80,7 +125,17 @@
           draw(graph(f6,-2,2));
           draw(graph(f7,-2,2));
 
-          label("$\frac{x^2}{4} + \frac{y^2}{1} = 1$",(1,-0.866),NW);
+          label("$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$",(1,-0.866),NW);
+          label("$a$",(-1,0),S);
+          label("$b$",(0,-0.5),W);
+
+          dot((-0.6,0));
+          dot((0.6,0));
+
+          draw((-0.6,0)--(-1.5,0.66)--(0.6,0));
+
+          label("$p$",(-0.6,0),NE);
+          label("$q$",(0.6,0),NE);
         </asymptote>
       </image>
     </figure>
@@ -118,9 +173,9 @@
     </ul></p>
     <figure xml:id="figure-parabola">
       <caption>The Parabola</caption>
-      <image xml:id="figure05" width="90%">
+      <image xml:id="image-parabola" width="90%">
         <asymptote>
-          size(12cm);
+          size(10cm,0);
 
           import graph;
 
@@ -131,7 +186,15 @@
 
           draw(graph(f5,-3,3));
 
-          label("$y = \frac{1}{3} x^2$", (2,4/3),SE);
+          label("$y = ax^2$", (2,1.33),SE);
+
+          draw((-3,-1)--(3,-1));
+          dot((0,1));
+
+          label("$p$",(0,1),NW);
+          label("$L$",(1,-1),NE);
+
+          draw((0,1)--(-2,1.33)--(-2,-1));
         </asymptote>
       </image>
     </figure>
@@ -180,9 +243,9 @@
     </ul></p>
     <figure xml:id="figure-hyperbola">
       <caption>The Hyperbola</caption>
-      <image xml:id="figure04" width="90%"> 
+      <image xml:id="image-hyperbola" width="90%"> 
         <asymptote>
-          size(10cm);
+          size(10cm,0);
 
           import graph;
 
@@ -197,7 +260,15 @@
           draw(graph(f4,-3,-1));
           draw(graph(f4,1,3));
 
-          label("$x^2-y^2=1$", (2.2,-1.8),NE);
+          label("$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$", (2.2,-1.8),NE);
+
+          dot((-2,0));
+          dot((2,0));
+
+          label("$p$",(-2,0),SW);
+          label("$q$",(2,0),SE);
+
+          draw((-2,0)--(-2.5,2.29)--(2,0));
         </asymptote>
       </image>
     </figure>

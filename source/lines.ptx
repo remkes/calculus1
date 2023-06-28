@@ -83,7 +83,7 @@
       <caption>Slope of the Line <m>y = \frac{1}{2} x + 2</m></caption>
       <image xml:id="figure81" width="80%">
         <asymptote>
-          size(12cm);
+          size(10cm,0);
 
           import graph;
 
@@ -155,13 +155,13 @@
       know where a line crosses the <m>y</m>-axis and I know how
       quickly is grows from that point (its slope), then I know
       everything about the line.  <xref ref="figure-slope-intercept"
-      /> shows an example to illustrate this slope-intercept form.
+      /> shows the general idea of this slope-intercept form.
     </p>
     <figure xml:id="figure-slope-intercept">
       <caption>Slope-Intercept Form </caption>
       <image xml:id="figure82" width="80%">
         <asymptote>
-          size(12cm);
+          size(10cm,0);
 
           import graph;
 
@@ -202,25 +202,23 @@
       <caption>Horizontal Lines</caption>
       <image xml:id="figure83" width="80%">
         <asymptote>
-          size(12cm);
+          size(10cm,0);
 
           import graph;
 
           xlimits(-8,8);
-          ylimits(-8,8);
+          ylimits(-4,8);
 
           xaxis("$x$",Ticks("%"));
           yaxis("$y$",Ticks("%"));
 
-          draw((-8,-7)--(8,-7));
           draw((-8,-3)--(8,-3));
           draw((-8,-1)--(8,-1));
           draw((-8,4)--(8,4));
           draw((-8,6)--(8,6));
 
-          label("$y = -7$",(-4,-7),N);
           label("$y = -3$",(-4,-3),N);
-          label("$y = -1$",(-4,-1),N);
+          label("$y = -1$",(4,-1),S);
           label("$y = 4$",(-4,4),N);
           label("$y = 6$",(-4,6),N);
         </asymptote>
@@ -242,23 +240,23 @@
       <caption>Vertical Lines</caption>
       <image xml:id="figure84" width="80%">
         <asymptote>
-          size(12cm);
+          size(10cm,0);
 
           import graph;
 
           xlimits(-8,8);
-          ylimits(-8,8);
+          ylimits(-6,6);
 
           xaxis("$x$",Ticks("%"));
           yaxis("$y$",Ticks("%"));
 
-          draw((-7,-8)--(-7,8));
-          draw((-3,-8)--(-3,8));
-          draw((3,-8)--(3,8));
-          draw((5,-8)--(5,8));
+          draw((-7,-6)--(-7,6));
+          draw((-3,-6)--(-3,6));
+          draw((3,-6)--(3,6));
+          draw((5,-6)--(5,6));
 
-          label("$x = -7$",(-7,6),E);
-          label("$x = -3$",(-3,4),W);
+          label("$x = -7$",(-7,5),E);
+          label("$x = -3$",(-3,3),W);
           label("$x = 3$",(3,-2),W);
           label("$x = 5$",(5,-4),E);
         </asymptote>
