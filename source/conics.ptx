@@ -85,15 +85,6 @@
     </figure>
     <p><ul>
       <li>
-        <title>Intrinsic Definition</title>
-        <p>
-          Given a positive real number <m>r</m>, a circle is the set
-          of all points in the plane which are exactly <m>r</m> units
-          away from a fixed centre point. <m>r</m> is called the
-          radius of the cicle.
-        </p>
-      </li>
-      <li>
         <title>Conic Slice Definition</title>
         <p>
           A circle is a perfectly horizontal slice of a cone.
@@ -102,8 +93,10 @@
       <li>
         <title>Algebraic Definition</title>
         <p>
-          A circle with radius <m>r</m> (centred at the origin) is
-          described by the equation <m>x^2 + y^2 = r^2</m>.
+          A circle is all points a fixed distrance from the centre.
+          This distance is called the <term>radius</term>. If the
+          circle is centred at the origin and the radius is <m>r</m>,
+          then its equation is <m>x^2 + y^2 = r^2</m>.
         </p>
       </li>
     </ul></p>
@@ -114,6 +107,9 @@
           size(10cm,0);
 
           import graph;
+          
+          xlimits(-2.3,2.3);
+          ylimits(-1.3,1.3);
 
           xaxis("$x$");
           yaxis("$y$");
@@ -126,29 +122,11 @@
 
           label("$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$",(1,-0.866),NW);
           label("$a$",(-1,0),S);
-          label("$b$",(0,-0.5),W);
-
-          dot((-0.6,0));
-          dot((0.6,0));
-
-          draw((-0.6,0)--(-1.5,0.66)--(0.6,0));
-
-          label("$p$",(-0.6,0),NE);
-          label("$q$",(0.6,0),NE);
+          label("$b$",(0,0.5),W);
         </asymptote>
       </image>
     </figure>
     <p><ul>
-      <li>
-        <title>Intrinsic Definition</title>
-        <p>
-          Given two points <m>p</m> and <m>q</m> and a positive real
-          number <m>r</m>, the ellipse is the set of all points in the
-          plane where the sum of the distances to both <m>p</m> and
-          <m>q</m> is exactly <m>r</m>. The points are called the foci
-          (singular focus).
-        </p>
-      </li>
       <li>
         <title>Conic Slice Definition</title>
         <p>
@@ -161,12 +139,16 @@
         <p>
           An ellipse (centred at the origin) is described by the
           equation <m>\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1</m>.
-          Assuming that <m>a>b</m>, the foci are at coordinates 
-          <m>(\sqrt{a^2-b^2},0)</m> and <m>(-\sqrt{a^2-b^2},0)</m>.
           For the numbers <m>a</m> and <m>b</m>, which ever is larger
-          is called the semi-major axis which ever is smaller is
-          called semi-minor axis. These two numbers cannot be equal,
-          since that would produce a circle.
+          is called the <term>semi-major axis</term> which ever is
+          smaller is called the <term>semi-minor axis</term>. These
+          numbers measure the smallest and largest distances from the
+          centre to the edge of the ellipse. These two numbers cannot
+          be equal, since that would produce a circle. In the diagram,
+          I've drawn an ellipse with <m>a \gt b</m> (so that <m>a</m>
+          is the semi-major axis), but that is not necessary. An
+          ellipse with <m>b \gt a</m> would be taller than it is wide,
+          and <m>b</m> would be the semi-major axis. 
         </p>
       </li>
     </ul></p>
@@ -178,6 +160,9 @@
 
           import graph;
 
+          xlimits(-3.3,3.3);
+          ylimits(-0.3,3.3);
+
           xaxis("$x$");
           yaxis("$y$");
 
@@ -186,28 +171,10 @@
           draw(graph(f5,-3,3));
 
           label("$y = ax^2$", (2,1.33),SE);
-
-          draw((-3,-1)--(3,-1));
-          dot((0,1));
-
-          label("$p$",(0,1),NW);
-          label("$L$",(1,-1),NE);
-
-          draw((0,1)--(-2,1.33)--(-2,-1));
         </asymptote>
       </image>
     </figure>
     <p><ul>
-      <li>
-        <title>Intrinsic Definition</title>
-        <p>
-          Given a positive real number <m>r</m>, a point <m>p</m> and
-          a line <m>L</m>, the parabola is the set of all points in
-          the plane which are equidistant to the point <m>p</m> and
-          the line <m>L</m>. The point <m>p</m> is called the focus
-          and the line <m>L</m> is called the directrix.
-        </p>
-      </li>
       <li>
         <title>Conic Slice Definition</title>
         <p>
@@ -219,13 +186,13 @@
         <title>Algebraic Definition</title>
         <p>
           A parabola (centred at the origin) is described by the
-          equation <m>y = ax^2</m>.  The focus is the point
-          <m>(0,\frac{a}{4})</m> and the directrix is the horizontal
-          line <m>y=\frac{-a}{4}</m>.
+          equation <m>y = ax^2</m>.  The coefficient <m>a</m> measures
+          the width of the parabola: a larger <m>a</m> will give a
+          narrower and steeper parabola. 
         </p>
       </li>
       <li>
-        <title>Another Algebraic Definition</title>
+        <title>Another Geometric Definition</title>
         <p>
           From your previous mathematical experience, you may be aware
           of another way of writing vertically-aligned parabolas. A
@@ -236,7 +203,7 @@
           positive, the parabola will open upwards; if negative, the
           parabola will open downwards.  A parabola with vertex
           <m>(a,b)</m> and leading coefficient <m>c</m> is described
-          by the equation <m>y = c(x - a) + b</m>.
+          by the equation <m>y = c(x - a) + b</m>. 
         </p>
       </li>
     </ul></p>
@@ -247,6 +214,9 @@
           size(10cm,0);
 
           import graph;
+
+          xlimits(-3.3,3.3);
+          ylimits(-3.3,3.3);
 
           xaxis("$x$");
           yaxis("$y$");
@@ -261,27 +231,12 @@
 
           label("$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$", (2.2,-1.8),NE);
 
-          dot((-2,0));
-          dot((2,0));
-
-          label("$p$",(-2,0),SW);
-          label("$q$",(2,0),SE);
-
-          draw((-2,0)--(-2.5,2.29)--(2,0));
+          draw((-3,-3)--(3,3),dotted);
+          draw((3,-3)--(-3,3),dotted);
         </asymptote>
       </image>
     </figure>
     <p><ul>
-      <li>
-        <title>Intrinsic Definition</title>
-        <p>
-          Given two points <m>p</m> and <m>q</m> and a positive real
-          number <m>r</m>, the hyperbola is the set of all points in
-          the plane where the difference of the distances to <m>p</m>
-          and <m>q</m> is exactly <m>r</m>. The points are called the
-          foci (singular focus).
-        </p>
-      </li>
       <li>
         <title>Conic Slice Definition</title>
         <p>
@@ -293,7 +248,13 @@
         <title>Algebraic Definition</title>
         <p>
           A hyperbola (centred at the origin) is described by the
-          equation <m>\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1</m>.
+          equation <m>\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1</m>. The
+          numbers <m>a</m> amd <m>b</m> don't have as immediate a
+          definition as in the ellipse. However, you can notice that
+          the arms of the hyperbola are becoming close to straight
+          lines. The slopes of these lines are <m>\frac{a}{b}</m> and
+          <m>\frac{-a}{b}</m>. These lines (called asymptotes) for the
+          parabola are show int he figure as dotted lines. 
         </p>
       </li>
     </ul></p>
@@ -302,16 +263,15 @@
       geometry is the problem of celestial motion <mdash /> how
       planets, moons, stars, comets and other celestial objects move
       and orbit around each other. The Greeks assumed, erroneously,
-      that orbits ought to be perfect circles. Johannes Kepler, in
-      the 16th century, correctly observed that orbits take
-      non-circular shapes. He put forward a very convincing theory
-      that orbits have shapes which are conics with the larger object
-      fixed at one of the foci of the conic. This leads to ellipses
-      for objects without escape velocity and hyperbolas for those
-      with escape velocity. Though not perfect (particularly in
-      complicated multi-body problems or when relativistic corrections
-      are included), Kepler's model is remarkably accurate. Conics
-      are still used as the basic models of orbital paths.
+      that orbits ought to be perfect circles. Johannes Kepler, in the
+      16th century, correctly observed that orbits take non-circular
+      shapes. He put forward a very convincing theory that orbits have
+      shapes which are conics.  This leads to ellipses for objects
+      without escape velocity and hyperbolas for those with escape
+      velocity. Though not perfect (particularly in complicated
+      multi-body problems or when relativistic corrections are
+      included), Kepler's model is remarkably accurate. Conics are
+      still used as the basic models of orbital paths.
     </p>
   </subsection>
 </section>
