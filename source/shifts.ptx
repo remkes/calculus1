@@ -6,7 +6,7 @@
       <caption>Shifts of a Circle</caption>
       <image xml:id="figure25" width="90%">
         <asymptote>
-          size(10cm);
+          size(10cm,0);
 
           import graph;
 

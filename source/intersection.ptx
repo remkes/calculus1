@@ -97,7 +97,7 @@
         <caption>Intersection of a Line and an Ellipse</caption>
         <image xml:id="figure24" width="70%">
           <asymptote>
-            size(10cm);
+            size(10cm,0);
   
             import graph;
   

@@ -120,7 +120,7 @@
           draw(graph(f6,-2,2));
           draw(graph(f7,-2,2));
 
-          label("$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$",(1,-0.866),NW);
+          label("$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$",(1,-0.866),SE);
           label("$a$",(-1,0),S);
           label("$b$",(0,0.5),W);
         </asymptote>
@@ -203,7 +203,11 @@
           positive, the parabola will open upwards; if negative, the
           parabola will open downwards.  A parabola with vertex
           <m>(a,b)</m> and leading coefficient <m>c</m> is described
-          by the equation <m>y = c(x - a) + b</m>. 
+          by the equation <m>y = c(x - a) + b</m>. The process of
+          taking a quadratic and writing it in vertex form is called
+          <term>completing the square</term>. This operation should be
+          familiar to you from your high school mathematics, but there
+          is also a reminder on the reference materials. 
         </p>
       </li>
     </ul></p>
