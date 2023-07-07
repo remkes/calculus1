@@ -59,12 +59,39 @@
     </ol></p>
     <p>
       In addition to the three concepts, function are also visualized
-      by graphs. (There is a library of functions in the common
-      materials which shows the graphs of many frequently used
-      functions.) Visualizing the action of a function by its graph is
-      a very convenient way to remember the function and its
-      properties.
+      by graphs. To draw the graph of a function, I use the <m>x</m>
+      axis as the input to the function (the set <m>A</m>) and the
+      <m>y</m> axis as the output of the function (the set <m>B</m>).
+      As you can see in <xref ref="figure-graph-of-a-function" />,
+      from the point show on the graph of the quadratic, the vertical
+      line drops down to the point on the <m>x<m> axis that represents the
+      input, and the horizontal line goes across to the point on the
+      <m>y</m> axis that represents the output. In addition to all the
+      examples I show in <xref ref="section-types-of-functions" />,
+      there is a library of functions in the common materials which
+      shows the graphs of many frequently used functions.
     </p>
+    <figure xml:id="figure-graph-of-a-function">
+      <caption>A Quadratic Function</caption>
+      <image xml:id="image-graph-of-a-function" width="75%">
+        <asymptote>
+          size(10cm,0);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return ((x-2)^2)/5;}
+
+          draw(graph(f,-1,5));
+
+          dot((4,0.75));
+
+          draw((4,0)--(4,0.75)--(0,0.75));
+        </asymptote>
+      </image>
+    </figure>
   </subsection>
   <subsection xml:id="subsection-real-functions">
     <title>Functions on <m>\RR</m></title>
