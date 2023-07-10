@@ -1,7 +1,69 @@
 <section xml:id="section-functions">
   <title>Functions</title>
+  <subsection xml:id="subsection-sets-briefly">
+    <title>Sets, Briefly</title>
+    <p>
+      In what follows in this section, I'm going to give three
+      concepts to help understand a function. One of them relies on
+      the idea of a set in mathematics, so I'm going to very briefly
+      describe that concept. 
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A <em>set</em> is any collection of things; the things in a
+          set are called its <em>elements</em>. (In this course,
+          sets will mostly be sets of numbers, but, in principle,
+          they can be sets of anything.)  If I want to write a
+          set explicitly, I use braces: this is the notation for the
+          set that contains the three numbers 4, 12 and 31. 
+          <me>
+            \{4, 12, 13\}
+          </me>
+          There is also a notation for membership. If I call the set
+          I just defined <m>A</m>, then to show that 12 is a member,
+          I write <m>12 \in A</m>. To show something is not a
+          member, I use a crossed-out version of the same symbol:
+          <m>15 \notin A</m>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Some of the most commonly used number sets have specific
+      names an notations.
+    </p>
+    <p><ul>
+      <li>
+        <m>\NN</m> is the set of natural numbers: positive whole
+        numbers. 
+      </li>
+      <li>
+        <m>\ZZ</m> is the integers: both positive and negative
+        whole numbers. 
+      </li>
+      <li>
+        <m>\QQ</m> is the rational numbers: number which can be
+        written as fractions. 
+      </li>
+      <li>
+        <m>\RR</m> is the real numbers: in addition to fraction,
+        this include numbers which can't be written as fractions,
+        like <m>\sqrt{2}</m> or <m>\pi</m>. 
+      </li>
+      <li>
+        Open inverals in the real numbers are written
+        <m>(a,b)</m>. This means all numbers between <m>a</m> and
+        <m>b</m>, not including the endpoints. 
+      </li>
+      <li>
+        Close inverals in the real numbers are written
+        <m>[a,b]</m>. This means all numbers between <m>a</m> and
+        <m>b</m>, including the endpoints. 
+      </li>
+    </ul></p>
+  </subsection>
   <subsection xml:id="subsection-functions-three-definitions">
-    <title>Three Ideas</title>
+    <title>Three Ideas for Functions</title>
     <p>
       Calculus is a branch of mathematics concerned with the behaviour
       of functions. In this introductory/review section, I want to
@@ -21,30 +83,14 @@
         this <m>f</m> as the machine that squares numbers. 
       </li>
       <li>
-        <p>
-          Second, a more abstract understanding of a function is as a
-          rule that assigns something in one set to something in
-          another. In order to explain this understanding, I first
-          need to review sets. 
-        </p>
-        <p>
-          A <em>set</em> is any collection of things; the things in a
-          set are called its <em>elements</em> While most of our sets
-          will be sets of numbers, a set can have any kind of things
-          as elements.  Particularly useful sets for this course are
-          the standard number sets (<m>\NN</m>, the natural numbers;
-          <m>\ZZ</m>, the integers; <m>\QQ</m>, the rational number,
-          <m>\RR</m>, the real numbers), open inverals <m>(a,b)</m>
-          and closed interval <m>[a,b]</m>.
-        </p>
-        <p>
-          Now I'll return to the second understanding of functions.
-          Let <m>A</m> and <m>B</m> be sets. A <em>function</em> <m>f:
-          A \rightarrow B</m> is a rule that assigns an element of
-          <m>B</m> to each element of <m>A</m>. The set <m>A</m> is
-          called the domain. The range of the function is the subset
-          of <m>B</m> consisting of all outputs of the function.
-        </p>
+        Second, a more abstract understanding of a function is as a
+        rule that assigns something in one set to something in
+        another.  Let <m>A</m> and <m>B</m> be sets. A
+        function <m>f: A \rightarrow B</m> is a rule that
+        assigns an element of <m>B</m> to each element of <m>A</m>.
+        The set <m>A</m> is called the domain. The range of the
+        function is the subset of <m>B</m> consisting of all outputs
+        of the function.
       </li>
       <li>
         Finally, functions encode relationships and dependencies.  For
@@ -64,7 +110,7 @@
       <m>y</m> axis as the output of the function (the set <m>B</m>).
       As you can see in <xref ref="figure-graph-of-a-function" />,
       from the point show on the graph of the quadratic, the vertical
-      line drops down to the point on the <m>x<m> axis that represents the
+      line drops down to the point on the <m>x</m> axis that represents the
       input, and the horizontal line goes across to the point on the
       <m>y</m> axis that represents the output. In addition to all the
       examples I show in <xref ref="section-types-of-functions" />,
@@ -86,9 +132,9 @@
 
           draw(graph(f,-1,5));
 
-          dot((4,0.75));
+          dot((4,0.8));
 
-          draw((4,0)--(4,0.75)--(0,0.75));
+          draw((4,0)--(4,0.8)--(0,0.8));
         </asymptote>
       </image>
     </figure>
