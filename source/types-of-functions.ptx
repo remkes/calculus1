@@ -115,7 +115,7 @@
     </p>
     <p>
       The number <m>n</m> of the largest power in the polynomial is
-      called the <em>degree</em> of the polynomial. The previous
+      called the <term>degree</term> of the polynomial. The previous
       cases are all polynomials: constant functions have degree zero,
       linear functions have degree one, and quadratics have degree
       two. We have names for the next few degress as well: cubics
