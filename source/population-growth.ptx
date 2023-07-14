@@ -151,7 +151,7 @@
       appropriate. If I double every <m>d</m> units of time, the
       exponential function is
       <me>
-        p(t) = a 2^{\frac{1}{d} t} 
+        p(t) = a 2^{\frac{t}{d}} 
       </me>
       where <m>a</m> is the starting value of the poluation. In this
       case, I used the function 
@@ -165,7 +165,7 @@
       change my previous exponential function using the fact that <m>2
       = e^{\ln 2}</m>. 
       <me>
-        p(t) = a \left( (e^{\ln 2} \right)^{\frac{1}{d} t} 
+        p(t) = a \left( e^{\ln 2} \right)^{\frac{t}{d}} 
       </me>
       Successive exponents are simplified by multiplying the
       exponents.
@@ -179,9 +179,10 @@
       In the data, I included the percentage growth for each year.
       Though there is a lot of variability, there is also some
       consistency here. The percentage growth varies above and below
-      20%, but remains somewhat nearby that value. This is an
-      important observation: a consistent precentage growth matches
-      with an exponential behaviour.
+      20%, but remains somewhat nearby that value. I could take the
+      average of the yearly growth rates and get an average increase
+      of $18.83\%$. This is an important observation: a consistent
+      precentage growth matches with an exponential behaviour. 
     </p>
     <p>
       But why? Why does relatively consistent percentage growth

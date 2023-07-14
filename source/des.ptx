@@ -139,7 +139,7 @@
       solution to this differential equation is a very similar
       function.
       <me>
-        p(t) = e^{\frac{1}{5} t}
+        p(t) = e^{\frac{t}{5}}
       </me>
     </p>
   </subsection>

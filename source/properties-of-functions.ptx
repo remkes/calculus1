@@ -35,13 +35,13 @@
         called the period.
       </li>
       <li>
-        A function is called <em>increasing</em> if <m>a \lt b</m>
-        implies <m>f(a) \leq f(b)</m>. Visually, the graph of the
+        A function is called <em>increasing</em> if <m>b \gt a</m>
+        implies <m>f(b) \gt f(a)</m>. Visually, the graph of the
         function is growing upwards as the input increases.
       </li>
       <li>
-        A function is called <em>decreasing</em> if <m>a \lt b</m>
-        implies <m>f(a) \geq f(b)</m>. Visually, the graph of the
+        A function is called <em>decreasing</em> if <m>b \gt a</m>
+        implies <m>f(b) \lt f(a)</m>. Visually, the graph of the
         function is declining downwards as the input increases.
       </li>
       <li>

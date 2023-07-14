@@ -106,26 +106,35 @@
       </image>
     </figure>
     <p>
-      Polynomial functions have the following form, where the
-      <m>a_i</m> are any real numbers.
+      I've used <m>x</m> in linear functions and <m>x^2</m> in
+      quadratic functions. Allowing higher powers of the variable
+      <m>x</m> leads to polynomial functions. Let me remind you
+      briefly about polynomials. A polynomial is an expression that
+      include whole positive powers of a variable, multiplied by
+      numbers and added and subtracted together. This includes any
+      expression like <m>x^5 - 4x^3 + 2x^2 - 9x + 1</m> or <m>5x^2 +
+      19x - 25</m>. The higest power in a polynomial is called the
+      <term>degree</term> of the polynomial. A linear function is a
+      degree one polynomial. A quadratic function is a degree two
+      polynomial. Degree three polynomials are called cubics and
+      degree four polynomials are called quartics. Any polynomial can
+      be treated as a function, leading to the class of polynomial
+      functions. If I want to write a very general form, I can do so
+      as follows, where the <m>a_i</m> are any real numbers.
       <me>
         f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_2x^2 + a_1 x +
         a_0
       </me>
     </p>
     <p>
-      The number <m>n</m> of the largest power in the polynomial is
-      called the <term>degree</term> of the polynomial. The previous
-      cases are all polynomials: constant functions have degree zero,
-      linear functions have degree one, and quadratics have degree
-      two. We have names for the next few degress as well: cubics
-      have degree three, quartics have degree four and quintics have
-      degree five. Polynomial functions have a familiar standard
-      shape involving a graph that curves up and down some number of
-      times. The maximum number of times the graph of polynomial can
-      change directions is one less than the degree. Polynomials of
-      degree <m>n</m> can have at most <m>n</m> roots, though they may
-      have fewer. Polynomial functions have no domain restrictions.
+      Polynomial functions have a familiar standard shape involving a
+      graph that curves up and down some number of times. The maximum
+      number of times the graph of polynomial can change directions is
+      one less than the degree. <xref
+      ref="figure-polynomial-function" /> shows a cubic function; as
+      a degree polynomial, it can change directions twice, which is
+      precisely what the graph does. Polynomial functions have no
+      domain restrictions.
     </p>
   </subsection>
   <subsection xml:id="subsection-rational-functions">
@@ -196,7 +205,11 @@
       exponent. This includes polynomials and rational functions, but
       also roots, since roots can be written as fractional exponents.
       (<m>\sqrt{x} = x^{\frac{1}{2}}</m>). Algebraic functions can be
-      very complicated conglomerations of these operations.
+      very complicated conglomerations of these operations. They can
+      have domain restrictions to avoid division by zero, as with
+      algebraic function. They also have domain restrictions from the
+      roots, since I can't take an even root of a negative number. Any
+      expression inside an even root must be positive. 
     </p>
   </subsection>
   <subsection xml:id="subsection-trig-functions">
@@ -237,7 +250,7 @@
           import graph;
 
           xaxis("$x$",-1.4,1.4);
-          yaxis("$y$",-1.4,1.4);
+          yaxis("$y$",-1.1,1.1);
 
           draw(unitcircle);
 
@@ -262,14 +275,38 @@
       identities. Please see the reference materials for
       definitions and identities involving trigonometric functions.
     </p>
+  </subsection>
+  <subsection xml:id="subsection-inverse-trig--functions">
+    <title>Inverse Trigonometri Functions</title>
+    <figure xml:id="figure-inverse-trig-function">
+      <caption>An Exponential Function</caption>
+      <image xml:id="image-invere-trig-function" width="75%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f(real x) {return atan(x);}
+
+          draw(graph(f,-4,4));
+        </asymptote>
+      </image>
+    </figure>
     <p>
       Each trigonometric function has a inverse function. There are
       two standard notations; the inverse of <m>\sin(x)</m> is written
       either as <m>\sin^{-1}(x)</m> or <m>\arcsin(x)</m>. Even though
       the former notation is familiar from calculators, I will use
       the latter in these notes to avoid confusions with
-      <m>\frac{1}{\sin(x)}</m>. (The reciprocal of a trig function is
-      not the same as the inverse of a trig function.) 
+      <m>\frac{1}{\sin(x)}</m>, which is a reciprocal, not an inverse.
+      Each inverse trig function has its own specific domain; consult
+      the reference materials for details. In <xref
+      ref="figure-inverse-trig-function" />, I've drawn
+      the graph of the inverse tangent function, <m>f(x) = \arctan
+      x</m>. It has a domain of all real numbers. 
     </p>
   </subsection>
   <subsection xml:id="subsection-exponential-functions">
@@ -288,6 +325,9 @@
           real f(real x) {return (2^(x))/3;}
 
           draw(graph(f,-3,3));
+
+          dot((0,1));
+          label("$(0,1)$",(0,1),NW);
         </asymptote>
       </image>
     </figure>
