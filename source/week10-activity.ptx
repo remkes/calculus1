@@ -1,639 +1,863 @@
 <section xml:id="section-week10-activity">
   <title>Week 10 Activity</title>
-  <subsection xml:id="subsection-activity-ivps">
-    <title>Initial Value Problems</title>
+  <subsection xml:id="subsection-activity-extrema">
+    <title>Extrema</title>
     <activity>
       <statement>
         <p>
-          Solve this initial value problem.
-          <md>
-            <mrow>
-              \frac{dy}{dx} \amp = x^2 y^2 
-              \amp \amp y(0) = 1
-            </mrow>
-          </md>
+          Find the <m>x</m> values of the maxima and minima of this
+          function.
+          <me>
+            f(x) = 7x^2 - 2x - 4
+          </me>
         </p>
       </statement>
       <solution>
         <p>
-          I use the form for separable equations, with <m>f(x) =
-          x^2</m> and <m>g(y) = y^2</m>.
+          First I take the derivative.
           <me>
-            \int \frac{1}{y^2} dy = \int x^2 dx 
+            \frac{df}{dx} = 14x - 2
           </me>
-          Then I integrate both sides, add the constant of integration
-          on the right.
-          <me>
-            \frac{-1}{y} = \frac{x^3}{3} + c= \frac{x^3+3c}{3} 
-          </me>
-          Then I solve for <m>y</m>.
-          <me>
-            y =  \frac{-3}{x^3+3c} 
-          </me>
-          Now I put the initial condition values in for <m>x</m> and
-          <m>y</m>, to try to solve for the constant of integration.
-          <me>
-            1 = \frac{-3}{x + 3c} \implies c = -1 
-          </me>
-          Finally, having solve for the constant of integration, I
-          replace <m>c</m> with the value solved for to get the final,
-          unique solution.
-          <me>
-            y = \frac{-3}{x^3 -3} = \frac{3}{3-x^3} 
-          </me>
+          Next I set the derivative to zero and solve.
+          <md>
+            <mrow>
+              14x - 2 \amp = 0 
+            </mrow>
+            <mrow>
+              x \amp = \frac{1}{7} 
+            </mrow>
+          </md>
+          The domain of this function is all real numbers. I split up
+          this domain using the critical point to get the intervals.
+          On each interval, I test the sign of the derivative.
+          <md>
+            <mrow>
+              \amp\left(-\infty, \frac{1}{7} \right) \amp 
+              \amp\left( \frac{1}{7}, \infty \right)
+            </mrow>
+            <mrow>
+              \amp f^\prime (0) = -2  \amp 
+              \amp f^\prime (1) = 12 
+            </mrow>
+            <mrow>
+              \amp \text{Negative} \amp
+              \amp \text{Positive} 
+            </mrow>
+            <mrow>
+              \amp \text{decreasing} \amp
+              \amp \text{increasing} 
+            </mrow>
+          </md>
+          Since the function changes from decreasing to increasing at
+          the critical point, there must be a minimum at <m>x =
+          \frac{1}{7}</m>. 
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Solve this initial value problem.
-          <md>
-            <mrow>
-              \frac{dy}{dx} \amp = e^x e^{-y} 
-              \amp \amp y(0) = 1 
-            </mrow>
-          </md>
+          Find the <m>x</m> values of the maxima and minima of this
+          function.
+          <me>
+            f(x) = \frac{x-1}{x^2+7} 
+          </me>
         </p>
       </statement>
       <solution>
         <p>
-          I use the form for separable equations, with <m>f(x) =
-          e^x</m> and <m>g(y) = e^{-y}</m>.
-          <me>
-            \int e^y dy = \int e^x dx 
-          </me>
-          Then I integrate both sides, add the constant of integration
-          on the right.
-          <me>
-            e^y = e^x + c 
-          </me>
-          Then I solve for <m>y</m>.
-          <me>
-            y = \ln (e^x + c) 
-          </me>
-          Now I put the initial condition values in for <m>x</m> and
-          <m>y</m>, to try to solve for the constant of integration.
-          <me>
-            1 = \ln (e^0 + c) = \ln (1+c) \implies c = e-1 
-          </me>
-          Finally, having solve for the constant of integration, I
-          replace <m>c</m> with the value solved for to get the final,
-          unique solution.
-          <me>
-            y = \ln (e^x + e - 1)
-          </me>
+          First I take the derivative, using the quotient rule.
+          <md>
+            <mrow>
+            \frac{df}{dx} \amp = \frac{(x^2+7) \left( \frac{d}{dx} x-1
+            \right) - (x-1) \left( \frac{d}{dx} x^2+7
+            \right)}{(x^2+7)^2} 
+            </mrow>
+            <mrow>
+            \amp = \frac{(x^2+7) - (x-1) (2x)}{(x^2+7)^2} 
+            </mrow>
+            <mrow>
+            \amp = \frac{x^2+7 - 2x^2 + 2x}{(x^2+7)^2} 
+            </mrow>
+            <mrow>
+            \amp = \frac{-x^2 + 2x + 7}{(x^2+7)^2} 
+            </mrow>
+          </md>
+          Next I set the derivative to zero and solve. I only need
+          to set the numerator equal to zero. 
+          <md>
+            <mrow>
+              -x^2 + 2x + 7 \amp = 0 
+            </mrow>
+            <mrow>
+              x^2 - 2x - 7 \amp = 0 
+            </mrow>
+            <mrow>
+              x \amp = \frac{2 \pm \sqrt{ 4 - (4)(1)(-7)}}{2}
+            </mrow>
+            <mrow>
+              x \amp = \frac{2 \pm \sqrt{32}}{2} = \frac{ 2 \pm 2
+              \sqrt{8}}{2} = 1 \pm \sqrt{8}
+            </mrow>
+          </md>
+          The domain of this function is all real numbers. I split up
+          this domain using the critical points to get the intervals.
+          On each interval, I test the sign of the derivative. 
+          <md>
+            <mrow>
+              \amp \left( -\infty, 1 - \sqrt{8} \right) \amp
+              \amp \left( 1 - \sqrt{8}, 1 + \sqrt{8}, \right) \amp
+              \amp \left( 1 + \sqrt{8}, \infty \right)
+            </mrow>
+            <mrow>
+              \amp f^\prime (-2) = \frac{-1}{121} \amp 
+              \amp f^\prime (0) = \frac{1}{7} \amp
+              \amp f^\prime (4) = \frac{-1}{519} 
+            </mrow>
+            <mrow>
+              \amp \text{Negative} \amp
+              \amp \text{Positive} \amp
+              \amp \text{Negative} 
+            </mrow>
+            <mrow>
+              \amp \text{decreasing} \amp
+              \amp \text{increasing} \amp
+              \amp \text{decreasing} 
+            </mrow>
+          </md>
+          At <m>x = 1 - \sqrt{8}</m>, the function changes from
+          decreasing to inscreasing, so this point is a minimum. 
+          At <m>x = 1 + \sqrt{8}</m>, the function changes from
+          increasing to decreasing, so this point is a maximum. 
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Solve this initial value problem.
-          <md>
-            <mrow>
-              \frac{dy}{dx} \amp = \frac{y}{x} 
-              \amp \amp y(3) = 1
-            </mrow>
-          </md>
+          Find the <m>x</m> values of the maxima and minima of this
+          function.
+          <me>
+            f(x) = e^{x^2-4}
+          </me>
         </p>
       </statement>
       <solution>
         <p>
-          I use the form for separable equations, with <m>f(x) =
-          \frac{1}{x}</m> and <m>g(y) = y</m>.
+          First I take the derivative, using the chain rule (I
+          haven't shown the steps here). 
           <me>
-            \int \frac{1}{y} dy = \int \frac{1}{x} dx 
+            \frac{df}{dx} = (2x)e^{x^2-4} 
           </me>
-          Then I integrate both sides, add the constant of integration
-          on the right.
-          <me>
-            \ln |y| = \ln |x| + c 
-          </me>
-          Then I solve for <m>y</m>.
-          <me>
-            y = e^{\ln x + c} = (x)(e^c) 
-          </me>
-          Now I put the initial condition values in for <m>x</m> and
-          <m>y</m>, to try to solve for the constant of integration.
-          <me>
-            1 = 3(e^c) \implies (e^c) = \frac{1}{3} \implies c = \ln
-            \frac{1}{3} = -\ln 3 
-          </me>
-          Finally, having solve for the constant of integration, I
-          replace <m>c</m> with the value solved for to get the final,
-          unique solution.
-          <me>
-            y = x e^{-\ln 3} = \frac{x}{e^{\ln 3}} = \frac{x}{3}
-          </me>
+          Next I set the derivative to zero and solve. Note that the
+          exponential term can never be zero, so I am free to divide
+          by it, leaving only the polynomial term remaining. 
+          <md>
+            <mrow>
+              2xe^{x^2-4} \amp = 0 \implies 2x = 0 
+            </mrow>
+            <mrow>
+              x \amp = 0 
+            </mrow>
+          </md>
+          The domain of this function is all real numbers. I split up
+          this domain using the critical point to get the intervals.
+          On each interval, I test the sign of the derivative.
+          <md>
+            <mrow>
+              \amp \left(-\infty, 0 \right) \amp 
+              \amp \left( 0 \infty \right)
+            </mrow>
+            <mrow>
+              \amp f^\prime (-1) = -2e^{-3}  \amp 
+              \amp f^\prime (1) = 2e^{-3}
+            </mrow>
+            <mrow>
+              \amp \text{Negative} \amp
+              \amp \text{Positive} 
+            </mrow>
+            <mrow>
+              \amp \text{decreasing} \amp
+              \amp \text{increasing} 
+            </mrow>
+          </md>
+          Since the function change from decreasing to increasing at
+          the critical point, there must be a minimum at <m>x = 0</m>.
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Solve this initial value problem.
-          <md>
-            <mrow>
-              \frac{dy}{dx} \amp = \sqrt{\frac{x}{y}} 
-              \amp \amp y(0) = 0 
-            </mrow>
-          </md>
+          Find the <m>x</m> values of the maxima and minima of this
+          function.
+          <me>
+            f(x) = \frac{1}{x^2 - 6x + 10}
+          </me>
         </p>
       </statement>
       <solution>
         <p>
-          The expression in the differential equation is not defined
-          for this initial value. Therefore, this IVP cannot be
-          solved. I could do the separable equation, but I won't be
-          able to input the initial conditions.
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Solve this initial value problem.
+          First I take the derivative. I used the chain rule (with
+          <m>u^{-1}</m> as the outside function), but the quotient
+          rule works just a well.
+          <me>
+            \frac{df}{dx} = \frac{-(2x-6)}{(x^2-6x+10)^2} 
+          </me>
+          Next I set the derivative to zero and solve. Note I only
+          need to set the numerator equal to zero.
           <md>
             <mrow>
-              \frac{dy}{dx} \amp = y^2 \sin x  
-              \amp \amp y(\pi) = 1 
+              2x-6 \amp = 0 
+            </mrow>
+            <mrow>
+              x \amp = 3 
             </mrow>
           </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          I use the form for separable equations, with <m>f(x) =
-          \sin x^2</m> and <m>g(y) = y^2</m>.
-          <me>
-            \int \frac{1}{y^2} dy = \int \sin x dx 
-          </me>
-          Then I integrate both sides, add the constant of integration
-          on the right.
-          <me>
-            \frac{-1}{y} = -\cos x + c 
-          </me>
-          Then I solve for <m>y</m>.
-          <me>
-            y = \frac{-1}{c - \cos x} = \frac{1}{\cos x - c} 
-          </me>
-          Now I put the initial condition values in for <m>x</m> and
-          <m>y</m>, to try to solve for the constant of integration.
-          <me>
-            1 = \frac{1}{\cos \pi - c} = \frac{1}{-1 - c} \implies c= -2
-          </me>
-          Finally, having solve for the constant of integration, I
-          replace <m>c</m> with the value solved for to get the final,
-          unique solution.
-          <me>
-            y = \frac{1}{\cos x + 2}
-          </me>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Solve this initial value problem.
+          This is not a root of the denominator, so this is a valid
+          critical point. The domain of this function is all real
+          numbers (since the denominator has no roots). We split up
+          this domain using the critical point to get the intervals.
+          On each interval, I test the sign of the derivative.
           <md>
             <mrow>
-              \frac{dy}{dx} \amp = \frac{(x-1)^2}{y} 
-              \amp \amp y(2) = 1 
+              \amp \left(-\infty, 3 \right) \amp 
+              \amp \left( 3, \infty \right)
             </mrow>
-          </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          I use the form for separable equations, with <m>f(x) =
-          (x-1)2</m> and <m>g(y) = \frac{1}{y}</m>.
-          <me>
-            \int y dy = \int (x-1)^2 dx 
-          </me>
-          Then I integrate both sides, add the constant of integration
-          on the right.
-          <me>
-            \frac{y^2}{2} = \frac{(x-1)^3}{3} + c 
-          </me>
-          Then I solve for <m>y</m>.
-          <me>
-            \frac{y^2}{2} = \frac{(x-1)^3+3c}{3} \implies y =
-            \sqrt{\frac{2(x-1)^3+6c}{3}} 
-          </me>
-          Now I put the initial condition values in for <m>x</m> and
-          <m>y</m>, to try to solve for the constant of integration.
-          <me>
-            1 = \sqrt{\frac{2(2-1)^3+6c}{3}} \implies 3 = 2+6c \implies
-            c = \frac{1}{6}
-          </me>
-          Finally, having solve for the constant of integration, I
-          replace <m>c</m> with the value solved for to get the final,
-          unique solution.
-          <me>
-            y = \sqrt{ \frac{2(x-1)^3+1}{3}}
-          </me>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Solve this initial value problem.
-          <md>
             <mrow>
-              \frac{dy}{dx} \amp = x^3 y^4 
-              \amp \amp y(1) = -3 
+              \amp f^\prime (0) = \frac{6}{100} \amp 
+              \amp f^\prime (4) = \frac{-2}{4} = \frac{-1}{2} 
             </mrow>
-          </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          I use the form for separable equations, with <m>f(x) =
-          x^3</m> and <m>g(y) = y^4</m>.
-          <me>
-            \int \frac{1}{y^4} dy = \int x^3 dx 
-          </me>
-          Then I integrate both sides, add the constant of integration
-          on the right.
-          <me>
-            \frac{-3}{y^3} = \frac{x^4}{4} + c = \frac{x^4 + 4c}{4}
-          </me>
-          Then I solve for <m>y</m>.
-          <me>
-            \frac{y^3}{-3} = \frac{4}{x^4 + 4x} \implies y^3 =
-            \frac{-12}{x^4+4x} \implies y = \sqrt[3]{\frac{-12}{x^4 +
-            4c}} 
-          </me>
-          Now I put the initial condition values in for <m>x</m> and
-          <m>y</m>, to try to solve for the constant of integration.
-          <me>
-            -3 = \sqrt[3]{\frac{-12}{(1)^4+ 4c}} \implies -27 =
-            \frac{-12}{1+4c} 
-          </me>
-          <me>
-            \frac{1}{27} = \frac{1+4c}{12} \implies 1+4c =
-            \frac{12}{27} \implies 4c = \frac{-15}{27} \implies c =
-            \frac{-15}{108} = \frac{-5}{36}
-          </me>
-          Finally, having solve for the constant of integration, I
-          replace <m>c</m> with the value solved for to get the final,
-          unique solution.
-          <me>
-            y = \sqrt[3]{\frac{-12}{x^4 + \frac{-60}{27}}} =
-            \sqrt[3]{\frac{324}{60 - 27x^4}} 
-          </me>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Solve this initial value problem.
-          <md>
             <mrow>
-              \frac{dy}{dx} \amp = y^2 e^x 
-              \amp \amp y(\ln 3) = 2 
+              \amp \text{Positive} \amp
+              \amp \text{Negative} 
+            </mrow>
+            <mrow>
+              \amp \text{increasing} \amp
+              \amp \text{decreasing} 
             </mrow>
           </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          I use the form for separable equations, with <m>f(x) =
-          e^x</m> and <m>g(y) = y^2</m>.
-          <me>
-            \int \frac{1}{y^2} dy = \int e^x dx 
-          </me>
-          Then I integrate both sides, add the constant of integration
-          on the right.
-          <me>
-            \frac{-1}{y} = e^x + c 
-          </me>
-          Then I solve for <m>y</m>.
-          <me>
-            y = \frac{-1}{e^x + c} 
-          </me>
-          Now I put the initial condition values in for <m>x</m> and
-          <m>y</m>, to try to solve for the constant of integration.
-          <me>
-            2 = \frac{-1}{3+c} \implies c= \frac{-7}{2} 
-          </me>
-          Finally, having solve for the constant of integration, I
-          replace <m>c</m> with the value solved for to get the final,
-          unique solution.
-          <me>
-            y = \frac{-1}{e^x - \frac{7}{2}} = \frac{2}{7 - 2e^x} 
-          </me>
+          Since the function change from increasing to decreasing at
+          the critical point, there must be a maximum at <m>x = 3</m>. 
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="subsection-activity-exponential-growth">
-    <title>Exponential Growth</title>
+  <subsection xml:id="subsection-activity-optimization">
+    <title>Optimization</title>
     <activity>
       <statement>
         <p>
-          Solve this initial value problem, where <m>p(t)</m> is
-          population in terms of time. 
-          <md>
-            <mrow>
-              \frac{dp}{dt} \amp = (0.03) p(t) 
-            </mrow>
-            <mrow>
-              p(0) \amp = 14000
-            </mrow>
-          </md>
+          The function
+          <me>
+            h(t) = - 3t^2 + 9 t + 7
+          </me>
+          measures height as a function of time. Find the maximum
+          height.
         </p>
       </statement>
       <solution>
         <p>
-          I follow the process for solving separable equations, using
-          <m>g(p) = p</m> and <m>f(t) = 0.03</m>. 
+          First I take the derivative.
           <me>
-            \int \frac{1}{p} dp = \int 0.03 dt 
+            \frac{dh}{dt} = -6t + 9
           </me>
-          I integate both sides; both a direct antiderivatives.
-          <me>
-            \ln |p| = 0.03t + c 
-          </me>
-          Then I solve for <m>p</m>. I can drop the absolute value 
-          since population must be positive. 
-          <me>
-            p(t)  = e^{(0.03t) + c} = e^c e^{0.03t} 
-          </me>
-          Finally, I use the initial value p(0) = 14000.
-          <me>
-            p(0) = e^c e^0 = e^c = 14000
-          </me>
-          Here is the final solution.
-          <me>
-            p(t) = 14000 e^{0.03t} 
-          </me>
-          This is exactly what I expected: population that starts at
-          14000 with a growth rate coefficient of <m>0.03</m>.
+          Next I set the derivative to zero and solve.
+          <md>
+            <mrow>
+              -6t + 9 \amp = 0 
+            </mrow>
+            <mrow>
+             t \amp = \frac{3}{2} 
+            </mrow>
+          </md>
+          The domain of this function is all real numbers, but I can
+          assume <m>t \geq </m> for the model. I split up
+          this domain using the critical point to get the intervals.
+          On each interval, I test the sign of the derivative.
+          <md>
+            <mrow>
+              \amp \left(0 \frac{3}{2} \right) \amp 
+              \amp \left(\frac{3}{2}, \infty \right)
+            </mrow>
+            <mrow>
+              \amp f^\prime (1) = 3  \amp 
+              \amp f^\prime (2) = -3 
+            </mrow>
+            <mrow>
+              \amp \text{Positive} \amp
+              \amp \text{Negative} 
+            </mrow>
+            <mrow>
+              \amp \text{increasing} \amp
+              \amp \text{decreasing} 
+            </mrow>
+          </md>
+          Since the function change from increasing to decreasing at
+          the critical point, there must be a maximum at <m>t =
+          \frac{3}{2}</m>. The value at <m>t = \frac{3}{2}</m> is
+          <m>-3 \left( \frac{3}{2} \right)^2 + 9 \frac{3}{2} + 7 =
+          \frac{-27}{4} + \frac{27}{2} + 7 = \frac{27}{4} +
+          \frac{28}{4} = \frac{55}{4}</m>. The maximum height is
+          <m>\frac{55}{4}</m> meters. 
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Solve this initial value problem, where <m>p(t)</m> is
-          population in terms of time. 
-          <md>
-            <mrow>
-              \frac{dp}{dt} \amp = (-0.14) p(t) 
-            </mrow>
-            <mrow>
-              p(0) \amp = 150000
-            </mrow>
-          </md>
+          A chemical reaction is controlled by a catalyst. The
+          function
+          <me>
+            T(c) = 14\sqrt{7 - 4c + c^2}
+          </me>
+          measure a bounding temperature of the reaction depending on
+          the concentration of the catalyst. Find the minimum
+          temperature bound. 
         </p>
       </statement>
       <solution>
         <p>
+          First I take the derivative, using the chain rule (I
+          haven't shown the steps). 
+          <me>
+            \frac{dT}{dc} = \frac{14 (2c-4)}{2\sqrt{7 - 4c + c^2}} =
+            \frac{14c - 28}{\sqrt{7 - 4c + c^2}} 
+          </me>
+          Next I set the derivative to zero and solve. I only need
+          to consider the numerator. 
+          <md>
+            <mrow>
+              14c - 28 \amp = 0 
+            </mrow>
+            <mrow>
+              c \amp = 2 
+            </mrow>
+          </md>
+          The domain of this function is all real numbers, since the
+          quadratic in the square root is always positive. However,
+          concentration cannot be negative, so in the model we will
+          assume a domain of positive numbers. I split up
+          this domain using the critical point to get the intervals.
+          On each interval, I test the sign of the derivative.
+          <md>
+            <mrow>
+              \amp \left(0, 2 \right) \amp 
+              \amp \left( 2, \infty \right)
+            </mrow>
+            <mrow>
+              \amp f^\prime (1) = \frac{14-28}{\sqrt{7 - 4 + 1}} =
+              \frac{-14}{\sqrt{3}} \amp 
+              \amp f^\prime (3) =  \frac{42 - 28}{\sqrt{7 - 12 + 9}} =
+              \frac{14}{2} = 7 
+            </mrow>
+            <mrow>
+              \amp \text{Negative} \amp
+              \amp \text{Positive} 
+            </mrow>
+            <mrow>
+              \amp \text{decreasing} \amp
+              \amp \text{increasing} 
+            </mrow>
+          </md>
+          Since the function change from decreasing to increasing at
+          the critical point, there must be a minimum at <m>c = 2</m>.
+          The value of the function at <m>c=2</m> is <m>T(2) = 14
+          \sqrt{7 - 8 + 4} = 14 \sqrt{3} \doteq 24.25</m>. The minimum
+          bounding temperature if 24.25 degree celcius. 
         </p>
-          I follow the process for solving separable equations, using
-          <m>g(p) = p</m> and <m>f(t) = 0.03</m>. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          The function
           <me>
-            \int \frac{1}{p} dp = \int -0.14  dt 
+            T(m) = n(4m - 15\ln(m-25))
           </me>
-          I integate both sides; both a direct antiderivatives.
+          bounds the sort time of a sorting algorithm which runs on
+          <m>m</m> parallel processors (for <m>m</m> at least 25).
+          <m>n</m> is the length of the list. How many processors give
+          the shortest sort time?
+        </p>
+      </statement>
+      <solution>
+        <p>
           <me>
-            \ln |p| = (-0.14t) + c 
+            T(m) = n \left(4m - 15 \ln (m-25) \right) 
           </me>
-          Then I solve for <m>p</m>. I can drop the absolute value 
-          since population must be positive. 
+          I start with  the derivative.
           <me>
-            p(t) = e^c e^{-0.14t} 
+            \frac{dT}{dm} = n \left( 4 - 15 \frac{1}{m-25} \right)
           </me>
-          Finally, I use the initial value p(0) = 14000.
+          Next I set the derivative to zero and solve.
+          <md>
+            <mrow>
+              4 - 15 \frac{1}{m-25} \amp = 0 
+            </mrow>
+            <mrow>
+              m - 25 \amp = \frac{15}{4} 
+            </mrow>
+            <mrow>
+              m \amp = \frac{15}{4} + 25 = \frac{115}{4}
+            </mrow>
+          </md>
+          The domain of this function is all numbers above 25. 
+          I split up this domain using the critical point to get the
+          intervals.  On each interval, I test the sign of the
+          derivative.
+          <md>
+            <mrow>
+              \amp \left(25, \frac{115}{4}  \right) \amp 
+              \amp \left( \frac{115}{4}, \infty \right)
+            </mrow>
+            <mrow>
+              \amp f^\prime (26) = n \left(4 - 15 \frac{1}{1}
+              \right) = -11n \amp 
+              \amp f^\prime (35) = n \left(4 - 15 \frac{1}{10}
+              \right) = \frac{2}{5} n
+            </mrow>
+            <mrow>
+              \amp \text{Negative} \amp
+              \amp \text{Positive} 
+            </mrow>
+            <mrow>
+              \amp \text{decreasing} \amp
+              \amp \text{increasing} 
+            </mrow>
+          </md>
+          Since the function change from decreasing to increasing at
+          the critical point, there must be a minimum at <m>m =
+          \frac{115}{4} </m>. The closest whole number to this is 29,
+          so the ideal choice is 29 processors. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          The function
           <me>
-            p(0) = e^c e^0 = e^c = 1500000
+            E(h) = \frac{-5}{3000}h^3 + \frac{1}{25}h^2 + 5
           </me>
-          Here is the final solution.
+          measure the fuel efficiency of an aircraft at height
+          <m>h</m> (in kilometers). Find the height with the maximum
+          fuel efficiency.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we take the derivative.
           <me>
-            p(t) = 150000 e^{-0.14t} 
+            \frac{dE}{dh} = -\frac{1}{200}h^2 + \frac{2}{25}h 
           </me>
-          This is exactly what I expect: population that starts at
-          150000 with a growth rate coefficient of <m>-0.14</m>.
+          Next I set the derivative to zero and solve.
+          <md>
+            <mrow>
+              \frac{-1}{200}h^2 + \frac{2}{25}h \amp = 0 
+            </mrow>
+            <mrow>
+              h \amp = 0 \text{ or } h = 16
+            </mrow>
+          </md>
+          The domain of this function is all real numbers, but the
+          model only makes sense for positive numbers. I ignore the
+          critical point at 0, since I am only interested in positive
+          heights. I split up this domain using the critical point to
+          get the intervals. On each interval, I test the sign of
+          the derivative.
+          <md>
+            <mrow>
+              \amp \left(0, 16 \right) \amp 
+              \amp \left(16, \infty \right)
+            </mrow>
+            <mrow>
+              \amp f^\prime (1) = \frac{-1}{200} + \frac{2}{25} =
+              \frac{15}{200}  \amp 
+              \amp f^\prime (20) = \frac{-400}{200} + \frac{40}{25} =
+              -2 + \frac{8}{5} = \frac{-3}{5} 
+            </mrow>
+            <mrow>
+              \amp \text{Positive} \amp
+              \amp \text{Negative} 
+            </mrow>
+            <mrow>
+              \amp \text{increasing} \amp
+              \amp \text{decreasing} 
+            </mrow>
+          </md>
+          Since the function change from increasing to decreasing at
+          the critical point, there must be a maximum at <m>h =
+          16</m>. Therefore, the best fuel efficiency happens at a
+          height of 16 kilometers.  
+        </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="subsection-activity-logistic-growth">
-    <title>Logistic Growth</title>
+  <subsection xml:id="subsection-activity-marginal-analysis">
+    <title>Marginal Analysis</title>
     <activity>
       <statement>
         <p>
-          Check that the logistic growth function given solves the
-          initial value problem. <m>p(t)</m> is population in terms of
-          time. (First check the initial value. Then calculate the
-          right side and left side of the differential equation and
-          see if you can simpify both expression into the same thing.)
+          Consider the following cost and benefit functions.
           <md>
             <mrow>
-              p(t) \amp = \frac{400000 e^{0.05t}}{600 + 400
-              e^{0.05t}} 
+              C(x) \amp = \frac{1}{4}x^2 
             </mrow>
             <mrow>
-              \frac{dp}{dt} \amp = (0.05) p(t) \left( 1 -
-              \frac{p(t)}{1000} \right) 
-            </mrow>
-            <mrow>
-              p(0) \amp = 400
+              B(x) \amp = 4 \sqrt{x} 
             </mrow>
           </md>
+          Determine the greatest possible net benefit. Also find the
+          break-even point with the highest gross benefit. Given an
+          interpretation of the cost and benefit functions, with
+          comment on their reasonability.
         </p>
       </statement>
       <solution>
         <p>
-          I have to check two things. First, I can check that the
-          initial value is correct. This is simply evaluating
-          <m>p(0)</m>. 
-          <me>
-            p(0) = \frac{400000 e^0}{600 + 400
-            e^0} = \frac{400000}{600+ 400} =
-            \frac{400000}{1000} = 400
-          </me>
-          This is the correct initial value. Now I need to
-          differentiate <m>p(t)</m> using the quotient rule and check
-          that it is the same as the left side of the differential
-          equation. This calculation is a bit complicated with many
-          pieces, but I'll simplify it step by step. 
+          There is a possible maximum net benefit when the marginal cost
+          and marginal benefit are equal. I calculate those two and
+          set them equal to each other.
           <md>
             <mrow>
-              \frac{dp}{dt} \amp = \frac{(600 + 400e^{0.05t}) \left(
-              \frac{d}{dt} 400000 e^{0.05t} \right) - 400000 e^{0.05t}
-              \left( \frac{d}{dt} 600 + 400 e^{0.05t} \right)}{(600 +
-              400 e^{0.05t})^2}
+              \frac{d}{dx} C(x) \amp = \frac{1}{2} x 
             </mrow>
             <mrow>
-              \amp = \frac{(600 + 400e^{0.05t})((0.05)(400000)e^{0.05t} 
-              - 400000 e^{0.05t}((0.05)400e^{0.05t})}{(600 + 400
-              e^{0.05t})^2}
+              \frac{d}{dx} B(x) \amp = \frac{4}{2\sqrt{x}} =
+              \frac{2}{\sqrt{x}}
             </mrow>
             <mrow>
-              \amp = \frac{(600 + 400e^{0.05t})20000 e^{0.05t} - 
-              400000 e^{0.05t} 20 e^{0.05t}}{(600 + 400 e^{0.05t})^2}
+              \frac{1}{2} x \amp = \frac{2}{\sqrt{x}}
             </mrow>
             <mrow>
-              \amp = \frac{12000000e^{0.05t} + 8000000e^{0.1t} - 
-              8000000 e^{0.1t}}{(600 + 400 e^{0.05t})^2}
+              x^\frac{3}{2} \amp = 4
             </mrow>
             <mrow>
-              \amp = \frac{12000000e^{0.05t}}{(600 + 400 e^{0.05t})^2}
+              x \amp = 4^\frac{2}{3} = \sqrt[3]{16} \doteq 2.52
             </mrow>
           </md>
-          After all that simplification, I have this expression. This
-          is the left side of the differential equation. I want to
-          compare it to the right side of the differential equation.
-          I'll try to calculate that right side and see if I can
-          simplify it down to the same thing. From the third to the
-          fourth line below, I construct a common denominator for the
-          term in brackets. 
+          Then I look at intervals. Below this critical value, say at
+          <m>x=1</m>, the marginal benefit is 2 and the marginal cost
+          is <m>\frac{1}{2}</m>. Here the net benefit is increasing,
+          since the marginal benefit exceeds the marginal cost. Above
+          the critical value, say at <m>x=4</m>, the marginal cost is
+          2 and the marginal benefit is 1. The marginal cost exceeds
+          the marginal benefit, so the net benefit is decreasing. I
+          conclude that there is a maximum net benefit at approximatly
+          <m>x = 2.52</m>.
+        </p>
+        <p>
+          For the break even point, I set the two functions each to
+          each other and solve.
           <md>
             <mrow>
-              \amp (0.05) p(t) \left( 1 - \frac{p(t)}{1000} \right) 
+              C(x) \amp = B(x) 
             </mrow>
             <mrow>
-              \amp = (0.05) \frac{400000 e^{0.05t}}{600 + 400 e^{0.05t}} 
-              \left( 1 - \frac{ \frac{400000 e^{0.05t}}{600 + 400
-              e^{0.05t}}}{1000} \right)
+              \frac{1}{4} x^2 \amp = 4 \sqrt{x} 
             </mrow>
             <mrow>
-              \amp = \frac{20000 e^{0.05t}}{600 + 400 e^{0.05t}} 
-              \left( 1 - \frac{400 e^{0.05t}}{600 + 400
-              e^{0.05t}} \right)
+              x^\frac{3}{2} \amp = 16
             </mrow>
             <mrow>
-              \amp = \frac{20000 e^{0.05t}}{600 + 400 e^{0.05t}} 
-              \left( \frac{600 + 400 e^{0.05t} - 400
-              e^{0.05t}}{600 + 400 e^{0.05t}} \right)
-            </mrow>
-            <mrow>
-              \amp = \frac{20000 e^{0.05t}}{600 + 400 e^{0.05t}} 
-              \left( \frac{600}{600 + 400 e^{0.05t}} \right)
-            </mrow>
-            <mrow>
-              \amp = \frac{12000000 e^{0.05t}}{(600 + 400 e^{0.05t})^2} 
+              x \amp = \sqrt[3]{256} \doteq 6.34
             </mrow>
           </md>
-          This produces exactly the same expression. Both
-          the left and ride sides of the equation simplify to the same
-          expression. Therefore, since these simplification have made
-          any actual changes to the function (just to how it is
-          expressed), the right side and left side of the differential
-          equation are equal, and I have confirmed that the given
-          function solves the differential equation.
+          This is only one positive break even point, at approximately
+          <m>x = 6.34</m>, so that is by default the largest. 
+          <xref ref="figure-marginal-1" /> shows the behaviour
+          of this marginal analysis model.
+          <figure xml:id="figure-marginal-1">
+            <caption>First Marginal Analysis Activity</caption>
+            <image xml:id="figure76" width="90%">
+              <asymptote>
+                size(12cm,8cm,IgnoreAspect);
+
+                import graph; 
+
+                xaxis(Ticks);
+                yaxis(Ticks);
+
+                real c(real x) {return x^2/4;}
+                real b(real x) {return 4*sqrt(x);}
+                
+                draw(graph(c,0,8));
+                draw(graph(b,0,8));
+
+                draw((2,1)--(2,5.66));
+                draw((2,10)--(2,5.66),Arrow);
+
+                dot((6.34,10.08));
+                
+                label("Maximum Net Benefit",(2,10),N);
+                label("Highest Break Even Point",(6.34,10.08),SE);
+              </asymptote>
+            </image>
+          </figure>
+          These cost and benefit functions seems at least somewhat
+          reasonable. The benefit function curves down, representing a
+          decreasing benefit with growing production. That behaviour
+          is reasonable if the demand for a product eventually dries
+          up. The cost function curves up, showing that producing more
+          eventually ends up costing a great deal per unit. This might
+          not be correct if economies of scale bring down the cost,
+          but it might make sense if the skills or materials needed
+          become more difficult to acquire.
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Check that the logistic growth function given solves the
-          initial value problem. <m>p(t)</m> is population in terms of
-          time.
+          Consider the following cost and benefit functions.
           <md>
             <mrow>
-              p(t) = \frac{240000 e^{0.02t}}{-500 + 800 
-              e^{0.02t}} 
+              C(x) \amp = 14 + \frac{1}{10}x 
             </mrow>
             <mrow>
-              \frac{dp}{dt} = (0.02) p(t) \left( 1 -
-              \frac{p(t)}{300} \right) 
+              B(x) \amp = 6 \sqrt[3]{x}
+            </mrow>
+          </md>
+          Determine the greatest possible net benefit. Also find the
+          break-even point with the highest gross benefit. Given an
+          interpretation of the cost and benefit functions, with
+          comment on their reasonability. (Ask a computer for the
+          solution for the break even point, since this is not easily
+          solvable using algebraic methods.) 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There is a possile maximum net benefit when the marginal cost
+          and marginal benefit are equal. I calculate those two and
+          set them equal to each other.
+          <md>
+            <mrow>
+              \frac{d}{dx} C(x) \amp = \frac{1}{10}
             </mrow>
             <mrow>
-              p(0) = 800
+              \frac{d}{dx} B(x) \amp = \frac{6}{3\sqrt[3]{x^2}} =
+              \frac{2}{\sqrt[3]{x^2}} 
+            </mrow>
+            <mrow>
+              \frac{1}{10} \amp = \frac{2}{\sqrt[3]{x^2}}
+            </mrow>
+            <mrow>
+              x^\frac{2}{3} \amp = 20 
+            </mrow>
+            <mrow>
+             x \amp = \sqrt{20^3} \doteq 89.44
+            </mrow>
+          </md>
+          Then I look at intervals. The marginal cost is always
+          fixed, so I just need to look at the marginal benefit. When
+          <m>x \lt 89</m>, say <m>x = 27</m>, the marginal benefit is
+          <m>\frac{2}{9}</m>, which is larger than the marginal
+          cost. When <m>x \geq 90</m>, say <m>x = 125</m>, then the
+          marginal benefit is <m>\frac{2}{25}</m>, which is smaller than
+          the marginal cost. Therefore, the net benefit is increasing
+          before the critical point and decreasing after it, so there
+          is a maximum.
+          </p>
+          <p>
+          For the break even point, I set the two functions each to
+          each other and solve
+          <md>
+            <mrow>
+              C(x) \amp = B(x) 
+            </mrow>
+            <mrow>
+              14 + \frac{1}{10}x \amp = 6 \sqrt[3]{x}
+            </mrow>
+            <mrow>
+              x \amp \doteq 18.4 \text{ or } x \doteq 224.85
+            </mrow>
+          </md>
+          A computer gives us the two approximate solution. Since the
+          benefit function is increasing, the larger <m>x</m> value is
+          the larger break even point. 
+          <xref ref="figure-marginal-2" /> shows the behaviour
+          of this marginal analysis model.
+          <figure xml:id="figure-marginal-2">
+            <caption>Second Marginal Analysis Activity</caption>
+            <image xml:id="figure77" width="90%">
+              <asymptote>
+                size(12cm,8cm,IgnoreAspect);
+
+                import graph; 
+
+                xaxis(Ticks);
+                yaxis(Ticks);
+
+                real c(real x) {return 14 + x/(10);}
+                real b(real x) {return 6 * x^(1/3);}
+
+                draw(graph(c,0,250));
+                draw(graph(b,0,250));
+
+                draw((89.44,22.944)--(89.44,26.83));
+                draw((89.44,10)--(89.44,22.944),Arrow);
+
+                dot((224.85,36.49));
+
+                label("Maximum Net Benefit",(89.44,10),SE);
+                label("Highest Break Even Point",(224.85,36.49),SE);
+              </asymptote>
+            </image>
+          </figure>
+          This cost function is linear, showing that producing more or
+          less has no effect on the cost per unit. This is possible
+          for some items or services. The benefit function curves down
+          as in the previous activity, again likely representing that
+          eventually the demand for the product or service becomes
+          saturated.  
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Consider the following cost and benefit functions.
+          <md>
+            <mrow>
+              C(x) \amp = \frac{1}{9} x^3
+            </mrow>
+            <mrow>
+              B(x) \amp = \left\{ \begin{matrix} 
+                4x \amp x \leq 2 \\ 
+                8 \amp x > 2 
+              \end{matrix} \right. 
             </mrow>
           </md>
         </p>
       </statement>
       <solution>
         <p>
-          I have to check two things. First, I can check that the
-          initial value is correct. This is simply evaluating
-          <m>p(0)</m>. 
-          <me>
-            p(0) = \frac{240000 e^0}{-500 + 800
-            e^0} = \frac{240000}{-500+ 800} =
-            \frac{240000}{300} = 800
-          </me>
-          This is the correct initial value. Now I need to
-          differentiate <m>p(t)</m> using the quotient rule and check
-          that it is the same as the left side of the differential
-          equation. This calculation is a bit complicated with many
-          pieces, but I'll simplify it step by step. 
+          There is a possile maximum net benefit when the marginal cost
+          and marginal benefit are equal. I calculate those two and
+          set them equal to each other. I need to work with two
+          pieces, one for <m>x \leq 2</m> and another for <m>x \gt
+          2</m>. I will start with <m> x \leq 2</m>.
           <md>
             <mrow>
-              \frac{dp}{dt} \amp = \frac{(-500 + 800e^{0.02t}) \left(
-              \frac{d}{dt} 240000 e^{0.02t} \right) - 240000 e^{0.02t}
-              \left(\frac{d}{dt} \left( -500 + 800 e^{0.02t} \right)
-              \right)}{(-500 + 800 e^{0.02t})^2}
+              \frac{d}{dx} C(x) \amp = \frac{x^2}{3} 
             </mrow>
             <mrow>
-              \amp = \frac{(-500 + 800e^{0.02t})(0.02)(240000)e^{0.02t} 
-              - 240000 e^{0.02t}((0.02)(800)e^{0.02t})}{(-500 + 800
-              e^{0.02t})^2}
+              \frac{d}{dx} B(x) \amp = 4
             </mrow>
             <mrow>
-              \amp = \frac{(-500 + 800e^{0.02t})(4800)e^{0.02t} 
-              - 240000 e^{0.02t}((16)e^{0.02t})}{(-500 + 800
-              e^{0.02t})^2}
+              \frac{x^2}{3} \amp = 4 
             </mrow>
             <mrow>
-              \amp = \frac{-2400000e^{0.02t} - 3840000e^{0.04t} 
-              + 3840000 e^{0.04t}}{(-500 + 800
-              e^{0.02t})^2}
+              x^2 \amp = 12 
             </mrow>
             <mrow>
-              \amp = \frac{-2400000e^{0.02t}}{(-500 + 800
-              e^{0.02t})^2}
+              x \amp \dot 3.46
             </mrow>
           </md>
-          After all that simplification, I have this expression. This
-          is the left side of the differential equation. I want to
-          compare it to the right side of the differential equation.
-          Let's try to calculate that right side and see if I can
-          simplify it down to the same thing. From the third to the
-          fourth line below, I construct a common denominator for the
-          term in brackets.
+          This solution is not in the range <m>x \leq 2</m>, so there
+          are no critical points on this part of the domain. For all
+          of this part of the domain, the marginal cost is bounded by
+          <m>\frac{4}{3}</m>, which is always smaller than the
+          marginal benefit, so the net benefit is always increasing.
+          Now I'll consider <m>x \gt 2</m>.
           <md>
             <mrow>
-              \amp (0.02) p(t) \left( 1 - \frac{p(t)}{300} \right) 
+              \frac{d}{dx} C(x) \amp = \frac{x^2}{3}
             </mrow>
             <mrow>
-              \amp = (0.02) \frac{240000 e^{0.02t}}{-500 + 800 e^{0.02t}} 
-              \left( 1 - \frac{ \frac{240000 e^{0.02t}}{-500 + 800
-              e^{0.02t}}}{300} \right)
-            </mrow>
-            <mrow>
-              \amp = \frac{4800 e^{0.02t}}{-500 + 800 e^{0.02t}} 
-              \left( 1 - \frac{800 e^{0.02t}}{-500 + 800 e^{0.02t}}
-              \right)
-            </mrow>
-            <mrow>
-              \amp = \frac{4800 e^{0.02t}}{-500 + 800 e^{0.02t}} 
-              \left( \frac{-500 + 800e^{0.02t} - 800 e^{0.02t}}{-500 +
-              800 e^{0.02t}} \right)
-            </mrow>
-            <mrow>
-              \amp = \frac{4800 e^{0.02t}}{-500 + 800 e^{0.02t}} 
-              \left( \frac{-500}{-500 + 800 e^{0.02t}} \right)
-            </mrow>
-            <mrow>
-              \amp = \frac{-960000 e^{0.02t}}{(-500 + 800
-              e^{0.02t})^2} 
+              \frac{d}{dx} B(x) \amp = 0
             </mrow>
           </md>
-          This produces exactly the same expression. Both
-          the left and ride sides of the equation simplify to the same
-          expression. Therefore, since these simplification have made
-          any actual changes to the function (just to how it is
-          expressed), the right side and left side of the differential
-          equation are equal, and I have confirmed that the given
-          function solves the differential equation.
+          These can never be equal and the marginal cost is always
+          larger than the marginal benefit. There are no critical
+          points and the net benefit is always decreasing. 
+          </p>
+          <p>
+          Even though there are no critical points, there is still an
+          understandable situation. Before <m>x=2</m>, the net benefit
+          is increasing and after <m>x=2</m>, the net benefit is
+          decreasing. Therefore, the maximum net benefit is at
+          the cross-over point, when <m>x=2</m>.
+          </p>
+          <p>
+          For the break even point, I set the two functions each to
+          each other and solve. Again, I work in two pieces, first
+          taking <m>x \leq 2</m>. 
+          <md>
+            <mrow>
+              C(x) \amp = B(x) 
+            </mrow>
+            <mrow>
+              \frac{1}{9}x^3 \amp = 4x 
+            </mrow>
+            <mrow>
+              x^2 \amp = 36 
+            </mrow>
+            <mrow>
+              x \amp = 6
+            </mrow>
+          </md>
+          This point isn't in this section of the domain, so it is not
+          a break even point. It is also true that <m>x=0</m> satisfies
+          this equality, but that isn't an interesting break even
+          point. Now let's take <m>x \gt 2</m>. 
+          <md>
+            <mrow>
+              C(x) \amp = B(x) 
+            </mrow>
+            <mrow>
+              \frac{1}{9}x^3 \amp = 8
+            </mrow>
+            <mrow>
+              x^3 \amp = 72
+            </mrow>
+            <mrow>
+              x \amp = \sqrt[3]{72} \doteq 4.16
+            </mrow>
+          </md>
+          There is a break even point. It is the only (non-zero) break
+          even point and the benefit is always positive, so it must be
+          the largest break even point.  <xref
+          ref="figure-marginal-3" /> shows the behaviour of this
+          marginal analysis model.
+          <figure xml:id="figure-marginal-3">
+            <caption>Third Marginal Analysis Activity</caption>
+            <image xml:id="figure78" width="90%">
+              <asymptote>
+                size(12cm,8cm,IgnoreAspect);
+
+                import graph; 
+
+                xaxis(Ticks);
+                yaxis(Ticks);
+
+                real c(real x) {return x^3/9;}
+                real b(real x) {return 4*x;}
+
+                draw(graph(c,0,5));
+                draw(graph(b,0,2));
+                draw((2,8)--(6,8));
+
+                draw((2,8)--(2,0.89));
+                draw((2,10)--(2,9),Arrow);
+
+                dot((4.16,8));
+
+                label("Maximum Net Benefit",(2,10),N);
+                label("Highest Break Even Point",(4.16,8),SE);
+              </asymptote>
+            </image>
+          </figure>
+          This cost function curves upwards, meaning that eventually
+          the materials or skills needed become scare and it becomes
+          more difficult to produce the item or service. The piecewise
+          benefit function is more interesting. For the first while,
+          benefit is linear, meaning that each unit produces the same
+          benefit. However, the benefit suddenly becomes flat, showing
+          that after a period of time, the demand is suddenly zero and
+          no more benefit can be produces. 
         </p>
       </solution>
     </activity>
@@ -643,15 +867,23 @@
     <p>
       <ul>
         <li>
-          How are exponential growth and logistic growth encoded in
-          differential equations?
+          Why are derivatives used to find maxima and minima of
+          function?
         </li>
         <li>
-          What does it mean to solve a differential equation?
+          Why are intervals used to test the sign of the derivative
+          on the intervals?
         </li>
         <li>
-          What is an initial condition and why do I need them to
-          solve differential conditions?
+          What is optimization and why is it part of calculus?
+        </li>
+        <li>
+          What are marginal cost and marginal benefit? Why are they
+          measure by derivatives?
+        </li>
+        <li>
+          Why are there critical points when marginal cost and
+          marginal benefit are equal?
         </li>
       </ul>
     </p>
