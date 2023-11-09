@@ -122,105 +122,126 @@
       <m>K</m>.
     </p>
     <p>
-      If I indluce this new adjustment to the Malthusian model, I get
+      If I include this new adjustment to the Malthusian model, I get
       the logistic equaiton.
       <me>
         \frac{dp}{dt} = \alpha p \left( 1 - \frac{p}{K} \right)
       </me>
-      I can solve this as a seperable equation as well. I take <m>f(t)
-      = \alpha</m> and <m>g(p) = p \left( 1 - \frac{p}{K}
-      \right)</m> and use the separable technique from the previous
-      section.
-      <me>
-        \int \frac{1}{p \left( 1 - \frac{p}{K} \right)} dp = \int
-        \alpha dt 
-      </me>
-      I can simplify the nested fraction on the left by multiplying by
-      <m>K</m>.
-      <me>
-        \int \frac{K}{p(K-p)} dp = \int \alpha dt 
-      </me>
-      Unfortunately, the left integral uses a technique that I won't
-      cover in this course (it is covered in Calculus II). Using a
-      technique called partial fracitons, the left side can be split
-      up this way.
-      <me>
-        \frac{K}{p(K-p)} = \frac{1}{p} + \frac{1}{K-p}
-      </me>
-      Using linearity, this turns the left side integral into two
-      integrals.
-      <me>
-        \int \frac{1}{p} dp + \int \frac{1}{K-p} dp  = \int \alpha dt 
-      </me>
-      Now I can do both of these integrals. The second integral on
-      the left uses a substitution <m>u = K-p</m>, for which I won't
-      show the steps here.
-      <me>
-       \ln p - \ln (K-p) = \alpha t + c 
-      </me>
-      Then I want to try to solve for <m>p</m>. I can first use a
-      property of the logarithm. 
-      <me>
-       \ln \frac{p}{K-p} = \alpha t + c 
-      </me>
-      Then I can apply the exponential to both sides.
-      <me>
-       \frac{p}{K-p} = e^{\alpha t + c} = e^c e^{\alpha t} 
-      </me>
-      I'll write <m>e^c = b</m>, simply to have an easier way to deal
-      with this constant. 
-      <me>
-       \frac{p}{K-p} = be^{\alpha t} 
-      </me>
-      I'll then take reciprocals of both sides.
-      <me>
-       \frac{K-p}{p} = \frac{1}{be^{\alpha t}}
-      </me>
-      This lets me simplify the left side.
-      <me>
-       \frac{K}{p} - 1 = \frac{1}{be^{\alpha t}}
-      </me>
-      Then there is only one <m>p</m> term, which I can isolate. 
-      <md>
-        <mrow>
-          \frac{K}{p} = \frac{1}{be^{\alpha t}} + 1 = \frac{be^{\alpha
-          t} + 1}{be^{\alpha t}}
-        </mrow>
-        <mrow>
-          \frac{p}{K} = \frac{b e^{\alpha t}}{be^{\alpha t} +1}
-        </mrow>
-        <mrow>
-          p = \frac{Kbe^{\alpha t}}{be^{\alpha t} +1}
-        </mrow>
-      </md>
-      This is the logistic growth function. However, this is not
-      precisely the form that I gave for it in <xref
-      ref="section-long-term-behaviour-of-models" />. The reason the
-      forms differ is that this constant <m>b</m> is not the starting
-      population. If I use an initial condition <m>p(0) = p_0</m> in
-      the solution, I get this expression.
-      <me>
-        p_0 = \frac{Kbe^{0}}{be^{0} +1} = \frac{Kb}{b+1} 
-      </me>
-      Skipping the algebra steps, I solve for <m>b</m>.
-      <me>
-        b = \frac{p_0}{K-p_0}
-      </me>
-      I can put this into the expression.
-      <me>
-        p(t) = \frac{K\left( \frac{p_0}{K-p_0} \right) e^{\alpha
-        t}}{ \left( \frac{p_0}{K - p_0} \right) e^{\alpha t} +1}
-      </me>
-      Finally, I simplify by multiplying numerator and denominator by
-      <m>(K-p_0)</m>
+      I can solve this as a seperable equation as well, using the
+      initial condition <m>p(0) = p_0</m> for some constant initial
+      popluation <m>p_0</m>. The steps in
+      the length process are below under as an example; they are they
+      for your interest if you wish, but right now, I'm focused just
+      on the result.
       <me>
         p(t) = \frac{Kp_0e^{\alpha t}}{ p_0e^{\alpha t} + K - p_0}
         = \frac{Kp_0e^{\alpha t}}{ p_0(e^{\alpha t}- 1) + K}
       </me>
-      Now I have indeed reconstructed logistic growth as it was first
+      This is ths logistic growth as it was first
       introduced in <xref ref="section-long-term-behaviour-of-models"
-      />. 
+      />. Now it is the solution a particular differential equation. 
     </p>
+    <example>
+      <statement>
+        <p>
+          Here are the steps to solve the logistic equation as a
+          seperable differential equation. 
+          <me>
+            \frac{dp}{dt} = \alpha p \left( 1 - \frac{p}{K} \right)
+          </me>
+          I take <m>f(t)
+          = \alpha</m> and <m>g(p) = p \left( 1 - \frac{p}{K}
+          \right)</m> and use the separable technique from the previous
+          section.
+          <me>
+            \int \frac{1}{p \left( 1 - \frac{p}{K} \right)} dp = \int
+            \alpha dt 
+          </me>
+          I can simplify the nested fraction on the left by multiplying by
+          <m>K</m>.
+          <me>
+            \int \frac{K}{p(K-p)} dp = \int \alpha dt 
+          </me>
+          Unfortunately, the left integral uses a technique that I won't
+          cover in this course (it is covered in Calculus II). Using a
+          technique called partial fracitons, the left side can be split
+          up this way.
+          <me>
+            \frac{K}{p(K-p)} = \frac{1}{p} + \frac{1}{K-p}
+          </me>
+          Using linearity, this turns the left side integral into two
+          integrals.
+          <me>
+            \int \frac{1}{p} dp + \int \frac{1}{K-p} dp  = \int \alpha dt 
+          </me>
+          Now I can do both of these integrals. The second integral on
+          the left uses a substitution <m>u = K-p</m>, for which I won't
+          show the steps here.
+          <me>
+           \ln p - \ln (K-p) = \alpha t + c 
+          </me>
+          Then I want to try to solve for <m>p</m>. I can first use a
+          property of the logarithm. 
+          <me>
+           \ln \frac{p}{K-p} = \alpha t + c 
+          </me>
+          Then I can apply the exponential to both sides.
+          <me>
+           \frac{p}{K-p} = e^{\alpha t + c} = e^c e^{\alpha t} 
+          </me>
+          I'll write <m>e^c = b</m>, simply to have an easier way to deal
+          with this constant. 
+          <me>
+           \frac{p}{K-p} = be^{\alpha t} 
+          </me>
+          I'll then take reciprocals of both sides.
+          <me>
+           \frac{K-p}{p} = \frac{1}{be^{\alpha t}}
+          </me>
+          This lets me simplify the left side.
+          <me>
+           \frac{K}{p} - 1 = \frac{1}{be^{\alpha t}}
+          </me>
+          Then there is only one <m>p</m> term, which I can isolate. 
+          <md>
+            <mrow>
+              \frac{K}{p} = \frac{1}{be^{\alpha t}} + 1 = \frac{be^{\alpha
+              t} + 1}{be^{\alpha t}}
+            </mrow>
+            <mrow>
+              \frac{p}{K} = \frac{b e^{\alpha t}}{be^{\alpha t} +1}
+            </mrow>
+            <mrow>
+              p = \frac{Kbe^{\alpha t}}{be^{\alpha t} +1}
+            </mrow>
+          </md>
+          This is the logistic growth function. However, this is not
+          precisely the form that I gave for it in <xref
+          ref="section-long-term-behaviour-of-models" />. The reason the
+          forms differ is that this constant <m>b</m> is not the starting
+          population. If I use an initial condition <m>p(0) = p_0</m> in
+          the solution, I get this expression.
+          <me>
+            p_0 = \frac{Kbe^{0}}{be^{0} +1} = \frac{Kb}{b+1} 
+          </me>
+          Skipping the algebra steps, I solve for <m>b</m>.
+          <me>
+            b = \frac{p_0}{K-p_0}
+          </me>
+          I can put this into the expression.
+          <me>
+            p(t) = \frac{K\left( \frac{p_0}{K-p_0} \right) e^{\alpha
+            t}}{ \left( \frac{p_0}{K - p_0} \right) e^{\alpha t} +1}
+          </me>
+          Finally, I simplify by multiplying numerator and denominator by
+          <m>(K-p_0)</m>
+          <me>
+            p(t) = \frac{Kp_0e^{\alpha t}}{ p_0e^{\alpha t} + K - p_0}
+            = \frac{Kp_0e^{\alpha t}}{ p_0(e^{\alpha t}- 1) + K}
+          </me>
+        </p>
+      </statement>
+    </example>
     <p>
       In summary, I was able to turn the two most important basic
       models of population into differential equations. Using the
