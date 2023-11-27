@@ -262,13 +262,13 @@
         <p>
           Calculate this integral.
           <me>
-            \int_0^4 \frac{x}{x-3}
+            \int_0^4 \frac{x}{x-3} dx
           </me>
         </p>
       </statement>
       <solution>
         <p>
-          This look very similar to the previous question. One might
+          This looks very similar to the previous question. One might
           thing that the process should be exactly the same. You could
           follow that process and get an answer, but that answer would
           not be valid. The problem, here, is that this is a definite
@@ -541,31 +541,33 @@
           Then I integrate both sides, add the constant of integration
           on the right.
           <me>
-            \frac{-3}{y^3} = \frac{x^4}{4} + c = \frac{x^4 + 4c}{4}
+            \frac{-1}{3y^3} = \frac{x^4}{4} + c = \frac{x^4 + 4c}{4}
           </me>
           Then I solve for <m>y</m>.
           <me>
-            \frac{y^3}{-3} = \frac{4}{x^4 + 4x} \implies y^3 =
-            \frac{-12}{x^4+4x} \implies y = \sqrt[3]{\frac{-12}{x^4 +
-            4c}} 
+            -3y^3 = \frac{4}{x^4 + 4c} \implies y^3 =
+            \frac{-4}{3(x^4+4c)} \implies y = \sqrt[3]{\frac{-4}{3x^4 +
+            12c}} 
           </me>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
           <me>
-            -3 = \sqrt[3]{\frac{-12}{(1)^4+ 4c}} \implies -27 =
-            \frac{-12}{1+4c} 
+            -3 = \sqrt[3]{\frac{-4}{3(1)^4+ 12c}} \implies -27 =
+            \frac{-4}{3+12c} 
           </me>
           <me>
-            \frac{1}{27} = \frac{1+4c}{12} \implies 1+4c =
-            \frac{12}{27} \implies 4c = \frac{-15}{27} \implies c =
-            \frac{-15}{108} = \frac{-5}{36}
+            \frac{1}{27} = \frac{3+12c}{4} \implies 3+12c =
+            \frac{4}{27} \implies 12c = \frac{-77}{27} \implies c =
+            \frac{-77}{324} = 
           </me>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
           <me>
-            y = \sqrt[3]{\frac{-12}{x^4 + \frac{-60}{27}}} =
-            \sqrt[3]{\frac{324}{60 - 27x^4}} 
+            y = \sqrt[3]{\frac{-4}{3x^4 + 12\frac{-77}{324}}} =
+            \sqrt[3]{\frac{-4}{3x^2 - \frac{77}{27}}} = 
+            \sqrt{3}{\frac{-108}{81x^2 - 77}} = 
+            \sqrt{3}{\frac{108}{77 - 81x^2}} 
           </me>
         </p>
       </solution>
@@ -906,7 +908,7 @@
               \left( \frac{-500}{-500 + 800 e^{0.02t}} \right)
             </mrow>
             <mrow>
-              \amp = \frac{-960000 e^{0.02t}}{(-500 + 800
+              \amp = \frac{-24000000 e^{0.02t}}{(-500 + 800
               e^{0.02t})^2} 
             </mrow>
           </md>
