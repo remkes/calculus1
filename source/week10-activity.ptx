@@ -753,7 +753,7 @@
               x^2 \amp = 12 
             </mrow>
             <mrow>
-              x \amp \dot 3.46
+              x \amp \doteq 3.46
             </mrow>
           </md>
           This solution is not in the range <m>x \leq 2</m>, so there
