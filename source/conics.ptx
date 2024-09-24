@@ -203,7 +203,7 @@
           positive, the parabola will open upwards; if negative, the
           parabola will open downwards.  A parabola with vertex
           <m>(a,b)</m> and leading coefficient <m>c</m> is described
-          by the equation <m>y = c(x - a) + b</m>. The process of
+          by the equation <m>y = c(x - a)^2 + b</m>. The process of
           taking a quadratic and writing it in vertex form is called
           <term>completing the square</term>. This operation should be
           familiar to you from your high school mathematics, but there
