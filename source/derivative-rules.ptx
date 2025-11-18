@@ -288,7 +288,7 @@
           definitions of the derivatives of <m>g(x)</m> and
           <m>f(x)</m>, respectively. 
           <me>
-            = f(x) \frac{dg}{dx} + f(x) \frac{df}{dx}
+            = f(x) \frac{dg}{dx} + g(x) \frac{df}{dx}
           </me>
         </p>
       </proof>

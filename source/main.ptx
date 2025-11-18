@@ -14,7 +14,7 @@
     <title>Course Notes for Calculus I</title>
 
     <frontmatter xml:id="frontmatter">
-      <titlepage>
+      <bibinfo>
         <author>
           <personname>Remkes Kooistra</personname>
           <department>Department of Mathematics</department>
@@ -23,21 +23,25 @@
         <date>
           <today />
         </date>
-      </titlepage>
-
-      <colophon>
-
         <copyright>
-          <year>2012<ndash />2023</year>
+          <year>2012<ndash />2025</year>
           <holder>Remkes Kooistra</holder>
           <shortlicense> 
             This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
           </shortlicense>
         </copyright>
-      </colophon>
-      <xi:include href="what-is-calculus.ptx"/>
+
+        <titlepage>
+          <titlepage-items/>
+        </titlepage>
+        <colophon>
+          <colophon-items/>
+        </colophon>
+
+      </bibinfo>
     </frontmatter>
     
+    <xi:include href="what-is-calculus.ptx"/>
     <xi:include href="./week1.ptx" />
     <xi:include href="./week2.ptx" />
     <xi:include href="./week3.ptx" />
@@ -49,15 +53,6 @@
     <xi:include href="./week9.ptx" />
     <xi:include href="./week10.ptx" />
     <xi:include href="./week11.ptx" />
-
-    <backmatter xml:id="backmatter">
-      <title>Backmatter</title>
-
-      <colophon>
-        <p> This book was authored in <pretext />. </p>
-      </colophon>
-
-    </backmatter>
 
   </book>
 </pretext>
