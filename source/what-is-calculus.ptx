@@ -1,5 +1,6 @@
 <section xml:id="section-what-is-calculus">
-  <title>What Is Calculus</title>
+  <subsection xml:id="subsection-what-is-calculus">>
+    <title>What Is Calculus</title>
     <p>
       In almost all universities, the core and starting point of
       academic mathematics is calculus. Why is this so? What is
@@ -89,4 +90,85 @@
       preparation for the idea of a calculus, which will properly
       start in <xref ref="chapter-week3" />.
     </p>
+  </subsection>
+  <subsection xml:id="subsection-los">>
+    <title>Course Learning Outcomes</title>
+    <p>
+      This course is organized into learning outcomes. There are three
+      types of these: core learning outcomes (CLOs), stretch learning
+      outcomes (SLOs) and holistic learning outcomes (HLOs). The main
+      content of the course is organized by the CLOs and the SLOs: you
+      will see each section of the course labelled by one of these.
+      The HLOs are major ideas, themes and skills that run throughout
+      the course but are not isolated to any one area. 
+    </p>
+    <p>
+      Here are the learning outcomes for the course. 
+    </p>
+    <ol>
+      <title>Core Learning Outcomes</title>
+      <li>
+        Describe and manipulation equations of simple loci (lines,
+        conics, etc) in Cartesian coordinates. 
+      </li>
+        Solve intersection problems with simple loci (lines, conics,
+        etc) in Cartesian coordinate
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+    </ol>
+    <ol>
+      <title>Stretch Learning Outcomes</title>
+      <li>
+      </li>
+    </ol>
+    <ol>
+      <title>Holistic Learning Outcomes</title>
+      <li>
+        Describe the conection between algebra and geometry using
+        catersian coordinates, specifically concerning equations of
+        lines, intersection problems, slopes and derivatives, graphs
+        of functions. 
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+    </ol>
+  </subsection>
 </section>
