@@ -1,4 +1,5 @@
-<section xml:id="section-what-is-calculus">
+<section xml:id="section-introduction">
+  <title>Introduction</title>
   <subsection xml:id="subsection-what-is-calculus">>
     <title>What Is Calculus</title>
     <p>
@@ -106,51 +107,89 @@
       Here are the learning outcomes for the course. 
     </p>
     <ol>
-      <title>Core Learning Outcomes</title>
+      <title>20 Core Learning Outcomes</title>
       <li>
         Describe and manipulation equations of simple loci (lines,
         conics, etc) in Cartesian coordinates. 
       </li>
+      <li>
         Solve intersection problems with simple loci (lines, conics,
-        etc) in Cartesian coordinate.
-      <li>
+        etc) in Cartesian coordinates.
       </li>
       <li>
+        Use functions as mathematical models for real world
+        situations, including interpretation of coefficients.
       </li>
       <li>
+        Manipulation functions with pointwise operations, composition
+        and inversion. 
       </li>
       <li>
+        Use differential equations to describe growth in models,
+        including the Mathusian model and logistic growth. 
       </li>
       <li>
+        Use phase lines to qualitatively describe the behaviour of
+        solutions to autonomous differential equations. 
       </li>
       <li>
+        Calculate limits of functions approaching finite values.
       </li>
       <li>
+        Determine continuity of piecewise functions. 
       </li>
       <li>
+        Use asymptotic analysis to calculate limits of functions
+        approaching infinity and long term behaviour of models. 
       </li>
       <li>
+        Describe the derivative as an approximation process calculated
+        by a limit. 
       </li>
       <li>
+        Use derivative rules for pointwise operations (linearity,
+        power rule, product rule, quotient rule). 
       </li>
       <li>
+        Use the chain rule for derivative of compositions. 
       </li>
       <li>
+        Use L'Hôpital's rule to calculate limits.
       </li>
       <li>
+        Describe the Riemann integral as an approximation process
+        calculated by a limit. 
       </li>
       <li>
+        Use the fundamental theory of calculus and antiderivatives to
+        solve integrals. 
       </li>
       <li>
+        Apply the substitution rule to solve integrals. 
       </li>
       <li>
+        Solve initial value problems with separable differential
+        equations.
       </li>
       <li>
+        Use derivative to find extrema, find intervals of increase and
+        decrease, and solve optimzation problems. 
       </li>
     </ol>
     <ol>
       <title>Stretch Learning Outcomes</title>
       <li>
+        Calculate derivatives using the limit definition of the
+        derivative instead of the usual derivative rules. 
+      </li>
+      <li>
+        Recount and explain proofs of the derivative rules (power
+        rule, product rule, chain rule, inverse derivative,
+        derivatives of exponential functions.) 
+      </li>
+      <li>
+        Use L'Hôpital's rule as a way to prove comparisons of
+        asymptotic order. 
       </li>
     </ol>
     <ol>
@@ -162,12 +201,23 @@
         of functions. 
       </li>
       <li>
+        Describe the limitations of algebraic techniques, the role of
+        approximation processes, and the importance of limits in the
+        creation of calculus. 
       </li>
       <li>
+        Holistically use the techniques of calculus to analyse
+        functions, including domain, range, increase and decrease,
+        concavity, extrema, continuity, limits and asymptopes. 
       </li>
       <li>
+        Holistically use the techniques of calculus to analyse and
+        critique models including questions of realism and viability. 
       </li>
       <li>
+        Use clear and precise written and oral communication to
+        describe the mathematical concepts, calculations and processes
+        involved in the core and stretch learning outcomes. 
       </li>
     </ol>
   </subsection>

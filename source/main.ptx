@@ -41,7 +41,7 @@
       </bibinfo>
     </frontmatter>
     
-    <xi:include href="what-is-calculus.ptx"/>
+    <xi:include href="introduction.ptx"/>
     <xi:include href="./week1.ptx" />
     <xi:include href="./week2.ptx" />
     <xi:include href="./week3.ptx" />
