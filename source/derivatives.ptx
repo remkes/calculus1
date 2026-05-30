@@ -1,0 +1,8 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
+  xml:id="chapter-derivatives">
+  <title>Functions</title>
+  <xi:include href="derivative-definition-clo10.ptx" />
+  <xi:include href="derivative-rules-clo11.ptx" />
+  <xi:include href="chain-rule-clo12.ptx" />
+  <xi:include href="hopitals-clo13.ptx" />
+</chapter>

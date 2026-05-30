@@ -17,16 +17,17 @@
       functions so central? Why `dynamic'?
     </p>
     <p>
-      I am going to spend a whole week in <xref
-      ref="chapter-week2"/> to review functions. For now, in brief,
-      a function is a mathematical way of encoding a dependance of one
-      quantity on another. Mathematics is a descriptive language that
-      seeks to capture the quantitative aspects of the world. In the
-      world, many quantites depend on other quantaties. In an
-      environment, humidity may depend on temperature. In a vehicle,
-      fuel efficieny may depend on speed. In an economy, productivity
-      may depend on interest rates. A function is the mathematical
-      thing that measures these relationship.
+      I am going to spend several early sections of the course on
+      functions, most of which should be review from your high school
+      background. For now, in brief, a function is a mathematical way
+      of encoding the dependance of one quantity on another. Mathematics
+      is a descriptive language that seeks to capture the quantitative
+      aspects of the world. In the world, many quantites depend on
+      other quantaties. In an environment, humidity may depend on
+      temperature. In a vehicle, fuel efficieny may depend on speed.
+      In an economy, productivity may depend on interest rates. A
+      function is the mathematical thing that measures these
+      relationships.
     </p>
     <p>
       This is why a function is, arguably, the most important
@@ -35,7 +36,7 @@
       and independent measurements; it is a collection of deeply
       interconnected systems. It is full of dependencies. The function
       is the tool that describes the reality of the (quantitative)
-      world. 
+      world in all its interdependencies. . 
     </p>
     <p>
       In particular, most quantities in the world depend on time and
@@ -50,46 +51,46 @@
     </p>
     <p>
       But some of you might now ask: why do we need a new theory? We
-      saw functions in high school and the algebraic techniques of
-      high school mathematics were pretty good in describing
-      functions. This is true: algebra goes a long way to
+      learned about functions in high school and the algebraic
+      techniques of high school mathematics were pretty good at
+      describing functions. This is true: algebra goes a long way to
       understanding functions. However, algebra has one very important
       and significant weakness: it is static. Algebra can calculate
-      one unknown quantity from other known quantities, but only it a
-      snapshot, a single fixed moment in time. Once quantities start
+      one unknown quantity from other known quantities, but it is only 
+      a snapshot, a single fixed moment in time. Once quantities start
       changing and shifting, algebra can not longer keep track.
     </p>
     <p>
       This is why we need the new techniques of calculus. Functions
       are dynamic: they are constantly change, constantly in flux.
-      They represented systems where nothing is static. The new tools in
+      They represent systems where nothing is static. The new tools in
       calculus (the derivative, the integral, the infinite series) are
       all ways to understand dynamic systems, where the change is
       happening all around. 
     </p>
     <p>
-      In <xref ref="section-population-growth"/>, I'll give more
+      In <xref ref="section-population-growth"/>, I'll give 
       specific motivating problems for the course. For now, I hope
-      this introduction gives a good concept and motivation. We want
-      to describe the (quantitative) world. We observe that in the
-      world, quantities are interrelated and interdependent. They are
-      also dynamic, constant in flux. To make a mathematical
-      description of the world, the description must also be dynamic
-      and interdependant. That requires functions, and calculus is the
-      study of their dynamic behaviour. 
+      this introduction provides reasonable motivation to at least
+      being the study of calculus. We want to describe the
+      (quantitative) world. We observe that in the world, quantities
+      are interrelated and interdependent. They are also dynamic,
+      constant in flux. To make a mathematical description of the
+      world, the description must also be dynamic and interdependant.
+      That requires functions, and calculus is the study of their
+      dynamic behaviour. 
     </p>
     <p>
-      To get to the tools of calculus, I'm going to spend two weeks on
-      material that may be review for some of you. In <xref
-      ref="chapter-week1" />, I'm going to cover  analytic geometry.
-      This is the set of geometric tools we use to understand the
-      shape of functions, as well as other shapes in two dimensional
-      space. It is necessary for understanding and, in particular,
-      visualizing functions. In <xref ref="chapter-week2" />, I'm
-      going to talk about the concept of a function and go over the
-      main properties and operation. These two chapters are
-      preparation for the idea of a calculus, which will properly
-      start in <xref ref="chapter-week3" />.
+      To get to the tools of calculus, I'm going to spend several
+      sections on material that may be review for some of you. First,
+      I'm going to cover anlytic geometry.  This is the set of
+      geometric tools mathematicians use to understand the shape of
+      functions, as well as other shapes in two dimensional space. It
+      is necessary for understanding and, in particular, visualizing
+      functions.  Following analytic geometry, I'm going to talk about
+      the concept of a function and go over the main properties and
+      operations. Ater this preparation, we can move on to the start
+      of what is actually considered calculus. 
     </p>
   </subsection>
   <subsection xml:id="subsection-los">>
@@ -101,15 +102,20 @@
       content of the course is organized by the CLOs and the SLOs: you
       will see each section of the course labelled by one of these.
       The HLOs are major ideas, themes and skills that run throughout
-      the course but are not isolated to any one area. 
+      the course but are not isolated to any one area. I'll try to
+      point out the development of the HLOs over the whole course. 
     </p>
     <p>
-      Here are the learning outcomes for the course. 
+      Here are the learning outcomes for the course. These are all
+      stated with active verbs: a learning outcome is something that a
+      student will be able to do, which can be demonstrated and
+      assessed. You can preface all of these with <sq>A student
+      completing this course should be able to <m>\ldots</m></sq> .
     </p>
     <ol>
       <title>20 Core Learning Outcomes</title>
       <li>
-        Describe and manipulation equations of simple loci (lines,
+        Describe and manipulate equations of simple loci (lines,
         conics, etc) in Cartesian coordinates. 
       </li>
       <li>
@@ -117,16 +123,16 @@
         etc) in Cartesian coordinates.
       </li>
       <li>
+        Manipulate functions with pointwise operations, composition
+        and inversion. 
+      </li>
+      <li>
         Use functions as mathematical models for real world
         situations, including interpretation of coefficients.
       </li>
       <li>
-        Manipulation functions with pointwise operations, composition
-        and inversion. 
-      </li>
-      <li>
         Use differential equations to describe growth in models,
-        including the Mathusian model and logistic growth. 
+        including the Mathusian model and the logistic growth models. 
       </li>
       <li>
         Use phase lines to qualitatively describe the behaviour of
@@ -136,7 +142,8 @@
         Calculate limits of functions approaching finite values.
       </li>
       <li>
-        Determine continuity of piecewise functions. 
+        Determine continuity of piecewise functions and articular the
+        connection between limits and continuity. 
       </li>
       <li>
         Use asymptotic analysis to calculate limits of functions
@@ -161,8 +168,9 @@
         calculated by a limit. 
       </li>
       <li>
-        Use the fundamental theory of calculus and antiderivatives to
-        solve integrals. 
+        Use the fundamental theory of calculus, basic
+        antiderivatives, linearity and the power rule  to solve
+        integrals. 
       </li>
       <li>
         Apply the substitution rule to solve integrals. 
@@ -188,8 +196,17 @@
         derivatives of exponential functions.) 
       </li>
       <li>
+        Prove the identities for inverse derivatives of trigonometric
+        functions. 
+      </li>
+      <li>
         Use L'Hôpital's rule as a way to prove comparisons of
         asymptotic order. 
+      </li>
+      <li>
+        Use the Riemann definition of the integral and common identity
+        for finite sums to calculate integrals of polynomial
+        functions. 
       </li>
     </ol>
     <ol>

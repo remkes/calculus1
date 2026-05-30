@@ -42,9 +42,10 @@
     </frontmatter>
     
     <xi:include href="introduction.ptx"/>
-    <xi:include href="./week1.ptx" />
-    <xi:include href="./week2.ptx" />
-    <xi:include href="./week3.ptx" />
+    <xi:include href="functions.ptx" />
+    <xi:include href="des.ptx" />
+    <xi:include href="limits.ptx" />
+    <xi:include href="derivatives3.ptx" />
     <xi:include href="./week4.ptx" />
     <xi:include href="./week5.ptx" />
     <xi:include href="./week6.ptx" />

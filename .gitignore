@@ -89,6 +89,10 @@ GitHub.sublime-settings
 .dropbox.attr
 .dropbox.cache
 
+# Don't include Asymptote generation cache files
+.cache/*
+.cache/asymptote/*
+
 # Unsure whether to track these or not
 .devcontainer
 codechat_config.yaml
