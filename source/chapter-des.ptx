@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-des">
   <title>Functions</title>
-  <xi:include href="des-clo5.ptx" />
-  <xi:include href="phase-lines-clo6.ptx" />
+  <xi:include href="clo5-des.ptx" />
+  <xi:include href="clo6-phase-lines.ptx" />
 </chapter>

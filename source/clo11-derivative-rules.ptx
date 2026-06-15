@@ -3,7 +3,7 @@
   <introduction>
     <p>
       I have introduced the idea of a derivative in <xref
-      ref="section-population-growth" /> and a formal limit definition
+      ref="subsection-population-growth" /> and a formal limit definition
       in <xref ref="section-derivative-definition" />. However, I
       don't yet have good tools to actually calculate derivatives. This
       section introduces tools for calculating derivatives. 

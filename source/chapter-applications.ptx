@@ -1,0 +1,8 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
+  xml:id="chapter-applications">
+  <title>Functions</title>
+  <xi:include href="clo17-.ptx" />
+  <xi:include href="clo17.ptx" />
+  <xi:include href="clo17.ptx" />
+  <xi:include href="clo17.ptx" />
+</chapter>

@@ -1,8 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
-  xml:id="chapter-functions">
-  <title>Functions</title>
-  <xi:include href="loci-clo1.ptx" />
-  <xi:include href="intersection-clo2.ptx" />
-  <xi:include href="function-operations-clo3.ptx" />
-  <xi:include href="models-clo4.ptx" />
-</chapter>

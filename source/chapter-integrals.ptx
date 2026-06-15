@@ -1,0 +1,7 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
+  xml:id="chapter-integrals">
+  <title>Functions</title>
+  <xi:include href="clo14-riemann-integral.ptx" />
+  <xi:include href="clo15-fundamental-theorem.ptx" />
+  <xi:include href="clo16.substitution.ptxptx" />
+</chapter>
