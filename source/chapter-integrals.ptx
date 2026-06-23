@@ -3,5 +3,5 @@
   <title>Functions</title>
   <xi:include href="clo14-riemann-integral.ptx" />
   <xi:include href="clo15-fundamental-theorem.ptx" />
-  <xi:include href="clo16.substitution.ptxptx" />
+  <xi:include href="clo16-substitution.ptx" />
 </chapter>

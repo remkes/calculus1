@@ -284,8 +284,8 @@
     <title>Limits of Secant Lines</title>
     <p>
       In <xref ref="subsection-population-growth" />, I defined the
-      derivative as the rate of change of a function. In <xref
-      ref="section-two-motivating-problems" />, I connected that
+      derivative as the rate of change of a function. In the current
+      section, I connected that
       definition to the geometry of slopes of tangent lines and
       constructed a process by which algebra can approximate a tangent
       line by using secant lines, shown in <xref

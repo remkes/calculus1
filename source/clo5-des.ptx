@@ -280,7 +280,7 @@
       totals). However, this is just the starting point. Most
       populations don't have ample resources, space to grow, and
       freedom from other limiting factors. In <xref
-      ref="section-long-term-behaviour-of-models" />, I already
+      ref="subsection-long-term-behaviour-of-models" />, I already
       introduced the first adjustment to population dynamics: logistic
       growth.
     </p>
@@ -336,7 +336,7 @@
         = \frac{Kp_0e^{\alpha t}}{ p_0(e^{\alpha t}- 1) + K}
       </me>
       This is ths logistic growth as it was first
-      introduced in <xref ref="section-long-term-behaviour-of-models"
+      introduced in <xref ref="subsection-long-term-behaviour-of-models"
       />. Now it is the solution a particular differential equation. 
     </p>
     <example>
@@ -415,7 +415,7 @@
           </md>
           This is the logistic growth function. However, this is not
           precisely the form that I gave for it in <xref
-          ref="section-long-term-behaviour-of-models" />. The reason the
+          ref="subsection-long-term-behaviour-of-models" />. The reason the
           forms differ is that this constant <m>b</m> is not the starting
           population. If I use an initial condition <m>p(0) = p_0</m> in
           the solution, I get this expression.

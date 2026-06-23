@@ -53,19 +53,18 @@
     </ul></p>
     <p>
       The analysis of models thus consists of everything I used to
-      analyze functions in <xref ref="section-functions" /> and <xref
-      ref="section-operations-on-functions" /> as well as these new
-      questions. Often, I will also want a qualitative analysis of the
-      model. Understanding the general shape and behaviour of the
-      functions involved is invaluable to this qualitative analysis.
-      A major goal for this course is to develop tools and
-      competencies to allow students to analyze functions and models
-      both quantitatively and qualitatively. The qualitative analysis
-      can often be expressed in a narrative: what story is the
-      function telling about the relationship it represents? If the
-      independent variable is time, as it often is, what is the story
-      of the dependant variable over a time span?  What happens to
-      it?
+      analyze functions in <xref ref="section-operations-on-functions"
+      /> as well as these new questions. Often, I will also want a
+      qualitative analysis of the model. Understanding the general
+      shape and behaviour of the functions involved is invaluable to
+      this qualitative analysis.  A major goal for this course is to
+      develop tools and competencies to allow students to analyze
+      functions and models both quantitatively and qualitatively. The
+      qualitative analysis can often be expressed in a narrative: what
+      story is the function telling about the relationship it
+      represents? If the independent variable is time, as it often is,
+      what is the story of the dependant variable over a time span?
+      What happens to it?
     </p>
   </subsection>
   <subsection xml:id="subsection-regression">
@@ -166,7 +165,7 @@
       </image>
     </figure>
   </subsection>
-  <subsection xml:id="subsection-population-motivation">
+  <subsection xml:id="subsection-population-growth">
     <title>A Motivating Problem</title>
     <p>
       A very natural motivating problem is population growth. Here are

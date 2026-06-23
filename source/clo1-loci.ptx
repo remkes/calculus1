@@ -128,11 +128,11 @@
     </p>
     <p>
       The two most important classes of loci are lines (see 
-      <xref ref="section-lines" />) and conics (see <xref
-      ref="section-conics" />). Lines are first both because their
-      geometry is approachable and because they are loci of the most
-      basic kind of equations. Conics follow as loci of the next most
-      approachable kind of equation. 
+      <xref ref="subsection-equations-lines" />) and conics (see <xref
+      ref="subsection-idea-of-conics" />). Lines are first both
+      because their geometry is approachable and because they are loci
+      of the most basic kind of equations. Conics follow as loci of
+      the next most approachable kind of equation. 
     </p>
     <p>
       Lines and conics are just two of many classes and families of
@@ -233,7 +233,7 @@
   <subsection xml:id="subsection-equations-lines">
     <title>Equations of Lines</title>
     <p>
-      When I defined loci in <xref ref="section-analytic-geometry"
+      When I defined loci in <xref ref="subsection-loci"
       />, I mentioned that the first and most common type of
       locus is a line. This section reviews some definitions and
       calculations for lines. This should be familiar material from
@@ -640,13 +640,11 @@
     </figure>
     <p>
       Those are the four shapes: circle, ellipse, parabola and
-      hyperbola. I will give two other equivalent
-      definitions for each conic: one instrinsically geometric
-      definition, and one by algebraic
-      equation. For the algebraic equations, I will assume that the
-      conic is centred at the origin. (More general conics can be
-      formed by shifting the conics centered at the origin. <xref
-      ref="section-shifts" /> describes these shifts.)
+      hyperbola. I will give two other equivalent definitions for each
+      conic: one instrinsically geometric definition, and one by
+      algebraic equation. For the algebraic equations, I will assume
+      that the conic is centred at the origin. (More general conics
+      can be formed by shifting the conics centered at the origin.)
     </p>
   </subsection>
   <subsection xml:id="subsection-description-of-conics">
