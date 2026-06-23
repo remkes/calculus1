@@ -1,0 +1,1134 @@
+INFO    : PreTeXt project found in `/Users/rkooistra/hub/calculus1`.
+INFO    : No change in assets requiring generating detected.  To force regeneration of assets, use `-g` flag.
+
+INFO    : Preparing to build into /Users/rkooistra/hub/calculus1/output/web.
+INFO    : 
+Now building HTML into /Users/rkooistra/hub/calculus1/output/web
+
+INFO    : discovering source file's directory name: /Users/rkooistra/hub/calculus1/source
+INFO    : verifying and expanding input directory: /Users/rkooistra/hub/calculus1/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/rkooistra/hub/calculus1/generated-assets
+INFO    : verifying and expanding input directory: /Users/rkooistra/hub/calculus1/source/../assets
+INFO    : input directory expanded to absolute path: /Users/rkooistra/hub/calculus1/assets
+INFO    : Runestone Services (via PreTeXt repository): version 6.5.0
+INFO    : Runestone Services (using newer, via online CDN query): version 7.1.1
+INFO    : converting /Users/rkooistra/hub/calculus1/source/main.ptx to HTML in /var/folders/2r/8zp7c2rs5717hjrm_rg_xqnr0000gn/T/tmpsb0y1f5m
+INFO    : XSL conversion of /Users/rkooistra/hub/calculus1/source/main.ptx by /Users/rkooistra/.ptx/xsl/pretext-html.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * Opening and ending tag mismatch: meta line 6 and head
+INFO    :     * Opening and ending tag mismatch: meta line 5 and html
+INFO    :     * Premature end of data in tag meta line 4
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its width cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    :     * PTX:ERROR:   the Asymptote diagram produced in "" needs to be available relative to the primary source file, or if available it is perhaps ill-formed and its height cannot be determined (which you might report as a bug).  We might be able to proceed as if the diagram is square, but results can be unpredictable.
+INFO    : processing with /Users/rkooistra/.ptx/xsl/pretext-html.xsl has failed
+
+CRITICAL: Cannot resolve URI /Users/rkooistra/hub/calculus1/generated-assets/asymptote/figure80.html
+INFO    : ##################
+INFO    : Removing temporary directory /var/folders/2r/8zp7c2rs5717hjrm_rg_xqnr0000gn/T/tmpsb0y1f5m
+INFO    : While running pretext, the following errors occurred:
+

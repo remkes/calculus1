@@ -4,4 +4,5 @@
   <xi:include href="clo14-riemann-integral.ptx" />
   <xi:include href="clo15-fundamental-theorem.ptx" />
   <xi:include href="clo16-substitution.ptx" />
+  <xi:include href="slo5-solving-des.ptx" />
 </chapter>
