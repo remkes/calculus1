@@ -23,9 +23,9 @@
     </figure>
     <p>
       A function is continuous at a point <m>a</m> in its domain if
-      <me>
+      <md>
         f(a) = \lim_{x \rightarrow a} f(x)
-      </me>.
+      </md>.
     </p>
     <p>
       I have already mentions these kinds of limit: in the calculation
@@ -129,19 +129,19 @@
       Consider a function on <m>\RR</m> which has two definitions, one
       for <m>x \lt a</m> and another <m>x \geq a</m>. Then the
       function is written
-      <me>
+      <md>
         f(x) = \begin{cases} g(x) \amp  x \lt  a \\ h(x) \amp
         x \geq a \end{cases} 
-      </me>.
+      </md>.
       With this notation, I can easily indicate how the function
       behaviours on various pieces of its domain.
     </p>
     <p>
       A very well-known example is the Heaviside function.
-      <me>
+      <md>
         h(x) = \begin{cases} 0 \amp  x \lt  0 \\ 1 \amp  x
         \geq 0 \end{cases} 
-      </me>
+      </md>
     </p>
     <p>
       The Heaviside function is very frequently used to model
@@ -155,10 +155,10 @@
       than two pieces and the conditions on <m>x</m> can be more
       complicated than inequalities. Here is a piecewise function
       with three pieces defined on intervals.
-      <me>
+      <md>
         f(x) = \begin{cases} x^2 -1 \amp  x \in (-5,0) \\ x^2
         + 1 \amp  x \in [0,3] \\ 3x-5 \amp  x \in (3,7) \end{cases}
-      </me>
+      </md>
     </p>
     <p>
       The domain of this function is <m>(-5,7)</m>, which is the union
@@ -168,10 +168,10 @@
     </p>
     <p>
       Piecewise functions can be extremely strange.
-      <me>
+      <md>
         f(x) = \begin{cases} 1 \amp  x \in \QQ \\ 0 \amp  x
         \notin \QQ \end{cases} 
-      </me>
+      </md>
       This function depends on whether its input is rational or
       irrational, returning one and zero respectively. It is a
       horendously discontinuous functions, with ones and zeros
@@ -216,20 +216,20 @@
       It is important to be able to check if a piecewise function is
       continuous at its crossover point. Consider a piecewise
       function with a break at <m>x=a</m>.
-      <me>
+      <md>
         f(x) = \begin{cases} g(x) \amp  x \lt  a \\ h(x) \amp
         x \geq a \end{cases} 
-      </me>
+      </md>
     </p>
     <p>
       It is natural to ask if <m>f</m> is continuous at <m>x=a</m>.
       In order to investigate this, I need to look at the function
       value and the limits from both sides. The function is
       continuous if all three are the same.
-      <me>
+      <md>
         \lim_{x \rightarrow a^-} f(x) = \lim_{x \rightarrow a^+} f(x)
         = f(a)
-      </me>
+      </md>
     </p>
   </subsection>
 </section>

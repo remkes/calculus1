@@ -53,16 +53,16 @@
         starting value and <m>d</m> is the doubling period, the
         function should be <m>a2^{\frac{t}{d}}</m>. Using the values from
         this data, here is the exponential function.
-        <me>
+        <md>
           p(t) = 2^{\frac{t}{5}}
-        </me>
+        </md>
         If I wanted, I could change base to write this as an
         exponential function with base <m>e</m>. (This is useful to do
         in many cases, since the base <m>e</m> is the most common and
         most useful base for exponential functions in calculus.) 
-        <me>
+        <md>
           p(t) =  e^{\frac{t \ln 2}{5}}
-        </me>
+        </md>
         The following table shows the values of this function to
         compare with the data set. 
         </p>
@@ -171,16 +171,16 @@
         the doubling period, the function should be
         <m>a2^{\frac{t}{d}}</m>. Using the values from this data, here
         is the exponential function.
-        <me>
+        <md>
           p(t) = (3) 2^{\frac{5t}{9}}
-        </me>
+        </md>
         If I wanted, I could change base to write this as an
         exponential function with base <m>e</m>. (This is useful to do
         in many cases, since the base <m>e</m> is the most common and
         most useful base for exponential functions in calculus.) 
-        <me>
+        <md>
           p(t) =  (3)e^{\frac{t 5\ln 2}{9}}
-        </me>
+        </md>
         The following table shows the values of this function to
         compare with the data set. 
         </p>
@@ -291,16 +291,16 @@
         the doubling period, the function should be
         <m>a2^{\frac{t}{d}}</m>. Using the values from this data, here
         is the exponential function.
-        <me>
+        <md>
           p(t) = (5) 2^{\frac{10t}{11}}
-        </me>
+        </md>
         If I wanted, I could change base to write this as an
         exponential function with base <m>e</m>. (This is useful to do
         in many cases, since the base <m>e</m> is the most common and
         most useful base for exponential functions in calculus.) 
-        <me>
+        <md>
           p(t) = (5)e^{\frac{t 10\ln 2}{11}}
-        </me>
+        </md>
         The following table shows the values of this function to
         compare with the data set. 
         </p>
@@ -364,9 +364,9 @@
       <statement>
         <p>
           Draw a phase line for this differential equation.
-          <me>
+          <md>
             \frac{dp}{dt} = p^2 - 9p + 18
-          </me>
+          </md>
           Determine the steady states and trajectories, then classify
           the steady states. You may assume this is a population
           model, so that <m>p \geq 0</m> and 0 is always a steady
@@ -436,9 +436,9 @@
       <statement>
         <p>
           Draw a phase line for the differential equation
-          <me>
+          <md>
             \frac{dp}{dt} = p^3 - 6p^2 + 11p - 6 
-          </me>
+          </md>
           Determine the steady states and trajectories, then classify
           the steady states. You may assume this is a population
           model, so that <m>p \geq 0</m> and 0 is always a steady
@@ -523,9 +523,9 @@
       <statement>
         <p>
           Draw a phase line for the differential equation
-          <me>
+          <md>
             \frac{dp}{dt} = p^3 - 10p^2 + 32 p - 32 
-          </me>
+          </md>
           Determine the steady states and trajectories, then classify
           the steady states. You may assume this is a population
           model, so that <m>p \geq 0</m> and 0 is always a steady

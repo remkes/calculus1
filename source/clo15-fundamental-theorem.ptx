@@ -14,9 +14,9 @@
       To state the theorem, I need to consider a strange new function.
       For <m>g(t)</m> continuous on <m>[a,b]</m> and <m>x \in [a,b)</m>,
       define a new function <m>f</m>.
-      <me>
+      <md>
         f(x) := \int_a^x g(t) dt
-      </me>
+      </md>
     </p>
     <p>
       Let me give some interpretation: <m>f(x)</m> is the area under the
@@ -90,24 +90,24 @@
       <p>
         I use the limit definition of the derivative to calculate this
         derivative.
-        <me>
+        <md>
           \frac{d}{dx} f(x) = \lim_{h \rightarrow 0} \frac{f(x+h) -
           f(x)}{h}
-        </me>
+        </md>
         Since <m>f</m> measures area under <m>g(t)</m>, the difference
         <m>f(x+h) - f(x)</m> is just the area of the very thin
         rectangle in <xref ref="figure-area-function" />. When
         <m>h</m> is small, this area is roughly the height <m>g(x)</m>
         times the width <m>h</m>.
-        <me>
+        <md>
           \frac{d}{dx} f(x) = \lim_{h \rightarrow 0} \frac{g(x) h}{h}
           = g(x)
-        </me>
+        </md>
         All this work can be summarized in the following statement, which
         is called the <em>Fundamental Theorem of Calculus</em>.
-        <me>
+        <md>
         \frac{d}{dx} f(x) = \frac{d}{dx} \int_a^x g(t) dt = g(x)
-      </me>
+      </md>
     </p>
     <p>
       The important implication of the fundamental theorem is this:
@@ -120,17 +120,17 @@
       There are several versions of the fundamental theorem, but they
       all capture this basic idea of reserve processes. The derivative
       can be inside the integral.
-      <me>
+      <md>
         \int_a^b f^\prime(t) dt = f(b) - f(a)
-      </me>
+      </md>
       This version of the fundamental theorem gives a wonderful way
       to calculate definite integrals. Let <m>F</m> be any function
       such that <m>F^\prime(x) = f(x)</m>. Such a function <m>F</m> is
       called an <em>antiderivative</em> for <m>f</m>. I use
       antiderivatives to evaluate integrals.
-      <me>
+      <md>
         \int_a^b f(t) dt = F(b) - F(a)
-      </me>
+      </md>
     </p>
   </subsection>
   <subsection xml:id="subsection-indefinite-integral">
@@ -146,9 +146,9 @@
       integrals are, in some way, the inverse operation, it seems
       natural to use an integral symbol to indicate an antiderivative.
       I drop the bounds that I used for definition integrals.
-      <me>
+      <md>
         \text{ Any antiderivative of f is written }  \int f(x) dx
-      </me>
+      </md>
       This is called an indefinite integral. Note that the notation
       means <em>all</em> anti-derivatives, since there may be more than
       one.
@@ -209,14 +209,14 @@
       useful here: when I write <m>\left. F(x) \right|_a^b</m>, I
       mean to evaluate  the function <m>F</m> at <m>a</m> and <m>b</m>
       and subtract the two evaluations. 
-      <me>
+      <md>
         F(x) \Big|_a^b = F(b) - F(a)
-      </me>
+      </md>
       Then the integral is the antiderivative evaluated with this
       notation.
-      <me>
+      <md>
         \int_a^b f(x) dx = F(x) \Big|_a^b = F(b) - F(a) 
-      </me>
+      </md>
     </p>
     <example>
       <statement>
@@ -224,11 +224,11 @@
           The antiderivative of <m>x^2</m> is <m>\frac{x^3}{3}</m>.
           This antiderivative lets me calculate the following
           integral. 
-          <me>
+          <md>
             \int_2^4 x^2 dx = \left. \frac{x^3}{3} \right|_2^4 =
             \frac{4^3}{3} - \frac{2^3}{3} = \frac{64 - 8}{3} =
             \frac{56}{3}
-          </me>
+          </md>
         </p>
       </statement>
     </example>

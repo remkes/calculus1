@@ -84,10 +84,10 @@
           Conisder a model of radioactivity on a contaminated site,
           where radioactivity is measured as <m>r</m> in grays and
           <m>t</m> is time in years. This is the model.
-          <me>
+          <md>
             r(t) = \begin{cases} 3 + \frac{5t^2}{10000} \amp t \leq 100
             \\ 2^{(-\frac{t}{100} + 4)} \amp t > 100 \end{cases} 
-          </me>
+          </md>
         </p>
         <p><ul>
           <li>
@@ -168,9 +168,9 @@
         <p>
           Conisder a population model, where <m>p</m> is population in
           thousands and <m>t</m> is time in years.
-          <me>
+          <md>
             p(t) = e^{-\frac{t}{10}} (100 + 10 \sin (2\pi t))
-          </me>
+          </md>
         </p>
         <p><ul>
           <li>
@@ -181,9 +181,9 @@
             The function has exponential and sinusoidal pieces. It
             might be useful to look at them separately. The
             exponential piece is
-            <me>
+            <md>
               p(t) = 100 e^{-t/10}
-            </me>
+            </md>
             This is exponential decay which starts at <m>100</m>
             when <m>t=0</m>.
           </li>
@@ -239,9 +239,9 @@
           relatively common situation: often in observations of the
           world, I can observe a differential equation instead of
           directly observing the function.
-          <me>
+          <md>
             \frac{dT}{dt} = 6-6t
-          </me>
+          </md>
           For this differential equation, I can just integrate to
           solve. That gives the function <m>T = -3t^2 + 6t + c</m>. To
           specify the function completely, I would need an initial

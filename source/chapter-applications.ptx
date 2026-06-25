@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-applications">
-  <title>Functions</title>
+  <title>Uses of Integrals and Derivatives</title>
   <xi:include href="clo17-optimization.ptx" />
   <xi:include href="clo18-magrinal-analysis.ptx" />
   <xi:include href="clo19-curve-sketching.ptx" />

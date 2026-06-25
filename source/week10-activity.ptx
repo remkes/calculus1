@@ -7,17 +7,17 @@
         <p>
           Find the <m>x</m> values of the maxima and minima of this
           function.
-          <me>
+          <md>
             f(x) = 7x^2 - 2x - 4
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           First I take the derivative.
-          <me>
+          <md>
             \frac{df}{dx} = 14x - 2
-          </me>
+          </md>
           Next I set the derivative to zero and solve.
           <md>
             <mrow>
@@ -59,9 +59,9 @@
         <p>
           Find the <m>x</m> values of the maxima and minima of this
           function.
-          <me>
+          <md>
             f(x) = \frac{x-1}{x^2+7} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -137,18 +137,18 @@
         <p>
           Find the <m>x</m> values of the maxima and minima of this
           function.
-          <me>
+          <md>
             f(x) = e^{x^2-4}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           First I take the derivative, using the chain rule (I
           haven't shown the steps here). 
-          <me>
+          <md>
             \frac{df}{dx} = (2x)e^{x^2-4} 
-          </me>
+          </md>
           Next I set the derivative to zero and solve. Note that the
           exponential term can never be zero, so I am free to divide
           by it, leaving only the polynomial term remaining. 
@@ -191,9 +191,9 @@
         <p>
           Find the <m>x</m> values of the maxima and minima of this
           function.
-          <me>
+          <md>
             f(x) = \frac{1}{x^2 - 6x + 10}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -201,9 +201,9 @@
           First I take the derivative. I used the chain rule (with
           <m>u^{-1}</m> as the outside function), but the quotient
           rule works just a well.
-          <me>
+          <md>
             \frac{df}{dx} = \frac{-(2x-6)}{(x^2-6x+10)^2} 
-          </me>
+          </md>
           Next I set the derivative to zero and solve. Note I only
           need to set the numerator equal to zero.
           <md>
@@ -249,9 +249,9 @@
       <statement>
         <p>
           The function
-          <me>
+          <md>
             h(t) = - 3t^2 + 9 t + 7
-          </me>
+          </md>
           measures height as a function of time. Find the maximum
           height.
         </p>
@@ -259,9 +259,9 @@
       <solution>
         <p>
           First I take the derivative.
-          <me>
+          <md>
             \frac{dh}{dt} = -6t + 9
-          </me>
+          </md>
           Next I set the derivative to zero and solve.
           <md>
             <mrow>
@@ -308,9 +308,9 @@
         <p>
           A chemical reaction is controlled by a catalyst. The
           function
-          <me>
+          <md>
             T(c) = 14\sqrt{7 - 4c + c^2}
-          </me>
+          </md>
           measure a bounding temperature of the reaction depending on
           the concentration of the catalyst. Find the minimum
           temperature bound. 
@@ -320,10 +320,10 @@
         <p>
           First I take the derivative, using the chain rule (I
           haven't shown the steps). 
-          <me>
+          <md>
             \frac{dT}{dc} = \frac{14 (2c-4)}{2\sqrt{7 - 4c + c^2}} =
             \frac{14c - 28}{\sqrt{7 - 4c + c^2}} 
-          </me>
+          </md>
           Next I set the derivative to zero and solve. I only need
           to consider the numerator. 
           <md>
@@ -372,9 +372,9 @@
       <statement>
         <p>
           The function
-          <me>
+          <md>
             T(m) = n(4m - 15\ln(m-25))
-          </me>
+          </md>
           bounds the sort time of a sorting algorithm which runs on
           <m>m</m> parallel processors (for <m>m</m> at least 25).
           <m>n</m> is the length of the list. How many processors give
@@ -383,13 +383,13 @@
       </statement>
       <solution>
         <p>
-          <me>
+          <md>
             T(m) = n \left(4m - 15 \ln (m-25) \right) 
-          </me>
+          </md>
           I start with  the derivative.
-          <me>
+          <md>
             \frac{dT}{dm} = n \left( 4 - 15 \frac{1}{m-25} \right)
-          </me>
+          </md>
           Next I set the derivative to zero and solve.
           <md>
             <mrow>
@@ -437,9 +437,9 @@
       <statement>
         <p>
           The function
-          <me>
+          <md>
             E(h) = \frac{-5}{3000}h^3 + \frac{1}{25}h^2 + 5
-          </me>
+          </md>
           measure the fuel efficiency of an aircraft at height
           <m>h</m> (in kilometers). Find the height with the maximum
           fuel efficiency.
@@ -448,9 +448,9 @@
       <solution>
         <p>
           First we take the derivative.
-          <me>
+          <md>
             \frac{dE}{dh} = -\frac{1}{200}h^2 + \frac{2}{25}h 
-          </me>
+          </md>
           Next I set the derivative to zero and solve.
           <md>
             <mrow>

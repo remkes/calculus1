@@ -6,9 +6,9 @@
       <statement>
         <p>
           Write this sum in ordinary notation. 
-          <me>
+          <md>
             \sum_{i=2}^9 i^2 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -31,9 +31,9 @@
       <statement>
         <p>
           Write this sum in ordinary notation. 
-          <me>
+          <md>
             \sum_{i=-3}^{10} (6i-4)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -74,9 +74,9 @@
       <statement>
         <p>
           Write this sum in ordinary notation. 
-          <me>
+          <md>
             \sum_{i=0}^{15} 2^i
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -107,9 +107,9 @@
       <statement>
         <p>
           Write this sum in ordinary notation. 
-          <me>
+          <md>
             \sum_{i=3}^7 (i^2 + 5i - 3^i)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -142,9 +142,9 @@
       <statement>
         <p>
           Write this sum in sigma notation.
-          <me>
+          <md>
             1 + 4 + 7 + 10 + 13 + 16 + 19
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -154,9 +154,9 @@
           I can start at <m>i=0</m> and describe this pattern as <m>1
           + 3i</m>. The value of <m>i</m> that gives 19 is <m>i=6</m>,
           so the sum will end at 6. 
-          <me>
+          <md>
             1 + 4 + 7 + 10 + 13 + 16 + 19 = \sum_{i=0}^6 (1+3i)
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -164,9 +164,9 @@
       <statement>
         <p>
           Write this sum in sigma notation.
-          <me>
+          <md>
             3 + 6 + 12 + 24 + 48 + 96
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -176,9 +176,9 @@
           this, I can start at <m>i=0</m> and describe this pattern
           as <m>3(2^i)</m>. The value of <m>i</m> that gives 96 is
           <m>i = 5</m>, so the sum will end at 6.
-          <me>
+          <md>
             3 + 6 + 12 + 24 + 48 + 96 = \sum_{i=0}^5 3(2^i)
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -186,9 +186,9 @@
       <statement>
         <p>
           Write this sum in sigma notation.
-          <me>
+          <md>
             16 + 14 + 12 + 10 + 8 + 6 + 4 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -200,9 +200,9 @@
           chose the first option, starting with <m>i=0</m> and writing
           <m>16 -2i</m> for the pattern. When <m>i=6</m>, I get the
           last term, so the sum will end at 6. 
-          <me>
+          <md>
             16 + 14 + 12 + 10 + 8 + 6 + 4 = \sum_{i=0}^6 (16-2i)
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -211,9 +211,9 @@
         <p>
           Use linearity to split this into several sums with constants
           removed. 
-          <me>
+          <md>
             \sum_{i=0}^{44} (5i^3 - 2i^2 - 19i + 19)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -221,11 +221,11 @@
           Linearity splits up the sum over addition and subtraction
           and allows me to pull out the constants. In each piece, the
           index and bounds of the sum stay the same. 
-          <me>
+          <md>
             \sum_{i=0}^{44} (5i^3 - 2i^2 - 19i + 19) = 5
             \sum_{i=0}^{44} i^3 - 2 \sum_{i=0}^{44} i^2 - 19
             \sum_{i=0}^{44} i + 19 \sum_{i=0}^{44} 1
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -234,9 +234,9 @@
         <p>
           Use linearity to split this into several sums with constants
           removed. 
-          <me>
+          <md>
             \sum_{i=4}^{104} (-12i^5 + i^3 - 71i^2 + 4)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -244,11 +244,11 @@
           Linearity splits up the sum over addition and subtraction
           and allows me to pull out the constants. In each piece, the
           index and bounds of the sum stay the same. 
-          <me>
+          <md>
             \sum_{i=4}^{104} (-12i^5 + i^3 - 71i^2 + 4) = 
             -12 \sum_{i=4}^{104} i^5 + \sum_{i=4}^{104} i^3 - 71
             \sum_{i=4}^{104} i^2 + 4 \sum_{i=4}^{104} 1
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -256,10 +256,10 @@
       <statement>
         <p>
           Use linearity to combine this into one sum. 
-          <me>
+          <md>
             4 \sum_{i=0}^{10} i^3 - 15 \sum_{i=0}^{10} i^2 - 7
             \sum_{i=0}^{10} i + 9 \sum_{i=0}^{10} i 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -286,10 +286,10 @@
       <statement>
         <p>
           Use linearity to combine this into one sum. 
-          <me>
+          <md>
             19 \sum_{i=4}^{17} i^3 - \sum_{i=4}^{17} i^3 + 2
             \sum_{i=4}^{17} i^2 - 36 \sum_{i=4}^{17} i 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -319,9 +319,9 @@
       <statement>
         <p>
           This is a multi-part activity to solve the integral 
-          <me>
+          <md>
             \int_{-1}^1 (x^2 + 2x + 2)dx
-          </me>
+          </md>
           by definition using the Reimann definition of the integral.
           First, write the definition of the integral and replace the
           general pieces with the specifics of this function.
@@ -330,10 +330,10 @@
       <solution>
         <p>
           Here is the general form.
-          <me>
+          <md>
             \int_a^b f(x) dx = \lim_{n \rightarrow \infty}
             \sum_{k=1}^n f(x_k^*) \left( \frac{b-a}{n} \right) 
-          </me>
+          </md>
           In this situation, <m>a = -1</m>, <m>b = 1</m> and <m>f(x) =
           (x^2 + 2x +2)</m>. I put these into the general form. 
           <md>
@@ -362,13 +362,13 @@
         <p>
           There is a general form for <m>x_k^*</m> that I have been
           using in the examples. 
-          <me>
+          <md>
             x_k^* = a + k \frac{b-a}{n} 
-          </me>
+          </md>
           Now I put in the values for this particular integral.
-          <me>
+          <md>
             x_k^* = -1 + k \frac{1-(-1)}{n}  = -1 + \frac{2k}{n} 
-          </me>
+          </md>
           Then I can return to the form from the previous section and
           replace <m>x_k^*</m> with this new expression. I'll proceed
           to simplify the polynomial after I've substituted <m>x_k^*</m>.
@@ -480,11 +480,11 @@
           denominator. Since these have the same asymptotic order,
           asymptotic analysis tells that the limit is the ratio of the
           leading coefficients. 
-          <me>
+          <md>
             \lim_{n \rightarrow \infty} \left( 2 + \frac{16n^3 +
             24n^2 + 8n)}{6n^3} \right) = 2 + \frac{16}{6} = 2 +
             \frac{8}{3} = \frac{14}{3}
-          </me>
+          </md>
           This completes the integral. The area under the curve
           described by the original problem is <m>\frac{14}{3}</m>
           units squared. 
@@ -499,9 +499,9 @@
         <p>
           Write the following antiderivative by using known
           derivatives or doing the derivative rules backwards.
-          <me>
+          <md>
             \int -\sin x dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -509,9 +509,9 @@
           I look to the tables of derivatives. <m>-\sin x</m> shows up
           as the derivative of <m>\cos x</m>, so I go backwards to
           that original function.
-          <me>
+          <md>
             \int -\sin x dx = \cos x + c 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -520,9 +520,9 @@
         <p>
           Write the following antiderivative by using known
           derivatives or doing the derivative rules backwards.
-          <me>
+          <md>
             \int \frac{1}{x} dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -530,17 +530,17 @@
           I look to the tables of derivatives. If I differentiate
           <m>\ln x</m>, I get <m>\frac{1}{x}</m>, so I go backwards
           to that original function.
-          <me>
+          <md>
             \int \frac{1}{x} dx = \ln x + c 
-          </me>
+          </md>
           If I look at the tables of integrals, I can actually do a
           bit better than this. The right side of the above equation
           is only defined for <m>x > 0</m>, but the left side is
           defined for all <m>x \neq 0</m>. There is an antiderivative
           that matches the full domain. 
-          <me>
+          <md>
             \int \frac{1}{x} dx = \ln |x| + c 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -550,24 +550,24 @@
           Write the following antiderivative by using known
           derivatives or doing the derivative rules backwards. You can
           use the linearity of the integral.
-          <me>
+          <md>
             \int (4 \cos x + 6 \sin x) dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I can use linearity to split this into two integrals. 
-          <me>
+          <md>
             \int (4 \cos x + 6 \sin x) dx = 4 \int \cos x dx + 6 \int
             \sin x dx 
-          </me>
+          </md>
           Then I look at the derivative tables and work backwards to
           get the antiderivatives of sine and cosine. 
-          <me>
+          <md>
             = 4 \int \cos x dx + 6 \int \sin x dx = 4 \sin x - 6 \cos
             x + c 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -577,25 +577,25 @@
           Write the following antiderivative by using known
           derivatives or doing the derivative rules backwards. You can
           use the linearity of the integral. 
-          <me>
+          <md>
             \int (x^3-e^x)dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I can use linearity to split this into two integrals.
-          <me>
+          <md>
             \int (x^3-e^x)dx = \int x^3 dx - \int e^x dx 
-          </me>
+          </md>
           For the first integral, I have to do the power rule
           backwards. This increases the exponent and divides by the
           new exponent. For the second integral, since the exponential
           function is its own derivative, it is also its own
           antiderivative. 
-          <me>
+          <md>
             \int x^3 dx - \int e^x dx = \frac{x^4}{4} - e^x + c 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -607,9 +607,9 @@
           However, don't do the chain rule backwards; instead, use
           what you know about the chain rule to make a reasonable
           guess for the antiderivative.
-          <me>
+          <md>
             \int e^{4x} dx
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -619,9 +619,9 @@
           the inside derivative is <m>\frac{d}{dx} 4x = 4</m>, so I
           would have to multiply by 4. Going backwards, then, I
           should do the opposite and divide by 4. 
-          <me>
+          <md>
             \int e^{4x} dx = \frac{1}{4} e^{4x} + c 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -630,9 +630,9 @@
         <p>
           Write the following antiderivative by using known
           derivatives or doing the derivative rules backwards.
-          <me>
+          <md>
             \int_0^{\pi} \sin x dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -642,10 +642,10 @@
           evaluate it on the bounds. (I don't need the constant of
           integral in definite integrals, since it would just cancel
           off when I evaluate on the bounds.)
-          <me>
+          <md>
             \int_0^{\pi} \sin x dx = -\cos x \Big|_0^{\pi} = -\cos
             (\pi) - (- \cos (0)) = -(-1) - (-1) = 2
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -654,9 +654,9 @@
         <p>
           Write the following antiderivative by using known
           derivatives or doing the derivative rules backwards.
-          <me>
+          <md>
             \int_1^{\ln 4} e^x dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -665,10 +665,10 @@
           evaluate on the bounds. Remember that the logarithm and the
           exponential are inverse operations, so they remove each
           other. 
-          <me>
+          <md>
             \int_1^{\ln 4} e^x dx = e^x \Big|_1^{\ln 4} = e^{\ln 4} -
             e^{1} = 4 - e
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -677,17 +677,17 @@
         <p>
           Write the following antiderivative by using known
           derivatives or doing the derivative rules backwards.
-          <me>
+          <md>
             \int_1^5 (2x-7) dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I use linearity to split up the integral.
-          <me>
+          <md>
             \int_1^5 (2x-7) dx = \int_1^5 2x dx - \int_1^5 7 dx
-          </me>
+          </md>
           Then I use the power rule backwards for the first integral.
           In the second, the antiderivative of a constant is just the
           variable itself. 

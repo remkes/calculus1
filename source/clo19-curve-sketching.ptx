@@ -131,12 +131,12 @@
             The limit as <m>x=0</m> is calcluate by the limit
             approacing the undefined point (on the positive side
             only). 
-            <me>
+            <md>
               \lim_{x \rightarrow 0^+} x \ln x = \lim_{x \rightarrow
               0^+} \frac{\ln x}{\frac{1}{x}} = \lim_{x \rightarrow
               0^+} \frac{\frac{1}{x}}{\frac{-1}{x^2}} = \lim_{x
               \rightarrow 0^+} -x = 0
-            </me>
+            </md>
             Since this limit is no infinite, there are no vertical
             asymptotes. The limit as <m>x \rightarrow \infty</m> is
             <m>\infty</m>, so there are no horizontal asymptotes

@@ -336,9 +336,9 @@
           variables. I know <m>P = 2a + 2b</m> so <m>a = \frac{P}{2}
           - b</m>. If I substitute for <m>a</m> in the area
           function, I get a single variable area function <m>A(b)</m>.
-          <me>
+          <md>
             A(b) = b \left( \frac{P}{2} - b \right)
-          </me>
+          </md>
         </p>
         <p>
           Then I can optimize. The derivative is <m>A^\prime(b) =
@@ -403,9 +403,9 @@
       point <m>(a,b)</m> and a locus in the variables <m>x</m> and
       <m>y</m>. The distance squared function from a point on the
       locus to the fixed point is 
-      <me>
+      <md>
         d(x,y)  = (x-a)^2 + (y-b)^2
-      </me>
+      </md>
       However, this is a function of two variables, which I don't know
       how to work with. How do I solve this? I use the locus. I solve
       for one of the two variables (whichever seems more convenient)
@@ -450,9 +450,9 @@
           \frac{x^2}{4}</m> is closest to the point <m>(4,2)</m>. The
           distance squared from a point <m>(x,y)</m> on the parabola
           to <m>(4,2)</m> is given the distance squared function.
-          <me>
+          <md>
             d = (4-x)^2 + (2-y)^2
-          </me>
+          </md>
         </p>
         <p>
           I use the locus <m>y = \frac{x^2}{4}</m> to replace

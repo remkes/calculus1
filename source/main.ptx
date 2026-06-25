@@ -41,6 +41,7 @@
       </bibinfo>
     </frontmatter>
     
+    <xi:include href="chapter-organization.ptx"/>
     <xi:include href="chapter-introduction.ptx"/>
     <xi:include href="chapter-functions.ptx" />
     <xi:include href="chapter-des.ptx" />

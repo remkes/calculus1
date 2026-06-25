@@ -17,19 +17,19 @@
       side of a DE only involves the independent variable. (This is
       the opposite of the autonomous equation, where the right side
       only involved the <em>dependent</em> variable.)
-      <me>
+      <md>
         \frac{df}{dx} = g(x)
-      </me>
+      </md>
       Since only the independant variable <m>x</m> appears on the
       right side, I can simply integrate both sides in <m>x</m>. 
-      <me>
+      <md>
         \int \frac{df}{dx} dx = \int g(x) dx
-      </me>
+      </md>
       On the left, the integral of the derivative is the original
       funciton <m>f</m>.
-      <me>
+      <md>
         f(x) = \int g(x) dx
-      </me>
+      </md>
       In this case, solving the differential equation is just doing an
       integral. In some sense, solving most differential equations
       involves undoing the derivative, involves some kind of
@@ -147,9 +147,9 @@
       functions in <m>x</m> and <m>y</m>, respectively. Separable
       differential equations are DEs where the dependent and
       independent variable can be separated by a product.
-      <me>
+      <md>
         \frac{dy}{dx} = f(x) g(y)
-      </me>
+      </md>
     </p>
     <p>
       In particular, this includes the autonomous equations 
@@ -173,9 +173,9 @@
       of the integral into an integral in <m>y</m>. (This looks
       strange, but it's really deciding to treat <m>y</m> as a
       variable, instead of as a function <m>y(x)</m>). 
-      <me>
+      <md>
         \int \frac{1}{g(y)} dy = \int f(x) dx + c 
-      </me>
+      </md>
     </p>
     <p>
       I have now separated the problem into two integrals, hence
@@ -272,9 +272,9 @@
           of course, since that doesn't satisfy a vertical line test.)
           If I want it expressed as a function, I can still solve for
           <m>y</m> after this. 
-          <me>
+          <md>
             y = \pm \sqrt{25 - x^2} 
-          </me>
+          </md>
         </p>
       </statement>
     </example>

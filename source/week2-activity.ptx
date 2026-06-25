@@ -16,9 +16,9 @@
           outside function and <m>g</m> is the inside function. I use
           the function <m>g</m> to replace the variable in the
           function <m>f</m>.
-          <me>
+          <md>
             f \circ g(x) = \frac{1}{(x^2-4) + 4} = \frac{1}{x^2} 
-          </me>
+          </md>
           In the resulting function, I need to exclude <m>x = 0</m>
           to avoid division by zero. The inside function <m>g</m> has
           no restrictions, so there are no other domain concerns and
@@ -29,10 +29,10 @@
           outside function and <m>f</m> is the inside function. I use
           the function <m>f</m> to replace the variable in the
           function <m>g</m>.
-          <me>
+          <md>
             g \circ f(x) = \left( \frac{1}{x+4} \right)^2 - 4 =
             \frac{1}{(x+4)^2} - 4 
-          </me>
+          </md>
           In the resulting function, I need to exclude <m>x = -4</m>
           to avoid division by zero. The inside function <m>f</m> has
           the same restriction, <m>x \neq -4</m>, so there are no
@@ -55,10 +55,10 @@
           outside function and <m>g</m> is the inside function. I use
           the function <m>g</m> to replace the variable in the
           function <m>f</m>.
-          <me>
+          <md>
             f \circ g(x) = e^{(\sqrt{x^3-5})^2-1} = e^{x^3-5-1} =
             e^{x^3-6}
-          </me>
+          </md>
           The resulting function has no obvious domain restrictons.
           However, since I have to do the inside function <m>g</m>
           first, I need to respect the domain restrictions of
@@ -73,10 +73,10 @@
           outside function and <m>f</m> is the inside function. I use
           the function <m>f</m> to replace the variable in the
           function <m>g</m>.
-          <me>
+          <md>
             g \circ f(x) = \sqrt{(e^{x^2-1})^3 - 5} =
             \sqrt{e^{3(x^2-1)} - 5}
-          </me>
+          </md>
           I've simplified this one step using the laws of exponents.
           Even though this is still a complicated expression, there
           aren't any more reasonable simplifications. The domain
@@ -140,17 +140,17 @@
           Therefore, the fourth root is a reasonable choice of the
           outside function, with everything inside the root as the
           inside function. That gives a decomposition.
-          <me>
+          <md>
             f = g \circ h \text{ where } g(x) = \sqrt[4]{x} \text{ and
             } h(x) = x^2-4
-          </me>
+          </md>
           Note that this isn't the only possible answer. Often there
           are many ways to break apart a function as the composition
           of two (or more) pieces. Here is another possibility.
-          <me>
+          <md>
             f = g \circ h \text{ where } g(x) = \sqrt[4]{x-4} \text{
             and } h(x) = x^2
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -170,16 +170,16 @@
           everything else in the function. I could choose the sine
           function as the outside function, leaving everything else as
           the inside. 
-          <me>
+          <md>
             f = g \circ h \text{ where } g(x) = \sin (x) \text{ and
             } h(x) = e^{x^2+x+1}
-          </me>
+          </md>
           There are other possible solutions. Here is one where I
           would like the inside function to be slightly simpler.
-          <me>
+          <md>
             f = g \circ h \text{ where } g(x) = \sin (e^x) \text{ and
             } h(x) = x^2+x+1
-          </me>
+          </md>
         </p>
       </solution>
     </activity>

@@ -15,17 +15,17 @@
       I'll start with a number of standard derivatives. If a
       function is constant, its rate of change is zero, so its must
       have a zero derivative.
-      <me>
+      <md>
         \frac{d}{dx} c = 0
-      </me>
+      </md>
     </p>
     <p>
       For the linear function <m>f(x) = mx + b</m>, the graph is a
       straight line with slope <m>m</m>. Since the derivative measures
       the slope, it should be constant <m>m</m>.
-      <me>
+      <md>
         \frac{d}{dx} mx + b = m
-      </me>
+      </md>
     </p>
     <p>
       Here are the derivatives of sine and cosine. They are given
@@ -106,9 +106,9 @@
       earlier by a limit; in Calculus II I will argue that the two
       definitions coincide.) By definition, the function <m>e^x</m>
       satisfies an important property.
-      <me>
+      <md>
         \frac{d}{dx} e^x = e^x
-      </me>
+      </md>
     </p>
     <p>
       This is the main reason that we are so fond of <m>e</m> as an
@@ -128,9 +128,9 @@
       calculate derivatives without using the definition. The first
       rule is called the <term>power rule</term>. Let <m>n \in \RR</m>
       with <m>n \neq 0</m>.
-      <me>
+      <md>
         \frac{d}{dx} x^n = nx^{n-1}
-      </me>
+      </md>
     </p>
     <p>
       I can give a proof when <m>n</m> is a positive integer, using
@@ -240,9 +240,9 @@
       <statement>
         <p>
           Let <m>f</m> and <m>g</m> be differentiable functions.
-          <me>
+          <md>
             \frac{d}{dx} fg = g \frac{df}{dx} + f \frac{dg}{dx}
-          </me>
+          </md>
         </p>
       </statement>
       <proof>
@@ -250,46 +250,46 @@
           The following calculation is a proof for the Leibniz rule. I
           start with the limit definition of the derivative, using the
           version with <m>h \rightarrow 0</m>.
-          <me>
+          <md>
             \frac{d}{dx} fg = \lim_{h \rightarrow 0}
             \frac{f(x+h)g(x+h) - f(x)g(x)}{h}
-          </me>
+          </md>
           Then I'm going to use a strange but surprisingly common
           algebraic trick. I want to do some particular kind of
           factoring in the numerator. To make that work, I add and
           subtract the same term from the numerator. Adding and
           subtracting the same thing doesn't change the expression, so
           equality is preserved. 
-          <me>
+          <md>
             = \lim_{h \rightarrow 0} \frac{f(x+h)g(x+h) - f(x+h)
             g(x) + f(x+h) g(x) - f(x)g(x)}{h}
-          </me>
+          </md>
           Then I'm going to write the first two terms as one limit and
           the next two terms as another limit. In the first two terms,
           <m>f(x+h)</m> is a common factor, so I can pull it out of
           the fraction. In the second two terms, <m>g(x)</m> is a
           common factor, so I can likewise pull it out of the
           fraction.
-          <me>
+          <md>
             = \lim_{h \rightarrow 0} f(x+h)\frac{g(x+h) - g(x)}{h} +
             \lim_{h \rightarrow 0} g(x) \frac{f(x+h) - f(x)}{h}
-          </me>
+          </md>
           I can use the limit rules for the first limit. The limit of
           <m>f(x+h)</m> as <m>h \rightarrow 0</m> is just <m>f(x)</m>,
           so I'll evaluate that piece of the product and leave the
           remaining limit. In the second limit, <m>g(x)</m> doesn't
           involve the variable <m>h</m> at all, so it can simply be
           pulled out of the limitl.
-          <me>
+          <md>
             = f(x) \lim_{h \rightarrow 0} \frac{g(x+h) - g(x)}{h} +
             g(x) \lim_{h \rightarrow 0} \frac{f(x+h) - f(x)}{h}
-          </me>
+          </md>
           Finally, I can simplify identify these two limits as the
           definitions of the derivatives of <m>g(x)</m> and
           <m>f(x)</m>, respectively. 
-          <me>
+          <md>
             = f(x) \frac{dg}{dx} + g(x) \frac{df}{dx}
-          </me>
+          </md>
         </p>
       </proof>
     </proposition>
@@ -329,10 +329,10 @@
       rule</term>.  Let <m>f</m> be a differentiable function and
       <m>g</m> be a differentiable function (with <m>g(x) \neq 0</m>
       on its domain). 
-      <me>
+      <md>
         \frac{d}{dx} \frac{f}{g} = \frac{g \frac{df}{dx} - 
         f \frac{dg}{dx}}{g^2}
-      </me>
+      </md>
     </p>
     <example>
       <statement>
@@ -387,9 +387,9 @@
       of motion, <m>F = ma</m>, says that force equals mass times
       acceleration. If force depends on position (as it often does),
       then I can write Newton's first law as a differential equation.
-      <me>
+      <md>
         F(p) = m \frac{d^2 p}{dt^2}
-      </me>
+      </md>
     </p>
     <p>
       As with most of the fundamentals of physics, Newtonian
@@ -413,9 +413,9 @@
       (negatively) proportional to the distance from equalibrium. If
       equalibrium is at <m>p=0</m>, then <m>F = -kp</m>. Using
       Newton's first law with this force produces a differential equation.
-      <me>
+      <md>
         -kp = m \frac{d^2 p}{dt^2}
-      </me>
+      </md>
       The behaviour of an object on a (perfect, frictionless) spring is
       determined by this differential equation. What is that behaviour?
       I simply have to figure out which function <m>p(t)</m> matches

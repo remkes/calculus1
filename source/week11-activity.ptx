@@ -6,9 +6,9 @@
       <statement>
         <p>
           Sketch the graph of the function
-          <me>
+          <md>
             f(x) = e^{-x} (x^2 + 3x - 6).
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -29,9 +29,9 @@
         <p>
           Intercepts: To find the <m>y</m> intercept, I simply
           evaluate the function at 0. 
-          <me>
+          <md>
             f(0) = e^{-0} (0^2 + 3(0) - 6) = -6
-          </me>
+          </md>
           There is a <m>y</m> intercept at <m>(0,-6)</m>. To find the
           <m>x</m> intercept, I need to solve <m>f(x) = 0</m>. Note
           that the exponential term can never be zero, so only the
@@ -65,17 +65,17 @@
           so there is no possibility of vertical asymptotes. We can
           look at the limits to <m>\pm \infty</m> for horizontal
           asymptotes. 
-          <me>
+          <md>
             \lim_{x \rightarrow \infty} e^{-x} (x^2 + 3x - 6) = 0 
-          </me>
+          </md>
           Asymptotically, the exponential decay is dominant over the
           polynomial growth, so the function approaches 0. This means
           that the function has a horizontal asymptote <m>y=0</m> in
           the positive direction. 
-          <me>
+          <md>
             \lim_{x \rightarrow -\infty} e^{-x} (x^2 + 3x - 6) =
             \infty
-          </me>
+          </md>
           For negative numbers, both the polynomial and exponential
           functions grow without bound. There is no horizontal
           asymptote in the negative direction. 
@@ -280,9 +280,9 @@
       <statement>
         <p>
           Sketch the graph of the function
-          <me>
+          <md>
             f(x) = \frac{x-9}{4x-5}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -304,9 +304,9 @@
         <p>
           Intercepts: To find the <m>y</m> intercept, I simply
           evaluate the function at 0. 
-          <me>
+          <md>
             f(0) = \frac{0-9}{4(0)-5} = \frac{-9}{-5} = \frac{9}{5} 
-          </me>
+          </md>
           There is a <m>y</m> intercept at <m>\left(0,\frac{9}{5}
           \right)</m>. To find the
           <m>x</m> intercept, I need to solve <m>f(x) = 0</m>. To do
@@ -339,20 +339,20 @@
           asymptote. (I do the two sides seperately to give me more
           information about whether to draw the function approaching
           positive or negative <m>\infty</m>.0
-          <me>
+          <md>
             \lim_{x \rightarrow \frac{5}{4}^+} \frac{x-9}{4x-5} =
             -\infty 
-          </me>
+          </md>
           The numerator approaches a finite number and the denominator
           approaches 0, so this does diverge to <m>\pm \infty</m>. Looking
           at the sign, for numbers slightly larger than
           <m>\frac{5}{4}</m>, the numerator is negative and the
           denominator is positive, so this limit approahces <m> -
           \infty</m>.
-          <me>
+          <md>
             \lim_{x \rightarrow \frac{5}{4}^-} \frac{x-9}{4x-5} =
             \infty
-          </me>
+          </md>
           The numerator approaches a finite number and the denominator
           approaches 0, so this does diverge to <m>\pm \infty</m>. Looking
           at the sign, for numbers slightly smaller than
@@ -364,15 +364,15 @@
         <p>
           I can look at the limits to <m>\pm \infty</m> for
           horizontal asymptotes. 
-          <me>
+          <md>
             \lim_{x \rightarrow \infty} \frac{x-9}{4x-5} = \frac{1}{4} 
-          </me>
+          </md>
           Asymptotically, the numerator and denominator has the same
           order, so I look at the leading coefficients to evaluate
           the limit. 
-          <me>
+          <md>
             \lim_{x \rightarrow -\infty} \frac{x-9}{4x-5} = \frac{1}{4} 
-          </me>
+          </md>
           The same behaviour holds in the negative direction as well.
           Both numerator and denominator will be negative, which
           cancels out, leaving just the ratio of the leading
@@ -524,9 +524,9 @@
         <p>
           Analyze and critique a model of population (in millions)
           depending on time (in years) give by the function
-          <me>
+          <md>
             p(t) = \frac{4t^2 + 3}{t^2+3}.
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -538,10 +538,10 @@
         <p>
           Long term behvaiour: I take the limit as <m>t \rightarrow
           \infty</m>.
-          <me>
+          <md>
             \lim_{t \rightarrow \infty} \frac{4t^2 + 3}{t^2 + 3} =
             \frac{4}{1} = 4
-          </me>
+          </md>
           The asymptotic order of the numerator and denominator are
           the same, so the limit is the ratio of the leading
           coefficients. In the long term, this population approaches 4
@@ -593,9 +593,9 @@
           Analyze and critique a model of temperature (in degree
           celcius) depending on ocean depth (in meters) given by the
           function
-          <me>
+          <md>
             T(d) = 16 - \frac{\sqrt{d}}{3}.
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -609,10 +609,10 @@
           or decrease of the model. (With the variable <m>d</m>,
           Leibniz notation is somewhat awkward, so I'll use Newton's
           notation for this derivative). 
-          <me>
+          <md>
             T^\prime(d) = 0 - \frac{1}{3} \frac{1}{2\sqrt{d}} =
             \frac{-1}{6 \sqrt{d}}
-          </me>
+          </md>
           This derivative is always negative (assume the domain <m>d
           \gt 0</m>, since a negative depth doesn't make sense), so
           the temperature is always decreasing. 
@@ -620,10 +620,10 @@
         <p>
           Long term behaviour: I take the limit as <m>d \rightarrow
           \infty</m>. 
-          <me>
+          <md>
             \lim_{d \rightarrow \infty} 16 - \frac{\sqrt{d}}{3} =
             -\infty. 
-          </me>
+          </md>
           The temperature gets lower and lower without bound. 
         </p>
         <p>
@@ -653,9 +653,9 @@
         <p>
           Analyze and critique a model of tree height (in cm)
           depending on time (in years) given by the function
-          <me>
+          <md>
             H(t) = 4 + 12t + 3\sin (\pi t).
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -665,10 +665,10 @@
         </p>
         <p>
           Derivative: I take the derivative.
-          <me>
+          <md>
             \frac{d}{dt} H(t) = \frac{d}{dt} 4 + 12t + 3 \sin (\pi t)
             = 0 + 12 + 3\pi \cos t = 12 + 3\pi \cos t 
-          </me>
+          </md>
           The term <m>3 \pi \cos t</m> has minimum value <m>-3\pi
           \doteq 9.42</m>. When I add 12, even with this minimum
           value, the derivative is always positive. The derivative is
@@ -709,9 +709,9 @@
           Analyze and critique a model of population (in thousands)
           depending on time (in years) given by the differential
           equation
-          <me>
+          <md>
             \frac{dp}{dt} = 10 p (p-40).
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -744,14 +744,14 @@
           Analyze and critique a model of radioactive contamination
           (in grays) depending on time (in years) given by the
           function
-          <me>
+          <md>
             r(t) = \left\{ \begin{matrix}
               (16) 2^{-0.02t} \amp 0 \leq t \lt 100 \\
               4 + \frac{1}{4} \sin (20 \pi t)  \amp 100 \leq
               t \lt 200 \\
               4 2^{-0.01(t-200)}  \amp 200 \leq t \\
             \end{matrix} \right. .
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -759,23 +759,23 @@
           Continuity: This is a piecewise model, so the first question
           is a question of continuity. We'll take the limits of the
           functions approaching the crossover points.
-          <me>
+          <md>
             \lim_{x \rightarrow 100^-} r(t) = \lim_{x \rightarrow
             100^-} (16) 2^{0.02t} = 16 2^{-2} = \frac{16}{4} = 4 
-          </me>
-          <me>
+          </md>
+          <md>
             \lim_{x \rightarrow 100^+} r(t) = \lim_{x \rightarrow
             100^+} 4 + \frac{1}{4} \sin (2000\pi t) = 4 + 0 = 4
-          </me>
-          <me>
+          </md>
+          <md>
             \lim_{x \rightarrow 200^-} r(t) = 
             \lim_{x \rightarrow 200^-} 4 + \frac{1}{4} \sin (4000\pi
             t) = 4 
-          </me>
-          <me>
+          </md>
+          <md>
             \lim_{x \rightarrow 200^+} r(t) = 
             \lim_{x \rightarrow 200^+} (4)2^0 = 4 
-          </me>
+          </md>
           At both the crossover points, the limit from the right and
           the limit from the left are the same. The model is
           continuous. 
@@ -836,9 +836,9 @@
           Analyze and critique the model of frequency (in percentage)
           of heights (as a function of height in meters) given by the
           function
-          <me>
+          <md>
             f(h) - \frac{1}{2} e^{- \frac{(h-3)^2}{2}}.
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -852,9 +852,9 @@
           Analyze and critique the model of the period of an orbit (in
           years) in terms of the maximum orbital distance (in hundred
           millions of kilometers) given by the function
-          <me>
+          <md>
             P(d) = 4 \sqrt{d^3 - 2d + 1}.
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -868,9 +868,9 @@
           Analyze and critique the model of bacteria population (in
           milliions depending on time (in days) give by the
           differential equation
-          <me>
+          <md>
             \frac{dp}{dt} = \frac{p^2}{40}.
-          </me>
+          </md>
           You may assume the initial value is <m>p(0) = 5</m>. 
         </p>
       </statement>
@@ -885,14 +885,14 @@
           Analyze and critique the model of of value (in dollars) in a
           savings account depending on time (in years) give by the
           function
-          <me>
+          <md>
             v(t) = \left\{ \begin{matrix}
               (1000) 2^{0.05t} \amp 0 \leq t \lt 15 \\
               (1500) 2^{0.07t} \amp 15 \leq t \lt 20 \\
               (1200) 2^{0.06t} \amp 20 \leq t \lt 30 \\
               (600) 2^{0.05t} \amp 30 \leq t \lt 40 
             \end{matrix} \right. .
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -906,9 +906,9 @@
           Analyze and critique the model of stellar temperature (in
           degrees kelvin) depending on the distance to the centre of a
           star (in thousands of kilometers) given by the function
-          <me>
+          <md>
             T(d) = \frac{500000d + 100000}{d^2} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>

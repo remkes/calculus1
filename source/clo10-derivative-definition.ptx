@@ -1,7 +1,146 @@
 <section xml:id="section-derivative-definition">
   <title>ClO 10: Definition of the Derivative</title>
   <subsection xml:id="subsection-secant-lines">
-    <title>Limits of Secant Lines</title>
+    <title>Secant Lines</title>
+    <figure xml:id="figure-slope-linear-2">
+      <caption>Slope of a Linear Function</caption>
+      <image xml:id="figure10-2" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$t$");
+          yaxis("$p$");
+
+          real f(real x) {return x/3;}
+
+          draw(graph(f,0,8));
+
+          draw((6,2)--(6,1)--(3,1));
+
+          label("$\Delta p$",(6,1.5),E);
+          label("$\Delta t$",(4.5,1),S);
+          label("$a = \frac{\Delta p}{\Delta t}$",(4.5,1.5),NW);
+          label("$p=at$", (8,8/3),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      In this section, I'm going to instead rely on physics.
+      Coming from physics, the velocity problem is one of the basic
+      motivating problems of calculus. Assume there is an object
+      moving in one dimension. I can describe its position as a
+      function <m>p(t)</m> where <m>p</m> is position in terms of time
+      <m>t</m>. I want to know its velocity.
+    </p>
+    <p>
+      If <m>p(t) = at + b</m> is a linear function, then algebra can
+      answer this question. With this linear function, for each unit
+      of time the object travels <m>a</m> units of distance. The value
+      <m>a</m> is the velocity. Geometrically, the velocity is
+      measured by the slope of the straight line graph of <m>p(t)</m>.
+      The slope is calculated by the ratio of the change in <m>p</m>,
+      <m>\Delta p</m>, to the change in <m>t</m>, <m>\Delta t</m>.
+    </p>
+    <p>
+      If slope is the way to measure velocity, then I need a notion
+      of slope for non-linear functions as well. The notion comes
+      from the idea of tangent lines. A tangent line to a graph is a
+      line which touches the graph at one point without crossing it
+      (as opposed to a secant line, which crosses the graph twice).
+    </p>
+    <figure xml:id="figure-tangent-line-2">
+      <caption>A Tangent Line</caption>
+      <image xml:id="figure11-2" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f1(real x) {return (x^3-x^2+x+1)/8;}
+          real f2(real x) {return 3/8*x - 11/76;}
+
+          draw(graph(f1,0,2.2));
+          draw(graph(f2,0,3));
+        </asymptote>
+      </image>
+    </figure>
+    <figure xml:id="figure-secant-line">
+      <caption>A Secant Line</caption>
+      <image xml:id="figure12" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f1(real x) {return (x^3-x^2+x+1)/8;}
+          real f2(real x) {return 3/8*x;}
+
+          draw(graph(f1,0,2.2));
+          draw(graph(f2,0,3));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      The slope of a graph is defined to be the slope of its tangent
+      line, should such a line exist. The velocity problem is reduced
+      to the problem of finding the tangent line (or, more
+      particularly, its slope). How do I calculate a tangent line?
+      Algebra has trouble with this. The best that algebra can
+      do is find secant lines which approximate a tangent line. I can
+      adjust the approximation by letting the two points of the secant
+      line come closer and closer together, as in the <xref
+      ref="figure-secant-approximations" />. In this way, I can build
+      an approximation process which improves as I move the points.
+      However, algebra an never finish the process <mdash /> it can
+      just supply improved approximations.
+    </p>
+    <figure xml:id="figure-secant-approximations">
+      <caption>Secant Approximations to the Tangent Line</caption>
+      <image xml:id="figure13" width="85%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+          
+          real f1(real x) {return x^2;}
+
+          draw(graph(f1,-1,2.1));
+
+          draw((0,-1)--(3,5));
+          draw((0,0)--(3,3));
+          draw((0,-.25)--(3,3.5));
+          draw((0,-.5)--(3,4));
+          draw((0,-.75)--(3,4.5));
+
+          label("5",(3,5),E);
+          label("4",(3,4.5),E);
+          label("3",(3,4),E);
+          label("2",(3,3.5),E);
+          label("1",(3,3),E);
+
+          label("Slope of Line  1 = $\frac{f(1) - f(0)}{1-0} =
+            1$",(4,1),E);
+          label("Slope of Line  2 = $\frac{f(1) -
+            f(1/4)}{1-\frac{1}{4}} = 5/4$",(4,2),E);
+          label("Slope of Line  3 = $\frac{f(1) -
+            f(1/2)}{1-\frac{1}{2}} = 3/2$",(4,3),E);
+          label("Slope of Line  4 = $\frac{f(1) -
+            f(3/4)}{1-\frac{3}{4}} = 7/4$",(4,4),E);
+          label("Line  5 is tangent line with slope 2.",(4,5),E);
+        </asymptote>
+      </image>
+    </figure>
     <p>
       In <xref ref="subsection-population-growth" />, I defined the
       derivative as the rate of change of a function. In the current
@@ -21,37 +160,37 @@
       be the other point (with <m>x \neq a</m>). Then the slope of
       the secant line is the difference in output (<m>f(x) - f(a)</m>)
       dividing by the difference in input (<m>x-a</m>).
-      <me>
+      <md>
         \frac{f(x) - f(a)}{x-a}
-      </me>
+      </md>
       I said that the approximation should get closer and closer to 
       the tangent line as <m>x</m> gets closer to <m>a</m>. Now I
       can ask for the limit as <m>x \rightarrow a</m>.
-      <me>
+      <md>
         \lim_{x \rightarrow a} \frac{f(x) - f(a)}{x-a}
-      </me>
+      </md>
       This limit, if it exists, will be the slope of the tangent line.
       It is called the derivative and it calculates the rate of change
       of the function at <m>x=a</m>. 
-      <me> 
+      <md> 
         f^\prime(a) = \frac{df}{dx} (a) = \lim_{x \rightarrow a}
         \frac{f(x) - f(a)}{x-a}
-      </me>
+      </md>
       There is a slight variation of this definition, which is useful
       for some calculations. If I define <m>h = x-a</m>, then I can
       write the limit in terms of <m>h</m> instead of <m>x</m>.
-      <me>
+      <md>
         f^\prime(a) = \frac{df}{dx} (a) = \lim_{h \rightarrow 0}
         \frac{f(a+h) - f(a)}{h}
-      </me>
+      </md>
       This second definition show that the derivative is
       an entirely new function. At each point <m>x</m> in the domain
       of <m>f</m>, I can ask for the slope of the tangent line. That
       gives a new function which measure the slope of the original. 
-      <me>
+      <md>
         f^\prime(x) = \frac{df}{dx} = \lim_{h \rightarrow 0}
         \frac{f(x+h) - f(x)}{h}
-      </me>
+      </md>
     </p>
   </subsection>
   <subsection xml:id="subsection-operators">
@@ -66,9 +205,9 @@
     <p>
       Leibniz notation is useful for thinking of derivatives as
       operators. If I seperate the notation slightly, I can write
-      <me>
+      <md>
         \frac{df}{dx} = \frac{d}{dx} f
-      </me>
+      </md>
     </p>
     <p>
       With this notation, I think of <m>\frac{d}{dx}</m> as the

@@ -13,10 +13,10 @@
       and <m>g</m> are differentiable functions, L'Hôpital's rule
       states that the limit is preserved if I differentiate both
       numerator and denominator.
-      <me>
+      <md>
         \lim_{x \rightarrow a} \frac{f(x)}{g(x)} = \lim_{x \rightarrow
         a} \frac{f^\prime(x)}{g^\prime(x)}
-      </me>
+      </md>
       This is particularly useful in asymptotic analysis, where many
       limits (as <m>x \rightarrow \infty</m>) have type
       <m>\frac{\infty}{\infty}</m>. Indeed, L'Hôpital's rule can be
@@ -38,13 +38,13 @@
           numerator is constant and the denominator becomes very
           large. 
         </p>
-        <me>
+        <md>
           \lim_{x \rightarrow \infty} \frac{\ln x}{\sqrt{x}} =
           \lim_{x \rightarrow \infty}
           \frac{\frac{1}{x}}{\frac{1}{2\sqrt{x}}} = \lim_{x
           \rightarrow \infty} \frac{2 \sqrt{x}}{x} = \lim_{x
           \rightarrow \infty} \frac{2}{\sqrt{x}} = 0
-        </me>
+        </md>
         <p>
           A limit of <m>0</m> means that the numerator has lower
           asymptotic order than the denominator; I was justified in

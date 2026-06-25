@@ -17,26 +17,26 @@
       functions so central? Why `dynamic'?
     </p>
     <p>
-      I am going to spend several early sections of the course on
-      functions, most of which should be review from your high school
-      background. For now, in brief, a function is a mathematical way
-      of encoding the dependance of one quantity on another. Mathematics
-      is a descriptive language that seeks to capture the quantitative
-      aspects of the world. In the world, many quantites depend on
-      other quantaties. In an environment, humidity may depend on
-      temperature. In a vehicle, fuel efficieny may depend on speed.
-      In an economy, productivity may depend on interest rates. A
-      function is the mathematical thing that measures these
-      relationships.
+      An understanding of function is prerequisite to this course
+      (though some review will be provided in early sections.) But let
+      me state a definition regardless. In brief, a function is a
+      mathematical way of encoding the dependance of one quantity on
+      another. Mathematics is a descriptive language that seeks to
+      capture the quantitative aspects of the world. In the world,
+      many quantites depend on other quantities. In an environment,
+      humidity may depend on temperature. In a vehicle, fuel efficieny
+      may depend on speed.  In an economy, productivity may depend on
+      interest rates. A function is the mathematical thing that
+      measures these relationships.
     </p>
     <p>
       This is why a function is, arguably, the most important
       mathematical tool for describing the quantitative world. The
-      (quantitative) world is not collection of completely seperated
+      (quantitative) world is not a collection of completely seperated
       and independent measurements; it is a collection of deeply
       interconnected systems. It is full of dependencies. The function
       is the tool that describes the reality of the (quantitative)
-      world in all its interdependencies. . 
+      world in all its interdependencies. 
     </p>
     <p>
       In particular, most quantities in the world depend on time and
@@ -69,18 +69,6 @@
       happening all around. 
     </p>
     <p>
-      In <xref ref="subsection-population-growth"/>, I'll give 
-      specific motivating problems for the course. For now, I hope
-      this introduction provides reasonable motivation to at least
-      being the study of calculus. We want to describe the
-      (quantitative) world. We observe that in the world, quantities
-      are interrelated and interdependent. They are also dynamic,
-      constant in flux. To make a mathematical description of the
-      world, the description must also be dynamic and interdependant.
-      That requires functions, and calculus is the study of their
-      dynamic behaviour. 
-    </p>
-    <p>
       To get to the tools of calculus, I'm going to spend several
       sections on material that may be review for some of you. First,
       I'm going to cover anlytic geometry.  This is the set of
@@ -93,433 +81,279 @@
       of what is actually considered calculus. 
     </p>
   </subsection>
-  <title>Two Motivating Problems</title>
-  <subsection xml:id="subsection-velocity-problem">
-    <title>The Velocity Problem</title>
-    <figure xml:id="figure-slope-linear">
-      <caption>Slope of a Linear Function</caption>
-      <image xml:id="figure10" width="60%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$t$");
-          yaxis("$p$");
-
-          real f(real x) {return x/3;}
-
-          draw(graph(f,0,8));
-
-          draw((6,2)--(6,1)--(3,1));
-
-          label("$\Delta p$",(6,1.5),E);
-          label("$\Delta t$",(4.5,1),S);
-          label("$a = \frac{\Delta p}{\Delta t}$",(4.5,1.5),NW);
-          label("$p=at$", (8,8/3),E);
-        </asymptote>
-      </image>
-    </figure>
+  <subsection xml:id="subsection-motivating-problems">
     <p>
-      So far, in <xref ref="subsection-population-growth" /> and
-      elsewhere in the course, I've relied heavily on biological
-      examples. In this section, I'm going to instead rely on physics.
-      Coming from physics, the velocity problem is one of the basic
-      motivating problems of calculus. Assume there is an object
-      moving in one dimension. I can describe its position as a
-      function <m>p(t)</m> where <m>p</m> is position in terms of time
-      <m>t</m>. I want to know its velocity.
+      To motivate the course, I want to describe a few important
+      problems: problems which cannot be solved just with algebra. I
+      hope these seem practical and worthwhile to you, so that it
+      makes sense why we would need to develop a whole new kind of
+      mathematics to solve these problems. 
+      To recap from the last section, I want to describe the
+      (quantitative) world. I observe that in the world, quantities
+      are interrelated and interdependent. These quantities  are also
+      dynamic, constant in flux. To make a mathematical description of the
+      world, the description must also be dynamic and interdependant.
+      That requires functions, and calculus is the study of their
+      dynamic behaviour. Here are some such dynamic problems. 
     </p>
-    <p>
-      If <m>p(t) = at + b</m> is a linear function, then algebra can
-      answer this question. With this linear function, for each unit
-      of time the object travels <m>a</m> units of distance. The value
-      <m>a</m> is the velocity. Geometrically, the velocity is
-      measured by the slope of the straight line graph of <m>p(t)</m>.
-      The slope is calculated by the ratio of the change in <m>p</m>,
-      <m>\Delta p</m>, to the change in <m>t</m>, <m>\Delta t</m>.
-    </p>
-    <p>
-      If slope is the way to measure velocity, then I need a notion
-      of slope for non-linear functions as well. The notion comes
-      from the idea of tangent lines. A tangent line to a graph is a
-      line which touches the graph at one point without crossing it
-      (as opposed to a secant line, which crosses the graph twice).
-    </p>
-    <figure xml:id="figure-tangent-line">
-      <caption>A Tangent Line</caption>
-      <image xml:id="figure11" width="60%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$x$");
-          yaxis("$y$");
-
-          real f1(real x) {return (x^3-x^2+x+1)/8;}
-          real f2(real x) {return 3/8*x - 11/76;}
-
-          draw(graph(f1,0,2.2));
-          draw(graph(f2,0,3));
-        </asymptote>
-      </image>
-    </figure>
-    <figure xml:id="figure-secant-line">
-      <caption>A Secant Line</caption>
-      <image xml:id="figure12" width="60%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$x$");
-          yaxis("$y$");
-
-          real f1(real x) {return (x^3-x^2+x+1)/8;}
-          real f2(real x) {return 3/8*x;}
-
-          draw(graph(f1,0,2.2));
-          draw(graph(f2,0,3));
-        </asymptote>
-      </image>
-    </figure>
-    <p>
-      The slope of a graph is defined to be the slope of its tangent
-      line, should such a line exist. The velocity problem is reduced
-      to the problem of finding the tangent line (or, more
-      particularly, its slope). How do I calculate a tangent line?
-      Algebra has trouble with this. The best that algebra can
-      do is find secant lines which approximate a tangent line. I can
-      adjust the approximation by letting the two points of the secant
-      line come closer and closer together, as in the <xref
-      ref="figure-secant-approximations" />. In this way, I can build
-      an approximation process which improves as I move the points.
-      However, algebra an never finish the process <mdash /> it can
-      just supply improved approximations.
-    </p>
-    <figure xml:id="figure-secant-approximations">
-      <caption>Secant Approximations to the Tangent Line</caption>
-      <image xml:id="figure13" width="85%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$x$");
-          yaxis("$y$");
-          
-          real f1(real x) {return x^2;}
-
-          draw(graph(f1,-1,2.1));
-
-          draw((0,-1)--(3,5));
-          draw((0,0)--(3,3));
-          draw((0,-.25)--(3,3.5));
-          draw((0,-.5)--(3,4));
-          draw((0,-.75)--(3,4.5));
-
-          label("5",(3,5),E);
-          label("4",(3,4.5),E);
-          label("3",(3,4),E);
-          label("2",(3,3.5),E);
-          label("1",(3,3),E);
-
-          label("Slope of Line  1 = $\frac{f(1) - f(0)}{1-0} =
-            1$",(4,1),E);
-          label("Slope of Line  2 = $\frac{f(1) -
-            f(1/4)}{1-\frac{1}{4}} = 5/4$",(4,2),E);
-          label("Slope of Line  3 = $\frac{f(1) -
-            f(1/2)}{1-\frac{1}{2}} = 3/2$",(4,3),E);
-          label("Slope of Line  4 = $\frac{f(1) -
-            f(3/4)}{1-\frac{3}{4}} = 7/4$",(4,4),E);
-          label("Line  5 is tangent line with slope 2.",(4,5),E);
-        </asymptote>
-      </image>
-    </figure>
-  </subsection>
-  <subsection xml:id="subsection-distance-problem">
-    <title>The Distance Travelled Problem</title>
-    <p>
-      Now I will consider the opposite problem. Consider a function
-      <m>v(t)</m> which tells me the velocity of an object at any
-      point of time. How can I determine the distance the object has
-      covered over a period of time?
-    </p>
-    <figure xml:id="figure-constant-velocity">
-      <caption>Constant Velocity</caption>
-      <image xml:id="figure14" width="60%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$t$");
-          yaxis("$y$");
-
-          draw((0,4)--(6,4)--(6,0));
-          
-          label("$v(t) = c$",(3,4),N);
-
-          dot("$t=0$",(0,0),NE);
-          dot("$t=t_0$",(6,0),NW);
-
-          label("Area$= ct_0$",(2,2),E);
-        </asymptote>
-      </image>
-    </figure>
-    <figure xml:id="figure-non-constant-velocity">
-      <caption>Non-Constant Velocity</caption>
-      <image xml:id="figure15" width="60%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$x$");
-          yaxis("$y$");
-
-          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
-          draw((6,3)--(6,0));
-
-          label("$v(t)$",(3,3),N);
-
-          dot("$t=0$",(0,0),NE);
-          dot("$t=t_0$",(6,0),NW);
-          
-          label("Area = Distance Travelled",(0.2,1),E);
-        </asymptote>
-      </image>
-    </figure>
-    <p>
-      Again, algebra can only answer this question for very simple
-      situations. Assume that the velocity <m>v(t) = c</m> is
-      constant. In this case, if the constant velocity is <m>c</m>
-      units of distance for each unit of time and the object has
-      travelled for <m>t_0</m> units of time, the distance is just the
-      product <m>ct_0</m>. Graphically, the situation is summarized in
-      <xref ref="figure-constant-velocity" />.  The distance travelled
-      under constant velocity is the area under the velocity graph, as
-      in <xref ref="figure-non-constant-velocity" />.  I can extend
-      this idea to non-constant velocity: the distance should be the
-      area under the velocity graph.  Therefore, to solve the distance
-      travelled problem, I need to find areas under curves. Like
-      tangent lines, this is not a problem that algebra can easily
-      tackle. However, it can approximate areas. Algebra is good at
-      areas of rectangles, so I can use rectanges to approximate
-      areas.
-    </p>
-    <figure xml:id="figure-approximation-by-rectangles">
-      <caption>Approximation of Area by Rectangles</caption>
-      <image xml:id="figure16" width="60%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$t$");
-          yaxis("$y$");
-
-          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
-
-          label("$v(t)$",(2.9,3.3),N);
-
-          draw((0,2.6)--(1,2.6)--(1,0));
-          draw((1,1.8)--(2,1.8));
-          draw((2,0)--(2,1.9)--(3,1.9));
-          draw((3,0)--(3,3.1)--(4,3.1));
-          draw((4,0)--(4,4.2)--(5,4.2)--(5,0));
-          draw((5,3.6)--(6,3.6)--(6,0));
-        </asymptote>
-      </image>
-    </figure>
-    <figure xml:id="figure-improved-approximation-by-rectangles">
-      <caption>Improved Approximation with More Rectangles</caption>
-      <image xml:id="figure17" width="60%">
-        <asymptote>
-          size(10cm);
-
-          import graph;
-
-          xaxis("$t$");
-          yaxis("$y$");
-
-          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
-
-          label("$v(t)$",(2.9,3.3),N);
-
-          draw((0,2.8)--(0.5,2.8)--(0.5,0));
-          draw((0.5,2.3)--(1,2.3)--(1,0));
-          draw((1,1.8)--(1.5,1.8)--(1.5,0));
-          draw((1.5,1.6)--(2,1.6));
-          draw((2,0)--(2,1.7)--(2.5,1.7));
-          draw((2.5,0)--(2.5,2.1)--(3,2.1));
-          draw((3,0)--(3,2.6)--(3.5,2.6));
-          draw((3.5,0)--(3.5,3.7)--(4,3.7));
-          draw((4,0)--(4,4.2)--(4.5,4.2)--(4.5,0));
-          draw((4.5,4.1)--(5,4.1)--(5,0));
-          draw((5,3.7)--(5.5,3.7)--(5.5,0));
-          draw((5.5,3.2)--(6,3.2)--(6,0));
-        </asymptote>
-      </image>
-    </figure>
-    <p>
-      The sum of the areas of all the rectangles is a reasonable
-      approximation to the area under the curve. If I want a better
-      approximation, I can divide the area into smaller rectangles. In
-      this way, I set up an approximation process to understand areas
-      under curves. Algebra can never completely answer the question,
-      but it can get better and better approximations by using more
-      and more rectangles in its approximation.
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-los">>
-    <title>Course Learning Outcomes</title>
-    <p>
-      This course is organized into learning outcomes. There are three
-      types of these: core learning outcomes (CLOs), stretch learning
-      outcomes (SLOs) and holistic learning outcomes (HLOs). The main
-      content of the course is organized by the CLOs and the SLOs: you
-      will see each section of the course labelled by one of these.
-      The HLOs are major ideas, themes and skills that run throughout
-      the course but are not isolated to any one area. I'll try to
-      point out the development of the HLOs over the whole course. 
-    </p>
-    <p>
-      Here are the learning outcomes for the course. These are all
-      stated with active verbs: a learning outcome is something that a
-      student will be able to do, which can be demonstrated and
-      assessed. You can preface all of these with <sq>A student
-      completing this course should be able to <m>\ldots</m></sq> .
-    </p>
-    <ol>
-      <title>20 Core Learning Outcomes</title>
-      <li>
-        Describe and manipulate equations of simple loci (lines,
-        conics, etc) in Cartesian coordinates. 
-      </li>
-      <li>
-        Solve intersection problems with simple loci (lines, conics,
-        etc) in Cartesian coordinates.
-      </li>
-      <li>
-        Manipulate functions with pointwise operations, composition
-        and inversion. 
-      </li>
-      <li>
-        Use functions as mathematical models for real world
-        situations, including interpretation of coefficients.
-      </li>
-      <li>
-        Use differential equations to describe growth in models,
-        including the Mathusian model and the logistic growth models. 
-      </li>
-      <li>
-        Use phase lines to qualitatively describe the behaviour of
-        solutions to autonomous differential equations. 
-      </li>
-      <li>
-        Calculate limits of functions approaching finite values.
-      </li>
-      <li>
-        Determine continuity of piecewise functions and articular the
-        connection between limits and continuity. 
-      </li>
-      <li>
-        Use asymptotic analysis to calculate limits of functions
-        approaching infinity and long term behaviour of models. 
-      </li>
-      <li>
-        Describe the derivative as an approximation process calculated
-        by a limit. 
-      </li>
-      <li>
-        Use derivative rules for pointwise operations (linearity,
-        power rule, product rule, quotient rule). 
-      </li>
-      <li>
-        Use the chain rule for derivative of compositions. 
-      </li>
-      <li>
-        Use L'Hôpital's rule to calculate limits.
-      </li>
-      <li>
-        Describe the Riemann integral as an approximation process
-        calculated by a limit. 
-      </li>
-      <li>
-        Use the fundamental theory of calculus, basic
-        antiderivatives, linearity and the power rule  to solve
-        integrals. 
-      </li>
-      <li>
-        Apply the substitution rule to solve integrals. 
-      </li>
-      <li>
-        Solve initial value problems with separable differential
-        equations.
-      </li>
-      <li>
-        Use derivative to find extrema, find intervals of increase and
-        decrease, and solve optimzation problems. 
-      </li>
-    </ol>
-    <ol>
-      <title>Stretch Learning Outcomes</title>
-      <li>
-        Calculate derivatives using the limit definition of the
-        derivative instead of the usual derivative rules. 
-      </li>
-      <li>
-        Recount and explain proofs of the derivative rules (power
-        rule, product rule, chain rule, inverse derivative,
-        derivatives of exponential functions.) 
-      </li>
-      <li>
-        Prove the identities for inverse derivatives of trigonometric
-        functions. 
-      </li>
-      <li>
-        Use L'Hôpital's rule as a way to prove comparisons of
-        asymptotic order. 
-      </li>
-      <li>
-        Solve separable differential equations with antiderivatice
-        covered so far in the course, including initial values. 
-      </li>
-      <li>
-        Use the Riemann definition of the integral and common identity
-        for finite sums to calculate integrals of polynomial
-        functions. 
-      </li>
-    </ol>
-    <ol>
-      <title>Holistic Learning Outcomes</title>
-      <li>
-        Describe the conection between algebra and geometry using
-        catersian coordinates, specifically concerning equations of
-        lines, intersection problems, slopes and derivatives, graphs
-        of functions. 
-      </li>
-      <li>
-        Describe the limitations of algebraic techniques, the role of
-        approximation processes, and the importance of limits in the
-        creation of calculus. 
-      </li>
-      <li>
-        Holistically use the techniques of calculus to analyse
-        functions, including domain, range, increase and decrease,
-        concavity, extrema, continuity, limits and asymptopes. 
-      </li>
-      <li>
-        Holistically use the techniques of calculus to analyse and
-        critique models including questions of realism and viability. 
-      </li>
-      <li>
-        Use clear and precise written and oral communication to
-        describe the mathematical concepts, calculations and processes
-        involved in the core and stretch learning outcomes. 
-      </li>
-    </ol>
+    <subsubsection xml:id="subsubsection-motivating-population">
+      <title>Motivating Problem: Population Growth</title>
+      <p>
+        If I observe a population (human, animal, plant, etc.), one of
+        most common behaviours to observe is percentage growth. How
+        much a population changes over a unit of time usually depend
+        on how large the population is, and that dependence is very
+        commonly a percentage. In Canada, for example, the population
+        growth over the last few decades has usually been between one
+        and three percent. This makes sense: a larger population can
+        produce more offspring, and under consistent conditions, will
+        produce offspring at some consistent rate. That's a
+        percentage.
+      </p>
+      <p>
+        As just a percentage, of course, algebra can calculate this.
+        If I have a population of 7 million and a percentage growth
+        of  <m>1.7\%</m> per year, then I can just calculate that the
+        population will increase by <m>119,000</m> individuals. This
+        is algebra, but this is only a single calculation. It tells me
+        the growth at a moment, but no more.
+      </p>
+      <p>
+        What is I wanted a more holistic picture? What is I wanted a
+        <em>function</em> that describes the popluation over time?
+        This algebra cannot solve. Percentage growth descripes a
+        growth rate of a function. But it doesn't tell you what the
+        function actually is. To find the function, you need a
+        mathematical method to start with a growth rate and produce
+        the original functions. That's the kind of dynamic problem
+        that algebra can't solve
+      </p>
+      <p>
+        This is a pretty universal problem: it doesn't just apply to
+        population. Anything that is described by a growth rate has
+        this problem: how do you get to a function from the growth
+        rate. This arise in many places: rates of heating and cooling; 
+        rates of financial or economic growth; rates of production of
+        a new chemical in a chemical reaction; rates of radio-active
+        decay; I could go on. That said, I choose population because
+        its importance, and because it is a biological problem.
+        Historically (as I will discuss shortly), biology was not the
+        motivating science for the invention of the calculus. But
+        population dynamics in biology is a perfect environment to
+        demonstrate the value of calculus. Throughout this course,
+        I'll rely most heavily on population dynamics as motivation: I
+        want this to be a course about understanding the nature of
+        population growth and how it can be reasonably described
+        mathematically. 
+      </p>
+    </subsubsection>
+    <subsubsection xml:id="subsubsection-motivating-velocity">
+      <title>Motivating Problem: Velocity</title>
+      <figure xml:id="figure-slope-linear">
+        <caption>Slope of a Linear Function</caption>
+        <image xml:id="figure10" width="60%">
+          <asymptote>
+            size(10cm);
+  
+            import graph;
+  
+            xaxis("$t$");
+            yaxis("$p$");
+  
+            real f(real x) {return x/3;}
+  
+            draw(graph(f,0,8));
+  
+            draw((6,2)--(6,1)--(3,1));
+  
+            label("$\Delta p$",(6,1.5),E);
+            label("$\Delta t$",(4.5,1),S);
+            label("$a = \frac{\Delta p}{\Delta t}$",(4.5,1.5),NW);
+            label("$p=at$", (8,8/3),E);
+          </asymptote>
+        </image>
+      </figure>
+      <p>
+        My first example was biological. However, the history of
+        calculus comes more from physics and geometry. So, let me go
+        back to that histor     My first example was biological.
+        However, the history of calculus comes more from physics and
+        geometry. So, let me go back to that historyy 
+        Coming from physics, the velocity problem is one of the basic
+        motivating problems of calculus. Assume there is an object
+        moving in one dimension. I can describe its position as a
+        function <m>p(t)</m> where <m>p</m> is position in terms of
+        time <m>t</m>. I want to know its velocity.
+      </p>
+      <p>
+        If <m>p(t) = at + b</m> is a linear function, then algebra can
+        answer this question. With this linear function, for each unit
+        of time the object travels <m>a</m> units of distance. The value
+        <m>a</m> is the velocity. Geometrically, the velocity is
+        measured by the slope of the straight line graph of <m>p(t)</m>.
+        The slope is calculated by the ratio of the change in <m>p</m>,
+        <m>\Delta p</m>, to the change in <m>t</m>, <m>\Delta t</m>.
+      </p>
+      <p>
+        That's fine for liner function: they hav e a constant
+        velocity. But with most moving objects, velocity is not
+        constant. The graph of such a function is not a straight line. 
+      </p>
+      <figure xml:id="figure-tangent-line">
+        <caption>Non-Constant Velocity</caption>
+        <image xml:id="figure11" width="60%">
+          <asymptote>
+            size(10cm);
+  
+            import graph;
+  
+            xaxis("$x$");
+            yaxis("$y$");
+  
+            real f1(real x) {return (x^3-x^2+x+1)/8;}
+            real f2(real x) {return 3/8*x - 11/76;}
+  
+            draw(graph(f1,0,2.2));
+            draw(graph(f2,0,3));
+          </asymptote>
+        </image>
+      </figure>
+      <p>
+        The line drawn in <xref ref="figure-tangent-line"/> is called
+        a tangent line. It just touches the graph at one points. It's
+        a straight line, so it has a slope, and therefore a velocity.
+        Finding this slope would be a way to understand the velocity
+        of this object. 
+      </p>
+      <p>
+        But wow do I calculate a tangent line? Algebra has trouble
+        with this problem. All I have is a point and the function.
+        There is no second point with which to define a line and thus
+        a slope. So here is another problem to motivate calculus.
+        Geometrically, how can I find the slope of a tangent line. In
+        terms of movement, how can I determine the velocity of a
+        function which measure position. 
+      </p>
+      <p>
+        Like growth rates, there are many version of this problem.
+        For anything that changes in time, I can ask how fast it is
+        changing. The velocity problem dealt with position over time,
+        but actually any function of time leads to the same question.
+        If heat depends on time, how fast is the heat increasing or
+        decreasing? If happiness depends on time, how fast is
+        happiness increasing or decreasing? This is all essentially
+        the same motivating problem: finding the rate of change given
+        a function that depends on time. 
+      </p>
+    </subsubsection>
+    <subsubsection xml:id="subsubsection-motivating-distance">
+      <title>Motivating Problem: Distance Travelled</title>
+      <p>
+        Now I will consider the opposite problem. Consider a function
+        <m>v(t)</m> which tells me the velocity of an object at any
+        point of time. How can I determine the distance the object has
+        covered over a period of time? Again, in the special situation
+        where the velocity is constant, algebra can solve this. 
+      </p>
+      <figure xml:id="figure-constant-velocity">
+        <caption>Constant Velocity</caption>
+        <image xml:id="figure14" width="60%">
+          <asymptote>
+            size(10cm);
+  
+            import graph;
+  
+            xaxis("$t$");
+            yaxis("$y$");
+  
+            draw((0,4)--(6,4)--(6,0));
+            
+            label("$v(t) = c$",(3,4),N);
+  
+            dot("$t=0$",(0,0),NE);
+            dot("$t=t_0$",(6,0),NW);
+  
+            label("Area$= ct_0$",(2,2),E);
+          </asymptote>
+        </image>
+      </figure>
+      <p>
+        If velocity is constant, the I just multiply velocty by time.
+        Velocity is units of distance per unit of time: multiplying by
+        time gives the total distance. Travelling at 40 km/h for 3
+        hours means you have travelled <m>40 \cdot 3 = 120</m>km.
+        Algebra can do this. 
+      </p>
+      <p>
+        Geometrically, in <xref ref="figure-constant-velocity"/>, the
+        velociy is the height of the graph and the time is the witdh.
+        The product of the two is height times width, which is just
+        area. The velocity travelled is the area under the velocity
+        graph. 
+      </p>
+      <p>
+        If the velocity is non-constant, then I get a more complicated
+        graph. 
+      </p>
+      <figure xml:id="figure-non-constant-velocity">
+        <caption>Non-Constant Velocity</caption>
+        <image xml:id="figure15" width="60%">
+          <asymptote>
+            size(10cm);
+  
+            import graph;
+  
+            xaxis("$x$");
+            yaxis("$y$");
+  
+            draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
+            draw((6,3)--(6,0));
+  
+            label("$v(t)$",(3,3),N);
+  
+            dot("$t=0$",(0,0),NE);
+            dot("$t=t_0$",(6,0),NW);
+            
+            label("Area = Distance Travelled",(0.2,1),E);
+          </asymptote>
+        </image>
+      </figure>
+      <p>
+        The distance travelled is still the area underneath this graph.
+        Therefore, to solve the distance travelled problem, I need to
+        find areas under curves. Liketangent lines, this is not a
+        problem that algebra can easily tackle. This is a complicated
+        area under a curving path: there is no easy formula for algebra
+        to apply. 
+      </p>
+      <p>
+        This is the third motivating problem. Geometrically, given a
+        graph, can I calculate the area underneath the graph. In physics
+        terms, this means starting with a velocity function and
+        determining the total distance travelled. 
+      </p>
+      <p>
+        Like the two previous problem, there are many versions of this
+        problem. Velociy measure how fast your are travelling, so
+        distance travelled is the total accomplish by travelling.
+        Anytime I consider a function which directly describes a 
+        rate of something being accomplish, then the area under that
+        curve is the total amount of <sq>work</sq> accomplished by that
+        function. If I have a function that measures the rate of water
+        usage in a population, the area is the total amount of water
+        consumed. If I have a funciton that measures the interest rate
+        on a bank account, then the area is the total amount of interest
+        gained. I could go on: any <sq>work accomplished</sq> probelm
+        also fits this pattern. Any for any of these problems, if the
+        situation is non-linear, I need new techique beyond algebra to
+        solve it. 
+      </p>
+    </subsubsection>
+    <subsubsection xml:id="subsubsection-motivating-optmization">
+      <title>Motivating Problem: Optimization</title>
+      <p>
+        One final motivating problem. 
+      </p>
+    </subsubsection>
   </subsection>
 </section>

@@ -315,28 +315,28 @@
       <m>2</m>, so an exponential function with base <m>2</m> is
       appropriate. If I double every <m>d</m> units of time, the
       exponential function is
-      <me>
+      <md>
         p(t) = a 2^{\frac{t}{d}} 
-      </me>
+      </md>
       where <m>a</m> is the starting value of the poluation. In this
       case, I used the function 
-      <me>
+      <md>
         p(t) = (1032) 2^{\frac{t}{4}}
-      </me>
+      </md>
       to do the regression, and it fits reasonably well. 
     </p>
     <p>
       It is conventional to use the base <m>e</m> in calculus. I can
       change my previous exponential function using the fact that <m>2
       = e^{\ln 2}</m>. 
-      <me>
+      <md>
         p(t) = a \left( e^{\ln 2} \right)^{\frac{t}{d}} 
-      </me>
+      </md>
       Successive exponents are simplified by multiplying the
       exponents.
-      <me>
+      <md>
         p(t) = a e^{\ln 2\frac{1}{d} t} = ae^{\frac{t \ln 2}{d}}
-      </me>
+      </md>
       This is a nice general way to write an exponential function with
       starting value <m>a</m> and doubling period <m>d</m>.
     </p>

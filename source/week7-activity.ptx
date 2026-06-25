@@ -6,9 +6,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \sin (x^2 + 1)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -18,23 +18,23 @@
           u</m>, using the temporary variable <m>u</m>. The inside
           function is <m>g(x) = x^2 +1</m>. Then I proceed with the
           chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \sin (x^2 + 1) = \frac{d}{du} \sin u
             \Bigg|_{u=x^2+1} \frac{d}{dx} (x^2+1)
-          </me>
+          </md>
           The derivative of sine is a known derivative, and linearity
           and the power rule give the derivative of the polynomial
           term. 
-          <me>
+          <md>
             = \cos u \Bigg|_{u=x^2+1} (2x+0)
-          </me>
+          </md>
           After I've done the derivative, I replace <m>u</m> as the
           evaluation bar reminds me to do. I'll also change the order
           of the terms, since convention is to usually write the
           polynomial term before the trigonometric term. 
-          <me>
+          <md>
             = 2x \cos (x^2+1)
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -42,9 +42,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \ln (\ln x) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -54,15 +54,15 @@
           </m>, using the temporary variable <m>u</m>. The inside
           function is <m>g(x) = \ln x</m>. Then I proceed with the
           chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \ln (\ln x) = \frac{d}{du} \ln u \Bigg|_{u =
             \ln x} \frac{d}{dx} \ln x 
-          </me>
+          </md>
           The deriavtive of the logarithm is a known derivative. 
-          <me>
+          <md>
             = \frac{1}{u} \Bigg|_{u = \ln x} \frac{1}{x} = \frac{1}{x
             \ln x} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -70,9 +70,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \frac{1}{1+e^x}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -82,20 +82,20 @@
           \frac{1}{u} = u^{-1}</m>, using the temporary variable
           <m>u</m>. The inside function is <m>g(x) = 1 + e^x </m>.
           Then I proceed with the chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \frac{1}{1+e^x} = \frac{d}{du} u^{-1} \Bigg|_{u
             = 1 + e^x} \frac{d}{dx} (1+e^x) 
-          </me>
+          </md>
           The first derivative is a power rule derivative. Linearity
           and the known derivative of the exponential function give me
           the second derivative. 
-          <me>
+          <md>
             = -u^{-2} \Bigg|_{u = 1 + e^x} (e^x) 
-          </me>
+          </md>
           Then I replace <m>u</m>. 
-          <me>
+          <md>
             = \frac{-1}{(1+e^x)^2} (e^x)  = \frac{-e^x}{(1+e^x)^2}
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -103,9 +103,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \sqrt[4]{x^2+4x+2}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -115,25 +115,25 @@
           \sqrt[4]{u} = u^\frac{1}{4} </m>, using the temporary
           variable <m>u</m>. The inside function is <m>g(x) = x^2 + 4x
           + 2</m>. Then I proceed with the chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \sqrt[4]{x^2+4x+2} = \frac{d}{du}
             u^\frac{1}{4} \Bigg|_{u = x^2 + 4x + 2} \frac{d}{dx} (x^2 +
             4x + 2)
-          </me>
+          </md>
           I use power rule for the first derivative (which is why I
           wrote the fourth root as a fractional exponent). The
           polynomial derivative is solved by linearity and the power
           rule. 
-          <me>
+          <md>
             = \frac{1}{4} u^\frac{-3}{4} \Bigg|_{u = x^2 + 4x + 2} (2x +
             4)
-          </me>
+          </md>
           Then I just have to do the replacement. I'll also write the
           fractional exponent as a root again. 
-          <me>
+          <md>
             = \frac{1}{4\sqrt[4]{u^3}} (2x + 4) = \frac{2x+4}{4
             \sqrt[4]{x^2+4x+2)^3}} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -141,9 +141,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \cos \left( e^{-4x} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -153,20 +153,20 @@
           (u) </m>, using the temporary variable <m>u</m>. The inside
           function is <m>g(x) = e^{-4x} </m>. Then I proceed with the
           chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \cos \left( e^{-4x} \right) = \frac{d}{du}
             \cos u \Bigg|_{u = e^{-4x}} \frac{d}{dx} e^{-4x}
-          </me>
+          </md>
           The derivative of cosine is known. However, this second
           derivative is still a composition, so I need to use chain
           rule again. To avoid confusion of variables, I'll use a new
           temporary variable <m>v</m>. The outside is <m>f(v) =
           e^v</m> and the inside is <m> g(x) = -4x </m>. I apply the
           chain rule again using this decomposition. 
-          <me>
+          <md>
             = -\sin u \Bigg|_{u = e^{-4x}} \frac{d}{dv} e^v \Bigg|_{v =
             -4x} \frac{d}{dx} (-4x)
-          </me>
+          </md>
           Then I proceed with the known derivatives, replacing
           <m>u</m> and <m>v</m> when I have finished the derivatives.
           <md>
@@ -191,9 +191,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \sqrt{\sin(x^2+1)}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -203,18 +203,18 @@
           \sqrt{u} = u^\frac{1}{2}</m>, using the temporary variable
           <m>u</m>. The inside function is <m>g(x) = \sin (x^2+1)</m>.
           Then I proceed with the chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \sqrt{\sin(x^2+1)} = \frac{d}{du}
             u^\frac{1}{2} \Bigg|_{u = \sin (x^2 + 1)} \frac{d}{dx} \sin
             (x^2+1)
-          </me>
+          </md>
           I need to use the chain rule again for the second
           derivative. The outside is <m>\sin v</m> and the inside is
           <m>(x^2 +1)</m>.
-          <me>
+          <md>
             = \frac{1}{2} u^\frac{-1}{2} \Bigg|_{u = \sin (x^2 + 1)}
             \frac{d}{dv} \sin v \Bigg|_{v = x^2 +1} \frac{d}{dx} x^2+1
-          </me>
+          </md>
           Now I just need to finish the individual derivative and
           re-arrange the answer into a reasonable form. 
           <md>
@@ -239,9 +239,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d^2}{dx^2} 5x^4 - 7x^3 + 15x + 1 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -268,9 +268,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d^3}{dx^3} e^{4x}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -315,9 +315,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d^4}{dx^4} \sin x - \cos x 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -363,9 +363,9 @@
           Check that this limit is an indeterminate form of type
           <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
           L'Hôpital's Rule to calculate the limit. 
-          <me>
+          <md>
             \lim_{x \rightarrow 0} \frac{\cos x - 1}{x} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -396,9 +396,9 @@
           <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
           L'Hôpital's Rule to calculate the limit. (Don't solve the
           limit by factoring.) 
-          <me>
+          <md>
             \lim_{x \rightarrow 4} \frac{x^2 - 7x + 12}{x^2 + x - 20}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -429,9 +429,9 @@
           Check that this limit is an indeterminate form of type
           <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
           L'Hôpital's Rule to calculate the limit. 
-          <me>
+          <md>
             \lim_{x \rightarrow 0^+} \frac{\ln x}{\frac{1}{x}} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -452,17 +452,17 @@
           </md>
           Now I have to simplify the nested fraction. I'll remind you
           of the general rule for simplifying nested tractions.
-          <me>
+          <md>
             \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{ad}{bc}
-          </me>
+          </md>
           I apply this rule to the previous expression to finish the
           limit. After canceling <m>x</m> from numerator and
           denominator, the resulting limit can be directly evaluated. 
-          <me>
+          <md>
             \lim_{x \rightarrow 0^+}
             \frac{\frac{1}{x}}{\frac{-1}{x^2}} = \lim_{x \rightarrow
             0^+} \frac{x^2}{-x} = \lim_{x \rightarrow 0^+} -x = 0 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -473,9 +473,9 @@
           <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
           L'Hôpital's Rule to calculate the limit. (Don't use
           asymptotic analysis.)
-          <me>
+          <md>
             \lim_{x \rightarrow \infty} \frac{x^2\ln x}{x^3+7} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -553,9 +553,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \ln (1+x)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -565,20 +565,20 @@
           u</m>, using the temporary variable <m>u</m>. The inside
           function is <m>g(x) = 1 + x</m>. Then I proceed with the
           chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \ln (1+x) = \frac{d}{du} \ln u
             \Bigg|_{u=1+x} \frac{d}{dx} (1+x)
-          </me>
+          </md>
           The derivative of the logarithm is a known derivative, and
           linearity determines the derivaitve of the inside.
-          <me>
+          <md>
             = \frac{1}{u} \Bigg|_{u=1+x} (1)
-          </me>
+          </md>
           After I've done the derivative, I replace <m>u</m> as the
           evaluation bar reminds me to do. 
-          <me>
+          <md>
             = \frac{1}{1+x}
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -586,9 +586,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} e^{x^2+1}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -598,20 +598,20 @@
           </m>, using the temporary variable <m>u</m>. The inside
           function is <m>g(x) = x^2 + 1</m>. Then I proceed with the
           chain rule.
-          <me>
+          <md>
             \frac{d}{dx} e^{x^2+1} = \frac{d}{du} e^u
             \Bigg|_{u=x^2 + 1} \frac{d}{dx} (x^2 + 1)
-          </me>
+          </md>
           The derivative of the exponential is a known derivative, and
           linearity determines the derivaitve of the inside.
-          <me>
+          <md>
             = e^u \Bigg|_{u=x^2+1} (2x)
-          </me>
+          </md>
           After I've done the derivative, I replace <m>u</m> as the
           evaluation bar reminds me to do. 
-          <me>
+          <md>
             = 2x e^{x^2+1}
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -619,9 +619,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \arctan (x^2-1)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -631,20 +631,20 @@
           u</m>, using the temporary variable <m>u</m>. The inside
           function is <m>g(x) = x^2 - 1</m>. Then I proceed with the
           chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \arctan (x^2 - 1) = \frac{d}{du} \arctan u 
             \Bigg|_{u=x^2 - 1} \frac{d}{dx} (x^2 - 1)
-          </me>
+          </md>
           The derivative of the arctangent is a known derivative, and
           linearity determines the derivaitve of the inside.
-          <me>
+          <md>
             = \frac{1}{1 + u^2} \Bigg|_{u=x^2 - 1} (2x) 
-          </me>
+          </md>
           After I've done the derivative, I replace <m>u</m> as the
           evaluation bar reminds me to do. 
-          <me>
+          <md>
             = \frac{2x}{1 + (x^2 - 1)^2}
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -652,9 +652,9 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} \ln (\arctan \sqrt{x}) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -665,33 +665,33 @@
           u</m>, using the temporary variable <m>u</m>. The inside
           function is <m>g(x) = \arctan \sqrt{x} </m>. Then I
           proceed with the chain rule.
-          <me>
+          <md>
             \frac{d}{dx} \ln (\arctan \sqrt{x}) = \frac{d}{du} \ln u
             \Bigg|_{u = \arctan \sqrt{x}} \frac{d}{dx} \arctan \sqrt{x} 
-          </me>
+          </md>
           The derivative of the logarithm is a known derivative. I
           need a second chain rule for the derivative of the inside. 
           I'll call the outside function <m>g(v) = \arctan v </m>,
           using the temporary variable <m>v</m>. The inside
           function is <m>g(x) = \sqrt{x} </m>. Then I
           proceed with the chain rule.
-          <me>
+          <md>
             = \frac{1}{u} \Bigg|_{u = \arctan \sqrt{x}} \frac{d}{dv}
             \arctan v \Bigg|_{v = \sqrt{x}} \frac{d}{dx} \sqrt{x}
-          </me>
+          </md>
           The derivative of arctangent is known. The derivtive of the
           square can be done with the power rule, as I've done several
           times already in these notes. 
-          <me>
+          <md>
             = \frac{1}{u} \Bigg|_{u = \arctan \sqrt{x}} \frac{1}{1+v^2}
             \Bigg|_{v = \sqrt{x}} \frac{1}{2\sqrt{x}}
-          </me>
+          </md>
           After I've done the derivatives, I replace <m>u</m> and
           <m>v</m> as the evaluation bar reminds me to do. 
-          <me>
+          <md>
             = \frac{1}{(\arctan \sqrt{x})(1+\sqrt{x}^2)(2 \sqrt{x})} =
             \frac{1}{2(1+x)(\sqrt{x})(\arctan \sqrt{x})} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -699,18 +699,18 @@
       <statement>
         <p>
           Calculate this derivative.
-          <me>
+          <md>
             \frac{d}{dx} (\sin x)^2 + 3 (\sin x)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           First I need linearity. 
-          <me>
+          <md>
             = \frac{d}{dx} (\sin x)^2 + 3 (\sin x) = \frac{d}{dx} (\sin
             x)^2 + 3 \frac{d}{dx} \sin x
-          </me>
+          </md>
           The derivative of the second term is the know derivative of
           sine. For the first term, I need the chain rule. I'll label
           the pieces: I'll call the outside function <m>f(u) =
@@ -718,20 +718,20 @@
           function is <m>g(x) = \sin x </m>. Then I proceed with the
           chain rule (I'll keep the second term in the linearity step
           around, of course.) 
-          <me>
+          <md>
             = \frac{d}{du} u^2 \Bigg|_{u = \sin x} \frac{d}{dx} \sin x +
             3 \cos x
-          </me>
+          </md>
           The derivative of outside is the power rule and the
           derivative of the inside is the known derivative of sine.
-          <me>
+          <md>
             = 2u \Bigg|_{u = \sin x} (cos x) + 3 \cos x 
-          </me>
+          </md>
           After I've done the derivative, I replace <m>u</m> as the
           evaluation bar reminds me to do. 
-          <me>
+          <md>
             = 2 \sin x \cos x + 3 \cos x
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -742,9 +742,9 @@
           <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
           L'Hôpital's Rule to calculate the limit. (Don't use
           asymptotic analysis.)
-          <me>
+          <md>
             \lim_{x \rightarrow \infty} \frac{\ln x}{\sqrt[9]{x}}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -780,9 +780,9 @@
           Check that this limit is an indeterminate form of type
           <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
           L'Hôpital's Rule to calculate the limit. 
-          <me>
+          <md>
             \lim_{x \rightarrow 0} \frac{\sin x}{x^3-x}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>

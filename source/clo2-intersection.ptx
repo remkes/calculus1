@@ -130,9 +130,9 @@
         point by using the equation of the line to replace a variable.
         If I replace <m>y</m> with <m>-x</m> in the equation of the
         ellipse, that equation simplifies as follows.
-        <me>
+        <md>
           \frac{5x^2}{4} = 1 \implies x = \pm \frac{2}{\sqrt{5}} 
-        </me>
+        </md>
         Now I know the <m>x</m> values of the intersection point. The
         line equation <m>y = -x</m> reminds me that the <m>y</m> values
         are just the negative of the <m>x</m> values. With that

@@ -11,20 +11,20 @@
     </p>
     <p>
       The statement
-      <me>
+      <md>
         \lim_{x \rightarrow \infty} f(x) = L
-      </me>
+      </md>
       means that as <m>x</m> gets larger and larger without bound,
       <m>f(x)</m> gets closer and closer to <m>L</m>. The statement
-      <me>
+      <md>
         \lim_{x \rightarrow \infty} f(x) = \infty
-      </me>
+      </md>
       means that as <m>x</m> gets larger and larger without bound,
       <m>f(x)</m> also gets larger and larger without bound. The
       statement
-      <me>
+      <md>
         \lim_{x \rightarrow \infty} f(x) = -\infty
-      </me>
+      </md>
       means that as <m>x</m> gets larger and larger without bound,
       <m>f(x)</m> becomes a larger and larger negative number without
       bound.
@@ -68,16 +68,16 @@
     <p>
       When a function <m>f(x)</m> has a finite limit as the input
       growths with out bound:
-      <me>
+      <md>
         \lim_{x \rightarrow \infty} f(x) = L
-      </me>,
+      </md>,
       then the graph of the function approaches the line <m>y=L</m>.
       Such
       lines are called <em>horizontal asymptotes</em>. Similarly, if
       the limit is
-      <me>
+      <md>
         \lim_{x \rightarrow -\infty} f(x) = L
-      </me>,
+      </md>,
       then again the fuction approach the line <m>y=L</m> and
       such a line is also called a horizontal asymptote. 
     </p>
@@ -102,9 +102,9 @@
       or deterined by a simple logical analysis. I can classify
       indeterminate forms by their type. For now, I will look at three
       types. The first two types are quotient limits.
-      <me>
+      <md>
         \lim_{x \rightarrow a} \frac{f(x)}{g(x)}
-      </me>
+      </md>
     </p>
     <p>
       If <m>f(x)</m> and <m>g(x)</m> approach <m>\pm \infty</m>, the
@@ -121,9 +121,9 @@
     </p>
     <p>
       The third type of indeterminate form is a difference limit.
-      <me>
+      <md>
         \lim_{x \rightarrow a} f(x) - g(x)
-      </me>
+      </md>
     </p>
     <p>
       If both <m>f(x)</m> and <m>g(x)</m> approach <m>\pm \infty</m>,
@@ -181,9 +181,9 @@
     <title>Asymptotic Order</title>
     <p>
       In asymptotic analysis, I start with a quotient limit.
-      <me>
+      <md>
         \lim_{x \rightarrow \infty} \frac{f(x)}{g(x)}
-      </me>
+      </md>
       <ul>
         <li>
           <p>
@@ -266,11 +266,11 @@
       I can summarize this in a list of asymptotic orders: in the
       following list <sq><m>f\lt g</m></sq> means that <m>f</m> grows
       slower than <m>g</m>.
-      <me>
+      <md>
         c \lt  \ln x \lt  \ldots \lt  x^{\frac{1}{3}} \lt
         x^{\frac{1}{2}} \lt  x \lt  x^2 \lt  x^3 \lt  \ldots \lt  e^x
         \lt   \ldots
-      </me>
+      </md>
     </p>
     <p>
       You will frequently need to reference this list for many limits
@@ -313,9 +313,9 @@
     <title>Actually Calculating Limits</title>
     <p>
       To evaluate a limit of the form
-      <me>
+      <md>
         \lim_{x \rightarrow \infty} \frac{f(x)}{g(x)} 
-      </me>
+      </md>
       I look at the asymptotic order. If <m>f</m> has a greater
       asymptotic order, the limit is <m>\infty</m> or <m>-\infty</m>
       (depending on the sign of the fraction as <m>x</m> gets large).
@@ -330,27 +330,27 @@
     </p>
     <example>
       <statement>
-        <me>
+        <md>
           \lim_{x \rightarrow \infty} \frac{9x^4 - 12x + 4}{x^5 -
           30x^3 + 4}
-        </me>
+        </md>
         <p>
           The order of the numerator is <m>x^4</m>. The order of the
           denominator is <m>x^5</m>. The denominator has a higher
           asymptotic order, so the limit is zero.
         </p>
-        <me>
+        <md>
           \lim_{x \rightarrow \infty} \frac{9x^4 - 12x + 4}{x^5 -
           30x^3 + 4} = 0
-        </me>
+        </md>
       </statement>
     </example>
     <example>
       <statement>
-        <me>
+        <md>
           \lim_{x \rightarrow \infty} \frac{8x^4 + 3x^2 + 4}{14x^4 -
           9x^3 - 50x^2 - 4x - 1}
-        </me>
+        </md>
         <p>
           The asymptotic order the numerator is <m>x^4</m> and the
           denominator has the same asymptotic order. Therefore, I look
@@ -358,10 +358,10 @@
           The leading coefficient in the numerator is <m>8</m>; in
           the denominator, it is <m>14</m>.  Only these terms matter, which
           radically simplifies the limit. 
-          <me>
+          <md>
             \lim_{x \rightarrow \infty} \frac{8x^4 + 3x^2 + 4}{14x^4 -
             9x^3 - 50x^2 - 4x - 1} = \frac{8}{14} = \frac{4}{7}
-          </me>
+          </md>
         </p>
       </statement>
     </example>
@@ -454,9 +454,9 @@
           <p>
             The function can approach a steady state, as in the logistic
             growth function.
-            <me>
+            <md>
               p(t) = \frac{p_0 K e^{at}}{K + p_0 (e^{at}-1)}
-            </me>
+            </md>
           </p>
         </li>
         <li>
@@ -465,10 +465,10 @@
             state, possibly with chaotic behaviour. A non-chaotic
             oscillating function is this periodic version of logistic
             growth.
-            <me>
+            <md>
               p(t) = \left(\frac{p_0 K e^{at}}{K + p_0 (e^{at}-1)}
               \right) \left( 1 + \frac{1}{5} \sin (bt) \right)
-            </me>
+            </md>
           </p>
         </li>
       </ul>
@@ -480,25 +480,25 @@
       <m>T</m> is temperature and <m>R</m> is a constant). I will
       assume that <m>P</m> and <m>V</m> are the variables, and
       <m>n</m>, <m>R</m> and <m>T</m> are constant.
-      <me>
+      <md>
         PV = nRT
-      </me>
+      </md>
     </p>
     <p>
       I can ask what happens to pressure at low volumes, expressed as a
       limit as <m>V \rightarrow 0</m>.
-      <me>
+      <md>
         \lim_{V \rightarrow 0} P = \lim_{V \rightarrow 0} \frac{nRT}{V}
         = \infty
-      </me>
+      </md>
     </p>
     <p>
       This tells me that low volumes result in high pressures. I could
       equivalently ask what happens at very high volumes.
-      <me>
+      <md>
         \lim_{V \rightarrow \infty} P = \lim_{V \rightarrow \infty}
         \frac{nRT}{V} = 0
-      </me>
+      </md>
     </p>
     <p>
       Unsurprisingly, very large volume result in very low pressures.
@@ -507,10 +507,10 @@
       The behaviour at extreme values depends on the particulars of the
       models. A more complicated gas law is the Vander Waal's gas law
       (where <m>a</m> and <m>b</m> are new positive constants).
-      <me>
+      <md>
         \left( P + \frac{n^2 a}{V^2} \right) \left( V - nb \right) =
         nRT
-      </me>
+      </md>
     </p>
     <p>
       What happens for these gasses at high pressures?  It's difficult
@@ -519,9 +519,9 @@
       large, the term only involving volume must grow to zero, so that
       the product remains the same. That happens when <m>V</m> is very
       close to the value <m>nb</m>.
-      <me>
+      <md>
         \lim_{P \rightarrow \infty} V = nb
-      </me>
+      </md>
     </p>
     <p>
       Therefore, in this model, extreme pressures happen near the fixed,

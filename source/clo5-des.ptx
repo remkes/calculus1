@@ -119,9 +119,9 @@
       of population added in a year) is <m>\frac{20}{100}</m> (or
       <m>\frac{1}{5}</m>) times the current population. I can express
       this as an equation.
-      <me>
+      <md>
         \frac{dp}{dt} = \frac{1}{5} p(t)
-      </me>
+      </md>
     </p>
     <p>
       This is a mathematical translation of the understanding of
@@ -138,9 +138,9 @@
       2^{\frac{t}{4}}</m>. I will show, later in the course, that the
       solution to this differential equation is a very similar
       function.
-      <me>
+      <md>
         p(t) = e^{\frac{t}{5}}
-      </me>
+      </md>
     </p>
   </subsection>
   <subsection xml:id="subsection-des-concept">
@@ -176,26 +176,26 @@
       both ways between the equation and the associated statement. The
       example in this section already shows percentage growth with
       percentage <m>c</m>% translates into an equation.
-      <me>
+      <md>
         \frac{dp}{dt} = \frac{c}{100} p
-      </me>
+      </md>
     </p>
     <p>
       I can use this example to translate similar sentences as well.
       Percentage decay says that a quantity looses a
       percentage <m>c</m>% of the current value  per unit time. This
       translates into a DE with a negative growth rate.
-      <me>
+      <md>
         \frac{dp}{dt} = -\frac{c}{100} p
-      </me>
+      </md>
     </p>
     <p>
       Not all differential equations are percentage growth. Perhaps the
       rate of change of some quantity is proportional to the square of
       the current value. That could likewise be translated into a DE.
-      <me>
+      <md>
         \frac{dp}{dt} = c(p(t))^2
-      </me>
+      </md>
     </p>
   </subsection>
   <subsection xml:id="subsection-percentage-growth">
@@ -207,15 +207,15 @@
       translate percentage growth into a differential equation. If a
       population <m>p(t)</m> had a growth rate of <m>c</m>
       percent, that was equivalent to the equation
-      <me>
+      <md>
         \frac{dp}{dt} = \frac{c}{100} p(t) 
-      </me>.
+      </md>.
       I don't need to state this as percentage. If <m>\alpha</m> is
       the fraction of the population that is added or subtracted in
       one unit of time, the equation is 
-      <me>
+      <md>
         \frac{dp}{dt} = \alpha p(t) 
-      </me>.
+      </md>.
       In the history of population models, this is often called the
       Malthusian model of population growth. It is one of the very
       first pieces of mathematical biology. In the original model that
@@ -224,23 +224,23 @@
       <m>b</m>, a negative death rate <m>d</m>, and possibly a
       migration rate <m>m</m> which could be positive or negative. The
       total growth rate is 
-      <me>
+      <md>
         \alpha = b - d + m 
-      </me>.
+      </md>.
     </p>
     <p>
       I argued, simply from regression, that the solution to the
       Malthusian model should be exponential. Now I'd like to prove
       that. The Mathusian model is a separable equation, so I can
       solve is using the techniques of the previous section.
-      <me>
+      <md>
         \frac{dp}{dt} = \alpha p(t) 
-      </me>
+      </md>
       In the notation of the previous section, <m>f(t) = \alpha</m> and
       <m>g(p) = p</m>. After seperateion, the integral become
-      <me>
+      <md>
         \int \frac{1}{p} dp = \int \alpha dt 
-      </me>.
+      </md>.
       Then I can integrate each side. The integral of
       <m>\frac{1}{p}</m> is <m>\ln |p|</m>. Howwever, since I can
       assume the population function must be positive, I can drop the
@@ -248,20 +248,20 @@
       of a constant on the right (in the variable <m>t</m> indicated
       by the <m>dt</m>) is <m>\alpha t</m>. I need a constant of
       integration, which I will call <m>c</m>. 
-      <me>
+      <md>
        \ln p  = \alpha t + c 
-      </me>
+      </md>
       Then I solve for <m>p</m>.
-      <me>
+      <md>
        p(t) = e^{\alpha t + c} = e^c e^{\alpha t} 
-      </me>
+      </md>
       If <m>t = 0</m>, this is <m>p(0) = e^c e^0 = e^c</m>, so
       <m>e^c</m> is the starting population. I'll write this just as
       <m>e^c = p_0</m>. The solution to the percentege growth equation
       (or the Malthusian model) is an exponential function.
-      <me>
+      <md>
        p(t) = p_0 e^{\alpha t} 
-      </me>
+      </md>
     </p>
     <p>
       Being able to actually solve the DE justifies the previous
@@ -299,9 +299,9 @@
       Instead of adjusting the function, I want to adjust the
       Malthusian differential equation to model this carrying
       capacity. The basic model is 
-      <me>
+      <md>
         \frac{dp}{dt} = \alpha p
-      </me>.
+      </md>.
       Now I want the rate of change to start out like this, but
       decrease as I get close to the carrying capacity. If the
       population is exactly at its carrying capacity, I want the
@@ -322,19 +322,19 @@
     <p>
       If I include this new adjustment to the Malthusian model, I get
       the logistic equaiton.
-      <me>
+      <md>
         \frac{dp}{dt} = \alpha p \left( 1 - \frac{p}{K} \right)
-      </me>
+      </md>
       I can solve this as a seperable equation as well, using the
       initial condition <m>p(0) = p_0</m> for some constant initial
       popluation <m>p_0</m>. The steps in
       the length process are below under as an example; they are they
       for your interest if you wish, but right now, I'm focused just
       on the result.
-      <me>
+      <md>
         p(t) = \frac{Kp_0e^{\alpha t}}{ p_0e^{\alpha t} + K - p_0}
         = \frac{Kp_0e^{\alpha t}}{ p_0(e^{\alpha t}- 1) + K}
-      </me>
+      </md>
       This is ths logistic growth as it was first
       introduced in <xref ref="subsection-long-term-behaviour-of-models"
       />. Now it is the solution a particular differential equation. 
@@ -344,62 +344,62 @@
         <p>
           Here are the steps to solve the logistic equation as a
           seperable differential equation. 
-          <me>
+          <md>
             \frac{dp}{dt} = \alpha p \left( 1 - \frac{p}{K} \right)
-          </me>
+          </md>
           I take <m>f(t)
           = \alpha</m> and <m>g(p) = p \left( 1 - \frac{p}{K}
           \right)</m> and use the separable technique from the previous
           section.
-          <me>
+          <md>
             \int \frac{1}{p \left( 1 - \frac{p}{K} \right)} dp = \int
             \alpha dt 
-          </me>
+          </md>
           I can simplify the nested fraction on the left by multiplying by
           <m>K</m>.
-          <me>
+          <md>
             \int \frac{K}{p(K-p)} dp = \int \alpha dt 
-          </me>
+          </md>
           Unfortunately, the left integral uses a technique that I won't
           cover in this course (it is covered in Calculus II). Using a
           technique called partial fracitons, the left side can be split
           up this way.
-          <me>
+          <md>
             \frac{K}{p(K-p)} = \frac{1}{p} + \frac{1}{K-p}
-          </me>
+          </md>
           Using linearity, this turns the left side integral into two
           integrals.
-          <me>
+          <md>
             \int \frac{1}{p} dp + \int \frac{1}{K-p} dp  = \int \alpha dt 
-          </me>
+          </md>
           Now I can do both of these integrals. The second integral on
           the left uses a substitution <m>u = K-p</m>, for which I won't
           show the steps here.
-          <me>
+          <md>
            \ln p - \ln (K-p) = \alpha t + c 
-          </me>
+          </md>
           Then I want to try to solve for <m>p</m>. I can first use a
           property of the logarithm. 
-          <me>
+          <md>
            \ln \frac{p}{K-p} = \alpha t + c 
-          </me>
+          </md>
           Then I can apply the exponential to both sides.
-          <me>
+          <md>
            \frac{p}{K-p} = e^{\alpha t + c} = e^c e^{\alpha t} 
-          </me>
+          </md>
           I'll write <m>e^c = b</m>, simply to have an easier way to deal
           with this constant. 
-          <me>
+          <md>
            \frac{p}{K-p} = be^{\alpha t} 
-          </me>
+          </md>
           I'll then take reciprocals of both sides.
-          <me>
+          <md>
            \frac{K-p}{p} = \frac{1}{be^{\alpha t}}
-          </me>
+          </md>
           This lets me simplify the left side.
-          <me>
+          <md>
            \frac{K}{p} - 1 = \frac{1}{be^{\alpha t}}
-          </me>
+          </md>
           Then there is only one <m>p</m> term, which I can isolate. 
           <md>
             <mrow>
@@ -419,24 +419,24 @@
           forms differ is that this constant <m>b</m> is not the starting
           population. If I use an initial condition <m>p(0) = p_0</m> in
           the solution, I get this expression.
-          <me>
+          <md>
             p_0 = \frac{Kbe^{0}}{be^{0} +1} = \frac{Kb}{b+1} 
-          </me>
+          </md>
           Skipping the algebra steps, I solve for <m>b</m>.
-          <me>
+          <md>
             b = \frac{p_0}{K-p_0}
-          </me>
+          </md>
           I can put this into the expression.
-          <me>
+          <md>
             p(t) = \frac{K\left( \frac{p_0}{K-p_0} \right) e^{\alpha
             t}}{ \left( \frac{p_0}{K - p_0} \right) e^{\alpha t} +1}
-          </me>
+          </md>
           Finally, I simplify by multiplying numerator and denominator by
           <m>(K-p_0)</m>
-          <me>
+          <md>
             p(t) = \frac{Kp_0e^{\alpha t}}{ p_0e^{\alpha t} + K - p_0}
             = \frac{Kp_0e^{\alpha t}}{ p_0(e^{\alpha t}- 1) + K}
-          </me>
+          </md>
         </p>
       </statement>
     </example>

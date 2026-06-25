@@ -1,5 +1,141 @@
 <section xml:id="section-riemann-integral">
   <title>CLO 14: The Riemann Integral</title>
+  <subsection xml:id="subsection-distance-problem">
+    <title>The Distance Travelled Problem</title>
+    <p>
+      Now I will consider the opposite problem. Consider a function
+      <m>v(t)</m> which tells me the velocity of an object at any
+      point of time. How can I determine the distance the object has
+      covered over a period of time?
+    </p>
+    <figure xml:id="figure-constant-velocity-2">
+      <caption>Constant Velocity</caption>
+      <image xml:id="figure14-2" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$t$");
+          yaxis("$y$");
+
+          draw((0,4)--(6,4)--(6,0));
+          
+          label("$v(t) = c$",(3,4),N);
+
+          dot("$t=0$",(0,0),NE);
+          dot("$t=t_0$",(6,0),NW);
+
+          label("Area$= ct_0$",(2,2),E);
+        </asymptote>
+      </image>
+    </figure>
+    <figure xml:id="figure-non-constant-velocity-2">
+      <caption>Non-Constant Velocity</caption>
+      <image xml:id="figure15-2" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
+          draw((6,3)--(6,0));
+
+          label("$v(t)$",(3,3),N);
+
+          dot("$t=0$",(0,0),NE);
+          dot("$t=t_0$",(6,0),NW);
+          
+          label("Area = Distance Travelled",(0.2,1),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Again, algebra can only answer this question for very simple
+      situations. Assume that the velocity <m>v(t) = c</m> is
+      constant. In this case, if the constant velocity is <m>c</m>
+      units of distance for each unit of time and the object has
+      travelled for <m>t_0</m> units of time, the distance is just the
+      product <m>ct_0</m>. Graphically, the situation is summarized in
+      <xref ref="figure-constant-velocity" />.  The distance travelled
+      under constant velocity is the area under the velocity graph, as
+      in <xref ref="figure-non-constant-velocity" />.  I can extend
+      this idea to non-constant velocity: the distance should be the
+      area under the velocity graph.  Therefore, to solve the distance
+      travelled problem, I need to find areas under curves. Like
+      tangent lines, this is not a problem that algebra can easily
+      tackle. However, it can approximate areas. Algebra is good at
+      areas of rectangles, so I can use rectanges to approximate
+      areas.
+    </p>
+    <figure xml:id="figure-approximation-by-rectangles">
+      <caption>Approximation of Area by Rectangles</caption>
+      <image xml:id="figure16" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$t$");
+          yaxis("$y$");
+
+          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
+
+          label("$v(t)$",(2.9,3.3),N);
+
+          draw((0,2.6)--(1,2.6)--(1,0));
+          draw((1,1.8)--(2,1.8));
+          draw((2,0)--(2,1.9)--(3,1.9));
+          draw((3,0)--(3,3.1)--(4,3.1));
+          draw((4,0)--(4,4.2)--(5,4.2)--(5,0));
+          draw((5,3.6)--(6,3.6)--(6,0));
+        </asymptote>
+      </image>
+    </figure>
+    <figure xml:id="figure-improved-approximation-by-rectangles">
+      <caption>Improved Approximation with More Rectangles</caption>
+      <image xml:id="figure17" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$t$");
+          yaxis("$y$");
+
+          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
+
+          label("$v(t)$",(2.9,3.3),N);
+
+          draw((0,2.8)--(0.5,2.8)--(0.5,0));
+          draw((0.5,2.3)--(1,2.3)--(1,0));
+          draw((1,1.8)--(1.5,1.8)--(1.5,0));
+          draw((1.5,1.6)--(2,1.6));
+          draw((2,0)--(2,1.7)--(2.5,1.7));
+          draw((2.5,0)--(2.5,2.1)--(3,2.1));
+          draw((3,0)--(3,2.6)--(3.5,2.6));
+          draw((3.5,0)--(3.5,3.7)--(4,3.7));
+          draw((4,0)--(4,4.2)--(4.5,4.2)--(4.5,0));
+          draw((4.5,4.1)--(5,4.1)--(5,0));
+          draw((5,3.7)--(5.5,3.7)--(5.5,0));
+          draw((5.5,3.2)--(6,3.2)--(6,0));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      The sum of the areas of all the rectangles is a reasonable
+      approximation to the area under the curve. If I want a better
+      approximation, I can divide the area into smaller rectangles. In
+      this way, I set up an approximation process to understand areas
+      under curves. Algebra can never completely answer the question,
+      but it can get better and better approximations by using more
+      and more rectangles in its approximation.
+    </p>
+  </subsection>
+
   <subsection xml:id="subsection-writing-sums">
   <title>Sigme Notation: Writing Complicated Sums</title>
     <p>
@@ -8,9 +144,9 @@
       greek letter sigma: <m>\Sigma</m>. Sigma notation relies on an
       index and expresses the terms of the sum as expression of the
       index. Here is an example to show the general form.
-      <me>
+      <md>
         \sum_{k=1}^{34} (k^2 - 4k)  
-      </me>
+      </md>
       Let me define the terminology. In the example pressent, <m>k</m>
       is the <term>index</term>. It ranges from <m>1</m> to <m>34</m>
       <mdash /> the numbers that appear above and below the
@@ -64,33 +200,33 @@
         </mrow>
       </md>
       I can combine sums if the indices match.
-      <me>
+      <md>
         \sum_{k=1}^{15} k^2 + \sum_{k=1}^{15} 4k = \sum_{k=1}^{15}
         (k^2 + 4k)
-      </me>
+      </md>
       If I want to combine sums when the indices don't match, I have
       to adjust the sums. There are two main methods of adjusting the
       sum. First, I can take out terms.
-      <me>
+      <md>
         \sum_{k=1}^{15} k^2 + \sum_{k=3}^{15} 4k = 1^2 + 2^2 +
         \sum_{k=3}^{15} k^2 + \sum_{k=3}^{15} 4k = 5 + \sum_{k=3}^{15}
         (k^2 + 4k)
-      </me>
+      </md>
       I can also shift the indices. This might seem tricky, but it's
       easy to remember if you think of balance: whatever I do to the
       index, I have to do the opposite to the expression.  Here I
       shift the index by <m>+2</m>, so the expression is shifted by
       <m>-2</m>.
-      <me>
+      <md>
         \sum_{k=3}^{17} 4k = \sum_{k=1}^{15} 4(k+2)
-      </me>
+      </md>
       I can use these two manipulations to combine sums if the
       indices don't initially line up.
-      <me>
+      <md>
         \sum_{k=1}^{15} k^2 + \sum_{k=3}^{17} 4k = \sum_{k=1}^{15}
         k^2 + \sum_{k=1}^{15} 4(k+2) = \sum_{k=1}^{15} (k^2 + 4k +
         8)
-      </me>
+      </md>
     </p>
   </subsection>
   <subsection xml:id="subsection-important-sums">
@@ -157,9 +293,9 @@
       the <m>k</m>th rectangle is <m>\frac{b-a}{n} f(x_k^*)</m>. To
       get the complete approximation, I add up all these rectangles
       with sigma notation.
-      <me>
+      <md>
         A \cong \sum_{k=1}^n \frac{b-a}{n} f(x_k^*)
-      </me>
+      </md>
     </p>
     <p>
       This sum is called a <term>Riemann sum</term> approximation for
@@ -168,10 +304,10 @@
       better and better approximations. This process can be extended
       into some kind of limit process. In the limit, I hope for a
       perfect calculation of area.
-      <me>
+      <md>
         A = \lim_{n \rightarrow \infty} \sum_{k=1}^n f(x_k^*)
         \frac{b-a}{n}
-      </me>
+      </md>
     </p>
     <p>
       This limit, if it exists, is called a <term>definite
@@ -179,10 +315,10 @@
       definite integral.  Since this definition uses Riemann sums,
       this is called the Riemann definiton of the integral, or simply
       the Riemann integral. It has a new notation.
-      <me>
+      <md>
         \int_a^b f(x) dx := \lim_{n \rightarrow \infty} \sum_{k=1}^n
         f(x_k^*) \frac{b-a}{n}
-      </me>
+      </md>
     </p>
     <p>
       I should explain the notation. The sigma of sigma notation gets
@@ -363,20 +499,20 @@
       </md>
       To integrate a constant, I just calculate the area of a
       rectangle, since the area under a constant graph is a rectangle. 
-      <me>
+      <md>
         \int_a^b c dx = c(b-a)
-      </me>
+      </md>
       If, for some reason, I end up with reversed bounds, I can
       change them by introducing a negative sign.
-      <me>
+      <md>
         \int_a^b f(x) dx = - \int_b^a f(x) dx
-      </me>
+      </md>
       If <m>f</m> is continuous on <m>[a,b]</m> and <m>[b,c]</m>, then
       the integral over the two pieces is equivalent to the integral
       over the whole interval <m>[a,c]</m>.
-      <me>
+      <md>
         \int_a^bf(x) dx + \int_b^c f(x) dx = \int_a^c f(x) dx
-      </me>
+      </md>
     </p>
   </subsection>
 </section>

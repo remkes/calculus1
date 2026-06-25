@@ -92,9 +92,9 @@
     <example>
       <statement>
         <p>
-          <me>
+          <md>
           \frac{dp}{dx} = p^2 - p
-          </me>
+          </md>
           The right side is zero when <m>p=0</m> or <m>p=1</m>, so
           those are the steady states. When <m>p \in (0,1)</m> the
           right-side is negative, so the trajectory is decreasing.
@@ -124,9 +124,9 @@
           This is an example of the logistic equation, which will be
           discussed in detail in <xref
           ref="subsection-logistic-growth" />. 
-          <me>
+          <md>
           \frac{dp}{dt} = 4p-p^2
-          </me>
+          </md>
           The right side is zero when <m>p=0</m> or <m>p=4</m>, so
           those are the steady states. When <m>p \in (0,4)</m> the
           right-side is positive, so the trajectory is increasing.
@@ -185,9 +185,9 @@
     <example>
       <statement>
         <p>
-        <me>
+        <md>
           \frac{dp}{dt} = p^3 -7p^2 + 10p
-          </me>
+          </md>
           The right side factors as <m>p(p-2)(p-5)</m>, so it is zero
           when <m>p=0</m>, <m>p=2</m> or <m>p=5</m>. Those are the
           steady states. When <m>p \in (0,2)</m> the right-side is

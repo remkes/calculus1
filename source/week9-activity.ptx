@@ -6,9 +6,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int 3x^2 (x^3 - 4)^5 dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -39,9 +39,9 @@
           </md>
           At the end, I undo the substitution to return to the
           original variable. 
-          <me>
+          <md>
             \frac{u^6}{6} + c = \frac{(x^3-4)^6}{6} + c 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -49,9 +49,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int \cos (17 x) dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -74,18 +74,18 @@
           integral doesn't have a term which looks like <m>17 dx</m>.
           In this form, however, I can replace all the piece of the
           original integral with the new variable. 
-          <me>
+          <md>
             \int \cos (17 x) dx = \int \cos u \frac{1}{17} du 
-          </me>
+          </md>
           Then I can use linearity and known antideriatives to do the
           integral. 
-          <me>
+          <md>
             = \frac{1}{17} \sin (u) + c 
-          </me>
+          </md>
           Finally, I reverse the substitution.
-          <me>
+          <md>
             = \frac{1}{17} \sin (17 x) + c 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -93,9 +93,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int \frac{x-4}{x-5} dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -113,39 +113,39 @@
             </mrow>
           </md>
           I also need to know how to replace the numerator. 
-          <me>
+          <md>
             u = x - 5 \implies u + 1 = x - 4 
-          </me>
+          </md>
           Now I can replace all the piece of the original integral. 
-          <me>
+          <md>
             \int \frac{x-4}{x-5} dx = \int \frac{u+1}{u} du 
-          </me>
+          </md>
           Now that I have a simpler denominator, I can split the
           numerator up to give two integrals, using linearity. 
-          <me>
+          <md>
             = \int \frac{u}{u} + \frac{1}{u} du = \int 1 du + \int
             \frac{1}{u} du 
-          </me>
+          </md>
           Then I use known antiderivatives. 
-          <me>
+          <md>
             = u + \ln |u| + c 
-          </me>
+          </md>
           Finally, I reverse the substitution.
-          <me>
+          <md>
             = (x-5) + \ln |x-5| + c 
-          </me>
+          </md>
           As a final note, I could group the <m>(-5)</m> with the
           constant, like this:
-          <me>
+          <md>
             = x + \ln |x-5| + (c - 5)
-          </me>
+          </md>
           If I did that, since the constant can be set to any real
           number, subtracting 5 doesn't make a difference. Therefore,
           an alternative form of the answer gets ride of this
           <m>(-5)</m>.
-          <me>
+          <md>
             = x + \ln |x-5| + c 
-          </me>
+          </md>
           This certinaly isn't necessary, but I mention it here since
           these kinds of steps with constants of integration are
           commonly done. 
@@ -156,9 +156,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int_0^1 2x(x^2 + 4)^3 dx
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -184,21 +184,21 @@
           </md>
           I can rearrange the integral so that I can substitute all
           the pieces clearly. 
-          <me>
+          <md>
             \int_0^1 2x(x^2 + 4)^3 dx = \int_0^1 (x^2+4)^3 (2x dx)
-          </me>
+          </md>
           Then I replace all the pieces, including changing the
           bounds. 
-          <me>
+          <md>
             = \int_4^5 u^3 du 
-          </me>
+          </md>
           Then I can proceed to finish the integral. Since this is a
           definite integral and I have changed the bounds as well, I
           do not need to reverse the substitution. 
-          <me>
+          <md>
             = \frac{u^4}{4} \Big|_4^5 = \frac{5^4}{4} - \frac{4^4}{4}
             = \frac{625 - 256}{4} = \frac{369}{4} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -206,9 +206,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int_0^4 \frac{x}{x+3} dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -237,9 +237,9 @@
           </md>
           Now I have all the pieces and I can change to the new
           variable, including changing the bounds. 
-          <me>
+          <md>
             \int_0^4 \frac{x}{x+3} dx = \int_3^7 \frac{u-3}{u} du 
-          </me>
+          </md>
           Then I can split up the integral using linearity into two
           integrals that I can solve with known antiderivatives. 
           <md>
@@ -261,9 +261,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int_0^4 \frac{x}{x-3} dx
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -301,29 +301,29 @@
         <p>
           I use the form for separable equations, with <m>f(x) =
           x^2</m> and <m>g(y) = y^2</m>.
-          <me>
+          <md>
             \int \frac{1}{y^2} dy = \int x^2 dx 
-          </me>
+          </md>
           Then I integrate both sides, add the constant of integration
           on the right.
-          <me>
+          <md>
             \frac{-1}{y} = \frac{x^3}{3} + c= \frac{x^3+3c}{3} 
-          </me>
+          </md>
           Then I solve for <m>y</m>.
-          <me>
+          <md>
             y =  \frac{-3}{x^3+3c} 
-          </me>
+          </md>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
-          <me>
+          <md>
             1 = \frac{-3}{x + 3c} \implies c = -1 
-          </me>
+          </md>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
-          <me>
+          <md>
             y = \frac{-3}{x^3 -3} = \frac{3}{3-x^3} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -343,29 +343,29 @@
         <p>
           I use the form for separable equations, with <m>f(x) =
           e^x</m> and <m>g(y) = e^{-y}</m>.
-          <me>
+          <md>
             \int e^y dy = \int e^x dx 
-          </me>
+          </md>
           Then I integrate both sides, add the constant of integration
           on the right.
-          <me>
+          <md>
             e^y = e^x + c 
-          </me>
+          </md>
           Then I solve for <m>y</m>.
-          <me>
+          <md>
             y = \ln (e^x + c) 
-          </me>
+          </md>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
-          <me>
+          <md>
             1 = \ln (e^0 + c) = \ln (1+c) \implies c = e-1 
-          </me>
+          </md>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
-          <me>
+          <md>
             y = \ln (e^x + e - 1)
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -385,30 +385,30 @@
         <p>
           I use the form for separable equations, with <m>f(x) =
           \frac{1}{x}</m> and <m>g(y) = y</m>.
-          <me>
+          <md>
             \int \frac{1}{y} dy = \int \frac{1}{x} dx 
-          </me>
+          </md>
           Then I integrate both sides, add the constant of integration
           on the right.
-          <me>
+          <md>
             \ln |y| = \ln |x| + c 
-          </me>
+          </md>
           Then I solve for <m>y</m>.
-          <me>
+          <md>
             y = e^{\ln x + c} = (x)(e^c) 
-          </me>
+          </md>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
-          <me>
+          <md>
             1 = 3(e^c) \implies (e^c) = \frac{1}{3} \implies c = \ln
             \frac{1}{3} = -\ln 3 
-          </me>
+          </md>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
-          <me>
+          <md>
             y = x e^{-\ln 3} = \frac{x}{e^{\ln 3}} = \frac{x}{3}
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -449,29 +449,29 @@
         <p>
           I use the form for separable equations, with <m>f(x) =
           \sin x^2</m> and <m>g(y) = y^2</m>.
-          <me>
+          <md>
             \int \frac{1}{y^2} dy = \int \sin x dx 
-          </me>
+          </md>
           Then I integrate both sides, add the constant of integration
           on the right.
-          <me>
+          <md>
             \frac{-1}{y} = -\cos x + c 
-          </me>
+          </md>
           Then I solve for <m>y</m>.
-          <me>
+          <md>
             y = \frac{-1}{c - \cos x} = \frac{1}{\cos x - c} 
-          </me>
+          </md>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
-          <me>
+          <md>
             1 = \frac{1}{\cos \pi - c} = \frac{1}{-1 - c} \implies c= -2
-          </me>
+          </md>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
-          <me>
+          <md>
             y = \frac{1}{\cos x + 2}
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -491,31 +491,31 @@
         <p>
           I use the form for separable equations, with <m>f(x) =
           (x-1)2</m> and <m>g(y) = \frac{1}{y}</m>.
-          <me>
+          <md>
             \int y dy = \int (x-1)^2 dx 
-          </me>
+          </md>
           Then I integrate both sides, add the constant of integration
           on the right.
-          <me>
+          <md>
             \frac{y^2}{2} = \frac{(x-1)^3}{3} + c 
-          </me>
+          </md>
           Then I solve for <m>y</m>.
-          <me>
+          <md>
             \frac{y^2}{2} = \frac{(x-1)^3+3c}{3} \implies y =
             \sqrt{\frac{2(x-1)^3+6c}{3}} 
-          </me>
+          </md>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
-          <me>
+          <md>
             1 = \sqrt{\frac{2(2-1)^3+6c}{3}} \implies 3 = 2+6c \implies
             c = \frac{1}{6}
-          </me>
+          </md>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
-          <me>
+          <md>
             y = \sqrt{ \frac{2(x-1)^3+1}{3}}
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -535,40 +535,40 @@
         <p>
           I use the form for separable equations, with <m>f(x) =
           x^3</m> and <m>g(y) = y^4</m>.
-          <me>
+          <md>
             \int \frac{1}{y^4} dy = \int x^3 dx 
-          </me>
+          </md>
           Then I integrate both sides, add the constant of integration
           on the right.
-          <me>
+          <md>
             \frac{-1}{3y^3} = \frac{x^4}{4} + c = \frac{x^4 + 4c}{4}
-          </me>
+          </md>
           Then I solve for <m>y</m>.
-          <me>
+          <md>
             -3y^3 = \frac{4}{x^4 + 4c} \implies y^3 =
             \frac{-4}{3(x^4+4c)} \implies y = \sqrt[3]{\frac{-4}{3x^4 +
             12c}} 
-          </me>
+          </md>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
-          <me>
+          <md>
             -3 = \sqrt[3]{\frac{-4}{3(1)^4+ 12c}} \implies -27 =
             \frac{-4}{3+12c} 
-          </me>
-          <me>
+          </md>
+          <md>
             \frac{1}{27} = \frac{3+12c}{4} \implies 3+12c =
             \frac{4}{27} \implies 12c = \frac{-77}{27} \implies c =
             \frac{-77}{324} = 
-          </me>
+          </md>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
-          <me>
+          <md>
             y = \sqrt[3]{\frac{-4}{3x^4 + 12\frac{-77}{324}}} =
             \sqrt[3]{\frac{-4}{3x^2 - \frac{77}{27}}} = 
             \sqrt{3}{\frac{-108}{81x^2 - 77}} = 
             \sqrt{3}{\frac{108}{77 - 81x^2}} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -588,29 +588,29 @@
         <p>
           I use the form for separable equations, with <m>f(x) =
           e^x</m> and <m>g(y) = y^2</m>.
-          <me>
+          <md>
             \int \frac{1}{y^2} dy = \int e^x dx 
-          </me>
+          </md>
           Then I integrate both sides, add the constant of integration
           on the right.
-          <me>
+          <md>
             \frac{-1}{y} = e^x + c 
-          </me>
+          </md>
           Then I solve for <m>y</m>.
-          <me>
+          <md>
             y = \frac{-1}{e^x + c} 
-          </me>
+          </md>
           Now I put the initial condition values in for <m>x</m> and
           <m>y</m>, to try to solve for the constant of integration.
-          <me>
+          <md>
             2 = \frac{-1}{3+c} \implies c= \frac{-7}{2} 
-          </me>
+          </md>
           Finally, having solve for the constant of integration, I
           replace <m>c</m> with the value solved for to get the final,
           unique solution.
-          <me>
+          <md>
             y = \frac{-1}{e^x - \frac{7}{2}} = \frac{2}{7 - 2e^x} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -636,26 +636,26 @@
         <p>
           I follow the process for solving separable equations, using
           <m>g(p) = p</m> and <m>f(t) = 0.03</m>. 
-          <me>
+          <md>
             \int \frac{1}{p} dp = \int 0.03 dt 
-          </me>
+          </md>
           I integate both sides; both a direct antiderivatives.
-          <me>
+          <md>
             \ln |p| = 0.03t + c 
-          </me>
+          </md>
           Then I solve for <m>p</m>. I can drop the absolute value 
           since population must be positive. 
-          <me>
+          <md>
             p(t)  = e^{(0.03t) + c} = e^c e^{0.03t} 
-          </me>
+          </md>
           Finally, I use the initial value p(0) = 14000.
-          <me>
+          <md>
             p(0) = e^c e^0 = e^c = 14000
-          </me>
+          </md>
           Here is the final solution.
-          <me>
+          <md>
             p(t) = 14000 e^{0.03t} 
-          </me>
+          </md>
           This is exactly what I expected: population that starts at
           14000 with a growth rate coefficient of <m>0.03</m>.
         </p>
@@ -681,26 +681,26 @@
         </p>
           I follow the process for solving separable equations, using
           <m>g(p) = p</m> and <m>f(t) = 0.03</m>. 
-          <me>
+          <md>
             \int \frac{1}{p} dp = \int -0.14  dt 
-          </me>
+          </md>
           I integate both sides; both a direct antiderivatives.
-          <me>
+          <md>
             \ln |p| = (-0.14t) + c 
-          </me>
+          </md>
           Then I solve for <m>p</m>. I can drop the absolute value 
           since population must be positive. 
-          <me>
+          <md>
             p(t) = e^c e^{-0.14t} 
-          </me>
+          </md>
           Finally, I use the initial value p(0) = 14000.
-          <me>
+          <md>
             p(0) = e^c e^0 = e^c = 1500000
-          </me>
+          </md>
           Here is the final solution.
-          <me>
+          <md>
             p(t) = 150000 e^{-0.14t} 
-          </me>
+          </md>
           This is exactly what I expect: population that starts at
           150000 with a growth rate coefficient of <m>-0.14</m>.
       </solution>
@@ -736,11 +736,11 @@
           I have to check two things. First, I can check that the
           initial value is correct. This is simply evaluating
           <m>p(0)</m>. 
-          <me>
+          <md>
             p(0) = \frac{400000 e^0}{600 + 400
             e^0} = \frac{400000}{600+ 400} =
             \frac{400000}{1000} = 400
-          </me>
+          </md>
           This is the correct initial value. Now I need to
           differentiate <m>p(t)</m> using the quotient rule and check
           that it is the same as the left side of the differential
@@ -840,11 +840,11 @@
           I have to check two things. First, I can check that the
           initial value is correct. This is simply evaluating
           <m>p(0)</m>. 
-          <me>
+          <md>
             p(0) = \frac{240000 e^0}{-500 + 800
             e^0} = \frac{240000}{-500+ 800} =
             \frac{240000}{300} = 800
-          </me>
+          </md>
           This is the correct initial value. Now I need to
           differentiate <m>p(t)</m> using the quotient rule and check
           that it is the same as the left side of the differential
@@ -955,9 +955,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int (x^2+1)(x^3 + 3x + 6)^3 dx
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -969,9 +969,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int e^{24x} dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -983,9 +983,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int \frac{4x+4}{x^2+2x+1} dx
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -997,9 +997,9 @@
       <statement>
         <p>
           Calculate this integral.
-          <me>
+          <md>
             \int_0^{\pi} \sin (6x) dx 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>

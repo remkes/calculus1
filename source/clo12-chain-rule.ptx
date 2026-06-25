@@ -18,10 +18,10 @@
           g(x)</m>. In the following notation, the vertical line means
           replace <m>u</m> with <m>g(x)</m> after any other
           calculations are finished.
-          <me>
+          <md>
             \frac{d}{dx} f(g(x)) = f^\prime(g(x)) g^\prime(x) = \left.
             \frac{df(u)}{du} \right|_{u=g(x)} \frac{dg}{dx} 
-          </me>
+          </md>
         </p>
       </statement>
       <proof>
@@ -69,9 +69,9 @@
       inside (<m>f^\prime(g(x))</m>), then multiplied by the
       derivative of the inside (<m>g^\prime</m>). There is one other
       way of expressing the chain rule, which looks the most elegant. 
-      <me>
+      <md>
         \frac{df}{dx} = \frac{df}{dg} \frac{dg}{dx}
-      </me>
+      </md>
     </p>
     <p>
       In this last version of the chain rule, I treat <m>df</m>,
@@ -94,33 +94,33 @@
           \frac{1}{x}</m>, even though the rule will be proved later
           in this section. In the first example, the outside function
           is <m>e^u</m> and the inside function is <m>ax</m>. 
-          <me>
+          <md>
             \frac{d}{dx} e^{ax} = \frac{d}{du} e^u \Bigg|_{u = ax}
             \frac{d}{dx} (ax) =  ae^{ax}
-          </me>
+          </md>
           In the next, the outside function is <m>\sin u</m> and the
           inside functon is <m>3x</m>. After the derivatives, I'll
           move the constant to the front of the function. This isn't
           necessary, but fits the general conventions of writing
           constants and polynomials to the left of trigonometric or
           exponential functions. 
-          <me>
+          <md>
             \frac{d}{dx} \sin 3x = \frac{d}{du} \sin u \Bigg|_{u =
             3x} \frac{d}{dx} (3x) = 3 \cos 3x
-          </me>
+          </md>
           In the next, the outside function is <m>e^u</m> and the
           inside function is <m>x^2 + 2</m>. 
-          <me>
+          <md>
             \frac{d}{dx} e^{x^2+2} = \frac{d}{du} e^u \Bigg|_{u =
             x^2 + 2} \frac{d}{dx} (x^2 + 2) = (2x) e^{x^2+2}
-          </me>
+          </md>
           In the next, the outside function is <m>\ln u</m> and the
           inside function is <m>5x^3 + 7x + 1</m>. 
-          <me>
+          <md>
             \frac{d}{dx} \ln (5x^3 + 7x + 1) = \frac{d}{du} \ln u
             \Bigg|_{u = 5x^3 + 7x + 1} \frac{d}{dx} (5x^3 + 7x + 1) =
             \frac{15x^2 + 7}{5x^3 + 7x + 1}
-          </me>
+          </md>
           In the last example, this is a triple compsition. I use the
           chain rule twice, making the outside function as easy as
           possible in each step. The first outside function is <m>\cos
@@ -156,11 +156,11 @@
           Since I applied the exponential and the logarithm, this
           doesn't change the function, but this forms allows the use
           of the chain rule and then the product rule.
-          <me>
+          <md>
             \frac{d}{dx} a^x = \frac{d}{dx} e^{x\ln a} =
             \frac{d}{du} e^u \Bigg|_{u = x \ln a} \frac{d}{dx} (x
             \ln a) = e^{x \ln a} \ln a = a^x \ln a
-          </me>
+          </md>
         </p>
       </statement>
     </example>
@@ -171,11 +171,11 @@
           as the previous examples. In the chain rule step, the
           derivative of the inside function (which is <m>x \ln x</m>)
           requires the product rule.
-          <me>
+          <md>
             \frac{d}{dx} x^x = \frac{d}{dx} e^{x\ln x} =
             e^{x\ln x} \frac{d}{dx} x\ln x = x^x (\ln x \frac{d}{dx}
             x + x \frac{d}{dx} \ln x) = x^x(\ln x + 1)
-          </me>
+          </md>
         </p>
       </statement>
     </example>
@@ -204,9 +204,9 @@
       This is now a reliable method for differentiating inverse
       functions as long as I know the derivative of the original. I
       will now use this to differentiate <m>\ln x</m>.
-      <me>
+      <md>
         \frac{d}{dx} \ln x = \frac{1}{e^{\ln x}} = \frac{1}{x}
-      </me>
+      </md>
     </p>
     <p>
       I can also prove derivative rules for the inverse trig

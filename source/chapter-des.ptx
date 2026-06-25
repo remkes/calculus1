@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-des">
-  <title>Functions</title>
+  <title>Differential Equations</title>
   <xi:include href="clo5-des.ptx" />
   <xi:include href="clo6-phase-lines.ptx" />
 </chapter>

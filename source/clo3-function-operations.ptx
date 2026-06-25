@@ -121,10 +121,10 @@
       be treated as a function, leading to the class of polynomial
       functions. If I want to write a very general form, I can do so
       as follows, where the <m>a_i</m> are any real numbers.
-      <me>
+      <md>
         f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_2x^2 + a_1 x +
         a_0
-      </me>
+      </md>
     </p>
     <p>
       Polynomial functions have a familiar standard shape involving a
@@ -162,9 +162,9 @@
       way, rational functions are fractions involving polynomials.
       Rational functions have the follwoing form, where <m>p(x)</m>
       and <m>q(x)</m> are polynomials.
-      <me>
+      <md>
         f(x) = \frac{p(x)}{q(x)}
-      </me>
+      </md>
     </p>
     <p>
       Rational functions may have domain restrictions. In order to
