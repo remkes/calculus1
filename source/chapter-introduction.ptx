@@ -82,6 +82,7 @@
     </p>
   </subsection>
   <subsection xml:id="subsection-motivating-problems">
+    <title>Motivating Problems</title>
     <p>
       To motivate the course, I want to describe a few important
       problems: problems which cannot be solved just with algebra. I
@@ -352,7 +353,7 @@
     <subsubsection xml:id="subsubsection-motivating-optmization">
       <title>Motivating Problem: Optimization</title>
       <p>
-        One final motivating problem. 
+        
       </p>
     </subsubsection>
   </subsection>
