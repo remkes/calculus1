@@ -18,7 +18,7 @@
     </p>
     <p>
       An understanding of function is prerequisite to this course
-      (though some review will be provided in early sections.) But let
+      (though some review will be provided in early sections). But let
       me state a definition regardless. In brief, a function is a
       mathematical way of encoding the dependance of one quantity on
       another. Mathematics is a descriptive language that seeks to
@@ -58,11 +58,11 @@
       and significant weakness: it is static. Algebra can calculate
       one unknown quantity from other known quantities, but it is only 
       a snapshot, a single fixed moment in time. Once quantities start
-      changing and shifting, algebra can not longer keep track.
+      changing and shifting, algebra can no longer keep track.
     </p>
     <p>
       This is why we need the new techniques of calculus. Functions
-      are dynamic: they are constantly change, constantly in flux.
+      are dynamic: they are constantly changing, constantly in flux.
       They represent systems where nothing is static. The new tools in
       calculus (the derivative, the integral, the infinite series) are
       all ways to understand dynamic systems, where the change is
