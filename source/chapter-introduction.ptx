@@ -357,33 +357,35 @@
     <subsubsection xml:id="subsubsection-motivating-optmization">
       <title>Motivating Problem: Optimization</title>
       <p>
-        The previous three motivating problems were direct: a kind of
-        calculation or production of a function. The fourth is a
-        little indirect, but still very important. 
+        The previous three motivating problems were direct: they all
+        were about some kind of specific calculation or the production
+        of a specific function. The fourth is a little indirect, but
+        still very important. 
       </p>
       <p>
         An optimization problem is any problem that asks for some
         superlative: the best, worse, highest, lowest, etc. This is
-        applied to some function: when is the function at its highest
-        or lowest valley? This is, again, a problem that algebra has a
-        hard time with. Visually, the problem is easy: if you can see
-        the function, you can just point out the peaks and the
-        valleys. 
+        applied to some function by asking <sq>When is the function at
+        its highest peak or lowest valley?</sq> This is, again, a
+        problem that algebra has a hard time with. Visually, the
+        problem is easy: if you can see the function, you can just
+        point out the peaks and the valleys. 
       </p>
       <p>
         But it turns out that calculating peaks and valleys percisely
         is quite difficult and algebra fails, in general, to do this.
         Peaks and valleys are parts of the changing dynamics of the
         fuction and the difficult in finding these points is similar
-        to finding tangent lines and areas under curves. 
+        to finding tangent lines and areas under curves. It turns out
+        we need the same tools<mdash/>we need calculus. 
       </p>
       <p>
         Obviously, optimization is a pretty valuable kind of problem
         fo solve. The world is full of people looking for optimal
-        solutions. Whenever they are dealing with functions, they are
-        then using calculus. Solving optimization problems turns out
-        to be one of the major reasons that calculus is so useful and
-        important. 
+        solutions. Whenever the optimization situation it described
+        using function, these problem solving are using calculus.
+        Solving optimization problems turns out to be one of the major
+        reasons that calculus is so useful and important. 
       </p>
     </subsubsection>
   </subsection>

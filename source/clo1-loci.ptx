@@ -3,6 +3,20 @@
   <subsection xml:id="subsection-cartesian-plane">
     <title>The Cartesian Plane</title>
     <p>
+      The first three learning outcomes in the course are partially
+      review. I want to go over analytic geometry and functions for
+      several reasons. First, the review is valuable and can help
+      identify any gaps in your background knowledge. Second,
+      mathematics has a surprising variety of terms and notations, to
+      say nothing of actual translation issues. Doing this review
+      allows me to set the terms and notation that I'll use for the
+      course and can help you clarify your understanding if you
+      learned this material using different terms or notation. Third,
+      analytic geometry and functions really do set up the rest of the
+      course and there are idea here that I want to specifically refer
+      to. With those reasons, I start with analytic geometry. 
+    </p>
+    <p>
       Analytic geometry was a huge breakthrough for mathematics.
       Prior to the 17th century, algebra and geometry were haphazardly
       connected branches of mathematics. Various attempts had been
@@ -117,30 +131,42 @@
     </figure>
     <p>
       Cartesian coordinates are useful for giving algebraic definitions
-      for various geometric shapes and objects. For an equation in
-      <m>x</m> and <m>y</m>, the coresponding shape consists of all
-      points <m>(a,b)</m> in the plane which satisfy the equation when
-      <m>x</m> is replaced by <m>a</m> and <m>y</m> is replaced by
-      <m>b</m>. Such an collection of points is called <em>locus</em>
-      of the equation. The plural of locus is <em>loci</em>. In <xref
-      ref="figure-circle-locus" />, the familiar circle of radius
-      <m>1</m> is the locus of the equation <m>x^2 + y^2 = 1</m>. 
+      for various geometric shapes and objects. Here is the formal
+      definition.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          For an equation in <m>x</m> and <m>y</m>, the coresponding
+          shape consists of all points <m>(a,b)</m> in the plane which
+          satisfy the equation when <m>x</m> is replaced by <m>a</m>
+          and <m>y</m> is replaced by <m>b</m>. Such an collection of
+          points is called <term>locus</term> of the equation. The plural
+          of locus is <em>loci</em>. 
+        </p>
+      </statement>
+    </definition>
+    <p>
+      As a key example, in <xref ref="figure-circle-locus" />, the
+      familiar circle of radius <m>1</m> is the locus of the equation
+      <m>x^2 + y^2 = 1</m>. In the figure, I've labelled three points
+      where the coordinates satisfy the equation of the locus. 
     </p>
     <p>
       The two most important classes of loci are lines (see 
       <xref ref="subsection-equations-lines" />) and conics (see <xref
-      ref="subsection-idea-of-conics" />). Lines are first both
+      ref="section-conics-clo2" />). Lines are primary both
       because their geometry is approachable and because they are loci
       of the most basic kind of equations. Conics follow as loci of
       the next most approachable kind of equation. 
     </p>
     <p>
       Lines and conics are just two of many classes and families of
-      loci in <m>\RR^2</m>.  The term <sq>curve</sq> is a general term
+      loci in <m>\RR^2</m>.  The term <em>curve</em> is a general term
       for loci of equations in <m>\RR^2</m>. Many equations give rise
       to complicated and unpredicable curves. Future calculus courses
-      will study the calculus of curves. For now, three curves are shown
-      in <xref ref="figure-three-curves"/>. 
+      will study the calculus of curves. For now, three curves and
+      their equations are shown in <xref ref="figure-three-curves"/>. 
     </p>
     <figure xml:id="figure-three-curves">
       <caption>Three Curves</caption>
@@ -235,7 +261,7 @@
     <p>
       When I defined loci in <xref ref="subsection-loci"
       />, I mentioned that the first and most common type of
-      locus is a line. This section reviews some definitions and
+      locus is a line. I want to review some definitions and
       calculations for lines. This should be familiar material from
       your previous mathematical experience, but it is worth
       reviewing. 
@@ -246,7 +272,8 @@
       Other than multiplication by a constant, no other operations are
       performed on the variables: no exponents, no roots, no
       functions, nothing else. These equations, since they produce
-      lines, are called linear equations. Here are some examples.
+      lines, are called <em>linear equations</em>. Here are some
+      examples.
       <md>
         <mrow>
           y \amp = 7x - 9 
@@ -261,7 +288,7 @@
           \sqrt{7}y \amp = \pi x + \frac{1}{\sqrt{19}}
         </mrow>
       </md>
-      In all these equations, all I have done is multiplied each
+      In all these equations, I have multiplied each
       variable by some constant and added the results together, making
       them equal to some other constant. By adding and subtracting
       terms, I can put some of the variables or the constant on the
@@ -342,10 +369,11 @@
     <p>
       The calculation of slope as rise over run shows again why
       veritcal lines have no slope. The <m>x</m> coordinates of any
-      two points on a vertical line are the same, to the run would be
+      two points on a vertical line are the same, so the run would be
       zero. To calculate the slope would involve division by zero,
       which is not defined. Therefore, vertical lines have no slope.
-      (Dividing by zero is undefined <mdash /> not infinity.) 
+      (Dividing by zero is undefined <mdash /> it does not produce
+      infinity.) 
     </p>
   </subsection>
   <subsection xml:id="subsection-slope-intercept">
@@ -372,7 +400,7 @@
       </md>
       To get the general form, I solve for <m>y</m> on the left. Let
       <m>m</m> and <m>b</m> be constants (the choice of these letters
-      is conventional and used in many places). This process produces
+      is conventional). This process produces
       the well-known slope-intercept form of the equation of a line.
       <md>
         y = mx + b 
@@ -496,8 +524,9 @@
   <subsection xml:id="subsection-calculating-lines">
     <title>Calcluating Equations of Lines</title>
     <p>
-      It is use to know how to calculate the equation of a line given
-      various pieces of information about this line.
+      It is useful to know how to calculate the equation of a line given
+      various pieces of information about this line. There are
+      typically three scenarios. Let me review them for you. 
     </p>
     <p><ul>
       <li>
@@ -590,281 +619,5 @@
         point, I would have calculated the same value for <m>b</m>. 
       </li>
     </ul></p>
-  </subsection>
-  <subsection xml:id="subsection-idea-of-conics">
-    <title>Slicing a Cone</title>
-    <p>
-      The conics are the second important class of loci. Unlike lines,
-      conic equations involve the squares of the variables. Conics
-      are a very old topic in mathematics; their names and definitions
-      come from ancient Greece. They are called conics (short for
-      conic sections) since they can be formed by taking slices of a
-      hollow cone at various angles, as show in <xref
-      ref="figure-slicing-a-cone" />. In that figure, there are four
-      slices, each steeper than the next. The first horizontal slice
-      gives a perfect circle. The second, slightly tilted slice gives
-      an ellipse. The third slice, precisely at the angle of the cone,
-      give a parabolic. The four slice, steeper than the cone itself,
-      gives a hpyerbolc.
-    </p>
-    <figure xml:id="figure-slicing-a-cone">
-      <caption>Four Slices of a Cone</caption>
-      <image xml:id="image-slicing-a-cone" width="80%">
-        <asymptote>
-          unitsize(1cm);
-          import solids;
-
-          currentprojection=orthographic(1,10,1);
-
-          real r=4, h=7;
-          triple O=(0,0,0);
-          triple Oprime=(0,0,3);
-          triple pS=(0,0,h);
-          triple pA=(r*sqrt(2)/2,r*sqrt(2)/2,0);
-          revolution rC=cone(O,r,h,axis=Z,n=1);
-
-          draw(surface(rC),grey+opacity(0.2));
-
-          pen bg=gray(0.9)+opacity(0.5);
-
-          draw(surface((4,4,5)--(4,-4,5)--(-4,-4,5)--(-4,4,5)--cycle),
-            bg,bg);
-          draw(surface((4,4,4)--(4,-4,4)--(-4,-4,3)--(-4,4,3)--cycle),
-            bg,bg);
-          draw(surface((4,4,6)--(4,-4,6)--(0,-4,0)--(0,4,0)--cycle),
-            bg,bg);
-          draw(surface((-1,4,6)--(-1,-4,6)--(-2,-4,0)--(-2,4,0)--cycle),
-            bg,bg);
-        </asymptote>
-      </image>
-    </figure>
-    <p>
-      Those are the four shapes: circle, ellipse, parabola and
-      hyperbola. I will give two other equivalent definitions for each
-      conic: one instrinsically geometric definition, and one by
-      algebraic equation. For the algebraic equations, I will assume
-      that the conic is centred at the origin. (More general conics
-      can be formed by shifting the conics centered at the origin.)
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-description-of-conics">
-    <title>Descriptions of Conics</title>
-    <figure xml:id="figure-circle">
-      <caption>The Circle</caption>
-      <image xml:id="image-circle" width="80%">
-        <asymptote>
-          size(10cm,0);
-
-          import graph;
-
-          xlimits(-1.3,1.3);
-          ylimits(-1.3,1.3);
-
-          xaxis("$x$");
-          yaxis("$y$");
-
-          draw(unitcircle);
-          
-          label("$x^2+y^2=r^2$", (0.7,-0.7),SE);
-
-          draw((0,0)--(0.71,0.71));
-          label("$r$",(0.3,0.3),SE);
-        </asymptote>
-      </image>
-    </figure>
-    <p><ul>
-      <li>
-        <title>Conic Slice Definition</title>
-        <p>
-          A circle is a perfectly horizontal slice of a cone.
-        </p>
-      </li>
-      <li>
-        <title>Algebraic Definition</title>
-        <p>
-          A circle is all points a fixed distrance from the centre.
-          This distance is called the <term>radius</term>. If the
-          circle is centred at the origin and the radius is <m>r</m>,
-          then its equation is <m>x^2 + y^2 = r^2</m>.
-        </p>
-      </li>
-    </ul></p>
-    <figure xml:id="figure-ellipse">
-      <caption>The Ellipse</caption>
-      <image xml:id="image-ellipse" width="80%">
-        <asymptote>
-          size(10cm,0);
-
-          import graph;
-          
-          xlimits(-2.3,2.3);
-          ylimits(-1.3,1.3);
-
-          xaxis("$x$");
-          yaxis("$y$");
-
-          real f6(real x) {return -sqrt(1-x^2/4);}
-          real f7(real x) {return sqrt(1-x^2/4);}
-
-          draw(graph(f6,-2,2));
-          draw(graph(f7,-2,2));
-
-          label("$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$",(1,-0.866),SE);
-          label("$a$",(-1,0),S);
-          label("$b$",(0,0.5),W);
-        </asymptote>
-      </image>
-    </figure>
-    <p><ul>
-      <li>
-        <title>Conic Slice Definition</title>
-        <p>
-          An ellipse is a slice of a cone at an angle greater than
-          zero but less than the angle of the cone.
-        </p>
-      </li>
-      <li>
-        <title>Algebraic Definition</title>
-        <p>
-          An ellipse (centred at the origin) is described by the
-          equation <m>\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1</m>.
-          For the numbers <m>a</m> and <m>b</m>, which ever is larger
-          is called the <term>semi-major axis</term> which ever is
-          smaller is called the <term>semi-minor axis</term>. These
-          numbers measure the smallest and largest distances from the
-          centre to the edge of the ellipse. These two numbers cannot
-          be equal, since that would produce a circle. In the diagram,
-          I've drawn an ellipse with <m>a \gt b</m> (so that <m>a</m>
-          is the semi-major axis), but that is not necessary. An
-          ellipse with <m>b \gt a</m> would be taller than it is wide,
-          and <m>b</m> would be the semi-major axis. 
-        </p>
-      </li>
-    </ul></p>
-    <figure xml:id="figure-parabola">
-      <caption>The Parabola</caption>
-      <image xml:id="image-parabola" width="80%">
-        <asymptote>
-          size(10cm,0);
-
-          import graph;
-
-          xlimits(-3.3,3.3);
-          ylimits(-0.3,3.3);
-
-          xaxis("$x$");
-          yaxis("$y$");
-
-          real f5(real x) {return (x^2)/3;}
-
-          draw(graph(f5,-3,3));
-
-          label("$y = ax^2$", (2,1.33),SE);
-        </asymptote>
-      </image>
-    </figure>
-    <p><ul>
-      <li>
-        <title>Conic Slice Definition</title>
-        <p>
-          A parabola is a slice of the cone at exactly the angle of
-          the cone.
-        </p>
-      </li>
-      <li>
-        <title>Algebraic Definition</title>
-        <p>
-          A parabola (centred at the origin) is described by the
-          equation <m>y = ax^2</m>.  The coefficient <m>a</m> measures
-          the width of the parabola: a larger <m>a</m> will give a
-          narrower and steeper parabola. 
-        </p>
-      </li>
-      <li>
-        <title>Another Geometric Definition</title>
-        <p>
-          From your previous mathematical experience, you may be aware
-          of another way of writing vertically-aligned parabolas. A
-          common way to describe a parabola is by giving a vertex and
-          a leading coefficient. The vertex is the peak of the
-          parabola and the leading coefficient will describe how wide
-          or narrow the parabola is. If the leading coefficient is
-          positive, the parabola will open upwards; if negative, the
-          parabola will open downwards.  A parabola with vertex
-          <m>(a,b)</m> and leading coefficient <m>c</m> is described
-          by the equation <m>y = c(x - a)^2 + b</m>. The process of
-          taking a quadratic and writing it in vertex form is called
-          <term>completing the square</term>. This operation should be
-          familiar to you from your high school mathematics, but there
-          is also a reminder on the reference materials. 
-        </p>
-      </li>
-    </ul></p>
-    <figure xml:id="figure-hyperbola">
-      <caption>The Hyperbola</caption>
-      <image xml:id="image-hyperbola" width="90%"> 
-        <asymptote>
-          size(10cm,0);
-
-          import graph;
-
-          xlimits(-3.3,3.3);
-          ylimits(-3.3,3.3);
-
-          xaxis("$x$");
-          yaxis("$y$");
-
-          real f3(real x) {return sqrt(x^2-1);}
-          real f4(real x) {return -sqrt(x^2-1);}
-          
-          draw(graph(f3,-3,-1));
-          draw(graph(f3,1,3));
-          draw(graph(f4,-3,-1));
-          draw(graph(f4,1,3));
-
-          label("$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$", (2.2,-1.8),NE);
-
-          draw((-3,-3)--(3,3),dotted);
-          draw((3,-3)--(-3,3),dotted);
-        </asymptote>
-      </image>
-    </figure>
-    <p><ul>
-      <li>
-        <title>Conic Slice Definition</title>
-        <p>
-          A hyperbola is slice of a cone at an angle steeper than the
-          angle of the cone.
-        </p>
-      </li>
-      <li>
-        <title>Algebraic Definition</title>
-        <p>
-          A hyperbola (centred at the origin) is described by the
-          equation <m>\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1</m>. The
-          numbers <m>a</m> amd <m>b</m> don't have as immediate a
-          definition as in the ellipse. However, you can notice that
-          the arms of the hyperbola are becoming close to straight
-          lines. The slopes of these lines are <m>\frac{a}{b}</m> and
-          <m>\frac{-a}{b}</m>. These lines (called asymptotes) for the
-          parabola are show int he figure as dotted lines. 
-        </p>
-      </li>
-    </ul></p>
-    <p>
-      One of the major motivating problems for conics and analytic
-      geometry is the problem of celestial motion <mdash /> how
-      planets, moons, stars, comets and other celestial objects move
-      and orbit around each other. The Greeks assumed, erroneously,
-      that orbits ought to be perfect circles. Johannes Kepler, in the
-      16th century, correctly observed that orbits take non-circular
-      shapes. He put forward a very convincing theory that orbits have
-      shapes which are conics.  This leads to ellipses for objects
-      without escape velocity and hyperbolas for those with escape
-      velocity. Though not perfect (particularly in complicated
-      multi-body problems or when relativistic corrections are
-      included), Kepler's model is remarkably accurate. Conics are
-      still used as the basic models of orbital paths.
-    </p>
   </subsection>
 </section>

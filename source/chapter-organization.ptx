@@ -41,8 +41,12 @@
     </p>
     <ol>
       <li>
-        Describe and manipulate equations of simple loci (lines,
-        conics, etc) in Cartesian coordinates. 
+        Describe and manipulate equations of line in Cartesian
+        coordinates. 
+      </li>
+      <li>
+        Describe and manipulate equations of conics in Cartesian
+        coordinates. 
       </li>
       <li>
         Solve intersection problems with simple loci (lines, conics,
@@ -102,12 +106,16 @@
         Apply the substitution rule to solve integrals. 
       </li>
       <li>
-        Solve initial value problems with separable differential
-        equations.
-      </li>
-      <li>
         Use derivative to find extrema, find intervals of increase and
         decrease, and solve optimzation problems. 
+      </li>
+      <li>
+        Use the tools of the course to sketch functions without the
+        aid of a computer graphing tool. 
+      </li>
+      <li>
+        Use the tools and concepts of the course to analyse and
+        critique functions as models of real-world situations. 
       </li>
     </ol>
     <p>
