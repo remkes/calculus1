@@ -40,7 +40,14 @@
       </statement>
       <solution>
         <p>
-          <m>\RR^2</m> is notation for the cartesian plane. 
+          <m>\RR^2</m> is notation for the cartesian plane. The
+          notation comes from the fact that each axis is like a copy
+          of the real numbers, and there are two axes. Similarly,
+          <m>\RR^3</m> is notation for catersian space, where there
+          are three axes. Even though it is not visualizable, in
+          principle we can make a version of cartesian coordinates
+          with any number of axes. This is called <m>\RR^n</m>, where
+          <m>n</m> can be any positive integer. 
         </p>
       </solution>
     </activity>
@@ -48,11 +55,16 @@
     <activity>
       <statement>
         <p>
-          
+          What is a locus? Why is it an important definition in
+          analytic geometry?
         </p>
       </statement>
       <solution>
         <p>
+          A locus is the shape in cartesian space defined by an
+          equation of the coordinates. It is the main way that algebra
+          (and equation) is connected to geometry (shapes), which is
+          the fundamentally amazing thing about analytic geometry. 
         </p>
       </solution>
     </activity>
@@ -60,11 +72,81 @@
     <activity>
       <statement>
         <p>
-          
+          What is a linear equation in two variables? How is it
+          interpreted geometrically?
         </p>
       </statement>
       <solution>
         <p>
+          A linear equation is an equation of the following form (or
+          various possible re-arrangements of the equation). 
+          <md>
+            ax + by + c = 0 
+          <md>
+          In this, <m>x</m> and <m>y</m> are variables and <m>a<m>,
+          <m>b</m> and <m>c</m> are the constant. 
+        </p>
+        <p>
+          The locus of a linear equation is a line. All straight lines
+          in the plane correspond to linear equations. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  </subsection>
+    <activity>
+      <statement>
+        <p>
+          What information is needed to determine the equation of a
+          line? 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I can determine the equation of a line from three different
+          set of information.
+          <ul>
+            <li>
+              If I have the slope and the <m>y</m>-intercept, then I
+              can directly put these into the slope-intercept form of
+              the equation.
+            </li>
+            <li>
+              If I have a point and a slope, I can put the slope into
+              the slope-intercept form of the line and then use the
+              point to calculate the intercept. 
+            </li>
+            <li>
+              If I have two points, I can use the two points to
+              calculate the slope and then use either point, along
+              with the sloipe, to calculate the intercept. 
+            </li>
+          </ul>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  </subsection>
+    <activity>
+      <statement>
+        <p>
+          What are the advantages and dis-advantages of the
+          slope-intercept form of the equation of a line. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The slope-intercept form of the equation of a line has
+          several advantages. It is standard and familiar, so easily
+          recognized. It isolate the <m>y</m> variable, so it
+          resemples the setup for the graph of a function. It is based
+          on slope and intercept, which are two easily observed
+          geometric facts about a line. Finally, it is easy to
+          calcualte and work with algebraiccaly. 
+        </p>
+        <p>
+          The main distadvantage is that the slope-intercept form
+          cannot represent vertical lines, since they have no slope. 
         </p>
       </solution>
     </activity>

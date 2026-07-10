@@ -1,8 +1,8 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-derivatives">
   <title>Derivatives</title>
-  <xi:include href="clo10-derivative-definition.ptx" />
-  <xi:include href="clo11-derivative-rules.ptx" />
-  <xi:include href="clo12-chain-rule.ptx" />
-  <xi:include href="clo13-hopitals.ptx" />
+  <xi:include href="clo11-derivative-definition.ptx" />
+  <xi:include href="clo12-derivative-rules.ptx" />
+  <xi:include href="clo13-chain-rule.ptx" />
+  <xi:include href="clo14-hopitals.ptx" />
 </chapter>
