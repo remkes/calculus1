@@ -1,0 +1,94 @@
+<section xml:id="section-activity-clo2">
+  <title>Activity for CLO-2</title>
+  <subsection xml:id="subsection-clo2-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-equations-of-conics">
+    <title>Calculation Question: Equations of Conics</title>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of an ellipse centred at the origin with
+          semi-major axis 4 and semi-minor axis 2. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The standard form of the equation of an ellipse centred at
+          the origin is <m> \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1</m>
+          where <m>a</m> and <m>b</m> are the semi-axes in the
+          <m>x</m> and <m>y</m> directions, respectively. I've been
+          told in the equation that the semi-major axis is 4 and the
+          semi-minor axis is 2; but the question didn't specify which
+          was the horizontal and which was the vertical directly.
+          Therefore, I can just choose: setting <m>a=2</m> and
+          <m>b=4</m> or vice-versa. 
+          <md>
+            \frac{x^2}{4} + \frac{y^2}{16} = 1 \text{ or }
+            \frac{x^2}{16} + \frac{y^2}{4} = 1 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the circle centred at the origin with
+          radius <m>\sqrt{15}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The standard form of the equation of an circle centred at
+          the origin is <m>x^2 + y^2 = r^2</m>. I am given the
+          radius of <m>\sqrt{15}</m>, so I just square that value in
+          insert it into the equation.
+          <md>
+            x^2 + y^2 = 15
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the parabola with vertex <m>(3,-2)</m>
+          and leading coefficient <m>\frac{1}{4}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The standard form of the equation of a parabola with vertex
+          <m>(a,b)</m> and leading coefficient <m>c</m> is <m>y = c (x
+          - a)^2 + b </m>. I can just replace the three unknown with
+          what I am given in the problem.
+          <md>
+            y = \frac{1}{4} (x-3)^2 - 2 
+          </md>
+          If I want a more conventional equation for this parabola,
+          I can expand.
+          <md>
+            y = \frac{1}{4} (x^2 - 6x + 9) - 2 = \frac{1}{4} x^2 -
+            \frac{3}{2} x + \frac{1}{4} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>
