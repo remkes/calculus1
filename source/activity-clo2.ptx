@@ -11,6 +11,152 @@
     <activity>
       <statement>
         <p>
+          Why are conics called <sq>conics</sq>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <sq>Conics</sq> is short for <sq>conic sections</sq>, with
+          <sq>section</sq> being used archaically to mean a cut or a
+          slipe. Conics are slices of cones: they are all the shape
+          you can get by slicing a hollow cone at various angles. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why are conics the most common and approachable type of
+          locus after lines?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Lines are loci of linear equations. A linear equation is the
+          most simple kind of algebraic equation: it only involves
+          variables multiplied by constants and added together. 
+        </p>
+        <p>
+          After a linear equation, the next simplest kind of equation
+          is an equation where variables are either squared or
+          multiplied by each other once. If <m>x</m> and <m>y</m> are
+          the variables, then the expressions <m>x^2</m>, <m>y^2</m>
+          and <m>xy</m> are allowed in the equation. Introducing these
+          terms produces equations whose loci are conics, hence conics
+          are the next simplest kind of locus. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What are the four types of conics and what are their
+          equations centred at the origin. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ul>
+            <li>
+              A circle is a horizontal slice of a cone. It is
+              determined by a radius <m>r</m> and the equation,
+              centred at the origin, is <m>x^2 + y^2 = r^2</m>.
+            </li>
+            <li>
+              An ellipse is a slice of a cone at a mild angle to the
+              horizontal. It is determined by two semi-axes, the
+              larger being called the semi-major axis and the smaller
+              being called the semi-minor axis. It's equation, centred
+              at the origin, is <m>\frac{x^2}{a^2} + \frac{y^2}{b^2} =
+              1</m>. 
+            </li>
+            <li>
+              A parabola is a slice of a cone at precisely the angle
+              of the cone. Its equation, centred at the origin, is
+              <m>y = ax^2</m>. 
+            </li>
+            <li>
+              A hyperbola is a slice of a cone at an angle steeper
+              than the angle of the cone. Its equation, centred at the
+              origin, is <m>\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1</m>.
+            </li>
+          </ul>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
         </p>
       </statement>
       <solution>

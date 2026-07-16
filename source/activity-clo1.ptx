@@ -79,8 +79,8 @@
           various possible re-arrangements of the equation). 
           <md>
             ax + by + c = 0 
-          <md>
-          In this, <m>x</m> and <m>y</m> are variables and <m>a<m>,
+          </md>
+          In this, <m>x</m> and <m>y</m> are variables and <m>a</m>,
           <m>b</m> and <m>c</m> are the constant. 
         </p>
         <p>
@@ -145,7 +145,7 @@
     </activity>
   </subsection>
   <subsection xml:id="subsection-activity-equations-of-lines">
-    <title>Calculate Questions</title>
+    <title>Calculation Questions: Equations of Lines</title>
     <activity>
       <statement>
         <p>
