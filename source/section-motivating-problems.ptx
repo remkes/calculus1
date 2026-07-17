@@ -1,0 +1,310 @@
+<section xml:id="section-motivating-problems">
+  <title>Motivating Problems</title>
+  <introduction>
+    <p>
+      To motivate the course, I want to describe a few important
+      problems which cannot be solved just with algebra. I hope these
+      seem practical and worthwhile to you, so that it makes sense why
+      we would need to develop a whole new kind of mathematics to
+      solve these problems. To recap from the last section, I want to
+      describe the (quantitative) world. I observe that in the world,
+      quantities are interrelated and interdependent. These quantities
+      are also dynamic, constantly in flux. To make a mathematical
+      description of the world, the description must also be dynamic
+      and interdependant.  That requires functions, and calculus is
+      the study of their dynamic behaviour. Here are some such dynamic
+      problems.
+    </p>
+  </introduction>
+  <subsection xml:id="subsection-motivating-population">
+    <title>Motivating Problem: Population Growth</title>
+    <p>
+      If I observe a population (human, animal, plant, etc.) over
+      time, one of most common behaviours to observe is percentage
+      growth. A population increase (or decrease) over a fixed
+      period of time usually depends on how large the population is,
+      and that dependence is very commonly a percentage. In Canada,
+      for example, the population growth over the last few decades
+      has usually been between one and three percent. Percentages
+      make sense for populattion growth: a larger population can
+      produce more offspring, and under consistent conditions, will
+      produce offspring at some consistent rate. That's a
+      percentage.
+    </p>
+    <p>
+      At a fixed point in time, algebra can, of course, just
+      calculate this percetage. 
+      If I have a population of 7 million and a percentage growth
+      of  <m>1.7\%</m> per year, then I can just calculate that the
+      population will increase by <m>119,000</m> individuals. This
+      is algebra, but this is only a single calculation. It tells me
+      the growth at a moment, but no more. 
+    </p>
+    <p>
+      What if I wanted a more holistic picture? What is I wanted a
+      <em>function</em> that describes the popluation over time?
+      This algebra cannot solve. Percentage growth descripes a
+      growth rate of a function. But it doesn't tell you what the
+      function actually is. To find the function, you need a
+      mathematical method to start with a growth rate and produce
+      the original function. That's the kind of dynamic problem
+      that algebra can't solve.
+    </p>
+    <p>
+      This is a pretty universal problem: it doesn't just apply to
+      population. Anything that is described by a growth rate has
+      this problem: how do you get to a function when you know only
+      the growth rate. This situation arises in many contexts: rates
+      of heating and cooling; rates of financial or economic growth;
+      rates of production of a new chemical in a chemical reaction;
+      rates of radio-active decay; I could go on. That said, I
+      choose population because of its importance, and because it is a
+      biological problem.  Historically (as I will discuss shortly),
+      biology was not the motivating context for the invention of
+      the calculus. But population dynamics in biology is a perfect
+      environment to demonstrate the value of calculus. Throughout
+      this course, I'll rely most heavily on population dynamics as
+      motivation: I want this to be a course about understanding the
+      nature of population growth and how it can be reasonably
+      described mathematically. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-motivating-velocity">
+    <title>Motivating Problem: Velocity</title>
+    <figure xml:id="figure-slope-linear">
+      <caption>Slope of a Linear Function</caption>
+      <image xml:id="figure10" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$t$");
+          yaxis("$p$");
+
+          real f(real x) {return x/3;}
+
+          draw(graph(f,0,8));
+
+          draw((6,2)--(6,1)--(3,1));
+
+          label("rise",(6,1.5),E);
+          label("run",(4.5,1),S);
+          label("$a =$ slope",(4.5,1.5),NW);
+          label("$p=at$", (8,8/3),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      My first example was biological. However, the history of
+      calculus comes more from physics and geometry. So, let me go
+      back to that history. Coming from physics, I'll start with the
+      velocity problem.  Assume there is an object moving in one
+      dimension. I can describe its position as a function
+      <m>p(t)</m> where <m>p</m> is position in terms of time
+      <m>t</m>. I want to know its velocity.
+    </p>
+    <p>
+      If <m>p(t) = at + b</m> is a linear function, then algebra can
+      answer this question. With this linear function, for each unit
+      of time the object travels <m>a</m> units of distance. In
+      <xref ref="figure-slope-linear" />, units of time are in the
+      horizontal direction (the run) and units of position are in
+      the vertical direction (the rise). The value <m>a</m> is the
+      velocity. Geometrically, the velocity is measured by the slope
+      of the straight line graph of <m>p(t)</m>, which you may
+      remember from high school as `rise over run'. 
+    </p>
+    <p>
+      Slope is easy for a linear function: such functions represent
+      constant velocity. But with most moving objects, velocity is
+      not constant. The graph of a function where velocity is
+      non-constant is not a straight line.
+    </p>
+    <figure xml:id="figure-tangent-line">
+      <caption>Non-Constant Velocity</caption>
+      <image xml:id="figure11" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f1(real x) {return (x^3-x^2+x+1)/8;}
+          real f2(real x) {return 3/8*x - 11/76;}
+
+          draw(graph(f1,0,2.2));
+          draw(graph(f2,0,3));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      How do we figure out the velocity of a function whose graph is
+      not a straight line?  The line drawn in <xref
+      ref="figure-tangent-line"/> is called a tangent line. It just
+      touches the graph at one points. It's a straight line, so it
+      has a slope, and therefore a velocity.  Finding this slope
+      would be a way to understand the velocity of this object. 
+    </p>
+    <p>
+      But wow do I calculate a tangent line? Algebra has trouble
+      with this problem. All I have is a point and the function.
+      There is no second point with which to define a line and thus
+      a slope. So here is another problem to motivate calculus.
+      Geometrically, how can I find the slope of a tangent line? In
+      terms of movement, how can I determine the velocity of a
+      function which measure position. 
+    </p>
+    <p>
+      Like growth rates, there are many version of this problem.
+      For anything that changes in time, I can ask how fast it is
+      changing. The velocity problem deals with position over time,
+      but indeed any function of time leads to the same question.
+      If heat depends on time, how fast is the heat increasing or
+      decreasing? If happiness depends on time, how fast is
+      happiness increasing or decreasing? This is all essentially
+      the same motivating problem: finding the rate of change given
+      a function that depends on time. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-motivating-distance">
+    <title>Motivating Problem: Distance Travelled</title>
+    <p>
+      Now I will consider the opposite problem. Consider a function
+      <m>v(t)</m> which tells me the velocity of an object at any
+      point of time. How can I determine the distance the object has
+      covered over a period of time? Again, in the special situation
+      where the velocity is constant, algebra can solve this. 
+    </p>
+    <figure xml:id="figure-constant-velocity">
+      <caption>Constant Velocity</caption>
+      <image xml:id="figure14" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$t$");
+          yaxis("$y$");
+
+          draw((0,4)--(6,4)--(6,0));
+          
+          label("$v(t) = c$",(3,4),N);
+
+          dot("$t=0$",(0,0),NE);
+          dot("$t=t_0$",(6,0),NW);
+
+          label("Area$",(2,2),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      If velocity is constant, then I am moving at some fixed number
+      $c$ units of distance per unit of time. If I multiply $c$ by
+      the time, I get the distance. Travelling at 40 km/h for 3
+      hours means you have travelled <m>40 \cdot 3 = 120</m>km.
+      Algebra can do this. 
+    </p>
+    <p>
+      Geometrically, in <xref ref="figure-constant-velocity"/>, the
+      velociy is the height of the graph and the time is the witdh.
+      The product of the two is height times width, which is just
+      area. The velocity travelled is the area under the velocity
+      graph. 
+    </p>
+    <p>
+      If the velocity is non-constant, then I get a more complicated
+      graph in <xref ref="figure-non-constant-velocity"/>.
+    </p>
+    <figure xml:id="figure-non-constant-velocity">
+      <caption>Non-Constant Velocity</caption>
+      <image xml:id="figure15" width="60%">
+        <asymptote>
+          size(10cm);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          draw((0,3){SE}..{E}(2,1.6){E}..{NE}(4,4){NE}..{SE}(6,3));
+          draw((6,3)--(6,0));
+
+          label("$v(t)$",(3,3),N);
+
+          dot("$t=0$",(0,0),NE);
+          dot("$t=t_0$",(6,0),NW);
+          
+          label("Area = Distance Travelled",(0.2,1),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      The distance travelled is still the area underneath this
+      graph, just as it was for constant velocity.  Therefore, to
+      solve the distance travelled problem, I need to find areas
+      under graphs like these. Liketangent lines, this is not a
+      problem that algebra can easily tackle. This is a complicated
+      area under a curving path: there is no easy formula for
+      algebra to apply. 
+    </p>
+    <p>
+      This is the third motivating problem. Geometrically, given a
+      graph, can I calculate the area underneath the graph? In physics
+      terms, this means starting with a velocity function and
+      determining the total distance travelled. 
+    </p>
+    <p>
+      Like the two previous problem, there are many versions of this
+      problem. Velociy measures how fast your are travelling, so
+      distance travelled is the total <sq>work</sq> accomplished by
+      travelling. Anytime I consider a function which directly
+      describes a rate of something being accomplish, then the area
+      under that curve is the total amount of <sq>work</sq>
+      accomplished by that function. If I have a function that
+      measures the rate of water usage in a population, the area is
+      the total amount of water consumed. If I have a funciton that
+      measures the interest rate on a bank account, then the area is
+      the total amount of interest gained. I could go on: any
+      <sq>work accomplished</sq> probelm also fits this pattern. And
+      for any of these problems, if the situation is non-linear, I
+      need new techique beyond algebra to solve it. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-motivating-optmization">
+    <title>Motivating Problem: Optimization</title>
+    <p>
+      The previous three motivating problems were direct: they all
+      were about some kind of specific calculation or the production
+      of a specific function. The fourth is a little indirect, but
+      still very important. 
+    </p>
+    <p>
+      An optimization problem is any problem that asks for some
+      superlative: the best, worse, highest, lowest, etc. This is
+      applied to some function by asking <sq>When is the function at
+      its highest peak or lowest valley?</sq> This is, again, a
+      problem that algebra has a hard time with. Visually, the
+      problem is easy: if you can see the function, you can just
+      point out the peaks and the valleys. 
+    </p>
+    <p>
+      But it turns out that calculating peaks and valleys percisely
+      is quite difficult and algebra fails, in general, to do this.
+      Peaks and valleys are parts of the changing dynamics of the
+      fuction and the difficult in finding these points is similar
+      to finding tangent lines and areas under curves. It turns out
+      we need the same tools<mdash/>we need calculus. 
+    </p>
+    <p>
+      Obviously, optimization is a pretty valuable kind of problem
+      fo solve. The world is full of people looking for optimal
+      solutions. Whenever the optimization situation it described
+      using function, these problem solving are using calculus.
+      Solving optimization problems turns out to be one of the major
+      reasons that calculus is so useful and important. 
+    </p>
+  </subsection>
+</section>

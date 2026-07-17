@@ -1,7 +1,6 @@
-
 <section xml:id="section-activity-clo3">
   <title>Activity for CLO-3</title>
-  <subsection xml:id="subsection-clo1-review">
+  <subsection xml:id="subsection-clo3-review">
     <title>Conceptual Review</title>
     <p>
       You can test your learning from the video (and your own
@@ -12,10 +11,77 @@
     <activity>
       <statement>
         <p>
+          Why is intersection an important conceptual connection
+          between algebra and geometry?
         </p>
       </statement>
       <solution>
         <p>
+          Intersection is the geometric equivalent of solving
+          equations. If I have two equations in two variables, their
+          common solution is the set of variable values that satisfy
+          both equation. But equations in two variables are loci in
+          <m>\RR^2</m> when interpreted geometrically. The values of
+          the variables that solve both equations are precisely the
+          coordinates of the points which are on both loci. Therefore,
+          intersection is just the geomtry version of solving a system
+          of equations. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the general algebraic method for solving
+          intersections?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Solving intersection is the same as solving systems of
+          equations. Solving system is best approached by isolating
+          and replacing variables, to reduce a multi-variable equation
+          into a single variable equation. Once you get to a single
+          variable equation, hopefully that equation is solvable and
+          the values of the single variable can be used to determine
+          the other variables. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What complications can happen with intersection that involve
+          conics? 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For interesection of line, the isolate and replace can be
+          done very algorithmically.  For conics, though, the choice
+          of replacement variable can matter. Sometime, isolating and
+          replace one variable leads to a much more difficult or
+          complicated situation than using the other variable. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What does it mean to isolate and replace an expression?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Usually, solving system is taught with instruction to
+          isolate and replace a variable. But is a variable only shows
+          up as the same expression in both equations, then it is
+          sufficient to isolate and replace that expression. If
+          <m>x^2</m> is the only instance of <m>x</m> in both equation,
+          then you can use one equation to solve for <m>x^2</m> and
+          then replace <m>x^2</m> directly in the second equation,
+          without ever having to use the square root to get to
+          <m>x</m> itself. 
         </p>
       </solution>
     </activity>

@@ -1,0 +1,409 @@
+<section xml:id="section-activity-clo-4">
+  <title>Activity for CLO-4</title>
+  <subsection xml:id="subsection-clo-4-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What does <sq>the behaviour of a function</sq> mean? What
+          tools exist to describe how functions behave?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The <sq>behaviour of a function</sq> refers to all its
+          mathematical properties. Specifically, it refers to it
+          direction: whether it grows or decays, whether it changes
+          direction, how quickly and how often it does any of these
+          things. It refers to its long term situation, where the
+          function is going to end up for large input. It refers to
+          any unusual properties such as jumps, sudden changes, of
+          unexpected gaps in the domain. 
+        </p>
+        <p>
+          Many algebraic tools exist. However, these are limited, and
+          one of the main goals of this course is to build a expansive
+          toolkit to analyze the behaviour of functions.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is domain and how it is determined?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Domain is the set of input of the function. By default, it
+          is the set of all possible input, though it can be
+          restricted to a smaller set is desired. 
+        </p>
+        <p>
+          Domain is determined by looking for domain problems. The
+          most common are division by zero, even roots of negative
+          number, and logarithms of negative number or zero. All of
+          these must be avoided, so the domain is the largest set
+          which avoids these problems. Other particular functions (such
+          as the inverse trig functions) have unique domain
+          restrictions as well. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is boundedness?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Boundedness is the property that the outputs of a function
+          never go above or below (or both) particular boundaries. It
+          means a function cannot keep getting larger forever (either
+          as a large positive or a large negative number). 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is monotonicity?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Monotonicity is the property that a function doesn't change
+          direction: it is always increasing or always decreasing. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is composition and how does it differ from pointwise
+          operations?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The composition to function is doing two function one after
+          the other. Thought of as machines or operators, it means
+          that we let one function act and produce an output. Then we
+          make that output the input to a second function.
+        </p>
+        <p>
+          This differs from pointwise operations. In pointwise
+          operations, two functions act independently. Then, something
+          is done to both the outcomes: they are added, multiplied,
+          etc. There isn't a first or second function and no output
+          from one function is used as input for another function. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What does it meant to invert a function? What does the
+          inverse of a function do?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To invert a function is to create a new function that undoes
+          what the original function did. It's to make the reverse
+          process. When a function and its inverse are composed
+          together, the rest is the identity function: nothing happens
+          and the input is returned as the same output. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          In a composition, how do the domains of the pieces work
+          together to determine the domain of the composition?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In a composition, the domain of the composition is limit by
+          the domain of the first (outside) function. This function
+          has to act before the second functions, so whatever it acts
+          on has to be in its domain. In addition, the output of the
+          first function has to be valid input for the second
+          function. That is, the output of the first function has to
+          be in the domain of the second. The inputs to the
+          composition may need to be further restricted to make sure
+          that this cooperation is possible. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-TOPIC">
+    <title>Calculation Questions: Composition</title>
+    <activity>
+      <statement>
+        <p>
+          Compose the functions <m>f(x) = \frac{1}{x+4}</m> and
+          <m>g(x) = x^2 - 4</m> in both orders. Determine the domain
+          of both compositions.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For the composition <m>f \circ g</m>, <m>f</m> is the
+          outside function and <m>g</m> is the inside function. I use
+          the function <m>g</m> to replace the variable in the
+          function <m>f</m>.
+          <md>
+            f \circ g(x) = \frac{1}{(x^2-4) + 4} = \frac{1}{x^2} 
+          </md>
+          In the resulting function, I need to exclude <m>x = 0</m>
+          to avoid division by zero. The inside function <m>g</m> has
+          no restrictions, so there are no other domain concerns and
+          the domain is all real numbers except 0.
+        </p>
+        <p>
+          For the composition <m>g \circ f</m>, <m>g</m> is the
+          outside function and <m>f</m> is the inside function. I use
+          the function <m>f</m> to replace the variable in the
+          function <m>g</m>.
+          <md>
+            g \circ f(x) = \left( \frac{1}{x+4} \right)^2 - 4 =
+            \frac{1}{(x+4)^2} - 4 
+          </md>
+          In the resulting function, I need to exclude <m>x = -4</m>
+          to avoid division by zero. The inside function <m>f</m> has
+          the same restriction, <m>x \neq -4</m>, so there are no
+          other domain concerns and the domain is all real numbers
+          except <m>-4</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Compose the functions <m>f(x) = e^{x^2-1}</m> and <m>g(x) =
+          \sqrt{x^3-5}</m> in both orders. Determine the domain of
+          both compositions.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For the composition <m>f \circ g</m>, <m>f</m> is the
+          outside function and <m>g</m> is the inside function. I use
+          the function <m>g</m> to replace the variable in the
+          function <m>f</m>.
+          <md>
+            f \circ g(x) = e^{(\sqrt{x^3-5})^2-1} = e^{x^3-5-1} =
+            e^{x^3-6}
+          </md>
+          The resulting function has no obvious domain restrictons.
+          However, since I have to do the inside function <m>g</m>
+          first, I need to respect the domain restrictions of
+          <m>g</m>. The argument in the square root needs to be
+          positive, I need <m>x^3-5 \geq 0</m>. This inequality
+          simplifies into <m>x^3 \geq 5</m> and further to <m> x \geq
+          \sqrt[3]{5}</m>. Therefore, the domain of the composition is
+          all real numbers <m>x \geq \sqrt[3]{5}</m>.
+        </p>
+        <p>
+          For the composition <m>g \circ f</m>, <m>g</m> is the
+          outside function and <m>f</m> is the inside function. I use
+          the function <m>f</m> to replace the variable in the
+          function <m>g</m>.
+          <md>
+            g \circ f(x) = \sqrt{(e^{x^2-1})^3 - 5} =
+            \sqrt{e^{3(x^2-1)} - 5}
+          </md>
+          I've simplified this one step using the laws of exponents.
+          Even though this is still a complicated expression, there
+          aren't any more reasonable simplifications. The domain
+          restrictions are also complicated here. The inside function
+          <m>f</m> has no restrictions, so I only have to worry about
+          the final form; unfortunately, that final form isn't easy to
+          pull apart. The square root is the only restriction, so the
+          term inside the square root must be non-negative. I will
+          work with that inequality a bit. (I'm going to apply a
+          logarithm to get ride of the exponential; this respects the
+          inequality, since the logarithm is an increasing function.
+          Any increasing function preserves inequalities and an
+          decreasing function reverses them.)
+          <md>
+            <mrow>
+              e^{3(x^2-1)} - 5 \amp \geq 0 
+            </mrow>
+            <mrow>
+              e^{3(x^2-1)} \amp \geq 5 
+            </mrow>
+            <mrow>
+              \ln (e^{3(x^2-1)}) \amp \geq \ln 5 
+            </mrow>
+            <mrow>
+             3(x^2-1) \amp \geq \ln 5 
+            </mrow>
+            <mrow>
+             x^2-1 \amp \geq \frac{1}{3} \ln 5 
+            </mrow>
+            <mrow>
+             x^2 \amp \geq \frac{1}{3} \ln 5 + 1 
+            </mrow>
+            <mrow>
+             x \amp \geq \sqrt{\frac{1}{3} \ln 5 + 1}
+            </mrow>
+          </md>
+          After the manipulation of this inequality, I get an
+          understandable domain restriction. This composition is
+          defined for all real numbers <m>x \geq \sqrt{\frac{1}{3} \ln
+          5 + 1}</m>.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-recognizing-composition">
+    <title>Calculation Activities: Recognizing Composition</title>
+    <activity>
+      <statement>
+        <p>
+          Express the function <m>f(x) = \sqrt[4]{x^2-4}</m> as a
+          composition of two functions.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I want to write <m>f = g \circ h</m> for some functions
+          <m>g</m> and <m>h</m>. I need to break this into successive
+          processes. The first observation is that the fourth root
+          is the last operations of the function: first I square the
+          variable, then subtract 4, then apply the fourth root.
+          Therefore, the fourth root is a reasonable choice of the
+          outside function, with everything inside the root as the
+          inside function. That gives a decomposition.
+          <md>
+            f = g \circ h \text{ where } g(x) = \sqrt[4]{x} \text{ and
+            } h(x) = x^2-4
+          </md>
+          Note that this isn't the only possible answer. Often there
+          are many ways to break apart a function as the composition
+          of two (or more) pieces. Here is another possibility.
+          <md>
+            f = g \circ h \text{ where } g(x) = \sqrt[4]{x-4} \text{
+            and } h(x) = x^2
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Express <m>f(x) = \sin (e^{x^2+x+1})</m> as the composition of
+          two functions.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I want to write <m>f = g \circ h</m> for some functions
+          <m>g</m> and <m>h</m>. I need to break this into successive
+          processes. If I want the simplest outside function, I can
+          observe that the sine function is the last step, applied to
+          everything else in the function. I could choose the sine
+          function as the outside function, leaving everything else as
+          the inside. 
+          <md>
+            f = g \circ h \text{ where } g(x) = \sin (x) \text{ and
+            } h(x) = e^{x^2+x+1}
+          </md>
+          There are other possible solutions. Here is one where I
+          would like the inside function to be slightly simpler.
+          <md>
+            f = g \circ h \text{ where } g(x) = \sin (e^x) \text{ and
+            } h(x) = x^2+x+1
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-inverting-functions">
+    <title>Calculation Questions: Inverting Functions</title>
+    <activity>
+      <statement>
+        <p>
+          Invert the function <m>f(x) = \ln (\sqrt{x})</m> on the
+          domain <m>x > 0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The function is increasing on this domain (since it is the
+          composition of two increasing functions), so it is
+          invertible. I follow the steps of the process: set <m>y =
+          f(x)</m>, solve for <m>y</m>, then switch variables to write
+          the inverse as a function of the conventional independent
+          variable <m>x</m>.
+          <md>
+            <mrow>
+              y \amp = \ln (\sqrt{x}) 
+            </mrow>
+            <mrow>
+              e^y \amp = \sqrt{x} 
+            </mrow>
+            <mrow>
+              (e^y)^2 \amp = x 
+            </mrow>
+            <mrow>
+              f^{-1}(x) \amp = e^{2x}
+            </mrow>
+          </md>
+          Note that I use the exponential to remove the logarithm:
+          these are inverse operations, so one removes the other. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Invert the function <m>f(x) = \frac{1}{\ln (x-1)}</m> on the
+          domain <m>x > 2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          When <m>x > 2 </m>, the logarithm <m>\ln (x-1)</m> is
+          positive and growing, so its reciprocal is positive and
+          decreasing.  The function is invertible on this domain. I
+          follow the steps of the process: set <m>y = f(x)</m>, solve
+          for <m>y</m>, then switch variables to write the inverse as
+          a function of the conventional independent variables
+          <m>x</m>. (In the step from the first to the second line, we
+          simply take the reciprocal of each side of the equation;
+          when the numerators are not zero, this is a valid
+          operation). 
+          <md>
+            <mrow>
+              y \amp = \frac{1}{\ln (x-1)}
+            </mrow>
+            <mrow>
+              \frac{1}{y} \amp = \ln (x-1)
+            </mrow>
+            <mrow>
+              e^{\frac{1}{y}} \amp = x-1 
+            </mrow>
+            <mrow>
+              e^{\frac{1}{y}} + 1  \amp = x 
+            </mrow>
+            <mrow>
+              f^{-1}(x) \amp = e^{\frac{1}{x}} + 1 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

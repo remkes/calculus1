@@ -87,80 +87,36 @@
     <activity>
       <statement>
         <p>
+          What is a vertex of a parabola and what is vertex form?
         </p>
       </statement>
       <solution>
         <p>
+          Vertex form is a polynomial written this way. 
+          <md>
+            y = a(x + b)^2 + c
+          </md>
+          It is important and useful because the vertex of the
+          polynomial is easily identified: the vertex if <m>\left(
+          -b, c)</m>
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
+          What does <sq>completing the square</sq> accomplish for a
+          parabola? Why does it work?
         </p>
       </statement>
       <solution>
         <p>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-        </p>
-      </statement>
-      <solution>
-        <p>
+          Completing the square takes a general parabola and writes it
+          in vertex form. It works because the squared binomial, when
+          expanded, recover the correct linear. When the constant term
+          from the square binomial is added to the vertex form constant
+          term, this also recovers the original constant from the
+          general parabola. 
         </p>
       </solution>
     </activity>
@@ -233,6 +189,18 @@
             y = \frac{1}{4} (x^2 - 6x + 9) - 2 = \frac{1}{4} x^2 -
             \frac{3}{2} x + \frac{1}{4} 
           </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write this polynomial in vertex form. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I start by completing the square. 
         </p>
       </solution>
     </activity>

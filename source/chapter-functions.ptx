@@ -4,7 +4,10 @@
   <xi:include href="clo1-loci.ptx" />
   <xi:include href="activity-clo1.ptx" />
   <xi:include href="clo2-conics.ptx" />
+  <xi:include href="activity-clo2.ptx" />
   <xi:include href="clo3-intersection.ptx" />
+  <xi:include href="activity-clo3.ptx" />
   <xi:include href="clo4-function-operations.ptx" />
+  <xi:include href="activity-clo4.ptx" />
   <xi:include href="clo5-models.ptx" />
 </chapter>

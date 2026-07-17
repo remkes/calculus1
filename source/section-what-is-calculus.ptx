@@ -1,0 +1,81 @@
+<section xml:id="section-what-is-calculus">
+  <title>What Is Calculus</title>
+  <p>
+    In almost all universities, the core and starting point of
+    academic mathematics is calculus. Why is this so? What is
+    calculus and why is it so important? In this introductory
+    section, I want to give you a brief idea of what calculus is
+    about, as well as provide some motivation for why it ought to be
+    studied. 
+  </p>
+  <p>
+    Calculus is the study of the dynamic behaviour of
+    functions. Okay, that's a definition, but why does that help?
+    What is a function and why is the study of the behaviour of
+    functions so central? Why `dynamic'?
+  </p>
+  <p>
+    An understanding of function is prerequisite to this course
+    (though some review will be provided in early sections). But let
+    me state a definition regardless. In brief, a function is a
+    mathematical way of encoding the dependance of one quantity on
+    another. Mathematics is a descriptive language that seeks to
+    capture the quantitative aspects of the world. In the world,
+    many quantites depend on other quantities. In an environment,
+    humidity may depend on temperature. In a vehicle, fuel efficieny
+    may depend on speed.  In an economy, productivity may depend on
+    interest rates. A function is the mathematical thing that
+    measures these relationships.
+  </p>
+  <p>
+    This is why a function is, arguably, the most important
+    mathematical tool for describing the quantitative world. The
+    (quantitative) world is not a collection of completely seperated
+    and independent measurements; it is a collection of deeply
+    interconnected systems. It is full of dependencies. The function
+    is the tool that describes the reality of the (quantitative)
+    world in all its interdependencies. 
+  </p>
+  <p>
+    In particular, most quantities in the world depend on time and
+    change over time. Very little in the world is completely static.
+    A function can describe how something changes and evolves over
+    time. 
+  </p>
+  <p>
+    In this way, mathematicians use functions to model the world. To
+    be able to do so, they need a theory of functions and their
+    behaviour. That theory is calculus. 
+  </p>
+  <p>
+    But some of you might now ask: why do we need a new theory? We
+    learned about functions in high school and the algebraic
+    techniques of high school mathematics were pretty good at
+    describing functions. This is true: algebra goes a long way to
+    understanding functions. However, algebra has one very important
+    and significant weakness: it is static. Algebra can calculate
+    one unknown quantity from other known quantities, but it is only 
+    a snapshot, a single fixed moment in time. Once quantities start
+    changing and shifting, algebra can no longer keep track.
+  </p>
+  <p>
+    This is why we need the new techniques of calculus. Functions
+    are dynamic: they are constantly changing, constantly in flux.
+    They represent systems where nothing is static. The new tools in
+    calculus (the derivative, the integral, the infinite series) are
+    all ways to understand dynamic systems, where the change is
+    happening all around. 
+  </p>
+  <p>
+    To get to the tools of calculus, I'm going to spend several
+    sections on material that may be review for some of you. First,
+    I'm going to cover anlytic geometry.  This is the set of
+    geometric tools mathematicians use to understand the shape of
+    functions, as well as other shapes in two dimensional space. It
+    is necessary for understanding and, in particular, visualizing
+    functions.  Following analytic geometry, I'm going to talk about
+    the concept of a function and go over the main properties and
+    operations. Ater this preparation, we can move on to the start
+    of what is actually considered calculus. 
+  </p>
+</section>

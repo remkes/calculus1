@@ -276,4 +276,169 @@
       still used as the basic models of orbital paths.
     </p>
   </subsection>
+  <subsection xml:id="subsection-parabola">
+    <title>Some Special Properties of Parabolas</title>
+    <p>
+      For the parabola centred at the origin, I gave this equation.
+      <md>
+        y = ax^2
+      </md>
+      This, however, is probably more restrictive than what you have
+      seen previously for parabolas. I'll talk in general about how to
+      move these equations away from the centre of the plane in <xref
+      ref="subsection-shifts-of-conics"/>, but it is worthwhile to
+      talk about the parabola in more detail right away. Parabolas are
+      unique among conics in that (as long as they are upward or
+      downward openning) they are graphs of functions. Due to this
+      reason, parabolas show up very frequently. You are very likely
+      familiar with this form of a parabola.
+      <md>
+        y = ax^2 + bx + c
+      </md>
+      In this form, <m>a</m>, <m>b</m> and <m>c</m> are all real
+      constants. This is the general form of an upward or downward
+      openning parabola, not necessarily centred at the origin. It is
+      the common form that we work with. 
+    </p>
+    <aside>
+      <p>
+        As a very particular aside, there is some debate about the
+        proper plural of <sq>parabola</sq>. Historically, even though it
+        has a Greek origin, <sq>parabola</sq> was a word in scholarly
+        Latin and was given the latinate plural <sq>parabolae</sq>.
+        Older texts will often use this plural. However, this has fallen
+        out of favor and the common English plural is now usually
+        <sq>parabolas</sq>, which we'll use in these notes. This is also
+        true for other worlds from scholarly latin, such as
+        <sq>formula</sq> and, <sq>hyperbola</sq>. 
+      </p>
+      <p>
+        Finally, the greek work that <sq>parabola</sq> comes from
+        <sq>parabole</sq> which means soething like a comparison of
+        juxtaposition. It's the same root as the English word
+        <sq>parable</sq>. 
+      </p>
+    </aside>
+    <p>
+      Since this parabola is no longer centred at the origin, I'd like
+      to know where it is centred. Let me give you a definition. 
+    </p>
+    <definition>
+      <statement>
+        <p>
+          The <term>vertex</term> of a parabola is the coordinate of
+          the turning point of the parabola. That is, the point where
+          is changes from moving down to moving up, or vice-versa for
+          a downward opening parabola.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      For a parabola centred at the origin, the vertex is the origin,
+      <m>(0,0)</m>. I want a method to find the vertex of a general
+      parabola. That method is something called <term>completing the
+      square</term>. Let me describe it for you here in general. I'll
+      start with the general form of a parabola.
+      <md>
+        y = ax^2 + bx + c
+      </md>
+      I can always factor out <m>a</m>.
+      <md>
+        y = a\left(x^2 + \frac{b}{a} x + \frac{c}{a} \right)
+      </md>
+      To make this easlier to work with, I'll replace
+      <m>\frac{b}{a}</m> with <m>B</m> and <m>\frac{c}{a}</m> with
+      <m>C</m>. (Often this whole step won't be necessary since
+      working with parabolas where <m>a=0</m> is very common; these
+      are called <term>monic</term> parabolas.)
+      <md>
+        y = a \left( x^2 + Bx + C \right)
+      </md>
+      Now that I have a monic parabola, I rewrite it as follows.
+      <md>
+        y = a \left( \left( x + \frac{B}{2} \right)^2 + \left( C -
+        \frac{B^2}{4} \right) \right) 
+      </md>
+      Finally, I redistribute the <m>a</m>. 
+      <md>
+        y = a \left( x + \frac{B}{2} \right)^2 + a \left( C -
+        \frac{B^2}{4} \right) 
+      </md>
+      The process here is to take the coefficient <m>B</m> and divide
+      by two; this gives the right number to be inside the squared
+      bracket. To balance out this change, I have to subtract
+      <m>\frac{B^2}{4}</m> from the constant. Let me finish this
+      development with another definition.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A parabola of the form
+          <md>
+            y = a \left( x + b \right)^2  + c
+          </md>
+          is called a parabola written in <term>vertex form</term>. In
+          this form, the vertex of the parabola has coordinates
+          <m>(-b, c)</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Here is an example with a monic parabola (which, again, is the
+      most common situation.) 
+    </p>
+    <example>
+      <statement>
+        <p>
+          Consider this parabola.
+          <md>
+            y = x^2 + 6x + 11 
+          </md>
+          To complete the square, I take the coefficient of <m>x</m>,
+          which is <m>6</m>, and divide by <m>2</m>. Then I also
+          calculate <m>\frac{b^2}{4}</m>, which in this case is
+          <m>\frac{6^2}{4} = \frac{36}{4} = 11</m>. This is the term I
+          subtract from the constant. 
+          <md>
+            y = (x + 3)^2 + 11 - 9 = (x^3)^2 + 2 
+          </md>
+          This is the vertex form. To check if this is correct, I can
+          expand the binomial that I have created and then simplify. 
+          <md>
+            y = (x^3)^2 + 2 = x^2 + 6x + 9 + 2 = x^2 + 6x + 11
+          </md>
+          This is, indeed, the same parabola. The vertex here is <m>(-3,
+          2)</m>.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Consider this parabola.
+          <md>
+            y = 3x^2 + 7x + 12
+          </md>
+          This is a more complicted example. First I factor out the
+          leading coefficient. 
+          <md>
+            y = 3 \left( x^2 + \frac{7}{3} x + 4 \right)
+          </md>
+          To complete the square, I take the coefficient of <m>x</m>,
+          which is <m>\frac{7}{3}</m>, and divide by <m>2</m>. Then I also
+          calculate <m>\frac{b^2}{4}</m>, which in this case is
+          <m>\frac{\frac{49}{9}}{4} = \frac{49}{36}</m>. This is the term I
+          subtract from the constant. 
+          <md>
+            y = 3 \left( \left( x + \frac{7}{6} \right)^2 + 4 -
+            \frac{49}{9} \right) = 3 \left( \left( x + \frac{7}{6}
+            \right)^2 - \frac{13}{9} \right) = 3 \left( x +
+            \frac{7}{6} \right)^2 - \frac{13}{3} 
+          </md>
+          This is the vertex form.  The vertex here is <m>\left(
+          \frac{-7}{6}, \frac{-13}{3} \right)</m>. 
+        </p>
+      </statement>
+    </example>
+  </subsection>
 </section>
