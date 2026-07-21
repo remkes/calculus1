@@ -1,0 +1,996 @@
+<section xml:id="section-activity-clo5">
+  <title>Activity for CLO-5</title>
+  <subsection xml:id="subsection-clo5-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What do we means in mathematic with the word <sq>model</sq>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We mean applying a mathematical construction to describe a
+          real-world situation. In thist course, that construction is
+          a function: we use a particular function to describe the
+          relationship between two real-world quantities. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why is a mathematical model like a scientific hypothesis?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A scientific hypothesis is a claim about some piece of
+          observable and measurable phenomenoon. A mathematcal model
+          is the example of such a claim: it is claiming that two
+          quantities in the world relate to each other in a way that
+          is described by a mathematical function (within some margin
+          of error, at least). Like a scientific hypothesis, a
+          mathematical model may be accurate or inaccurate. It may
+          describe the world well or describe the world poorly.
+          Evidence can be gathered to support or to undermine the
+          value of the model. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why do models often have additional domain restrictions?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          When I choose a mathematical function as a model, that
+          function will have a mathematically determined domain. This
+          is just the rule of mathematics: no division by zero, no
+          even roots of negative numbers, and so on. However, when a
+          function becomes a model, the reasonable values of the
+          quantities are restricted by the situation. If I am
+          measuring distances or population, then negative numbers are
+          unreasonable. If I am measuring time, then there is probably
+          a limit to how far back in time I can reasonably look. If I
+          am measuring temperature in degrees Celcius, then the lowest
+          possible value is <m>-273</m>. These become additional
+          domain restrictions imposed by the situation of the mdoel
+          instead of just the mathematical rules of domains. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What does <sq>regression</sq> mean as a mathematical term. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A regression is a way of determining a relationship between
+          two quantities in the real world. In the language of this
+          course, it is a method for choosing a function as a model of
+          some situation. The methods of regression are mostly part of
+          statistics, not calculus, though calculus is heavily
+          involved in the background of those methods. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What are the important properties of exponential groth. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          As a function, exponential growth is a model where time is
+          the exponent in ane exponential expression. It can also be
+          described by a consistent doubling period, adjusting the
+          exponential expression so that the exponential base becomes
+          <m>2</m>. Finally and most importantly, exponential
+          regression seems to match up with a situation where the
+          growth per unit of time is a percentage of the total:
+          exponential growth and percentage growth appear to be the
+          same phenomenonon. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-regression">
+    <title>Calculation Questions: Regression</title>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Plot the points of this dataset on the
+          cartesian plane. Choose a type of function to match the
+          data. (You don't have give a specific function, just a
+          general class: linear, quadratic, sinusoidal, exponential,
+          etc). 
+          <table xml:id="table-data-set-1">
+            <title>Data Set 1 for Regression</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">x</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+                <cell>11</cell>
+              </row>
+              <row>
+                <cell right="medium">y</cell>
+                <cell>0.8</cell>
+                <cell>-0.4</cell>
+                <cell>-2.3</cell>
+                <cell>-2.8</cell>
+                <cell>-2.9</cell>
+                <cell>-2.7</cell>
+                <cell>-2.2</cell>
+                <cell>-0.7</cell>
+                <cell>0.5</cell>
+                <cell>5.4</cell>
+                <cell>7.1</cell>
+                <cell>9.4</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I plot the points of the data set in the cartesian plane.
+          They drop initially, then rise again. A reasonable choice
+          for this data set is a quadratic function.
+        </p>
+        <figure xml:id="figure-activity-quadratic-regression">
+          <caption>A Quadratic Regression</caption>
+          <image xml:id="figure67" width="90%">
+            <asymptote>
+              size(12cm,7cm,IgnoreAspect);
+
+              import graph;
+
+              yaxis("x",Ticks());
+              xaxis("y",Ticks());
+
+              dot((0,0.81));
+              dot((1,-0.4));
+              dot((2,-2.3));
+              dot((3,-2.8));
+              dot((4,-2.9));
+              dot((5,-2.7));
+              dot((6,-2.2));
+              dot((7,-0.7));
+              dot((8,0.5));
+              dot((9,5.4));
+              dot((10,7.1));
+              dot((11,9.4));
+
+              real f(real x) {return ((x-4)^2)*(12)/49-2.8;}
+
+              draw(graph(f,0,11));
+            </asymptote>
+          </image>
+        </figure>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Plot the points of this dataset on the
+          cartesian plane. Choose a type of function to match the
+          data. (You don't have give a specific function, just a
+          general class: linear, quadratic, sinusoidal, exponential,
+          etc). 
+          <table xml:id="table-data-set-2">
+            <title>Data Set 2 for Regression</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">x</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+                <cell>11</cell>
+              </row>
+              <row>
+                <cell right="medium">y</cell>
+                <cell>-2.5</cell>
+                <cell>1.2</cell>
+                <cell>2.7</cell>
+                <cell>2.1</cell>
+                <cell>-0.4</cell>
+                <cell>-2.8</cell>
+                <cell>-2.6</cell>
+                <cell>-0.1</cell>
+                <cell>2.4</cell>
+                <cell>2.7</cell>
+                <cell>1.2</cell>
+                <cell>-2.4</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I plot the points of the data set in the cartesian plane.
+          The data rises and falls in what looks like a regular
+          pattern. A sinusoidal function is a good choice for this
+          data.
+        </p>
+        <figure xml:id="figure-activity-sinusoidal-regression">
+          <caption>A Sinusoidal Regression</caption>
+          <image xml:id="figure69" idth="90%">
+            <asymptote>
+              size(12cm,7cm,IgnoreAspect);
+
+              import graph;
+
+              yaxis("x",Ticks());
+              xaxis("y",Ticks());
+
+              dot((0,-2.5));
+              dot((1,1.2));
+              dot((2,2.7));
+              dot((3,2.1));
+              dot((4,-0.4));
+              dot((5,-2.8));
+              dot((6,-2.6));
+              dot((7,-0.1));
+              dot((8,2.4));
+              dot((9,2.7));
+              dot((10,1.2));
+              dot((11,-2.4));
+
+              real f(real x) {return (-2.8)*cos(x+0.9);}
+
+              draw(graph(f,0,11));
+            </asymptote>
+          </image>
+        </figure>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Plot the points of this dataset on the
+          cartesian plane. Choose a type of function to match the
+          data. (You don't have give a specific function, just a
+          general class: linear, quadratic, sinusoidal, exponential,
+          etc). 
+          <table xml:id="table-data-set-3">
+            <title>3ata Set 3 for Regression</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">x</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+                <cell>11</cell>
+              </row>
+              <row>
+                <cell right="medium">y</cell>
+                <cell>-0.8</cell>
+                <cell>1.7</cell>
+                <cell>2.9</cell>
+                <cell>2.4</cell>
+                <cell>0.6</cell>
+                <cell>-0.3</cell>
+                <cell>-1.1</cell>
+                <cell>0.1</cell>
+                <cell>3.2</cell>
+                <cell>7.2</cell>
+                <cell>20.6</cell>
+                <cell>64.4</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I plot the points of the data set in the cartesian plane.
+          The data rises, fall, and then rises rapidly. Three changes
+          in directions is possible with a cubic, so that is a
+          reasonable choise for this data. 
+        </p>
+        <figure xml:id="figure-activity-cubic-regression">
+          <caption>A Cubic Regression</caption>
+          <image xml:id="figure70" width="90%">
+            <asymptote>
+              import graph;
+
+              size(12cm,7cm,IgnoreAspect);
+
+              yaxis("x",Ticks());
+              xaxis("y",Ticks());
+
+              dot((0,-0.8));
+              dot((1,1.7));
+              dot((2,2.9));
+              dot((3,2.4));
+              dot((4,0.6));
+              dot((5,-0.3));
+              dot((6,-1.1));
+              dot((7,0.1));
+              dot((8,3.2));
+              dot((9,7.2));
+              dot((10,20.6));
+              dot((11,64.4));
+
+              real f(real x) {return 1/6*(x-1/3)*(x-14/3)*(x-69/10);};
+
+              draw(graph(f,0,11));
+            </asymptote>
+          </image>
+        </figure>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Plot the points of this dataset on the
+          cartesian plane. Choose a type of function to match the
+          data. (You don't have give a specific function, just a
+          general class: linear, quadratic, sinusoidal, exponential,
+          etc). 
+          <table xml:id="table-data-set-4">
+            <title>Data Set 4 for Regression</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">x</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+                <cell>11</cell>
+              </row>
+              <row>
+                <cell right="medium">y</cell>
+                <cell>-2.9</cell>
+                <cell>-2.4</cell>
+                <cell>-2.3</cell>
+                <cell>-2.0</cell>
+                <cell>-1.8</cell>
+                <cell>-1.7</cell>
+                <cell>-1.1</cell>
+                <cell>0.9</cell>
+                <cell>1.4</cell>
+                <cell>1.7</cell>
+                <cell>2.2</cell>
+                <cell>2.3</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I plot the points of the data set in the cartesian plane.
+          The data here points to a increasing function and looks
+          mostly linear. I could simply guess a linear function.
+          However, there seems to be a jump between 6 and 7, which
+          makes a single line a bit problematic. It could be a more
+          complicated kind of function which connects the two pieces.
+          It would also be a discontinuous piecewise function:
+          sometimes functions make sudden jumps. I've chosen this last
+          option, and show two different lines for the two pieces of
+          the data set.
+        </p>
+        <figure xml:id="figure-activity-piecewise-regression">
+          <caption>A Piecewise Regression</caption>
+          <image xml:id="figure71" width="90%">
+            <asymptote>
+              import graph;
+
+              size(12cm,7cm,IgnoreAspect);
+
+              yaxis("x",Ticks());
+              xaxis("y",Ticks());
+
+              dot((0,-2.9));
+              dot((1,-2.4));
+              dot((2,.2-3));
+              dot((3,-2));
+              dot((4,-1.8));
+              dot((5,-1.7));
+              dot((6,-1.1));
+              dot((7,0.9));
+              dot((8,1.4));
+              dot((9,1.7));
+              dot((10,2.2));
+              dot((11,2.3));
+
+              real f1(real x) {return (0.34)*x-3.2;}
+              real f2(real x) {return (0.35)*x-1.5;}
+
+              draw(graph(f1,0,6.5));
+              draw(graph(f2,6.5,11));
+            </asymptote>
+          </image>
+        </figure>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Plot the points of this dataset on the
+          cartesian plane. Choose a type of function to match the
+          data. (You don't have give a specific function, just a
+          general class: linear, quadratic, sinusoidal, exponential,
+          etc). 
+          <table xml:id="table-data-set-5">
+            <title>Data Set 5 for Regression</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">x</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+                <cell>11</cell>
+              </row>
+              <row>
+                <cell right="medium">y</cell>
+                <cell>-2.1</cell>
+                <cell>-0.4</cell>
+                <cell>0.4</cell>
+                <cell>0.5</cell>
+                <cell>0.9</cell>
+                <cell>1.4</cell>
+                <cell>1.5</cell>
+                <cell>2.0</cell>
+                <cell>2.2</cell>
+                <cell>2.6</cell>
+                <cell>2.8</cell>
+                <cell>3.0</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I plot the points of the data set in the cartesian plane.
+          The data is increasing, but more and more slowly as I go
+          along. I want some kind of function which increases but
+          bends downward. Two comnon functions with this behaviours
+          are the square root and the logarithm. I've chose to do with
+          a square root function.
+        </p>
+        <figure xml:id="figure-activity-square-root-regression">
+          <caption>A Square Root Regression</caption>
+          <image xml:id="figure72" width="90%">
+            <asymptote>
+              size(12cm,7cm,IgnoreAspect);
+
+              import graph;
+
+              yaxis("x",Ticks());
+              xaxis("y",Ticks());
+
+              dot((0,-2.13));
+              dot((1,-0.42));
+              dot((2,0.38));
+              dot((3,0.45));
+              dot((4,0.91));
+              dot((5,1.35));
+              dot((6,1.52));
+              dot((7,1.98));
+              dot((8,2.24));
+              dot((9,2.56));
+              dot((10,2.78));
+              dot((11,3.01));
+
+              real f(real x) {return sqrt(7x/3)-2;}
+
+              draw(graph(f,0,11));
+            </asymptote>
+          </image>
+        </figure>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-interpreting-parameters">
+    <title>Interpreting Parameters</title>
+    <activity>
+      <statement>
+        <p>
+        Consider <m>C(t) = ae^{-bt}</m>, a model of the concentration
+        of a chemical over time. Give an interpretation for the
+        parameters <m>a</m> and <m>b</m> in this model. Assume that
+        the parameters are positive.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        This is the same form as the exponential form for population
+        growth, but with a negative exponent. I can use our
+        undersatnding of the parameters in population growth to
+        interpret these parameters. When <m>t=0</m>, I have <m>C(0) =
+        a</m>, so <m>a</m> the starting value. The coefficient in the
+        exponential was the rate of exponential growth for population.
+        I can likewise conclude that <m>b</m> is control the rate of
+        decay of concentration here. This is decay because there is a 
+        negative exponential. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        Consider <m>p(d) = a + bd</m>, a model of the pressure in a
+        body of water as a function of depth. Give an interpretation
+        for the parameters <m>a</m> and <m>b</m> in this model. Assume
+        that the parameters are positive.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        When the depth is zero, I have <m>p(0) = a</m>. I can
+        conclude that <m>a</m> is the pressure at the surface of the
+        body of water. Since the parameters are positive, this
+        pressure increases linearly as the depth increases. The
+        parameter <m>b</m> is the slope of this increas, so it measure
+        that rate of which the water gains pressure as depth
+        increases.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        Consider <m>h(t) = a + b\sin(\pi t) - ct</m>, a model of
+        height of an object as a function of time. Give an
+        interpretation for the parameters <m>a</m>, <m>b</m> and
+        <m>c</m>in this model. Assume that the parameters are
+        positive.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        When the time is 0, I have <m>p(0) = a</m>. Therefore, I can
+        call <m>a</m> the starting height. The other pieces of the
+        function are sinusoidal oscillation linear decline. The
+        parameter <m>b</m> is the amplitude of the sinusoidal piece
+        and the parameter <m>c</m> is the negative slope of the linear
+        decline. The behaviour of the model comes from adding these
+        two behaviours together: so I get some oscillations while
+        generally having a linear decline. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+        Consider <m>p(t) = (a-b)t + c</m>, a model of population as a
+        function of time. Give an interpretation for the parameters
+        <m>a</m>, <m>b</m> and <m>c</m> in this model. Assume that the
+        parameters are positive.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        When time is 0, I have <m>p(0) = c</m>, so <m>c</m> is the
+        starting value of the population. The population is linear,
+        with slope <m>a-b</m>. This will be positive or negative
+        depending on which parameter is larger. Since the parater
+        <m>a</m> is positive but I subtract the parameter <m>b</m>,
+        <m>a</m> must have a positive effect on the population and
+        <m>b</m> must have a negative effect. The simpliest way to
+        interpret this is to assume that <m>a</m> is a birth rate and
+        <m>b</m> is a death rate. The population will only grow if the
+        rate of briths exceeds the rate of deaths. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-exponential-regression">
+    <title>Calculation Questions: Exponential Regression </title>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Just by looking at the dataset, guess
+          the doubling period and write a guess of the appropriate
+          exponential function. Evaluate that exponential function
+          (using a calculator or computer) and compare the values with
+          the data. 
+          <table xml:id="table-data-set-exponential-1">
+            <title>Data Set 1 for Exponential Growth</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>1.0</cell>
+                <cell>1.1</cell>
+                <cell>1.2</cell>
+                <cell>1.5</cell>
+                <cell>1.8</cell>
+                <cell>2.0</cell>
+                <cell>2.3</cell>
+                <cell>2.7</cell>
+                <cell>3.1</cell>
+                <cell>3.5</cell>
+                <cell>4.1</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        It looks like this data doubles about every five years. The
+        starting value is 1. From the notes, I can use the provided
+        structure for this exponential function: if <m>a</m> is the
+        starting value and <m>d</m> is the doubling period, the
+        function should be <m>a2^{\frac{t}{d}}</m>. Using the values from
+        this data, here is the exponential function.
+        <md>
+          p(t) = 2^{\frac{t}{5}}
+        </md>
+        If I wanted, I could change base to write this as an
+        exponential function with base <m>e</m>. (This is useful to do
+        in many cases, since the base <m>e</m> is the most common and
+        most useful base for exponential functions in calculus.) 
+        <md>
+          p(t) =  e^{\frac{t \ln 2}{5}}
+        </md>
+        The following table shows the values of this function to
+        compare with the data set. 
+        </p>
+          <table xml:id="table-data-set-exponential-1-answers">
+            <title>Data Set 1 for Exponential Growth - Values</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>1.0</cell>
+                <cell>1.1</cell>
+                <cell>1.2</cell>
+                <cell>1.5</cell>
+                <cell>1.8</cell>
+                <cell>2.0</cell>
+                <cell>2.3</cell>
+                <cell>2.7</cell>
+                <cell>3.1</cell>
+                <cell>3.5</cell>
+                <cell>4.1</cell>
+              </row>
+              <row>
+                <cell right="medium"><m>2^\frac{t}{5}</m></cell>
+                <cell>1.00</cell>
+                <cell>1.14</cell>
+                <cell>1.32</cell>
+                <cell>1.51</cell>
+                <cell>1.74</cell>
+                <cell>2.00</cell>
+                <cell>2.30</cell>
+                <cell>2.64</cell>
+                <cell>3.03</cell>
+                <cell>3.48</cell>
+                <cell>4.00</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>
+            The function seems reasonably close to the given data.
+          </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Just by looking at the dataset, guess
+          the doubling period and write a guess of the appropriate
+          exponential function. Evaluate that exponential function
+          (using a calculator or computer) and compare the values with
+          the data. 
+          <table xml:id="table-data-set-exponential-2">
+            <title>Data Set 2 for Exponential Growth</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>3.0</cell>
+                <cell>4.2</cell>
+                <cell>6.3</cell>
+                <cell>10.5</cell>
+                <cell>14.7</cell>
+                <cell>22.8</cell>
+                <cell>33.3</cell>
+                <cell>50.1</cell>
+                <cell>73.8</cell>
+                <cell>102.3</cell>
+                <cell>144.6</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        It looks like this data doubles is something a little less
+        than two years. I will guess a doubling period of
+        <m>\frac{9}{5}</m>. The starting value is 3.  From the notes,
+        I can use the provided structure for this exponential
+        function: if <m>a</m> is the starting value and <m>d</m> is
+        the doubling period, the function should be
+        <m>a2^{\frac{t}{d}}</m>. Using the values from this data, here
+        is the exponential function.
+        <md>
+          p(t) = (3) 2^{\frac{5t}{9}}
+        </md>
+        If I wanted, I could change base to write this as an
+        exponential function with base <m>e</m>. (This is useful to do
+        in many cases, since the base <m>e</m> is the most common and
+        most useful base for exponential functions in calculus.) 
+        <md>
+          p(t) =  (3)e^{\frac{t 5\ln 2}{9}}
+        </md>
+        The following table shows the values of this function to
+        compare with the data set. 
+        </p>
+          <table xml:id="table-data-set-exponential-2-answers">
+            <title>Data Set 2 for Exponential Growth - Values</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>3.0</cell>
+                <cell>4.2</cell>
+                <cell>6.3</cell>
+                <cell>10.5</cell>
+                <cell>14.7</cell>
+                <cell>22.8</cell>
+                <cell>33.3</cell>
+                <cell>50.1</cell>
+                <cell>73.8</cell>
+                <cell>102.3</cell>
+                <cell>144.6</cell>
+              </row>
+              <row>
+                <cell right="medium"><m>(3)2^{\frac{5t}{9}}</m></cell>
+                <cell>3.00</cell>
+                <cell>4.40</cell>
+                <cell>6.48</cell>
+                <cell>9.52</cell>
+                <cell>14.00</cell>
+                <cell>20.58</cell>
+                <cell>30.24</cell>
+                <cell>44.44</cell>
+                <cell>65.32</cell>
+                <cell>96.00</cell>
+                <cell>141.09</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>
+            The function produces numbers which are reasonably close
+            to the original, so I can conclude that the guess was a
+            decent one.
+          </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Here is a dataset. Just by looking at the dataset, guess
+          the doubling period and write a guess of the appropriate
+          exponential function. Evaluate that exponential function
+          (using a calculator or computer) and compare the values with
+          the data. 
+          <table xml:id="table-data-set-exponential-3">
+            <title>Data Set 3 for Exponential Growth</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>5</cell>
+                <cell>10</cell>
+                <cell>17</cell>
+                <cell>32</cell>
+                <cell>62</cell>
+                <cell>118</cell>
+                <cell>212</cell>
+                <cell>383</cell>
+                <cell>698</cell>
+                <cell>1258</cell>
+                <cell>2362</cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        It looks like this data doubles every year, perhaps a little
+        bit more than a year in some cases. I guess a doubling period
+        of <m>\frac{11}{10}</m>. The starting value is 5.  From the
+        notes, I can use the provided structure for this exponential
+        function: if <m>a</m> is the starting value and <m>d</m> is
+        the doubling period, the function should be
+        <m>a2^{\frac{t}{d}}</m>. Using the values from this data, here
+        is the exponential function.
+        <md>
+          p(t) = (5) 2^{\frac{10t}{11}}
+        </md>
+        If I wanted, I could change base to write this as an
+        exponential function with base <m>e</m>. (This is useful to do
+        in many cases, since the base <m>e</m> is the most common and
+        most useful base for exponential functions in calculus.) 
+        <md>
+          p(t) = (5)e^{\frac{t 10\ln 2}{11}}
+        </md>
+        The following table shows the values of this function to
+        compare with the data set. 
+        </p>
+          <table xml:id="table-data-set-exponential-3-answers">
+            <title>Data Set 3 for Exponential Growth - Values</title>
+            <tabular>
+              <row bottom="medium">
+                <cell right="medium">t</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>9</cell>
+                <cell>10</cell>
+              </row>
+              <row>
+                <cell right="medium">p</cell>
+                <cell>5</cell>
+                <cell>10</cell>
+                <cell>17</cell>
+                <cell>32</cell>
+                <cell>62</cell>
+                <cell>118</cell>
+                <cell>212</cell>
+                <cell>383</cell>
+                <cell>698</cell>
+                <cell>1258</cell>
+                <cell>2362</cell>
+              </row>
+              <row>
+                <cell right="medium"><m>p(t) = (5)e^{\frac{t 10\ln
+                  2}{11}}</m></cell>
+                <cell>5</cell>
+                <cell>9</cell>
+                <cell>18</cell>
+                <cell>33</cell>
+                <cell>62</cell>
+                <cell>117</cell>
+                <cell>219</cell>
+                <cell>412</cell>
+                <cell>773</cell>
+                <cell>1452</cell>
+                <cell>2727</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>
+            This guess was perhaps a little weaker. The function I
+            produced is similar to the data, but seems to outpace it
+            but a bit. A slightly smaller doubling period might have
+            been more appropriate. 
+          </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

@@ -10,4 +10,5 @@
   <xi:include href="clo4-function-operations.ptx" />
   <xi:include href="activity-clo4.ptx" />
   <xi:include href="clo5-models.ptx" />
+  <xi:include href="activity-clo5.ptx" />
 </chapter>

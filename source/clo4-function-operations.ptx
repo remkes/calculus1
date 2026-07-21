@@ -435,6 +435,39 @@
       non-elementary functions. 
     </p>
   </subsection>
+  <subsection xml:id="subsection-functions-piecewise-functions">
+    <title>Piecewise Functions</title>
+    <p>
+      Before moving on to properties of functions, I need to cover one
+      more very important type of functions. So far, all the functions
+      I've described have been one kind of function over their domain:
+      a sinusoidal function, a polynomial function, etc. However, this
+      need not be the case. A function can be defined in several
+      pieces, each of which can be a different expression. This is
+      called a <term>piecewise function</term>. The notation for
+      piecewise functions uses a large bracket, as seen in this example.
+      <md>
+        f(x) = \left\{ \begin{matrix} x^2 \amp x > \geq 0 \\
+          \cos x \amp x \lt 0 \end{matrix} \right. 
+      </md>
+      In this example, the function is defined in two pieces. For
+      positive inputs (including zero), the function is <m>f(x) =
+      x^2 </m>. For negative inputs (not including zero), the function
+      is <m>f(x) = \cos x</m>. 
+    </p>
+    <p>
+      The point where a piecewise function changes is called a
+      <term>cross-over point</term>. The cross over point of the
+      previous example is <m>x = 0</m>, but a piece function can have
+      any number of cross-over points. The following example has two
+      cross-over points, one at <m>x=-4</m> and one at <m>x = 4</m>.
+      <md>
+        f(x) = \left\{ \begin{matrix} 3x \amp x \lt -4 \\
+          4x \amp -4 \leq x \lt 4 \\
+          5x \amp 4 \leq x \end{matrix} \right. 
+      </md> 
+    </p>
+  </subsection>
   <subsection xml:id="subsection-functions-first-properties">
     <title>Properties of Functions</title>
     <p>

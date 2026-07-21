@@ -157,12 +157,12 @@
       Two conics can also intersection. As with conics and lines, a
       wide variety of possibilities exist for the intersection.
       Consider the parabola and the circle shown in <xref
-      ref="figure-intersection-circle-parabola"/>. 
+      ref="figure-intersection-parabola-circle"/>. 
     </p>
     <example>
-      <figure xml:id="figure-intersection-circle-parabola">
-        <caption>Intersection of a Line and an Ellipse</caption>
-        <image xml:id="image-intersection-cicrlc-parabola" width="70%">
+      <figure xml:id="figure-intersection-parabola-circle">
+        <caption>Intersecdtion of a Parabola and a  Circle</caption>
+        <image xml:id="figure25-2" width="90%">
           <asymptote>
             size(10cm,0);
   
