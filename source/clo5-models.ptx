@@ -66,6 +66,40 @@
       what is the story of the dependant variable over a time span?
       What happens to it?
     </p>
+    <p>
+      A part of this analysis of models is the assignment of meaning
+      to the piece of the mathematics. I'll talk about this much more
+      in <xref ref="section-des"/> when we invent new symbols to
+      translate important ideas, but I want to briefly mention the
+      general idea here. Consider a linear model of a population.
+      <md>
+        p(t) = 100 + 4t
+      </md>
+      There are two numbers in this equation: 100 and 4. What is the
+      meaning of those numbers if this is, indeed, a model of
+      population? If this is something that describes the world, then
+      the numbers, the coefficients, should carry some meaning. 
+    </p>
+    <p>
+      And indeed they do. If I calculate <m>p(0)</m>, I get 100.
+      Therefore, 100 is the size of the population at time zero. I can
+      interpret this as the starting value. What about the other
+      number? Well, this is a line and 4 is the slope of the line.
+      This is the familiary <m>y = mx + b</m> form, just with
+      different variable. As slope, 4 is telling how quickly the line
+      is rising. That's a growth rate. 4 is a measure of how quickly
+      this population is growing (in whatever the appropriate units
+      are for this model). 
+    </p>
+    <p>
+      Interpreting coefficients is an important but surprisingly
+      difficult talks. It's not at all algorithmic and, for some
+      models, assigning meaning to the coefficients and constants can
+      be quite opque. I'm going to give you a few activities on this
+      topic in this section of the course, but I mostly hope that, by
+      the end of the course, you'll be able to do this kind of
+      analysis. 
+    </p>
   </subsection>
   <subsection xml:id="subsection-regression">
     <title>Regression</title>
@@ -166,7 +200,7 @@
     </figure>
   </subsection>
   <subsection xml:id="subsection-population-growth">
-    <title>A Motivating Problem</title>
+    <title>Population Growth</title>
     <p>
       A very natural motivating problem is population growth. Here are
       some reasonable mathematical questions one might ask about

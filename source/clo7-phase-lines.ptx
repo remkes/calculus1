@@ -27,6 +27,19 @@
       behaviour of the model without actually having to solve the DE
       at all.
     </p>
+    <p>
+      What is the meaning of an autonomous model? Well, the
+      differential equation shows the growth profile of the function.
+      I'll assume that time is the independent variable. The fact that
+      time doesn't show up on the right shows that the growth dynamics
+      don't change over time. The growth changes, for sure, but it
+      fundamental rule of behaviour doesn't change. If this were
+      percentage growth, this is akin to saying that the percentage
+      growth is consistent: the population grows at the same
+      percentage over the years. If a population had normal percentage
+      growth but with a changing percentage every year, that probably
+      couldn't be capture by an autonomous differential equation. 
+    </p>
   </subsection>
   <subsection xml:id="subsection-phase-lines">
     <title>Phase Line Analysis</title>
@@ -121,70 +134,6 @@
     <example>
       <statement>
         <p>
-          This is an example of the logistic equation, which will be
-          discussed in detail in <xref
-          ref="subsection-logistic-growth" />. 
-          <md>
-          \frac{dp}{dt} = 4p-p^2
-          </md>
-          The right side is zero when <m>p=0</m> or <m>p=4</m>, so
-          those are the steady states. When <m>p \in (0,4)</m> the
-          right-side is positive, so the trajectory is increasing.
-          When <m>p \in (4, \infty)</m>, the right-side is negative,
-          so the trajectory is decreasing. 
-          <figure xml:id="figure-phase-line2" width="80%"> 
-          <caption>The Phase Line Diagram for <m>\frac{dp}{dt} = 4p -
-            p^2</m></caption>
-            <image xml:id="figure86">
-              <asymptote>
-                size(16cm,0);
-                dot("$0$",(0,0),N);
-                dot("$4$",(4,0),N);
-                dot("$\infty$",(8,0),N);
-                draw((0,0)--(4,0),MidArrow);
-                draw((8,0)--(4,0),MidArrow);
-              </asymptote>
-            </image>
-          </figure>
-        </p>
-        <p>
-          The logistic equation leads to logistic growth. Logistic
-          growth is identified by the fact that the two trajectories
-          point towards the steady state <m>p=4</m>. In logistic
-          growth, the population wants to approach to some non-zero
-          steady state. From below, this is growth up to some maximum
-          and from above it is decay down to a minimum. (After
-          exponential growth, logistic growth is the most commonly
-          used model for populations.) <xref
-          ref="figure-exponential-logistic" /> shows both exponential
-          and logistic growth (where the steady state for the logistic
-          model is at <m>p=6</m>.)
-          <figure xml:id="figure-exponential-logistic" width="80%">
-          <caption>Exponential and Logistic Growth</caption>
-            <image xml:id="figure87">
-              <asymptote>
-                import graph;
-                size(12cm,8cm,IgnoreAspect);
-                yaxis("$p$",Ticks());
-                xaxis("$t$",Ticks());
-                real f(real x) {return exp(x/5);}
-                draw(graph(f,0,10));
-                real g(real x) {return (6*exp(4*x/5))/(6+(exp(4*x/5)-1));}
-                draw(graph(g,0,10));
-                draw((0,6)--(10,6),dashed);
-                label("Exponential Growth",(6.7,3.2),E);
-                label("$\frac{dp}{dt} = \frac{1}{5}p$",(6.7,2.6),E);
-                label("Logistic  Growth",(0.2,5.4),E);
-                label("$\frac{dp}{dt} = \frac{4}{5}p(6-p)$",(0.2,4.6),E);
-              </asymptote>
-            </image>
-          </figure>
-        </p>
-      </statement>
-    </example>
-    <example>
-      <statement>
-        <p>
         <md>
           \frac{dp}{dt} = p^3 -7p^2 + 10p
           </md>
@@ -214,5 +163,153 @@
         </p>
       </statement>
     </example>
+  </subsection>
+  <subsection xml:id="subsection-logsitic-growth">
+    <title>Logistic Growth</title>
+    <p>
+      Using phase lines, I can discuss the first major adjustment of
+      the Malthusian model. The Malthusian model is indeed the bedrock
+      of population dynamics, but it is, itself, limit in application.
+      In particular, the exponential function which solves the
+      Malthusian model grows forever. This is unrealistic: populations
+      always exist in an environment and an envinroment is a finite
+      space. Eventually, limits are reached. 
+    </p>
+    <p>
+      Here is, again, the general Malthusiam model with <m>\alpha</m>
+      as the growth rate. 
+      <md>
+      \frac{dp}{dt} = \alpha p(t)
+      </md>
+      Now let me assume there is some population <m>K</m> which is the
+      upper bound for growth determined by the environment. I can
+      adjust the Malthusian model by multiplying by a new expression. 
+      <md>
+      \frac{dp}{dt} = \alpha p(t) \left( 1 - \frac{p(t)}{K} \right)
+      </md>
+      Now that I know how to use a phase line, I can analyze what this
+      differential equation is doing. The steady state is at
+      <m>p=K</m>, since that is a zero of the right side. If have a
+      population lower than <m>K</m>, then the right side is positive,
+      so the function is growing. If I have a population higher than
+      <m>K</m>, then the right side is negative, so the polution is
+      decaying. 
+    </p>
+    <p>
+      The result of this is a model which always tends to approach
+      <m>K</m>. There is a definition for this.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Consider this differential equation, where <m>\alpha</m> and
+          <m>K</m> are positive constants. 
+          <md>
+          \frac{dp}{dt} = \alpha p(t) \left( 1 - \frac{p(t)}{K} \right)
+          </md>
+          This is called the <term>logistic model</term>. The constant
+          <m>\alpha</m> is the <term>natural growth rate</term> and
+          the constant <m>K</m> is the <term>carrying capacity</term>.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          This is an example of the logistic equation.
+          <md>
+          \frac{dp}{dt} = 4p \left( \frac{1 - \frac{p}{4} \right) = 4p
+          - p^2 
+          </md>
+          The right side is zero when <m>p=0</m> or <m>p=4</m>, so
+          those are the steady states. When <m>p \in (0,4)</m> the
+          right-side is positive, so the trajectory is increasing.
+          When <m>p \in (4, \infty)</m>, the right-side is negative,
+          so the trajectory is decreasing. 
+          <figure xml:id="figure-phase-line2" width="80%"> 
+          <caption>The Phase Line Diagram for <m>\frac{dp}{dt} = 4p -
+            p^2</m></caption>
+            <image xml:id="figure86">
+              <asymptote>
+                size(16cm,0);
+                dot("$0$",(0,0),N);
+                dot("$4$",(4,0),N);
+                dot("$\infty$",(8,0),N);
+                draw((0,0)--(4,0),MidArrow);
+                draw((8,0)--(4,0),MidArrow);
+              </asymptote>
+            </image>
+          </figure>
+          I see the expected behaviour of the logistic model: all
+          population terns dowards the carrying capacity. If the
+          population is below its carrying capacity, then it will grow
+          up to the carrying capacity. If it starts above, it will
+          decay down to the carrying capacity. 
+        </p>
+      </statement>
+    </example>
+    <p>
+      The logistic model leads to behaviour which is called behaviour
+      which is called JJlogistic growth. Logistic
+      growth is identified by the fact that the two trajectories
+      point towards a single steady state, the carrying capacity.
+      After exponential growth, logistic growth is the most commonly
+      used model for populations. <xref
+      ref="figure-exponential-logistic" /> shows both exponential
+      and logistic growth (where the steady state for the logistic
+      model is at <m>p=6</m>.) You can notice in the figure that, near
+      zero, both models are very similar. Logistic growth act like
+      exponential growth or decay when the population values are very
+      far away from the carrying capacity. But logistic growth slows
+      as it approach the carrying capacity. In the graph, the growth
+      curve gets closer and closer to the carrying capacity,
+      eventually becoming arbitraily close. (This is called an
+      <term>asymptote</term> and it will be formally defined in <xref
+      ref="subsection-horizontal-asymptotes"/>.
+    </p>
+    <figure xml:id="figure-exponential-logistic" width="80%">
+    <caption>Exponential and Logistic Growth</caption>
+      <image xml:id="figure87">
+        <asymptote>
+          import graph;
+          size(12cm,8cm,IgnoreAspect);
+          yaxis("$p$",Ticks());
+          xaxis("$t$",Ticks());
+          real f(real x) {return exp(x/5);}
+          draw(graph(f,0,10));
+          real g(real x) {return (6*exp(4*x/5))/(6+(exp(4*x/5)-1));}
+          draw(graph(g,0,10));
+          draw((0,6)--(10,6),dashed);
+          label("Exponential Growth",(6.7,3.2),E);
+          label("$\frac{dp}{dt} = \frac{1}{5}p$",(6.7,2.6),E);
+          label("Logistic  Growth",(0.2,5.4),E);
+          label("$\frac{dp}{dt} = \frac{4}{5}p(6-p)$",(0.2,4.6),E);
+        </asymptote>
+      </image>
+    </figure>
+  </subsection>
+  <subsection xml:id="subsection-logicstic-function">
+    <title>The Logistic Function</title>
+    <p>
+      Even though I don't know how to solve the differential equation
+      at this point, I know that that Malthusian model is connected to
+      exponential growth. What about the logistic model? I've made an
+      adjustment to the Malthusian model, but how does that affect the
+      solution, the function?
+    </p>
+    <p>
+      Solving the logistic differential equation is actually fairly
+      difficult and I won't discuss the methods at all at thei point
+      However, I will give you the function. If <m>p_0</m> is the
+      starting population, <m>\alpha</m> is the natural growth rate,
+      and <m>K</m> is the carrying capacity, then the logistic
+      function has this form.
+      <md>
+        p(t) = \frac{p_0 Ke^{\alpha t}}{K + p_0 (e^{\alpha t} - 1)}
+      </md>
+      This is a pretty complicated function, but I want to be able to
+      use it for examples in the rest of the coruse, so I thought it
+      valuable to state up front.
+    </p>
   </subsection>
 </section>

@@ -1,5 +1,5 @@
 <section xml:id="section-limits-at-finite-values">
-  <title>CLO 7: Calcluating Limits at Finite Values</title>
+  <title>CLO 8: Calcluating Limits at Finite Values</title>
   <subsection xml:id="subsection-limit-definition">
     <title>Limit Definitions</title>
     <p>
@@ -190,6 +190,35 @@
           </p>
         </li>
       </ul>
+    </p>
+    <p>
+      There is a word for limits of this third type, limit which need
+      more steps before anything can be done to calculate them. These
+      limits are called <term>indeterminate form</term>. I can
+      classify indeterminate forms by their type. For now, I will look
+      at three types. The first two types are quotient limits.
+      <md>
+        \lim_{x \rightarrow a} \frac{f(x)}{g(x)}
+      </md>
+    </p>
+    <p>
+      If <m>f(x)</m> and <m>g(x)</m> approach <m>\pm \infty</m>, the
+      limit is called an indeterminate form of type
+      <m>\frac{\infty}{\infty}</m>. If instead both <m>f(x)</m> and
+      <m>g(x)</m> approach <m>0</m>, then it is an indeterminate form
+      of type <m>\frac{0}{0}</m>. In both cases, I want to use
+      algebra to factor out and cancel off the pieces of the quotients
+      which tends to <m>\infty</m> or <m>0</m> to solve the limit. (I
+      previously cautioned about using <m>\infty</m> in arithmetic or
+      dividing by zero. Both of those cautions stand. The expression
+      <m>\frac{\infty}{\infty}</m> and <m>\frac{0}{0}</m> used for
+      indeterminate forms are <em>labels</em>, not calculations.)
+    </p>
+    <p>
+      In all these definitions, I could replace <m>x \rightarrow
+      a</m> with the one-sided limit or <m>x \rightarrow \pm
+      \infty</m>; the indeterminate forms are classified the same way
+      for any type of limit. 
     </p>
   </subsection>
   <subsection xml:id="subsection-limit-rules">
@@ -399,5 +428,44 @@
         </p>
       </statement>
     </example>
+  </subsection>
+  <subsection xml:id="subsection-divide-by-zero">
+    <title>Don't Divide By Zero</title>
+    <p>
+      I'll end with an important note about how to write limits.
+      Consider this limit.
+      <md>
+        \lim_{x \rightarrow 3^+} \frac{1}{x-3} = \infty
+      </md>
+      This limit diverges to positive infinity, meaning it gets larger
+      and larger without bound. It's very common for students to treat
+      this limit as a kind of division by zero. Student will often
+      write the following. 
+      <md>
+        \lim_{x \rightarrow 3^+} \frac{1}{x-3} = \frac{1}{0} = \infty
+      </md>
+      I need to state this as clearly as possible: this is
+      not good mathematics. This is incorrect. Please do not do this!
+      <md>
+        \lim_{x \rightarrow 3^+} \frac{1}{x-3} = \cancel{\frac{1}{0}}
+        = \infty
+      </md>
+    </p>
+    <p>
+      Division by zero is not a valid piece of arithmetic, not even
+      for limits. Moreover, this doesn't actually make any sense with
+      the limit definition. A limit is about a process: as the numbers
+      get closer and closer to 3 (from the positive side), then ration
+      <m>\frac{1}{x-3}</m> gets larger and larger without bound. I am
+      never actually dividing by exactly <m>(3-3)</m>. I'm only
+      concerned about numbers close to three, and the process of
+      getting closer. 
+    </p>
+    <p>
+      There are other reasons why division by zero is non-sensical,
+      but violating the concept of a limit is enough for us know.
+      Again, this is a really common mis-conception, so please take
+      care to avoid it. 
+    </p>
   </subsection>
 </section>

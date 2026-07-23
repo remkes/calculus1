@@ -1,11 +1,146 @@
-<section xml:id="section-week5-activity">
-  <title>Week 5 Activity</title>
-  <subsection xml:id="subsection-activity-limits-at-infinity">
-    <title>Limits at Infinity</title>
+<section xml:id="section-activity-clo10">
+  <title>Activity for CLO-10</title>
+  <subsection xml:id="subsection-clo10-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p> 
+          What is a limit at infinity?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A limit at infinity is a limit at the input to the function
+          gets larger and larger without bound. Remember that
+          <sq>infinity</sq> in this course means the process of
+          getting larger and larger without bound. With that reminder,
+          a limit at infinity is just applying the infinite process to
+          the input. 
+        </p>
+      </solution>
+    </activity>
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          What is a horizontal asymptote?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A horizontal asymptote is a horizontal line that a function
+          is approaching. It is identified by a limit at infinity
+          producing a finite output: as the input gets larger and
+          larger without bound, the output gets closer and closer to
+          some number. Visually, getting close to some number is the
+          same as approaching some horizontal line on the graph. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is asymptotic analysis?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Asymptotic analysis is a method to analyze the relative
+          growth of functions: to have a general way to determined
+          which functions grow more quickly than others. This
+          information can then be used to salve a variety of
+          mathematical problems, including limits at infinity. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is an asymptotic order?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An asymptotic order is a rough ranking of the speed of
+          growth of a function. Each step in the order is a class of
+          functions, like <sq>lineqr</sq>, <sq>cubic</sq> or
+          <sq>exponential</sq> (though not all ranks have clearly
+          stated names). All functions which have a domain which
+          extends to infinity can be ranked this way and assigned an
+          asymptotic order. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How do sums and products interact with asymptotic order?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In a sum, the asymptotic order of the sum is the asymptotic
+          order of the largest individual summand. The other pieces of
+          the sum do not affect the asymptotic order at all.
+        </p>
+        <p>
+          In a product, the asymptotic order can change. If both
+          functions grow (have an asymptotic order greater than a
+          constant), then the product will be something of a higher
+          asymptotic order than either. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What do limits at infinity mean for models?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Limits at infinity are interpreted as the long term
+          behaviour of models. The input <sq>going to infinity</sq>
+          doesn't necessarily mean we need to consider extremely large
+          inputs; it is enough, usually, to just consinder vaguely
+          large inputs, but input still within reason. Almost
+          universally, the limit at infinity will be a good measure of
+          the behaviour of the function at even these modestly large
+          input: it shows the long term behaviour. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is stability in the analyais of models?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Stability is a term used to talk about the long term
+          behaviour of models. I haven't given a formal definition in
+          the course (though there are a number of subtly different
+          such definitions elsewhere in mathematics.) But the general
+          idea is that stability means that a function will level off
+          to some limit in the long term. Similarly, unstable means
+          that the limit that describes the long term behaviour will
+          be divergent. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-TOPIC">
+    <title>Calculation Questions: Limits at Infinity</title>
+    <activity>
+      <statement>
+        <p>
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{9x^2+9x-5}{4x^4-3x+102}
           </md>
@@ -24,7 +159,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{24x^5 - 85x^4 - 9x^2 +
             4x}{90x^3 + 405x^2 - 817}
@@ -45,7 +180,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{132x^4 - 56 x^3 + 5x -
             100}{46x^4 - 512x^3 + 5123x^2 + 4}
@@ -70,7 +205,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{93x^2 - 40x^3 + x + 5}{x
             - x^2 + 82x^3} 
@@ -98,7 +233,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{8x^4 - 91542}{7x^4 +
             819234}
@@ -124,7 +259,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{\sqrt{x^5 - 1}}{x^2} 
           </md>
@@ -146,7 +281,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{x}{\sqrt[3]{1-x^5}}
           </md>
@@ -167,7 +302,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{x^2e^x + 7}{e^{2x} + 1}
           </md>
@@ -190,7 +325,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{5 + \ln x}{\sqrt{1+ 7x}}
           </md>
@@ -209,7 +344,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{x + \sin x}{5x - 9} 
           </md>
@@ -233,7 +368,7 @@
     <activity>
       <statement>
         <p>
-          Evaluate this limit. 
+          Evaluate this limit using asymptotic analysis. 
           <md>
             \lim_{x \rightarrow \infty} \frac{10 e^{7x}}{1 - e^{4x}  +
             e^{8x}}
@@ -255,7 +390,7 @@
     </activity>
   </subsection>
   <subsection xml:id="subsection-activity-horizontal-asymptotes">
-    <title>Horizontal Asymptotes</title>
+    <title>Calcluation Questions: Horizontal Asymptotes</title>
     <activity>
       <statement>
         <p>
@@ -394,7 +529,7 @@
     </activity>
   </subsection>
   <subsection xml:id="subsection-activity-long-term-behaviour-of-models">
-    <title>Long Term Behaviour of Models</title>
+    <title>Calcluation Activity: Long Term Behaviour of Models</title>
     <activity>
       <statement>
         <p>
@@ -536,29 +671,5 @@
         </p>
       </solution>
     </activity>
-  </subsection>
-  <subsection xml:id="subsection-week5-concepts">
-    <title>Conceptual Review Questions</title>
-    <p>
-      <ul>
-        <li>
-          How do limits at infinity differ from limits at finite
-          values?
-        </li>
-        <li>
-          What is asymptotic analysis? What does it mean for a
-          function to grow faster, slower, or at the same rate as
-          another function?
-        </li>
-        <li>
-          What is a horizontal asymptote and how does it relate to
-          limits?
-        </li>
-        <li>
-          How do limis at infinity measure the long term behaviour of
-          models?
-        </li>
-      </ul>
-    </p>
   </subsection>
 </section>

@@ -1,0 +1,259 @@
+<section xml:id="section-activity-clo9">
+  <title>Activity for CLO-9</title>
+  <subsection xml:id="subsection-clo9-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is a continuous function.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is a function whose graph can be drawn with an
+          uninterupted path. More formally, a function is continuous
+          at a point <m>a</m> if the following equation holds. 
+          <md>
+            \lim_{x \rightarrow a} f(x) = f(a)
+          </md>
+          This says that the limit, the process of approaching, is
+          the same as the actual value of the function. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What does it mean for a function to be <sq>continuous on its
+          domain</sq>? Which functions have this property?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A function is continuous on its domain its graph can be
+          drawn with a single path other than breaks in the domain.
+          Equivalently, the limit definition of continuity holds for
+          all points in the domain. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the intermediate value theorem?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The intermediate value theory is a fancy theory that makes a
+          pretty simple point: if a contuous function has two outputs
+          which are different, then it must go through all
+          intermediate output. In terms of position, if a continuous
+          function measure the travel from point A to point B, it also
+          has to pass through all points in-between. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is a piecewise function? Why is continuity of
+          particular concern for these functions?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A piecewise function is a function which has a different
+          definition at different points in its domain. Between the
+          different sections, there are often cross-over point where
+          the definition changes. These are important points for
+          continuity: we want to know whether the two different
+          definitions of the function actually match up with each
+          other at the cross-over point. If they do and they form a
+          connected path, the function is continuous at that point. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How do you test the continuity of a piecewise function at a
+          cross-over point?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          You take the limit from both sides. If both limits exist and
+          both are equal to the actualy function value at that point,
+          then the function is continuous at the cross-over point. 
+        </p>
+        <p>
+          It is important that a limit is used. I am not evaluating
+          both peicese at the cross-over point, I am taking the limit
+          approaching the cross-over point. If both limits can be
+          directly evaluated, it may feel like just evaluating, but
+          using a limit is an important conceptual piece that should
+          not be forgotten. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-conintuity">
+    <title>Calculation Questions: Continuity</title>
+    <activity>
+      <statement>
+        <p>
+          Find a value for <m>a</m> (if there is any) which makes this
+          piecewise function continuous.
+          <md>
+            f(x) = \left\{ \begin{matrix}
+            x+3 \amp x > 0 \\
+            -2x + a \amp x \leq 0 
+            \end {matrix} \right.
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To determine continuity, I need to take the limit from the
+          left and the limit from the right approaching the cross over
+          point. Here are the two limits, both of which can be
+          evaluated directly. 
+          <md>
+            <mrow>
+              \lim_{x \rightarrow 0^+} f(x) \amp = 
+              \lim_{x \rightarrow 0^+} x+3 = 3 
+            </mrow>
+            <mrow>
+              \lim_{x \rightarrow 0^-} f(x) \amp = 
+              \lim_{x \rightarrow 0^-} -2x + a = a 
+            </mrow>
+          </md>
+          Making these equal gives the equation
+          <md>
+            3 = a 
+          </md>.
+          This equation is (obviously) solved when <m>a=3</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find a value for <m>a</m> (if there is any) which makes this
+          piecewise function continuous.
+          <md>
+            f(x) = \left\{ \begin{matrix}
+            x^2 + 2x + 5 \amp x \lt -1 \\
+            ax^2 \amp x \geq -1 
+            \end {matrix} \right.
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To determine continuity, I need to take the limit from the
+          left and the limit from the right approaching the cross over
+          point. Here are the two limits, both of which can be
+          evaluated directly. 
+          <md>
+            <mrow>
+              \lim_{x \rightarrow -1^+} f(x) \amp = 
+              \lim_{x \rightarrow -1^+} ax^2 = a
+            </mrow>
+            <mrow>
+              \lim_{x \rightarrow -1^-} f(x) \amp = 
+              \lim_{x \rightarrow -1^-} x^2 + 2x + 5 = 1 - 2 + 5 = 4
+            </mrow>
+          </md>
+          Making these equal gives the equation
+          <md>
+            a = 4 
+          </md>.
+          This equation is (obviously) solved when <m>a = 4</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find a value for <m>a</m> (if there is any) which makes this
+          piecewise function continuous.
+          <md>
+            f(x) = \left\{ \begin{matrix}
+            \sin (\pi x)  \amp x > \frac{5}{2} \\
+            x^2 + ax + 2  \amp x \leq \frac{5}{2}
+            \end {matrix} \right.
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To determine continuity, I need to take the limit from the
+          left and the limit from the right approaching the cross over
+          point. Here are the two limits, both of which can be
+          evaluated directly. 
+          <md>
+            <mrow>
+              \lim_{x \rightarrow \frac{5}{2}^+} f(x) \amp = 
+              \lim_{x \rightarrow \frac{5}{2}^+} \sin (\pi x) = \sin
+              \left( \frac{5\pi}{2} \right) = 1 
+            </mrow>
+            <mrow>
+              \lim_{x \rightarrow \frac{5}{2}^-} f(x) \amp = 
+              \lim_{x \rightarrow \frac{5}{2}^-} x^2 + ax + 2 =
+              \frac{25}{4} + \frac{5a}{2} + 2  = \frac{33 + 10a}{4} 
+            </mrow>
+          </md>
+          Making these equal gives the equation
+          <md>
+            1 = \frac{33 + 10a}{4} 
+          </md>
+          This equation is solved when <m>a = \frac{-29}{10}</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find a value for <m>a</m> (if there is any) which makes this
+          piecewise function continuous.
+          <md>
+            f(x) = \left\{ \begin{matrix}
+            \frac{1}{x} \amp x > 0 \\
+            x^2 + ax + a \amp x \leq 0 
+            \end {matrix} \right.
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To determine continuity, I need to take the limit from the
+          left and the limit from the right approaching the cross over
+          point. Here are the two limits. The second can be evaluated
+          directly, and the first diverges by logical analysis of the
+          pieces. 
+          <md>
+            <mrow>
+              \lim_{x \rightarrow 0^+} f(x) \amp = 
+              \lim_{x \rightarrow 0^+} \frac{1}{x} = \infty 
+            </mrow>
+            <mrow>
+              \lim_{x \rightarrow 0^-} f(x) \amp = 
+              \lim_{x \rightarrow 0^-} x^2 + ax + a = a
+            </mrow>
+          </md>
+          I cannot equate these limits, since <m>\infty</m> is not a
+          number. There is no value of <m>a</m> which makes this
+          piecewise function continuous. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

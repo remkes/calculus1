@@ -1,5 +1,5 @@
 <section xml:id="section-continuity">
-  <title>CLO 8:Continuity</title>
+  <title>CLO 9:Continuity</title>
   <subsection xml:id="subsection-continuity-definition">
     <figure xml:id="figure-continuity">
       <caption>Continuity</caption>
@@ -34,12 +34,17 @@
       continuity of the standard functions. Happily, I was
       justified in doing so: all the standard elementary functions
       (polynomials, rational function, algebraic functions, trig,
-      exponentials) are continuous on their domains. The phrase
-      <sq>on their domains</sq> is important; where there is a break
-      in the domain, the function cannot be continuous. Continuity
-      only happens inside the domain of a function. Visually, the
-      graph of a continuous function is connected; it can be drawn
-      without lifting your pen (pencil, chalk, etc).
+      exponentials) are continuous on their domains. I can rely on
+      their continuity. However, see <xref
+      ref="subsection-continuous-on-domain"/> for some discussion of
+      the phrase <sq>continuous on their domains</sq>.
+    </p>
+    <p>
+      Visually, the graph of a continuous function is connected; it
+      can be drawn without lifting your pen (pencil, chalk, etc).
+      <xref ref="figure-continuity"/> shows this distrinction: the
+      function on the left is one connected path and the function on
+      the right has a jump, a discontinuity. 
     </p>
   </subsection>
   <subsection xml:id="subsection-ivt">
@@ -125,15 +130,17 @@
       pieces of their domain. 
     </p>
     <p>
-      Piecewise functions have special notation for their definitions. 
-      Consider a function on <m>\RR</m> which has two definitions, one
+      The definition of a piecewise function was reviewed in <xref
+      ref="subsection-functions-piecewise-functions"/>. From that
+      review, 
+      consider a function on <m>\RR</m> which has two definitions, one
       for <m>x \lt a</m> and another <m>x \geq a</m>. Then the
-      function is written
+      function is written with this notation. 
       <md>
         f(x) = \begin{cases} g(x) \amp  x \lt  a \\ h(x) \amp
         x \geq a \end{cases} 
       </md>.
-      With this notation, I can easily indicate how the function
+      Using this notation, I can easily indicate how the function
       behaviours on various pieces of its domain.
     </p>
     <p>
@@ -230,6 +237,38 @@
         \lim_{x \rightarrow a^-} f(x) = \lim_{x \rightarrow a^+} f(x)
         = f(a)
       </md>
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-continuous-on-domain">
+    <title>Continuous On Its Domain</title>
+    <p>
+      I want to include a short section at the end here to cover an
+      important piece of terminology.  The phrase
+      <sq>on their domains</sq> is used to talk about the continuity
+      of elementary functions. This phrase allows for break in the
+      function due to domain restrictions. If there is a break in the
+      domain, then obviously, the function cannot be drawn with a
+      continuous path. 
+    </p>
+    <p>
+      Consider the function <m>f(x) = \frac{1}{x}</m>. The domain of
+      this function is all real number except zero. The graph of this
+      function has two pieces: the positive and the negative pieces.
+      However, we still say that this function is continuous on its
+      domain, since the discontinuity is a domain problem. This is
+      useful phrasing and we will use it frequencly in this course and
+      throughout mathematics. 
+    </p>
+    <p>
+      In particular, this is a good phrase for the formal limit
+      definition of continuity. Since the definition involves
+      evaluating <m>f(a)</m>, the definition only makes sense for
+      points in the domain. The definition can't even been attempted
+      outside the limit. (The limit might still be possible and limits
+      at the edges of domains are very common). Therefore,
+      <sq>continuous on its domain</sq> is a pretty reasonable, if
+      slightly redundant, idea: the domain is where we consider the
+      possibility of continuity. 
     </p>
   </subsection>
 </section>

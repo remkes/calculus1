@@ -1,0 +1,226 @@
+<section xml:id="section-higher-derivative">
+  <title>CLO 14: Higher Derivatives</title>
+  <subsection xml:id="subsection-derivatives-iterating">
+    <title>Iterating Differentiation</title>
+    <p>
+      Starting with a differentiable function <m>f(x)</m>, I used the
+      derivative to get a whole new function <m>f^\prime(x)</m> which
+      measured the slope of the previous function. This solves the
+      velocity problem: if <m>p(t)</m> is position of an object, then
+      <m>p^\prime(t)</m> is the velocity of the object.
+    </p>
+    <p>
+      I can continue this process. If <m>f^\prime(x)</m> is still a
+      differentiable function itself, I can take another derivative to
+      get <m>f^{\prime \prime}(x)</m>. This is called the <term>second
+      derivative</term>. The process is exactly the same: I use the same
+      limit definition and the same differentiation rules to find this
+      second derivative. <m>f^{\prime \prime}(t)</m> is Newton's
+      notation for the second derivative; the Leibniz notation is
+      <m>\frac{d^2 f}{dx^2}</m>. 
+    </p>
+    <p>
+      This process is called <term>iterated differentiatione</term>.
+      The result of the process is a <term>higher derivative</term>: a
+      second derivative, a third derivative, a ninteenth derivative,
+      and so on. The key thing to remember is that there are no new
+      rules here at all. The rules for the second derivative are
+      exactly the same as for the first derivative. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-higher-derivatives-examples">
+    <title>Examples of Higher Derivatives</title>
+    <example>
+      <statement>
+        <p>
+          Consider the higher derivatvies of the sine function.
+          <md>
+            <mrow>
+              f(x) \amp = \sin x
+            </mrow>
+            <mrow>
+              f^\prime(x) \amp = \cos x
+            </mrow>
+            <mrow>
+              f^{\prime\prime}(x) \amp = -\sin x
+            </mrow>
+            <mrow>
+              f^{\prime\prime\prime}(x) \amp = -\cos x
+            </mrow>
+            <mrow>
+              f^{(4)}(x) \amp = \sin x
+            </mrow>
+          </md>
+        </p>
+        <p>
+          If I take four derivatives, I get back to the original
+          function. The same is true for <m>\cos x</m>, but those two
+          functions are unique among functions for this property.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Now I'll show what happens with higher derivatives of a
+          polynomial.
+          <md>
+            <mrow>
+              f(x) \amp = x^5
+            </mrow>
+            <mrow>
+              \frac{df}{dx} \amp = 5x^4
+            </mrow>
+            <mrow>
+              \frac{d^2f}{dx^2} \amp = 20x^3
+            </mrow>
+            <mrow>
+              \frac{d^3f}{dx^3} \amp = 60x^2
+            </mrow>
+            <mrow>
+              \frac{d^4f}{dx^4} \amp = 120x
+            </mrow>
+            <mrow>
+              \frac{d^5f}{dx^5} \amp = 120
+            </mrow>
+            <mrow>
+              \frac{d^6f}{dx^6} \amp = 0
+            </mrow>
+          </md>
+          Each differentiation reduces the degree of the polynomial by
+          one, until I eventually get to zero. If I take enough
+          derivatives of any polynomial, I will eventually reach zero.
+          Again, only polynomials have this property. 
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="subsection-higher-derivative-acceleration">
+    <p>
+      If <m>p(t)</m> was a position function
+      and <m>p^\prime(t)</m> was its velocity (the rate of change of
+      position), the <m>p^{\prime \prime}(t)</m> would be the rate of
+      change of velocity. That woud be acceleration. Acceleration is
+      the second derivative of position.
+    </p>
+    <p>
+      This has important implications for physics. Newton's first law
+      of motion, <m>F = ma</m>, says that force equals mass times
+      acceleration. If force depends on position (as it often does),
+      then I can write Newton's first law as a differential equation.
+      <md>
+        F(p) = m \frac{d^2 p}{dt^2}
+      </md>
+    </p>
+    <p>
+      As with most of the fundamentals of physics, Newtonian
+      motion is determined by the solution of a differential equation.
+      But, since acceleration is involved, the differential equation
+      for Newton's law needs a second derivative. This is very common
+      for physics: most of the fundamental equations in physics, the
+      basic model that underpin the discipline at its very core, are
+      differential equation with second order derivatives. It's not an
+      exageration to say that the major breakthroughs in physics often
+      revolve around finding the right differential equations to
+      describe a system. 
+    </p>
+    <p>
+      A specific example is Hooke's law. This law describes the
+      force caused by a spring; the law states that the force is
+      (negatively) proportional to the distance from equalibrium. If
+      equalibrium is at <m>p=0</m>, then <m>F = -kp</m>. Using
+      Newton's first law with this force produces a differential equation.
+      <md>
+        -kp = m \frac{d^2 p}{dt^2}
+      </md>
+      The behaviour of an object on a (perfect, frictionless) spring is
+      determined by this differential equation. What is that behaviour?
+      I simply have to figure out which function <m>p(t)</m> matches
+      this differential equation. In this case, there are two
+      solutions.
+      <md>
+        <mrow>
+        p(t) \amp = \sin \left( \sqrt{\frac{m}{k}} t \right) \amp
+        \text{or} \amp \amp p(t) \amp= \cos \left( \sqrt{\frac{m}{k}}
+        t \right)
+        </mrow>
+      </md>
+      Since the sinusoidal functions solve the differential equation,
+      I can conclude that an object on a spring should act with a
+      sinusoidal behaviour. Since there is no friction in this system,
+      this sinusoidal solution continues for ever. 
+    </p>
+    <p>
+      If I wanted, I could add friction into the system as well. How
+      does friction work? Well, friction is a resistance generated by
+      movement and movement is measured by velocity. Therefore,
+      friction should be somehow proportional to velocity and the
+      coefficient should be negative, to indicate that it is acting to
+      slow down the system. 
+    </p>
+    <p>
+      Here area is Hooke's law. 
+      <md>
+        -kp = m \frac{d^2 p}{dt^2}
+      </md>
+      Then I'll add a term which is a constant multiplied by
+      velocity, which is the first derivative. The new constant is
+      <m>b</m>, which is called the coefficient of friction.
+      <md>
+        -kp - b \frac{dp}{dt}  = m \frac{d^2 p}{dt^2}
+      </md>
+      I'll rearrange this to put is all on one side of the equation,
+      which is the conventional way of presenting this equation. 
+      <md>
+        0 = m \frac{d^2 p}{dt^2} + b \frac{dp}{dt}  + kp 
+      </md>
+      This is now a differential equation for an opject on a spring
+      including friction. We won't at all get into the method for
+      solving this, but just stating this equaiton is an
+      accomplishment. If you want to check the derivative (it is quite
+      a bit of work), feel free: here is the solution under
+      the assumption that <m>b^2 \lt 4km</m>. 
+      <md>
+        <mrow>
+        p(t) \amp = e^{-\frac{-b}{2m}t} \sin \left( \frac{\sqrt{4km -
+        b^2}}{2n} t \right) \amp
+        \text{or} \amp \amp p(t) \amp = e^{-\frac{-b}{2m}t} \cos \left(
+        \frac{\sqrt{4km - b^2}}{2m} t \right)
+        </mrow>
+      </md>
+      This is a pretty complicated mess, but it does describe
+      oscilating with exponential decay. The friction will cause the
+      object on a spring to slow down and the amplitude to decay. In
+      the end, it will come to a rest. 
+    </p>
+    <p>
+      This model is called the damped harmonic oscillator. In
+      population dynamics, I talked about the Malthusian model and the
+      logistic model as fundamental models for many problems; many
+      other sophisticated models are extentions and elaborations on
+      these basic cases. The same is true here. The dampled harmonic
+      oscillator is a fundamental model. It describes, in rough, any
+      motion that oscillated with friction and it forms the basis of
+      many other extension. It's fundamental. And now, with the
+      language of higher derivative, we can state the model and
+      understand what the differential equation is trying to
+      accomplish.
+    </p>
+    <p>
+      Finally, this is another good example of something I talked
+      about ub <xref ref="section-differential-equations"/>.
+      Differential equation are particular useful because observations
+      about the work often produce information that can be put into a
+      differential equation. I can observe mass, the coefficient of
+      friction, and the stiffness of a spring. I can watch the motion,
+      but I don't directly have a function for the motion. Instead of
+      just guessing for the function, I can instead put the
+      observations into the differential equation and then solve the
+      differential equation. This is how much of applied mathematics
+      work: observe the work, take the observations to make a
+      differential equation, then try to solve the differential
+      equation to actually get the function that describes the
+      situation. 
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,534 @@
+<section xml:id="section-activity-clo12">
+  <title>Activity for CLO-12</title>
+  <subsection xml:id="subsection-clo12-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is linearity?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Linearity is a mathematical rule where a mathematical
+          operation cooperates with both addition and multiplication
+          by constants. It applies to derivatives. For derivatives,
+          it is these three rules for constant <m>c</m> and function
+          <m>f</m> and <m>g</m>. 
+          <md>
+            <mrow>
+              \frac{d}{dx} (f + g) \amp = \amp \frac{df}{dx} +
+              \frac{dg}{dx} 
+            </mrow>
+            <mrow>
+              \frac{d}{dx} (f - g) \amp = \amp \frac{df}{dx} -
+              \frac{dg}{dx} 
+            </mrow>
+            <mrow>
+              \frac{d}{dx} (cf) = c \frac{df}{dx} 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the power rule?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is a rule for calculation the derivatives of powers of
+          the variable. It applies when the exponent is non-zero. Here
+          is the rule.
+          <md>
+            \frac{d}{dx} x^n = nx^{n-1}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the Leibniz rule?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is the rule for differentiating products of two function. 
+          <md>
+            \frac{d}{dx} fg = g \frac{df}{dx} + f \frac{dg}{dx}
+          </md>
+          It is also called the product rule. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the quotient rule?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is the rule for differentiating quotients of two
+          functions.
+          <md>
+            \frac{d}{dx} \frac{f}{g}  = \frac{g \frac{df}{dx} - f
+            \frac{dg}{dx}}{g^2} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is an iterated derivative?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A derivative of a function produces a new function. Then the
+          derivative can be applied again to this new function. The
+          derivative can be iterated. The result are higher
+          derivatires: second, third, fourth and so on. These are
+          using all the same rule, just repeating the operation on the
+          output of the previous step. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-derivative-rules">
+    <title>Calculation Questions: Derivative Rules</title>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} 8x^3 - 4x^2 + 3x + 1
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I can use linearity to split this up into four derivatives. 
+          <md>
+            \frac{d}{dx} 8x^3 - 4x^2 + 3x + 1 = \frac{d}{dx} 8x^3 -
+            \frac{d}{dx} 4x^2 + \frac{d}{dx} 3x + \frac{d}{dx} 1 
+          </md>
+          I can use linearity again to take out the constant. 
+          <md>
+            = 8 \frac{d}{dx} x^3 - 4 \frac{d}{dx} x^2 + 3 \frac{d}{dx}
+            x + \frac{d}{dx} 1 
+          </md>
+          Then I apply the product rule to the first two derivatives,
+          and known deriavtive for the second pair. 
+          <md>
+            = 8 (3x^2) - 4 (2x) + 3 (1) + 0 = 24x^2 - 8x + 3
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} 9x^4 - 2x^3 - x - 17
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I can use linearity to split this up and pull out the
+          constant. (In the previous question, I did this over two
+          linearity steps. As I move on, I tend to show fewer steps
+          and apply the rules more quickly and less explicitly.) 
+          <md>
+            \frac{d}{dx} 9x^4 - 2x^3 - x - 17 = 9 \frac{d}{dx} x^4 - 2
+            \frac{d}{dx} x^3 - \frac{d}{dx} x - \frac{d}{dx} 17
+          </md>
+          Then I use the power rule and known derivatives. 
+          <md>
+            = 9 (4x^3) - 2 (3x^2) - 1 - 0 = 36x^3 - 6x^2 - 1
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} (x^2) \sin x
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the product rule. I will label the pieces as <m>f(x)
+          = x^2</m> and <m>g(x) = \sin x</m>. Here is the form of the
+          product rule.
+          <md>
+            \frac{d}{dx} f(x) g(x) = f(x) \frac{d}{dx} g(x) + g(x)
+            \frac{d}{dx} f(x) 
+          </md>
+          I apply this form to the piece of this product. 
+          <md>
+            \frac{d}{dx} (x^2) \sin x = x^2 \frac{d}{dx} (\sin x) +
+            (\sin x) \frac{d}{dx} x^2 
+          </md>
+          I apply the power rule for the polynomial derivative and
+          the known derivative of the sine function from the tables. 
+          <md>
+            = x^2 (\cos x) + (\sin x) (2x)
+          </md>
+          This is a reasonable way to leave the answer. However, by
+          pure convention, I like to write polynoials before trig
+          function, so I'll write the answer slightly differently. 
+          <md>
+            \frac{d}{dx} (x^2) \sin x = x^2\cos x + 2x\sin x
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} (x^2+3)(x^3 - 7x - 1)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the product rule. I will label the pieces as <m>f(x)
+          = (x^2 + 3) </m> and <m>g(x) = (x^3 - 7x - 1)</m>. Here is
+          the form of the product rule.
+          <md>
+            \frac{d}{dx} f(x) g(x) = f(x) \frac{d}{dx} g(x) + g(x)
+            \frac{d}{dx} f(x) 
+          </md>
+          I apply this form to the piece of this product. 
+          <md>
+            \frac{d}{dx} (x^2+3)(x^3 - 7x - 1) = (x^2 + 3)
+            \frac{d}{dx} (x^3 - 7x - 1) + (x^3 - 7x - 1) \frac{d}{dx}
+            (x^2+3)
+          </md>
+          Then, in each of the two derivatives, I use linearity to
+          split the derivative up over the pieces. 
+          <md>
+            = (x^2+3) \left( \frac{d}{dx} x^3 - 7 \frac{d}{dx} x -
+            \frac{d}{dx} 1 \right) + (x^3 - 7x - 1) \left( \frac{d}{dx}
+            x^2 + \frac{d}{dx} 3 \right)
+          </md>
+          Then I use the power rule and known derivatives to evaluate
+          all the individual derivatives. 
+          <md>
+            = (x^2+3) \left( 3x^2  - 7 - 0 \right) + (x^3 - 7x - 1)
+            \left( 2x + 0 \right)
+          </md>
+          I could leave it in this form -- this is a valid answer.
+          However, expanding and simplifying into a single polynomial
+          is certainly a cleaner way to leave the answer. 
+          <md>
+            = 3x^4 + 9x^2 - 7x^2 - 21  + 2x^4 - 14x^2 - 2x = 5x^4 -
+            12x^2 - 2x - 21
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \frac{x^2+3}{x-4}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the quotient rule. I will label the pieces as <m>f(x)
+          = x^2+3</m> and <m>g(x) = x-4</m>. Here is the form of the
+          quotient rule.
+          <md>
+            \frac{d}{dx} f(x) g(x) = \frac{g(x) \frac{d}{dx} f(x) - f(x)
+            \frac{d}{dx} g(x)}{(g(x))^2} 
+          </md>
+          I apply this form to the piece of this product. 
+          <md>
+            \frac{(x-4) \frac{d}{dx} (x^2+3) - (x^2+3) \frac{d}{dx}
+            (x-4)}{(x-4)^2}
+          </md>
+          I use linearity to split up the derivatives in the
+          numerator. Then I use the power rule and known derivatives
+          for these derivatives. 
+          <md>
+            \frac{(x-4) \left( 2x + 0 \right) - (x^2+3)
+            (1-0)}{(x-4)^2}
+          </md>
+          To put the answer in a more pleasant form, I distribute the
+          multiplications in the numerator to write it as one
+          polynomial. 
+          <md>
+            \frac{2x^2 - 8x - x^2 - 3}{(x-4))^2} = \frac{x^2 - 8x -
+            3}{(x-4)^2} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \sqrt{x} + x^2
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use linearity to split up the derivative. 
+          <md>
+            \frac{d}{dx} \sqrt{x} + x^2 = \frac{d}{dx} \sqrt{x} +
+            \frac{d}{dx} x^2 
+          </md>
+          The second derivative is a power rule, which is hopefully
+          pretty familiar with by this point. The first is also a
+          power rule, if I write the square root as a fractional
+          exponent:
+          <m>\sqrt{x} = x^\frac{1}{2}</m>. 
+          <md>
+            = \frac{d}{dx} x^{\frac{1}{2}} + \frac{d}{dx} x^2 =
+            \frac{1}{2} x^{-\frac{1}{2}} + 2x 
+          </md>
+          To finish, I'll return the fractional exponent to a square
+          root form, since that is the more conventional notation.
+          <md>
+            = \frac{1}{2\sqrt{x}} + 2x 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} e^x \sqrt{x} 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the product rule. I will label the pieces as <m>f(x)
+          = e^x</m> and <m>g(x) = \sqrt{x}</m>. Here is the form of the
+          product rule.
+          <md>
+            \frac{d}{dx} f(x) g(x) = f(x) \frac{d}{dx} g(x) + g(x)
+            \frac{d}{dx} f(x) 
+          </md>
+          I apply this form to the piece of this product. 
+          <md>
+            \frac{d}{dx} e^x \sqrt{x} = e^x \frac{d}{dx} \sqrt{x} +
+            \sqrt{x} \frac{d}{dx} e^x
+          </md>
+          The derivative of the exponential function is itself, but we
+          have to write the square root as a fracitonal exponent to
+          use the power rule to differentiate it. 
+          <md>
+            = e^x \frac{d}{dx} x^\frac{1}{2} +
+            \sqrt{x} \frac{d}{dx} e^x = e^x \frac{1}{2}
+            x^{\frac{-1}{2}} + \sqrt{x} e^x 
+          </md>
+          I'll change the fractional exponent back to a conventional
+          square root expression. I'll also factor out the exponential
+          term which is common to both expressions. 
+          <md>
+            = e^x \left( \frac{1}{2\sqrt{x}} + \sqrt{x} \right)
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \frac{\sqrt{x}}{x^2+4} 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the quotient rule. I will label the pieces as <m>f(x)
+          = \sqrt{x}</m> and <m>g(x) = x^2+4</m>. Here is the form of the
+          product rule.
+          <md>
+            \frac{d}{dx} f(x) g(x) = g(x) \frac{d}{dx} f(x) - f(x)
+            \frac{d}{dx} g(x) 
+          </md>
+          I apply this form to the piece of this product. 
+          <md>
+            \frac{d}{dx} \frac{\sqrt{x}}{x^2+4} = \frac{ (x^2+4)
+            \frac{d}{dx} \sqrt{x} - \sqrt{x} \frac{d}{dx}
+            (x^2+4)}{(x^2+4)^2} 
+          </md>
+          I need to evaluate both the derivative in the numerator.
+          The second can be evaluated with linearity and the power
+          rule, like all polynomials. The first is evaluated by
+          writing the square root as a fractional exponent. 
+          <md>
+            <mrow>
+              \amp = \frac{ (x^2+4) \frac{d}{dx} x^\frac{1}{x} - \sqrt{x}
+              \left( \frac{d}{dx} x^2 + \frac{d}{dx} 4 \right)}{(x^2+4)^2} 
+            </mrow>
+            <mrow>
+              \amp = \frac{ (x^2+4) \frac{1}{2} x^{\frac{-1}{2}} - \sqrt{x}
+              (2x+0)}{(x^2+4)^2} 
+            </mrow>
+          </md>
+          This is an answers, but as usual, I'll make some
+          simplifications to give a more pleasant and usable form of
+          the answer. 
+          <md>
+            = \frac{\frac{x^2+4}{2\sqrt{x}} - 2x\sqrt{x}}{(x^2+4)^2}
+            = \frac{x^2 + 4 - 4x^2}{2(x^2+4)\sqrt{x}} =
+            \frac{-3x^2+4}{2(x^2+4)\sqrt{x}}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \frac{e^x}{x^2+1}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the quotient rule. I will label the pieces as <m>f(x)
+          = e^x</m> and <m>g(x) = x^2+1</m>. Here is the form of the
+          quotient rule.
+          <md>
+            \frac{d}{dx} f(x) g(x) = \frac{g(x) \frac{d}{dx} f(x) - f(x)
+            \frac{d}{dx} g(x)}{(g(x))^2}
+          </md>
+          I apply this form to the piece of this product. 
+          <md>
+            \frac{d}{dx} \frac{e^x}{x^2+1} = \frac{ (x^2+1)
+            \frac{d}{dx} e^x - e^x \frac{d}{dx} (x^2+1)}{(x^2+1)^2}
+          </md>
+          The first derivative is the known derivative of the
+          exponential function. The second deriative, like all
+          polynomials, is solved by linearity and the power rule. 
+          <md>
+            = \frac{d}{dx} \frac{e^x}{x^2+1} = \frac{ (x^2+1)
+            e^x - e^x (2x+0)}{(x^2+1)^2}
+          </md>
+          As usual, I'll make some simplifications to the result of
+          the derivative. 
+          <md>
+            \frac{d}{dx} \frac{e^x}{x^2+1} = \frac{ e^x (x^2 - 2x +1)}
+            {(x^2+1)^2}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \frac{\cos x}{x} + \frac{\sin x}{x} 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          These are both quotient rule derivatives. I'll not write the
+          general form and labelling here, but proceed with the
+          specific calculation.
+          <md>
+            \frac{d}{dx} \frac{\cos x}{x} + \frac{\sin x}{x} =
+            \frac{x \frac{d}{dx} \cos x - \cos x \frac{d}{dx}
+            x}{x^2} + \frac{x \frac{d}{dx} \sin x - \sin x
+            \frac{d}{dx} x}{x^2} 
+          </md>
+          Then I need to do all four of the specific derivatives, which
+          are all known derivatives. 
+          <md>
+            = \frac{-x \sin x - \cos x}{x^2} + \frac{x \cos x -
+            \sin x}{x^2}
+          </md>
+          Some change in the expression could be made <mdash />
+          perhaps splitting up the numerators.  No change seems to me
+          to create any substantially simpler expression, so I'm
+          content to leave the answer in this form.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} (x^2+1)(\sin x)(e^x)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a triple product. I still need the product rule,
+          but I have to be conscious of the grouping. There are several
+          options, but I will choose <m>f(x) = (x^2+1)</m> and <m>g(x)
+          = (\sin x)(e^x)</m>. Then I proceed with the product rule
+          form. 
+          <md>
+            \frac{d}{dx} (x^2+1)(\sin x)(e^x) = (x^2+1) \frac{d}{dx}
+            \left( (\sin x)(e^x) \right) + (\sin x)(e^x) \frac{d}{dx}
+            (x^2+1)
+          </md>
+          The second derivative is a reasonable polynomial, solved by
+          linearity. The first derivative, however, is still a
+          product. I need to do another product rule with this
+          product. 
+          <md>
+            = (x^2+1) \left( e^x \frac{d}{dx} \sin x + \sin x
+            \frac{d}{dx} e^x \right) + (\sin x)(e^x) (2x+0)
+          </md>
+          Then I just need to use the two known derivatives of the
+          sine function and the exponential function.
+          <md>
+            = (x^2+1) \left( e^x \cos x + \sin x e^x \right) 
+            + (\sin x)(e^x) (2x)
+          </md>
+          I can simplify this slightly by factoring out the
+          exponential and combining the polynomial terms. 
+          <md>
+            <mrow>
+              \amp = e^x \left( (x^2+1) \cos x + (x^2+1) \sin x 
+              + (2x) (\sin x) \right) 
+            </mrow>
+            <mrow>
+              \amp = e^x \left( (x^2+1) \cos x + (x^2 + 2x + 1) \sin x
+              \right) 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

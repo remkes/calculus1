@@ -1,7 +1,206 @@
-<section xml:id="section-week4-activity">
-  <title>Week 4 Activity</title>
-  <subsection xml:id="subsection-activity-limits-at-finite-values">
-    <title>Limits at Finite Values</title>
+<section xml:id="section-activity-clo8">
+  <title>Activity for CLO-8</title>
+  <subsection xml:id="subsection-clo8-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is a limit?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A limit is a determine of the behaviour of a funciton when
+          it approaches some value. A limit exists if a function gets
+          closer and closer to some output as the input approaches
+          some fixed point. If the function doe not have this
+          <sq>closer and closer</sq> behaviour, the limit does not
+          exist. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What does <m>\infty</m> mean, in the context of limits. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In limits, the symbol <sq><m>\infty</m></sq> means
+          <sq>getting larger and larger without bound</sq>. It is a
+          symbol for a process, not a value. It means that something
+          (an input, a sequence, a function) is eventually going to
+          exceed any finite number as it goes through some process. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is is important to think of a limit as a process?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is important to think of a limit as a process because a
+          limit is a process. To evaluate a function at a point is
+          just to point that point into a function. It's one
+          evaluation. But a limit is many, many evaluations, analyzing
+          the behaviour as the input gets closer and closer to some
+          fixed value. The <sq>getting closer and closer</sq> can only
+          be seen as a process, not a single destination. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What do the terms <sq>converge</sq> and <sq>diverge</sq>
+          mean?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For limits, <sq>converge</sq> means that the limit exists,
+          that the function does, indeed, get closer and closer to
+          some finite output. In contrast, <sq>diverge</sq> means that
+          the limit fails for one of many possible reasons. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is a vertical asymptote?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A vertical asymptote is a vertical line that the graph of a
+          function approaches. It exists when a function has an
+          inifnite limit while approaching a finite value. It
+          represents the function growth very very quickly, without
+          bound, in a finite amount of input space. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is a one-sided limit?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          When I say <sq>closer and closer</sq>, I don't implicitly
+          specify whether the nubmers are above or below the target. A
+          one-sided limit makes that specification. A limit from
+          below, written with a superscript negative, means that the
+          nubmers getting closer and closer must be less than the
+          target. A limit from above, written with a superscript
+          positive, means that the numbers getting closer and closer
+          must be greater than the target. 
+        </p>
+        <p>
+          An general limit converges if and only if both of its
+          one-sided versions converge. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the three-step process to try to calculate a limit. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, I try to evaluate. If the limit point is actually in
+          the domain of the function, then I can argue that the limit
+          just approaches the function value, which is found by just
+          evaluating the function.
+        </p>
+        <p>
+          Second, I try to use a logical analysis of the pieces. This
+          is most commonly done in fractions. If I can figure out
+          what behaviour the numerator and denomninator have, I might
+          be able to make a reasonable judgement, just on logic, about
+          the behaviour of the fraction. 
+        </p>
+        <p>
+          Third, I rely on a whole host of algebraic tools to
+          manipulate the limit. Limits that don't allow the first two
+          technique can not be determined direction. I need to do
+          something (simplify, factor, cancel, use identities, etc) to
+          change the limit to try to put it into a form where I can
+          use one of the two previous techniques. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is an indeterminate form? What are the two types that
+          have been introduced so far in this course? 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An indeterminate form is a limit that requires the third
+          step of the three-step process. It can't be evaluated and
+          can't be determined meerly by analyzing the pieces. Hence
+          <sq>indeterminate</sq>. 
+        </p>
+        <p>
+          The two types we have covered are types <m>\frac{0}{0}</m>
+          and type <m>\frac{\infty}{\infty}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What are the limit rules or the limit laws?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          These are identities for limits. Holistically, they say that
+          limit cooperate with mathematical operations (addition,
+          subtraction, multiplication, division, exponents) as long as
+          the individual limit exist. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why shouldn't you divide by zero?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are many reasons. For this course, division by zero
+          often happens when trying to evaluate limits. This is out of
+          step with the definition of a limit, which is a process. You
+          are never actually evaluating exactly at the point; instead
+          you as asking for the process approaching a point.
+          Therefore, when a denominator approaches zero and the limit
+          approaches infinity, you need to keep this process in mind.
+          Just trying to divide by zero destroys any idea of process. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-finite-limits">
+    <title>Calculation Questions: Finite Limits</title>
     <activity>
       <statement>
         <p>
@@ -341,240 +540,8 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="subsection-activity-continuity">
-    <title>Continuity</title>
-    <activity>
-      <statement>
-        <p>
-          Find a value for <m>a</m> (if there is any) which makes this
-          piecewise function continuous.
-          <md>
-            f(x) = \left\{ \begin{matrix}
-            x+3 \amp x > 0 \\
-            -2x + a \amp x \leq 0 
-            \end {matrix} \right.
-          </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          To determine continuity, I need to take the limit from the
-          left and the limit from the right approaching the cross over
-          point. Here are the two limits, both of which can be
-          evaluated directly. 
-          <md>
-            <mrow>
-              \lim_{x \rightarrow 0^+} f(x) \amp = 
-              \lim_{x \rightarrow 0^+} x+3 = 3 
-            </mrow>
-            <mrow>
-              \lim_{x \rightarrow 0^-} f(x) \amp = 
-              \lim_{x \rightarrow 0^-} -2x + a = a 
-            </mrow>
-          </md>
-          Making these equal gives the equation
-          <md>
-            3 = a 
-          </md>.
-          This equation is (obviously) solved when <m>a=3</m>.
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find a value for <m>a</m> (if there is any) which makes this
-          piecewise function continuous.
-          <md>
-            f(x) = \left\{ \begin{matrix}
-            x^2 + 2x + 5 \amp x \lt -1 \\
-            ax^2 \amp x \geq -1 
-            \end {matrix} \right.
-          </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          To determine continuity, I need to take the limit from the
-          left and the limit from the right approaching the cross over
-          point. Here are the two limits, both of which can be
-          evaluated directly. 
-          <md>
-            <mrow>
-              \lim_{x \rightarrow -1^+} f(x) \amp = 
-              \lim_{x \rightarrow -1^+} ax^2 = a
-            </mrow>
-            <mrow>
-              \lim_{x \rightarrow -1^-} f(x) \amp = 
-              \lim_{x \rightarrow -1^-} x^2 + 2x + 5 = 1 - 2 + 5 = 4
-            </mrow>
-          </md>
-          Making these equal gives the equation
-          <md>
-            a = 4 
-          </md>.
-          This equation is (obviously) solved when <m>a = 4</m>.
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find a value for <m>a</m> (if there is any) which makes this
-          piecewise function continuous.
-          <md>
-            f(x) = \left\{ \begin{matrix}
-            \sin (\pi x)  \amp x > \frac{5}{2} \\
-            x^2 + ax + 2  \amp x \leq \frac{5}{2}
-            \end {matrix} \right.
-          </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          To determine continuity, I need to take the limit from the
-          left and the limit from the right approaching the cross over
-          point. Here are the two limits, both of which can be
-          evaluated directly. 
-          <md>
-            <mrow>
-              \lim_{x \rightarrow \frac{5}{2}^+} f(x) \amp = 
-              \lim_{x \rightarrow \frac{5}{2}^+} \sin (\pi x) = \sin
-              \left( \frac{5\pi}{2} \right) = 1 
-            </mrow>
-            <mrow>
-              \lim_{x \rightarrow \frac{5}{2}^-} f(x) \amp = 
-              \lim_{x \rightarrow \frac{5}{2}^-} x^2 + ax + 2 =
-              \frac{25}{4} + \frac{5a}{2} + 2  = \frac{33 + 10a}{4} 
-            </mrow>
-          </md>
-          Making these equal gives the equation
-          <md>
-            1 = \frac{33 + 10a}{4} 
-          </md>
-          This equation is solved when <m>a = \frac{-29}{10}</m>.
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find a value for <m>a</m> (if there is any) which makes this
-          piecewise function continuous.
-          <md>
-            f(x) = \left\{ \begin{matrix}
-            \frac{1}{x} \amp x > 0 \\
-            x^2 + ax + a \amp x \leq 0 
-            \end {matrix} \right.
-          </md>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          To determine continuity, I need to take the limit from the
-          left and the limit from the right approaching the cross over
-          point. Here are the two limits. The second can be evaluated
-          directly, and the first diverges by logical analysis of the
-          pieces. 
-          <md>
-            <mrow>
-              \lim_{x \rightarrow 0^+} f(x) \amp = 
-              \lim_{x \rightarrow 0^+} \frac{1}{x} = \infty 
-            </mrow>
-            <mrow>
-              \lim_{x \rightarrow 0^-} f(x) \amp = 
-              \lim_{x \rightarrow 0^-} x^2 + ax + a = a
-            </mrow>
-          </md>
-          I cannot equate these limits, since <m>\infty</m> is not a
-          number. There is no value of <m>a</m> which makes this
-          piecewise function continuous. 
-        </p>
-      </solution>
-    </activity>
-  </subsection>
-  <subsection xml:id="subsection-activity-edge-behaviour-of-models">
-    <title>Limits and  Models</title>
-    <activity>
-      <statement>
-        <p>
-          Consider a population model.
-          <md>
-            f(t) = \left\{ \begin{matrix}
-            \frac{1}{16}e^{\frac{1}{10}t} \amp t \in [0,10] \\
-            \frac{39}{12}e^{\frac{1}{7}t} \amp t \in [10,20] 
-            \end{matrix} \right.
-          </md>
-          Is this model continuous? If not, what happens at <m>t =
-          10</m>?
-        </p>
-      </statement>
-      <solution>
-        <p>
-          I take the limits from the left and from the right to
-          determine continuity. Both limits can be evaluated directly:
-          the limit from the left is <m>\frac{e}{16}</m> from the
-          right is <m>\frac{39}{12}e^{\frac{10}{7}}</m>. The
-          approximate values of these numbers is, respectively,
-          <m>0.1699</m> and <m>13.5614</m>. These are not the same, so
-          the function is not continuous. At <m>t=10</m> the population
-          has a sudden and significant jump; through some process, a
-          large population has suddenly been added to the existing
-          population.
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Consider a model of temperature in a chemical reaction, as a
-          function of time.
-          <md>
-            T(t) = 24 + \frac{\sqrt{(t-5)^3}}{t-5}
-          </md>
-          The point <m>t=5</m> is the edge of the domain of this
-          model. What happens to the temperature approaching <m>t =
-          5</m>?
-        </p>
-      </statement>
-      <solution>
-        <p>
-          I take the limit. 
-          <md>
-            \lim_{t \rightarrow 5} 24 +
-            \frac{\sqrt{(t-5)^3}}{t-5} = 24 + \lim_{t \rightarrow 5}
-            \frac{(t-5)}{(t-5)} \sqrt{t-5} = 24 + 0 = 24 
-          </md>
-          Even though the function is undefined, the limit is
-          reasonable and the temperature simply approaches 24. This
-          tells me that even though the domain is undefined past this
-          point, the model has reasonable and predicatable behaviour. 
-        </p>
-      </solution>
-    </activity>
-  </subsection>
-  <subsection xml:id="subsection-week4-concepts">
-    <title>Conceptual Review Questions</title>
-    <p>
-      <ul>
-        <li>
-          What is a limit?
-        </li>
-        <li>
-          Why don't I write division by zero when doing limits?
-        </li>
-        <li>
-          When do I stop writing <m>\lim_{x \rightarrow a}</m> in the
-          process of a limit calculation and why?
-        </li>
-        <li>
-          What is a vertical asymptote? How does it relate to a limit? 
-        </li>
-      </ul>
-    </p>
-  </subsection>
-  <subsection xml:id="week-4-extra-practice">
-    <title>Extra Practice</title>
+  <subsection xml:id="subsection-finite-limits-extra-practice">
+    <title>Extra Practice for Finite Limits</title>
     <activity>
       <statement>
         <p>

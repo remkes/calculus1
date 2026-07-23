@@ -1,0 +1,540 @@
+<section xml:id="section-activity-clo13">
+  <title>Activity for CLO-13</title>
+  <subsection xml:id="subsection-clo13-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          Why do we need the chain rule?
+        </p>
+      </statement>
+      <solution>
+        <p> 
+          We need the chain rule because composition is a complete
+          unique way of combining functions. The previous rules dealt
+          with algebraic operations, but such operations don't cover
+          composition. We need a specific rule for composition. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why does the chain rule help with derivativres of inverse
+          functions?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An inverse function satisfies this equation.
+          <md>
+            f \circ f^{-1} (x) = x 
+          </md>
+          This is a composition, so I can apply the chain to
+          differentiate the left side. Out of that chain rule, I can
+          isolate the derivative of the inverse function.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-chain-rule">
+    <title>Calculation Questions: Chain Rule</title>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \sin (x^2 + 1)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) = \sin
+          u</m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = x^2 +1</m>. Then I proceed with the
+          chain rule.
+          <md>
+            \frac{d}{dx} \sin (x^2 + 1) = \frac{d}{du} \sin u
+            \Bigg|_{u=x^2+1} \frac{d}{dx} (x^2+1)
+          </md>
+          The derivative of sine is a known derivative, and linearity
+          and the power rule give the derivative of the polynomial
+          term. 
+          <md>
+            = \cos u \Bigg|_{u=x^2+1} (2x+0)
+          </md>
+          After I've done the derivative, I replace <m>u</m> as the
+          evaluation bar reminds me to do. I'll also change the order
+          of the terms, since convention is to usually write the
+          polynomial term before the trigonometric term. 
+          <md>
+            = 2x \cos (x^2+1)
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \ln (\ln x) 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) = \ln u
+          </m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = \ln x</m>. Then I proceed with the
+          chain rule.
+          <md>
+            \frac{d}{dx} \ln (\ln x) = \frac{d}{du} \ln u \Bigg|_{u =
+            \ln x} \frac{d}{dx} \ln x 
+          </md>
+          The deriavtive of the logarithm is a known derivative. 
+          <md>
+            = \frac{1}{u} \Bigg|_{u = \ln x} \frac{1}{x} = \frac{1}{x
+            \ln x} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \frac{1}{1+e^x}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) =
+          \frac{1}{u} = u^{-1}</m>, using the temporary variable
+          <m>u</m>. The inside function is <m>g(x) = 1 + e^x </m>.
+          Then I proceed with the chain rule.
+          <md>
+            \frac{d}{dx} \frac{1}{1+e^x} = \frac{d}{du} u^{-1} \Bigg|_{u
+            = 1 + e^x} \frac{d}{dx} (1+e^x) 
+          </md>
+          The first derivative is a power rule derivative. Linearity
+          and the known derivative of the exponential function give me
+          the second derivative. 
+          <md>
+            = -u^{-2} \Bigg|_{u = 1 + e^x} (e^x) 
+          </md>
+          Then I replace <m>u</m>. 
+          <md>
+            = \frac{-1}{(1+e^x)^2} (e^x)  = \frac{-e^x}{(1+e^x)^2}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \sqrt[4]{x^2+4x+2}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) =
+          \sqrt[4]{u} = u^\frac{1}{4} </m>, using the temporary
+          variable <m>u</m>. The inside function is <m>g(x) = x^2 + 4x
+          + 2</m>. Then I proceed with the chain rule.
+          <md>
+            \frac{d}{dx} \sqrt[4]{x^2+4x+2} = \frac{d}{du}
+            u^\frac{1}{4} \Bigg|_{u = x^2 + 4x + 2} \frac{d}{dx} (x^2 +
+            4x + 2)
+          </md>
+          I use power rule for the first derivative (which is why I
+          wrote the fourth root as a fractional exponent). The
+          polynomial derivative is solved by linearity and the power
+          rule. 
+          <md>
+            = \frac{1}{4} u^\frac{-3}{4} \Bigg|_{u = x^2 + 4x + 2} (2x +
+            4)
+          </md>
+          Then I just have to do the replacement. I'll also write the
+          fractional exponent as a root again. 
+          <md>
+            = \frac{1}{4\sqrt[4]{u^3}} (2x + 4) = \frac{2x+4}{4
+            \sqrt[4]{x^2+4x+2)^3}} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \cos \left( e^{-4x} \right)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) = \cos
+          (u) </m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = e^{-4x} </m>. Then I proceed with the
+          chain rule.
+          <md>
+            \frac{d}{dx} \cos \left( e^{-4x} \right) = \frac{d}{du}
+            \cos u \Bigg|_{u = e^{-4x}} \frac{d}{dx} e^{-4x}
+          </md>
+          The derivative of cosine is known. However, this second
+          derivative is still a composition, so I need to use chain
+          rule again. To avoid confusion of variables, I'll use a new
+          temporary variable <m>v</m>. The outside is <m>f(v) =
+          e^v</m> and the inside is <m> g(x) = -4x </m>. I apply the
+          chain rule again using this decomposition. 
+          <md>
+            = -\sin u \Bigg|_{u = e^{-4x}} \frac{d}{dv} e^v \Bigg|_{v =
+            -4x} \frac{d}{dx} (-4x)
+          </md>
+          Then I proceed with the known derivatives, replacing
+          <m>u</m> and <m>v</m> when I have finished the derivatives.
+          <md>
+            <mrow>
+              \amp = -\sin \left( e^{-4x} \right) e^v \Bigg|_{v = -4x} (-4) 
+            </mrow>
+            <mrow>
+              \amp = -\sin \left( e^{-4x} \right) e^{-4x} (-4) = 4 e^{-4x}
+              \sin \left( e^{-4x} \right)
+            </mrow>
+          </md>
+          Note that I could have chosen a different decomposition. I
+          made the choice I made to make the outside function as
+          simple as possible. When you have a complicated composition
+          of several functions, work from the outside in. Make the
+          outside function easily differentiable, and apply more rules
+          to the inside function if necessary. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \sqrt{\sin(x^2+1)}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) =
+          \sqrt{u} = u^\frac{1}{2}</m>, using the temporary variable
+          <m>u</m>. The inside function is <m>g(x) = \sin (x^2+1)</m>.
+          Then I proceed with the chain rule.
+          <md>
+            \frac{d}{dx} \sqrt{\sin(x^2+1)} = \frac{d}{du}
+            u^\frac{1}{2} \Bigg|_{u = \sin (x^2 + 1)} \frac{d}{dx} \sin
+            (x^2+1)
+          </md>
+          I need to use the chain rule again for the second
+          derivative. The outside is <m>\sin v</m> and the inside is
+          <m>(x^2 +1)</m>.
+          <md>
+            = \frac{1}{2} u^\frac{-1}{2} \Bigg|_{u = \sin (x^2 + 1)}
+            \frac{d}{dv} \sin v \Bigg|_{v = x^2 +1} \frac{d}{dx} x^2+1
+          </md>
+          Now I just need to finish the individual derivative and
+          re-arrange the answer into a reasonable form. 
+          <md>
+            <mrow>
+             \amp  = \frac{1}{2\sqrt{u}} \Bigg|_{u = \sin (x^2 + 1)}
+              \cos v \Bigg|_{v = x^2 +1} (2x)
+            </mrow>
+            <mrow>
+              \amp = \frac{1}{2\sqrt{\sin(x^2+1))}} \cos (x^2+1) (2x)
+            </mrow>
+            <mrow>
+              \amp = \frac{x\cos(x^2+1)}{\sqrt{\sin(x^2+1))}} 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  </subsection>
+  <subsection xml:id="subsection-chain-rule--extra-practice">
+    <title>Extra Practice: Chain Rule</title>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \ln (1+x)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) = \ln 
+          u</m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = 1 + x</m>. Then I proceed with the
+          chain rule.
+          <md>
+            \frac{d}{dx} \ln (1+x) = \frac{d}{du} \ln u
+            \Bigg|_{u=1+x} \frac{d}{dx} (1+x)
+          </md>
+          The derivative of the logarithm is a known derivative, and
+          linearity determines the derivaitve of the inside.
+          <md>
+            = \frac{1}{u} \Bigg|_{u=1+x} (1)
+          </md>
+          After I've done the derivative, I replace <m>u</m> as the
+          evaluation bar reminds me to do. 
+          <md>
+            = \frac{1}{1+x}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} e^{x^2+1}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) = e^u
+          </m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = x^2 + 1</m>. Then I proceed with the
+          chain rule.
+          <md>
+            \frac{d}{dx} e^{x^2+1} = \frac{d}{du} e^u
+            \Bigg|_{u=x^2 + 1} \frac{d}{dx} (x^2 + 1)
+          </md>
+          The derivative of the exponential is a known derivative, and
+          linearity determines the derivaitve of the inside.
+          <md>
+            = e^u \Bigg|_{u=x^2+1} (2x)
+          </md>
+          After I've done the derivative, I replace <m>u</m> as the
+          evaluation bar reminds me to do. 
+          <md>
+            = 2x e^{x^2+1}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \arctan (x^2-1)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a composition, so I use the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) = \arctan
+          u</m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = x^2 - 1</m>. Then I proceed with the
+          chain rule.
+          <md>
+            \frac{d}{dx} \arctan (x^2 - 1) = \frac{d}{du} \arctan u 
+            \Bigg|_{u=x^2 - 1} \frac{d}{dx} (x^2 - 1)
+          </md>
+          The derivative of the arctangent is a known derivative, and
+          linearity determines the derivaitve of the inside.
+          <md>
+            = \frac{1}{1 + u^2} \Bigg|_{u=x^2 - 1} (2x) 
+          </md>
+          After I've done the derivative, I replace <m>u</m> as the
+          evaluation bar reminds me to do. 
+          <md>
+            = \frac{2x}{1 + (x^2 - 1)^2}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} \ln (\arctan \sqrt{x}) 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a double composition, so I use the chain rule twice. 
+          For the first chain rule,  I'll label
+          the pieces: I'll call the outside function <m>f(u) = \ln 
+          u</m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = \arctan \sqrt{x} </m>. Then I
+          proceed with the chain rule.
+          <md>
+            \frac{d}{dx} \ln (\arctan \sqrt{x}) = \frac{d}{du} \ln u
+            \Bigg|_{u = \arctan \sqrt{x}} \frac{d}{dx} \arctan \sqrt{x} 
+          </md>
+          The derivative of the logarithm is a known derivative. I
+          need a second chain rule for the derivative of the inside. 
+          I'll call the outside function <m>g(v) = \arctan v </m>,
+          using the temporary variable <m>v</m>. The inside
+          function is <m>g(x) = \sqrt{x} </m>. Then I
+          proceed with the chain rule.
+          <md>
+            = \frac{1}{u} \Bigg|_{u = \arctan \sqrt{x}} \frac{d}{dv}
+            \arctan v \Bigg|_{v = \sqrt{x}} \frac{d}{dx} \sqrt{x}
+          </md>
+          The derivative of arctangent is known. The derivtive of the
+          square can be done with the power rule, as I've done several
+          times already in these notes. 
+          <md>
+            = \frac{1}{u} \Bigg|_{u = \arctan \sqrt{x}} \frac{1}{1+v^2}
+            \Bigg|_{v = \sqrt{x}} \frac{1}{2\sqrt{x}}
+          </md>
+          After I've done the derivatives, I replace <m>u</m> and
+          <m>v</m> as the evaluation bar reminds me to do. 
+          <md>
+            = \frac{1}{(\arctan \sqrt{x})(1+\sqrt{x}^2)(2 \sqrt{x})} =
+            \frac{1}{2(1+x)(\sqrt{x})(\arctan \sqrt{x})} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d}{dx} (\sin x)^2 + 3 (\sin x)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First I need linearity. 
+          <md>
+            = \frac{d}{dx} (\sin x)^2 + 3 (\sin x) = \frac{d}{dx} (\sin
+            x)^2 + 3 \frac{d}{dx} \sin x
+          </md>
+          The derivative of the second term is the know derivative of
+          sine. For the first term, I need the chain rule. I'll label
+          the pieces: I'll call the outside function <m>f(u) =
+          u^2</m>, using the temporary variable <m>u</m>. The inside
+          function is <m>g(x) = \sin x </m>. Then I proceed with the
+          chain rule (I'll keep the second term in the linearity step
+          around, of course.) 
+          <md>
+            = \frac{d}{du} u^2 \Bigg|_{u = \sin x} \frac{d}{dx} \sin x +
+            3 \cos x
+          </md>
+          The derivative of outside is the power rule and the
+          derivative of the inside is the known derivative of sine.
+          <md>
+            = 2u \Bigg|_{u = \sin x} (cos x) + 3 \cos x 
+          </md>
+          After I've done the derivative, I replace <m>u</m> as the
+          evaluation bar reminds me to do. 
+          <md>
+            = 2 \sin x \cos x + 3 \cos x
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Check that this limit is an indeterminate form of type
+          <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
+          L'Hôpital's Rule to calculate the limit. (Don't use
+          asymptotic analysis.)
+          <md>
+            \lim_{x \rightarrow \infty} \frac{\ln x}{\sqrt[9]{x}}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Both numerator and denominator are fucntions that grow
+          without bound, so this is a indeterminate form of type
+          <m>\frac{\infty}{\infty0}</m>. I apply L'Hôpital's rule.
+          After applying the rule, the powers of <m>x</m> in the
+          nested fraction can be simplified down (using the rules of
+          exponents) into a limit that can be directly evaluated. 
+          <md>
+            <mrow>
+              \lim_{x \rightarrow \infty} \frac{\ln x}{\sqrt[9]{x}}
+              \amp = \lim_{x \rightarrow \infty} \frac{ \frac{d}{dx}
+              \ln x}{ \frac{d}{dx} \sqrt[9]{x} }
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{ \frac{1}{x}}{
+              \frac{1}{9\sqrt[9]{x^8}}} = 
+              \lim_{x \rightarrow \infty} \frac{x^{\frac{8}{9}}}{x} = 
+              \lim_{x \rightarrow \infty} \frac{1}{x^{\frac{1}{9}}} =
+              0 
+            </mrow>
+          </md>
+          In the final limit, only the denominator is growing, to the
+          limit must converge to zero. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Check that this limit is an indeterminate form of type
+          <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
+          L'Hôpital's Rule to calculate the limit. 
+          <md>
+            \lim_{x \rightarrow 0} \frac{\sin x}{x^3-x}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since <m>\sin 0 = 0</m>, the numerator approaches 0. The
+          denominator also approaches <m>0^3 - 0 = 0</m>, so this is a
+          indeterminate form of type <m>\frac{0}{0}</m>. I apply
+          L'Hôpital's rule.  After applying the rule the resulting
+          limit can be directly evaluted.
+          <md>
+            <mrow>
+              \lim_{x \rightarrow 0} \frac{\sin x}{x^3 - x} \amp =
+              \lim_{x \rightarrow 0} \frac{ \frac{d}{dx} \sin
+              x}{\frac{d}{dx} (x^3 -x)}
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow 0} \frac{\cos x}{3x^2 - 1} =
+              \frac{1}{0-1} = -1
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

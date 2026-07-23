@@ -1,0 +1,512 @@
+<section xml:id="section-activity-clo7">
+  <title>Activity for CLO-7</title>
+  <subsection xml:id="subsection-clo7-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is an autonomous differential equation. Why is it a
+          useful definition?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is a differential equation where the derivative is
+          isolated on the left and the expression on the right side
+          only involves the dependent variable (the function). It is
+          useful for two reasons. First, it allows for phase line
+          analysis, which is a powerful technique. Second, it shows
+          that the dynamics of the system are consistent, not changing
+          over time. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is a phase line?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is a diagram that qualitively shows the growth dynamics
+          of an autonomous differential equation. The diagram is a 
+          line, and points on the line are potential starting values
+          for the function. Steady states are labelled as dot; if the
+          function starts at these values, then it is static. Steady
+          means that it doesn't change. Between the steady states, an
+          arrow is drawn. This arrow is called the trajectory and it
+          shows the growth behaviour. Upward arrows indicate growth
+          and downward arrow indicate decay. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is logistic growth?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Logistic growth is a growth model that acts like exponential
+          growth for small value but slows approaching a certain
+          value, called the carrying capacity. Similarly, if the
+          population start above the carrying capacity, it start out
+          like exponential decay but then slows as it approach the
+          carrying capacity.
+        </p>
+        <p>
+          Logistic growth represents growth within a limited
+          environment. Once all the space or resources are used, the
+          population stabilized at a certain value, called the
+          carrying capacity. If the population is above the carrying
+          capacity, it will shrink back down to that value. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How is the Malthusian model adjusted to make the logistic
+          model>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If it adjusted by multiplying by a new term, <m>\left( 1 -
+          \frac{p}{K} \right)</m>. Using phase lines, this introduces
+          a steady state, which is the carrying capacity, and testing
+          on either side of the steady state shows the behaviour of
+          approaching the carrying capacity from either side. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-phase-lines">
+    <title>Calculation Questions: Phase Lines</title>
+    <activity>
+      <statement>
+        <p>
+          Draw a phase line for this differential equation.
+          <md>
+            \frac{dp}{dt} = p^2 - 9p + 18
+          </md>
+          Determine the steady states and trajectories, then classify
+          the steady states. You may assume this is a population
+          model, so that <m>p \geq 0</m> and 0 is always a steady
+          state.
+        </p>
+      </statement>
+      <solution>
+        <figure xml:id="figure-phase-line-activity-1">
+          <caption>Phase Line for <m>p^2 - 9p + 18</m></caption>
+          <image xml:id="figure73" width="100%">
+            <asymptote>
+              size(16cm,0,IgnoreAspect);
+
+              dot("$0$",(0,0),N);
+              dot("$3$",(2,0),N);
+              dot("$6$",(4,0),N);
+              dot("$\infty$",(6,0),N);
+
+              draw((0,0)--(2,0),MidArrow);
+              draw((4,0)--(2,0),MidArrow);
+              draw((4,0)--(6,0),MidArrow);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          To calculate the phase line, I need the zeros of the right
+          side of the equation. This is a quadratic and it factors as
+          <m>(p-6)(p-3)</m>. Therefore, there are steady states at
+          <m>p=3</m> and <m>p=6</m>. I label these points on the phase
+          line. To determine the trajectories, I check the value of
+          the right side of the equation between the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            At <m>p=1</m>, the right side evaluates to 10, which is
+            positive. The trajectory between 0 and 3 is upward. 
+          </li>
+          <li>
+            At <m>p=4</m>, the right side evaluates to -2, which is
+            negative. The trajectory between 3 and 6 is downward. 
+          </li>
+          <li>
+            At <m>p=7</m>, the right side evaluates to 4, which is
+            positive. The trajectory above 6 is upward. 
+          </li>
+        </ul></p>
+        <p>
+          This lets me classify the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            The (imposed) steady state at 0 only has an trajectory
+            pointing away, so this is an unstable steady state. 
+          </li>
+          <li>
+            The steady state at 3 has trajectories pointing toward it,
+            so it is a stable steady state.
+          </li>
+          <li>
+            The steady state at 6 has trajectories pointing away from
+            it, so it is an unstable steady state. 
+          </li>
+        </ul></p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Draw a phase line for the differential equation
+          <md>
+            \frac{dp}{dt} = p^3 - 6p^2 + 11p - 6 
+          </md>
+          Determine the steady states and trajectories, then classify
+          the steady states. You may assume this is a population
+          model, so that <m>p \geq 0</m> and 0 is always a steady
+          state.
+        </p>
+      </statement>
+      <solution>
+        <figure xml:id="figure-phase-line-activity-2">
+          <caption>Phase Line for <m>p^3 - 6p^2 + 11p - 6</m></caption>
+          <image xml:id="figure74" width="100%">
+            <asymptote>
+              size(16cm,0,IgnoreAspect);
+
+              dot("$0$",(0,0),N);
+              dot("$1$",(2,0),N);
+              dot("$2$",(4,0),N);
+              dot("$3$",(6,0),N);
+
+              dot("$\infty$",(8,0),N);
+
+              draw((2,0)--(0,0),MidArrow);
+              draw((2,0)--(4,0),MidArrow);
+              draw((6,0)--(4,0),MidArrow);
+              draw((6,0)--(8,0),MidArrow);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          To calculate the phase line, I need the zeros of the right
+          side of the equation. This is a cubic: I can try to look for
+          the roots by inspection or ask a computer for the roots. In
+          any case, I find that <m>p=1</m>, <m>p=2</m> and <m>p=3</m>
+          are the roots. I label these points on the phase line. To
+          determine the trajectories, I check the value of the right
+          side of the equation between the steady states.
+        </p>
+        <p><ul>
+          <li>
+            At <m>p=\frac{1}{2}</m>, the right side evaluates to
+            <m>\frac{-15}{8}</m>, which is negative. The trajectory
+            between 0 and 1 is downward.
+          </li>
+          <li>
+            At <m>p=\frac{3}{2}</m>, the right side evaluates to
+            <m>\frac{3}{8}</m>, which is positive. The trajectory
+            between 1 and 2 is upward. 
+          </li>
+          <li>
+            At <m>p=\frac{5}{2}</m>, the right side evaluates to
+            <m>\frac{-3}{8}</m>, which is negative. The trajectory
+            between 2 and 3 is downward.
+          </li>
+          <li>
+            At <m>p=4</m>, the right side evaluates to 6,
+            which is positive. The trajectory above 4 is upward. 
+          </li>
+        </ul></p>
+        <p>
+          This lets me classify the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            The (imposed) steady state at 0 only has an trajectory
+            pointing towards, so this is a stable steady state. 
+          </li>
+          <li>
+            The steady state at 1 has trajectories pointing away from
+            it, so it is an unstable steady state. 
+          </li>
+          <li>
+            The steady state at 2 has trajectories pointing toward it,
+            so it is a stable steady state.
+          </li>
+          <li>
+            The steady state at 3 has trajectories pointing away from
+            it, so it is an unstable steady state. 
+          </li>
+        </ul></p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Draw a phase line for the differential equation
+          <md>
+            \frac{dp}{dt} = p^3 - 10p^2 + 32 p - 32 
+          </md>
+          Determine the steady states and trajectories, then classify
+          the steady states. You may assume this is a population
+          model, so that <m>p \geq 0</m> and 0 is always a steady
+          state.
+        </p>
+      </statement>
+      <solution>
+        <figure xml:id="figure-phase-line-activity-3">
+          <caption>
+            Phase Line for <m>p^3 - 10p^2 + 32p - 32</m>
+          </caption>
+          <image xml:id="figure75" width="100%">
+            <asymptote>
+              size(16cm,0,IgnoreAspect);
+
+              dot("$0$",(0,0),N);
+              dot("$2$",(2,0),N);
+              dot("$4$",(4,0),N);
+              dot("$\infty$",(6,0),N);
+
+              draw((2,0)--(0,0),MidArrow);
+              draw((2,0)--(4,0),MidArrow);
+              draw((4,0)--(6,0),MidArrow);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          To calculate the phase line, I need the zeros of the right
+          side of the equation. This is a cubic; I can find the factors
+          by inspection or by asking a computer. The roots are
+          <m>p=2</m> and <m>p=4</m>. I label these points on the phase
+          line. To determine the trajectories, I check the value of the
+          right side of the equation between the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            At <m>p=1</m>, the right side evaluates to -9, which is
+            negative. The trajectory between 0 and 2 is downward. 
+          </li>
+          <li>
+            At <m>p=3</m>, the right side evaluates to 1, which is
+            positive. The trajectory between 2 and 4 is upward. 
+          </li>
+          <li>
+            At <m>p=5</m>, the right side evaluates to 5, which is
+            positive. The trajectory above 4 is upward. 
+          </li>
+        </ul></p>
+        <p>
+          This lets me classify the steady states. 
+        </p>
+        <p><ul>
+          <li>
+            The (imposed) steady state at 0 only has an trajectory
+            pointing towards, so this is a stable steady state. 
+          </li>
+          <li>
+            The steady state at 2 has trajectories pointing away from
+            it, so it is an unstable steady state.
+          </li>
+          <li>
+            The steady state at 4 has one trajectory pointing towards
+            and one pointing away. This is neither stable or
+            unstable; we can call it partially stable. If I want to
+            be more specific, I can say that it is stable from below
+            and unstable from above.
+          </li>
+        </ul></p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-calculation-logistic">
+    <title>Calculate Questions: Logistic Growth</title>
+    <activity>
+      <statement>
+        Write the logistic model with a natural growth rate of
+        <m>3\%</m> and a carrying capacity of <m>1300</m>. 
+      </statement>
+      <solution>
+        <p>
+          I can place both constants into the from of the logistic
+          model. 
+          <md>
+            \frac{dp}{dt} = \frac{3}{100} p \left( 1 - \frac{p}{1300}
+            \right) 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        Write the logistic model with a natural growth rate of
+        <m>75\%</m> and a carrying capacity of five million.
+      </statement>
+      <solution>
+        <p>
+          I can place both constants into the from of the logistic
+          model. 
+          <md>
+            \frac{dp}{dt} = \frac{3}{4} p \left( 1 - \frac{p}{5000000}
+            \right) 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Consider this logistic equation.
+          <md>
+            \frac{dp}{dt} = \frac{2}{100} p \left( 1 - \frac{p}{757}
+            \right) 
+          </md>
+          What is the natural growth rate and the carrying capacity for
+          this equation?
+        </p>
+        <p>
+          Use a computer to calculate the value of the side for a
+          sequence of population values which are getting closer and
+          closer to the carrying capacity. (Start at 700 and then
+          increase in jumps to get closer to the carrying capacity.
+          Make at least ten calculations) What do you observe about
+          the growth rate as the population gets closer and closer to
+          the carrying capacity? (Decimal approxmiations are
+          appropriate for this question). 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The natural growth rate is <m>2\%</m> and the carrying
+          capacity is <m>757</m>. 
+        </p>
+        <p>
+          here is a table of value for the right side for various
+          numbers starting at 700. I'll increase by 5 at the start,
+          and then increase by 1 once I reach 750.
+          <tabular>
+            <row top="minor" bottom="minor">
+              <cell>
+                Population
+              </cell>
+              <cell>
+                Growth Rate
+              </cell>
+            </row>
+            <row>
+              <cell>
+                700
+              </cell>
+              <cell>
+                1.054
+              </cell>
+            </row>
+            <row>
+              <cell>
+                700
+              </cell>
+              <cell>
+                0.882
+              </cell>
+            </row>
+            <row>
+              <cell>
+                720
+              </cell>
+              <cell>
+                0.704
+              </cell>
+            </row>
+            <row>
+              <cell>
+                730
+              </cell>
+              <cell>
+                0.521
+              </cell>
+            </row>
+            <row>
+              <cell>
+                740
+              </cell>
+              <cell>
+                0.332
+              </cell>
+            </row>
+            <row>
+              <cell>
+                750
+              </cell>
+              <cell>
+                0.139
+              </cell>
+            </row>
+            <row>
+              <cell>
+                751
+              </cell>
+              <cell>
+                0.119
+              </cell>
+            </row>
+            <row>
+              <cell>
+                752
+              </cell>
+              <cell>
+                0.0993
+              </cell>
+            </row>
+            <row>
+              <cell>
+                753
+              </cell>
+              <cell>
+                0.0796
+              </cell>
+            </row>
+            <row>
+              <cell>
+                754
+              </cell>
+              <cell>
+                0.0560
+              </cell>
+            </row>
+            <row>
+              <cell>
+                755
+              </cell>
+              <cell>
+                0.0399
+              </cell>
+            </row>
+            <row>
+              <cell>
+                756
+              </cell>
+              <cell>
+                0.0200
+              </cell>
+            </row>
+          </tabular>
+        </p>
+        <p>
+          I notice the decreasing growth rate approaching the carrying
+          capacity. As I get closer, the growth is smaller and
+          smaller, showing that population is always approaching but
+          never quite reaching the carrying capacity. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

@@ -1,0 +1,200 @@
+<section xml:id="section-activity-clo14">
+  <title>Activity for CLO-14</title>
+  <subsection xml:id="subsection-clo14-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p> 
+          What is an iterated derivative?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An iterated derivative is the process of repeating
+          differentiation. The outcome of a derivative is still a
+          function, so I can differentiate again. Differentiation can
+          be iterated. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is a higher derivative?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A higher derivative is the output of iterated
+          differentiation. A second derivative is the output of taking
+          two derivatives. A third derivative is the output of taking
+          three derivatives. This naming convention continues. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          In what was is acceleration a higher derivative. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If <m>p(t)</m> is a position function, then the rate of
+          change of position is velocity, si <m>p^\prime (t)</m>
+          measures velocity. But acceleration is the rate of change of
+          velocity, so it is a second derivative. <m>p^{\prime
+          \prime}(t) </m> measures acceleration.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is damped harmonic motion?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Damped harmonic motion is a differential equation involving
+          three term. It models a mass on a spring, or some other
+          similar system where oscillation is possible. It has
+          position, which is multiplied by a constant measuring the
+          stiffness of the harmonic system.  It has velocity, the
+          first derivative, which is multiplied by a constant
+          measuring the strength of the friction in the system. Is
+          has accelration, the second derivative, which is multiplied
+          by a constant measuring the mass of the system. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-higher-derivatives">
+    <title>Calculation Questions: Higher Derivatives</title>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d^2}{dx^2} 5x^4 - 7x^3 + 15x + 1 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need to take the derivative twice. Both times I am
+          taking polynomial derivatives, so I am using linearity and
+          the power rule for the derivatives. 
+          <md>
+            <mrow>
+              \frac{d^2}{dx^2} 5x^4 - 7x^3 + 15x + 1 \amp = \frac{d}{dx}
+              \frac{d}{dx} 5x^4 - 7x^3 + 15x + 1 
+            </mrow>
+            <mrow>
+              \amp = \frac{d}{dx} 20x^3 - 21x^2 + 15 
+            </mrow>
+            <mrow>
+              \amp = 60x^2 - 42x 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d^3}{dx^3} e^{4x}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need to take the derivative three times. Each time, this
+          is a chain rule derivative, with outside function <m>e^u</m>
+          and inside function <m>4x</m>. Each time the derivative of
+          the inside produces a constant 4, which I can factor out of
+          the remaining steps due to linearity. 
+          <md>
+            <mrow>
+              \frac{d^3}{dx^3} e^{4x} \amp = \frac{d}{dx} \frac{d}{dx}
+              \frac{d}{du} e^u \Bigg|_{u = 4x} \frac{d}{dx} 4x
+            </mrow>
+            <mrow>
+              \amp = \frac{d}{dx} \frac{d}{dx} e^u \Bigg|_{u = 4x} 4
+            </mrow>
+            <mrow>
+              \amp = 4 \frac{d}{dx} \frac{d}{dx} e^{4x} 
+            </mrow>
+            <mrow>
+              \amp = 4 \frac{d}{dx} \frac{d}{du} e^{u} \Bigg|_{u=4x}
+              \frac{d}{dx} 4x 
+            </mrow>
+            <mrow>
+              \amp = 4 \frac{d}{dx} e^{u} \Bigg|_{u=4x} 4 
+            </mrow>
+            <mrow>
+              \amp = 16 \frac{d}{dx} e^{4x}
+            </mrow>
+            <mrow>
+              \amp = 16 \frac{d}{du} e^{u} \Bigg|_{u=4x} \frac{d}{dx} 4x 
+            </mrow>
+            <mrow>
+              \amp = 16 e^{u} \Bigg|_{u=4x} 4 = 64 e^{4x} 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate this derivative.
+          <md>
+            \frac{d^4}{dx^4} \sin x - \cos x 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I have four derivatives to take. In each step, I use
+          linearity and the known derivatives of sine and cosine.
+          <md>
+            <mrow>
+              \frac{d^4}{dx^4} \sin x - \cos x \amp = \frac{d}{dx}
+              \frac{d}{dx} \frac{d}{dx} \frac{d}{dx} \sin x - \cos x 
+            </mrow>
+            <mrow>
+              \amp = \frac{d}{dx} \frac{d}{dx} \frac{d}{dx} \cos x + \sin x 
+            </mrow>
+            <mrow>
+              \amp = \frac{d}{dx} \frac{d}{dx} \frac{d}{dx} \cos x + \sin x 
+            </mrow>
+            <mrow>
+              \amp = \frac{d}{dx} \frac{d}{dx} -\sin x + \cos x 
+            </mrow>
+            <mrow>
+              \amp = \frac{d}{dx} -\cos x - \sin x 
+            </mrow>
+            <mrow>
+              \amp = \sin x - \cos x 
+            </mrow>
+          </md>
+          Notice that I return to the original expression. That is as
+          expected, since the fourth derivative of both sine and
+          cosine is the same as whichever I started with. This
+          subtraction of one from the other also has the property of
+          being preserved under four derivatives, since the derivative
+          respects subtraction. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

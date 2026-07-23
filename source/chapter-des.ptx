@@ -2,5 +2,7 @@
   xml:id="chapter-des">
   <title>Differential Equations</title>
   <xi:include href="clo6-des.ptx" />
+  <xi:include href="activity-clo6.ptx" />
   <xi:include href="clo7-phase-lines.ptx" />
+  <xi:include href="activity-clo7.ptx" />
 </chapter>

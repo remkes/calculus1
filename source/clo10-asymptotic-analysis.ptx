@@ -1,8 +1,7 @@
 <section xml:id="section-asymptotic-analysis">
-  <title>CLO 9:Asymptotic Analysis</title>
+  <title>CLO 10:Asymptotic Analysis</title>
   <subsection xml:id="subsection-definitions-at-infinity">
     <title>Limits at Infinity</title>
-    <title>Definitions</title>
     <p>
       In addition to asking what happens to a function as the input
       approaches paticular finite values, I can also ask what happens
@@ -92,53 +91,6 @@
       directions but at different values. 
     </p>
   </subsection>
-  <subsection xml:id="subsection-classifying-limits">
-    <title>Classifying Types of Limits</title>
-    <p>
-      It will be useful for this section to elaborate on the term
-      <term>indeterminate form</term> introduced in <xref
-      ref="section-limits-at-finite-values" />. Recall that a limit is
-      called an indeterminate form  if it cannot be directly evaluated
-      or deterined by a simple logical analysis. I can classify
-      indeterminate forms by their type. For now, I will look at three
-      types. The first two types are quotient limits.
-      <md>
-        \lim_{x \rightarrow a} \frac{f(x)}{g(x)}
-      </md>
-    </p>
-    <p>
-      If <m>f(x)</m> and <m>g(x)</m> approach <m>\pm \infty</m>, the
-      limit is called an indeterminate form of type
-      <m>\frac{\infty}{\infty}</m>. If instead both <m>f(x)</m> and
-      <m>g(x)</m> approach <m>0</m>, then it is an indeterminate form
-      of type <m>\frac{0}{0}</m>. In both cases, I want to use
-      algebra to factor out and cancel off the pieces of the quotients
-      which tends to <m>\infty</m> or <m>0</m> to solve the limit. (I
-      previously cautioned about using <m>\infty</m> in arithmetic or
-      dividing by zero. Both of those cautions stand. The expression
-      <m>\frac{\infty}{\infty}</m> and <m>\frac{0}{0}</m> used for
-      indeterminate forms are <em>labels</em>, not calculations.)
-    </p>
-    <p>
-      The third type of indeterminate form is a difference limit.
-      <md>
-        \lim_{x \rightarrow a} f(x) - g(x)
-      </md>
-    </p>
-    <p>
-      If both <m>f(x)</m> and <m>g(x)</m> approach <m>\pm \infty</m>,
-      this limit is called an indeterminate form of type <m>\infty -
-      \infty</m>. For this type, I want to use common denominator,
-      conjugates or other algegraic tricks to reduce it to a limit of
-      type <m>\frac{\infty}{\infty}</m> or type <m>\frac{0}{0}</m>.
-    </p>
-    <p>
-      In all these definitions, I could replace <m>x \rightarrow
-      a</m> with the one-sided limit or <m>x \rightarrow \pm
-      \infty</m>; the indeterminate forms are classified the same way
-      for any type of limit. 
-    </p>
-  </subsection>
   <subsection xml:id="subsection-novel-technique">
     <title>A Novel Technique</title>
     <p>
@@ -213,7 +165,7 @@
       </ul>
     </p>
     <p>
-      With this definition, wI can evaluate many limits by just
+      With this definition, we can evaluate many limits by just
       knowing which functions have greater or lesser asymptotic
       order.
     </p>
@@ -431,7 +383,10 @@
       the study of limits and models. The word <sq>stability</sq> has
       various technical definitions in various pieces of applied
       mathematics, but it always relates to the limits of the model
-      and the behaviour near those limits.
+      and the behaviour near those limits. A stable function is, again
+      generally, a function that will have a limit that approaches
+      some finite value and an unstable function will have some kind
+      of divergent limit. 
     </p>
     <p>
       Considering popluation models, here are four categories of long
@@ -453,7 +408,7 @@
         <li>
           <p>
             The function can approach a steady state, as in the logistic
-            growth function.
+            function.
             <md>
               p(t) = \frac{p_0 K e^{at}}{K + p_0 (e^{at}-1)}
             </md>
@@ -464,7 +419,11 @@
             The function can oscillate without ever reaching a steady
             state, possibly with chaotic behaviour. A non-chaotic
             oscillating function is this periodic version of logistic
-            growth.
+            growth. (This function broadly behaving like logistic
+            growth, but instead of settling to a carrying capacity, it
+            oscilates up and down around its carrying capacity,
+            perhaps indicating some kind of regular seasonal
+            variation. 
             <md>
               p(t) = \left(\frac{p_0 K e^{at}}{K + p_0 (e^{at}-1)}
               \right) \left( 1 + \frac{1}{5} \sin (bt) \right)
@@ -474,58 +433,15 @@
       </ul>
     </p>
     <p>
-      Asymptotic analysis can also give information about the extreme
-      values in a model. Consider the ideal gas law (where <m>P</m> is
-      pressure, <m>V</m> is volume, <m>n</m> is the amount of gas,
-      <m>T</m> is temperature and <m>R</m> is a constant). I will
-      assume that <m>P</m> and <m>V</m> are the variables, and
-      <m>n</m>, <m>R</m> and <m>T</m> are constant.
-      <md>
-        PV = nRT
-      </md>
-    </p>
-    <p>
-      I can ask what happens to pressure at low volumes, expressed as a
-      limit as <m>V \rightarrow 0</m>.
-      <md>
-        \lim_{V \rightarrow 0} P = \lim_{V \rightarrow 0} \frac{nRT}{V}
-        = \infty
-      </md>
-    </p>
-    <p>
-      This tells me that low volumes result in high pressures. I could
-      equivalently ask what happens at very high volumes.
-      <md>
-        \lim_{V \rightarrow \infty} P = \lim_{V \rightarrow \infty}
-        \frac{nRT}{V} = 0
-      </md>
-    </p>
-    <p>
-      Unsurprisingly, very large volume result in very low pressures.
-    </p>
-    <p>
-      The behaviour at extreme values depends on the particulars of the
-      models. A more complicated gas law is the Vander Waal's gas law
-      (where <m>a</m> and <m>b</m> are new positive constants).
-      <md>
-        \left( P + \frac{n^2 a}{V^2} \right) \left( V - nb \right) =
-        nRT
-      </md>
-    </p>
-    <p>
-      What happens for these gasses at high pressures?  It's difficult
-      to solve directly for volume, but I can analyze the equation in
-      its current form. If the term involving pressure grows very
-      large, the term only involving volume must grow to zero, so that
-      the product remains the same. That happens when <m>V</m> is very
-      close to the value <m>nb</m>.
-      <md>
-        \lim_{P \rightarrow \infty} V = nb
-      </md>
-    </p>
-    <p>
-      Therefore, in this model, extreme pressures happen near the fixed,
-      but non-zero, volume <m>V = nb</m>.
+      For all four of these types, I would use limits at infinity and
+      asymptotic analysis to make these conclusions about the long
+      term behaviour. This is already a reasonably rich colleciton. I
+      now have tools to describe populations that grow forever, decay
+      to nothing, level off to stability, or level off to stability
+      but with some periodic variation. I said that population
+      dynamics was a motivating problem for the course, and we have
+      already made some decent progress to addressing that motivating
+      problem. 
     </p>
   </subsection>
 </section>

@@ -1,7 +1,10 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-limits">
-  <title>Functions</title>
+  <title>Limits</title>
   <xi:include href="clo8-finite-limits.ptx" />
+  <xi:include href="activity-clo8.ptx" />
   <xi:include href="clo9-continuity.ptx" />
+  <xi:include href="activity-clo9.ptx" />
   <xi:include href="clo10-asymptotic-analysis.ptx" />
+  <xi:include href="activity-clo10.ptx" />
 </chapter>

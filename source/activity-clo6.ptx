@@ -1,0 +1,261 @@
+<section xml:id="section-activity-clo6">
+  <title>Activity for CLO-6</title>
+  <subsection xml:id="subsection-clo6-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is a derivative?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A derivative is a measure of the rate of growth or rate of
+          change of a function. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is a differential equation?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A differential equation is an equation which involves a
+          function and its derivative. It is relationship between the
+          current value of a function and its rate of change. The
+          <sq>answer</sq> to a differential equation is a function. A
+          differential equation is implicitly asking <sq>What function
+          satisfies this property</sq>? (That is, in the same way that
+          an algebraic equation is implicitly asking <sq>What number
+          satisfied this property</sq>?) 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What does it mean to solve a differential equation?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Solving a differential equation means finding the function
+          which behaves according to the differential equation. Very
+          often, a differential equation is an observation about the
+          world, but the actual function is unknown. Solving the
+          differential equation is discovering what function actually
+          describes the situation. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How is percentage growth a differential equation?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Percentage growth is implicity a relationship between a
+          growth rate and the current value. If I say that a
+          population grows at <m>5\%</m>, that means that the growth
+          rate, how much the function is increasing in a unit of time,
+          is measured as <m>\frac{5}{100}</m> of the current value.
+          This can be translated directly into mathematical symbols. 
+          <md>
+            \frac{dp}{dt} = \frac{5}{100} p(t) 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the Malthusian model?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The Malthusian model is another name for percentage growth.
+          For our purpsoes, it is specifically talking about the
+          differential equation version of percentage growth. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why can we reasonably talk about differential equation as
+          translations of observations stated in ordinary language?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Up to a certain point, mathematical symbols are translations of
+          regular language. This is particular true for growth rates.
+          Often in a situation in the world, we can collect data and
+          make an observation about the growth rate, such as the
+          observation of percentage growth. We get some
+          regular-language statement about growth: <sq>this
+          population seems to growth at a roughly consistent seven
+          percent each year</sq>. This is already a mathematical
+          claim<mdash/>we just need to state it in mathematical
+          symbols instead of English word. This is why we can treat a
+          differential equation as a translation.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What one important piece of information about a function is
+          missing from a differential equation?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The differential equation tells how a function changes, but
+          not where it starts. Some kind of starting value is missing
+          from a differential equation. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-malthusian">
+    <title>Calculation Questions: Malthusian Model</title>
+    <activity>
+      <statement>
+        <p>
+          Write the Malthusian model for <m>4.3\%</m> percentage
+          growth and a starting value of <m>p(0) = 1436</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The percentage become the constant on the right side of the
+          differential equation.
+          <md>
+            \frac{dp}{dt} = \frac{43}{1000} p(t)
+          </md>
+          The initial value is important, but it doesn't show up in
+          the differential equation.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the Malthusian model for <m>4\%</m> percentage
+          decay and a starting value of <m>p(0) = 10^5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The percentage become the constant on the right side of the
+          differential equation. Since this is decay, not growth, the
+          coefficient is negative. 
+          <md>
+            \frac{dp}{dt} = \frac{-4}{100} p(t)
+          </md>
+          The initial value is important, but it doesn't show up in
+          the differential equation.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the Malthusian model for no growth at all 
+          growth and a starting value of <m>p(0) = 435</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The percentage become the constant on the right side of the
+          differential equation. Since the constant is zero, the right
+          side is multiplication of zero by the function, which is
+          just zero. 
+          <md>
+            \frac{dp}{dt} = 0 
+          </md>
+          The initial value is important, but it doesn't show up in
+          the differential equation.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-translation">
+    <title>Calculation Questions: Translations</title>
+    <activity>
+      <statement>
+        <p>
+          Translate the following statement into a differential
+          equation: the rate of change is proportional to the square
+          of the current value of a population. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I follow the pattern of the Malthusian model. The left side
+          is the derivative, which translates the rate of change. The
+          right is the square of the function, which is the current
+          value. I include a proportionality constant <m>\alpha</m>.
+          <md>
+            \frac{dp}{dt} = \alpha (p(t))^2
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Translate the following statement into a differential
+          equation: the rate of change is proportional to the cube
+          root of the current value of a population. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I follow the pattern of the Malthusian model. The left side
+          is the derivative, which translates the rate of change. The
+          right is the cube root of the function, which is the current
+          value. I include a proportionality constant <m>\alpha</m>.
+          <md>
+            \frac{dp}{dt} = \alpha \sqrt[3]{p(t)} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Translate the following statement into a differential
+          equation: the rate of change is proportional to the sum of
+          the reciprocal of the current value and another constant. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I follow the pattern of the Malthusian model. The left side
+          is the derivative, which translates the rate of change. The
+          right is the sum of the function and a constant, which i
+          call <m>\beta</m>. 
+          I include a proportionality constant <m>\alpha</m>.
+          <md>
+            \frac{dp}{dt} = \alpha \left( \frac{1}{p(t) + \beta
+            \right) 
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>
