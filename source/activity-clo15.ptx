@@ -11,23 +11,192 @@
     <activity>
       <statement>
         <p>
+          What is L'Hôpital's rule and why is it useful?
         </p>
       </statement>
       <solution>
         <p>
+          L'Hôpital's rule is a rule for evaluation limit of ratios of
+          differentiable functions. It says that the limit of a ratio
+          of two functions is the same as the limit of the ratio of
+          their derivatives.
+        </p>
+        <p>
+          It is useful because is it another way to evaluate
+          indetereminat forms of type <m>\frac{0}{0}</m> or type
+          <m>\frac{\infty}{\infty}</m>. Indeterminate forms require
+          some kind of method to change them into solvable limits, so
+          having an additional method is appreciated. 
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="subsection-activity-TOPIC">
-    <title>Calculation Questions: </title>
+  <subsection xml:id="subsection-activity-hopitals-rule">
+    <title>Calculation Questions: L'Hôpital's Rule</title>
     <activity>
       <statement>
         <p>
+          Check that this limit is an indeterminate form of type
+          <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
+          L'Hôpital's Rule to calculate the limit. 
+          <md>
+            \lim_{x \rightarrow 0} \frac{\cos x - 1}{x} 
+          </md>
         </p>
       </statement>
       <solution>
         <p>
+          Since <m>\cos 0 = 1</m>, the numerator approaches 0. The
+          denominator also approaches 0, so this is a indeterminate
+          form of type <m>\frac{0}{0}</m>. I apply L'Hôpital's rule.
+          After applying the rule the resulting limit can be directly
+          evaluted.
+          <md>
+            <mrow>
+              \lim_{x \rightarrow 0} \frac{\cos x - 1}{x} \amp = \lim_{x
+              \rightarrow 0} \frac{ \frac{d}{dx} (\cos x -
+              1)}{\frac{d}{dx} x} 
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow 0} \frac{ -\sin x - 0}{1} =
+              \frac{0}{1} = 0 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Check that this limit is an indeterminate form of type
+          <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
+          L'Hôpital's Rule to calculate the limit. (Don't solve the
+          limit by factoring.) 
+          <md>
+            \lim_{x \rightarrow 4} \frac{x^2 - 7x + 12}{x^2 + x - 20}
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The limit of the numerator as <m>x \rightarrow 4</m> is
+          <m>16 - 28 + 12 = 0</m>. The limit of the denominator as
+          <m>x \rightarrow 4</m> is <m>16 + 4 - 20 = 0</m>. This is an
+          indeterminate form of type <m>\frac{0}{0}</m> and I can
+          apply L'Hôpital's rule. After applying the rule, the
+          resulting limit can be directly evaluated. 
+          <md>
+            <mrow>
+              \lim_{x \rightarrow 4} \frac{x^2 - 7x + 12}{x^2 + x -
+              20} \amp = \lim_{x \rightarrow 4} \frac{\frac{d}{dx} (x^2 - 7x
+              + 12)}{\frac{d}{dx} (x^2 + x + 20)}
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow 4} \frac{2x-7}{2x+1} =
+              \frac{8-7}{8+1} = \frac{1}{9} 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Check that this limit is an indeterminate form of type
+          <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
+          L'Hôpital's Rule to calculate the limit. 
+          <md>
+            \lim_{x \rightarrow 0^+} \frac{\ln x}{\frac{1}{x}} 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Both the functions have asymptotes as I approach
+          <m>0^+</m>, so this is an indeterminate form of type
+          <m>\frac{\infty}{\infty}</m>. I can apply L'Hôpital's rule.
+          <md>
+            <mrow>
+              \lim_{x \rightarrow 0^+} \frac{\ln x}{\frac{1}{x}} \amp =
+              \lim_{x \rightarrow 0^+} \frac{\frac{d}{dx} \ln
+              x}{\frac{d}{dx} x^{-1}} 
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow 0^+}
+              \frac{\frac{1}{x}}{\frac{-1}{x^2}}
+            </mrow>
+          </md>
+          Now I have to simplify the nested fraction. I'll remind you
+          of the general rule for simplifying nested tractions.
+          <md>
+            \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{ad}{bc}
+          </md>
+          I apply this rule to the previous expression to finish the
+          limit. After canceling <m>x</m> from numerator and
+          denominator, the resulting limit can be directly evaluated. 
+          <md>
+            \lim_{x \rightarrow 0^+}
+            \frac{\frac{1}{x}}{\frac{-1}{x^2}} = \lim_{x \rightarrow
+            0^+} \frac{x^2}{-x} = \lim_{x \rightarrow 0^+} -x = 0 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Check that this limit is an indeterminate form of type
+          <m>\frac{0}{0}</m> or type <m>\frac{\infty}{\infty}</m>. Use
+          L'Hôpital's Rule to calculate the limit. (Don't use
+          asymptotic analysis.)
+          <md>
+            \lim_{x \rightarrow \infty} \frac{x^2\ln x}{x^3+7} 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Both numerator and denominator are growing functions without
+          bound, so this is an indeterminate form of type
+          <m>\frac{\infty}{\infty}</m>. I can apply L'Hôpital's rule.
+          <md>
+            <mrow>
+              \lim_{x \rightarrow \infty} \frac{x^2\ln x}{x^3+7} \amp =
+              \lim_{x \rightarrow \infty} \frac{\frac{d}{dx} x^2 \ln
+              x}{\frac{d}{dx} x^3+7} 
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{2x \ln x + x^2
+              \frac{1}{x}}{3x^2+0}
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{2x \ln x + x}{3x^2+0}
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{x (2\ln x + 1)}{3x^2}
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{2\ln x + 1}{3x}
+            </mrow>
+          </md>
+          This cannot be directly evaluated. However, I can use
+          L'Hôpital's rule again. Both functions are still growing to
+          <m>\infty</m>, so the rule still applies. 
+          <md>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{\frac{d}{dx} 2\ln x
+              + 1}{ \frac{d}{dx} 3x}
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{\frac{2}{x}}{3}
+            </mrow>
+            <mrow>
+              \amp = \lim_{x \rightarrow \infty} \frac{2}{3x} = 0 
+            </mrow>
+          </md>
+          This final limit can be directly determined: as <m>x</m>
+          gets very large, its reciprocal gets very small and the
+          limit goes to 0.
         </p>
       </solution>
     </activity>

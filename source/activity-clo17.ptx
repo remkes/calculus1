@@ -1,0 +1,340 @@
+<section xml:id="section-activity-clo17">
+  <title>Activity for CLO-17</title>
+  <subsection xml:id="subsection-clo17-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          How can an integral be used to define a new function?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An integral defined a new function by allowing the variable
+          of the function to be the upper bound of the integral. In
+          this sense, a new function measures the area under the curve
+          of a previously known function with a fixed starting point
+          and a variable ending point for the area. This is a common
+          method of building new functions in mathematics. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is an antiderivative?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An antiderivative of a function <m>f(x)</m> is some function
+          <m>g(x)</m> such that <m>g^\prime(x) = f(x)</m>. It is
+          essentially doing differentiation backwards: an
+          antiderivative wants to know what function has a specific
+          already stated derivative. The derivative is known but the
+          original function is unknown. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What are definite and indefinite integrals?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A definite integral is a measurenent of an area under a
+          curve. It is defined by the Riemann integral, a limit of
+          approximation by rectangles. It has bounds on the integral
+          sign to indicate the interval of integration. The result of
+          a definite integral is a number
+        </p>
+        <p>
+          An indefinite integral is a notation for an antiderivative.
+          It takes a function and produces the antiderivative for that
+          function (which will always involve an unknown constant of
+          integration). It has no bounds on the integral sign, since
+          there is not specific interval or area being considered. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the main idea of the fundamental theorm of calculus. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The main idea is that integrals are an inverse process to
+          derivatives. To do an integral, we can essentially just do a
+          derivative backwards. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How you calculate a definite integral?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          You find an antiderivative for the function. Then you
+          evaluate the antiderivative on the upper bound, evaluate the
+          antiderivative on the lower bound, and take the difference
+          of these two values. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why is the fundamental theorem of calculus so important?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For two main reasons. First, it is a deep conceptual
+          connection between the two main definitions: derivative and
+          integrals. It is a realization that these are just two sides
+          of the same coin. They are the same process, just one
+          forward and one in reverse. 
+        </p>
+        <p>
+          More practically, the fundamental theorem is a way to
+          calculate integrals. Rules for differentiation can be
+          calculated from the definition. The definition of a
+          derivative is, relatively speaking, an easy definition to
+          work with. The definition of the integral, however, is a
+          very troublesome definition. It's very difficult to work
+          with and difficult to use to make rules and calculation
+          methods. The fundamental theorem means that we can use all
+          that we know about derivative, just in reverse. Now, in
+          reverse is harder than regular derivative, but it much
+          easier and much more approachable than trying to
+          understand integrals just from the definition. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-fundamental-theorem">
+    <title>Calculation Questions: Fundamental Theorem</title>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards.
+          <md>
+            \int -\sin x dx 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I look to the tables of derivatives. <m>-\sin x</m> shows up
+          as the derivative of <m>\cos x</m>, so I go backwards to
+          that original function.
+          <md>
+            \int -\sin x dx = \cos x + c 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards.
+          <md>
+            \int \frac{1}{x} dx 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I look to the tables of derivatives. If I differentiate
+          <m>\ln x</m>, I get <m>\frac{1}{x}</m>, so I go backwards
+          to that original function.
+          <md>
+            \int \frac{1}{x} dx = \ln x + c 
+          </md>
+          If I look at the tables of integrals, I can actually do a
+          bit better than this. The right side of the above equation
+          is only defined for <m>x > 0</m>, but the left side is
+          defined for all <m>x \neq 0</m>. There is an antiderivative
+          that matches the full domain. 
+          <md>
+            \int \frac{1}{x} dx = \ln |x| + c 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards. You can
+          use the linearity of the integral.
+          <md>
+            \int (4 \cos x + 6 \sin x) dx 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I can use linearity to split this into two integrals. 
+          <md>
+            \int (4 \cos x + 6 \sin x) dx = 4 \int \cos x dx + 6 \int
+            \sin x dx 
+          </md>
+          Then I look at the derivative tables and work backwards to
+          get the antiderivatives of sine and cosine. 
+          <md>
+            = 4 \int \cos x dx + 6 \int \sin x dx = 4 \sin x - 6 \cos
+            x + c 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards. You can
+          use the linearity of the integral. 
+          <md>
+            \int (x^3-e^x)dx 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I can use linearity to split this into two integrals.
+          <md>
+            \int (x^3-e^x)dx = \int x^3 dx - \int e^x dx 
+          </md>
+          For the first integral, I have to do the power rule
+          backwards. This increases the exponent and divides by the
+          new exponent. For the second integral, since the exponential
+          function is its own derivative, it is also its own
+          antiderivative. 
+          <md>
+            \int x^3 dx - \int e^x dx = \frac{x^4}{4} - e^x + c 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards.
+          However, don't do the chain rule backwards; instead, use
+          what you know about the chain rule to make a reasonable
+          guess for the antiderivative.
+          <md>
+            \int e^{4x} dx
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If I were to differentiate this, it would be a chain rule
+          derivative. The outside function would remain unchanged, but
+          the inside derivative is <m>\frac{d}{dx} 4x = 4</m>, so I
+          would have to multiply by 4. Going backwards, then, I
+          should do the opposite and divide by 4. 
+          <md>
+            \int e^{4x} dx = \frac{1}{4} e^{4x} + c 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards.
+          <md>
+            \int_0^{\pi} \sin x dx 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The antiderivative of <m>\sin x</m> is <m>(-\cos x)</m>. For
+          definite integrals, after I find the antiderivative, I
+          evaluate it on the bounds. (I don't need the constant of
+          integral in definite integrals, since it would just cancel
+          off when I evaluate on the bounds.)
+          <md>
+            \int_0^{\pi} \sin x dx = -\cos x \Big|_0^{\pi} = -\cos
+            (\pi) - (- \cos (0)) = -(-1) - (-1) = 2
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards.
+          <md>
+            \int_1^{\ln 4} e^x dx 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The antiderivative of the exponential it itself. I need to
+          evaluate on the bounds. Remember that the logarithm and the
+          exponential are inverse operations, so they remove each
+          other. 
+          <md>
+            \int_1^{\ln 4} e^x dx = e^x \Big|_1^{\ln 4} = e^{\ln 4} -
+            e^{1} = 4 - e
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the following antiderivative by using known
+          derivatives or doing the derivative rules backwards.
+          <md>
+            \int_1^5 (2x-7) dx 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use linearity to split up the integral.
+          <md>
+            \int_1^5 (2x-7) dx = \int_1^5 2x dx - \int_1^5 7 dx
+          </md>
+          Then I use the power rule backwards for the first integral.
+          In the second, the antiderivative of a constant is just the
+          variable itself. 
+          <md>
+            <mrow>
+              \int_1^5 2x dx - \int_1^5 7 dx \amp = \frac{2x^2}{2}
+              \Big|_1^5 - 7x \Big|_1^5 
+            </mrow>
+            <mrow>
+              \amp = 5^2 - 1^2 - (7(5) - 7) = 25 - 1 - 35 + 7 = -4 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

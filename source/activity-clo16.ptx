@@ -1,0 +1,582 @@
+<section xml:id="section-activity-clo16">
+  <title>Activity for CLO-16</title>
+  <subsection xml:id="subsection-clo16-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is sigma notation?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Sigma notation is notation using the upper case sigma,
+          <m>\Sigma</m>, to write long sums. It's a common notation in
+          many parts of mathematics, since many ideas and
+          constructions rely on the ability to write arbitrary large
+          sums in a concise way. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How can area under a curve be approximated by rectangles?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The area can be approximated by dividing the domain into
+          smaller piece. Then, over each piece, a rectangle can be
+          drawn with height roughly matching the curve. The sum of the
+          areas of these rectangles is an approximation to the area
+          under the curve. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is the Riemann integral?
+        </p>
+      </statement>
+      <solution>
+        <p> 
+        The Riemann integral is the limit of the process of using
+        rectangle to approximation areas under curves. As the number
+        of rectangles increases, the approximation gets more and more
+        accurate. In the limit at the numbers of rectangles increases
+        without bound, the approximation approaches a fixed value,
+        which is exactly the area under the curve. The result is the
+        Riemann definition of the integral. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is an integrable function?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An integrable function is a function for which the Riemann
+          integral limit converges, hence the area under the graph of
+          the function can be determined by integration. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What are the bound of an integral?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The bounds of an integral are the end points of the interval
+          over which the integral is defined. In the notation, they
+          are placed at the bottom and top of the integral symbol. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-sigma-notation">
+    <title>Calcluation Questions: Sigma Notation</title>
+    <activity>
+      <statement>
+        <p>
+          Write this sum in ordinary notation. 
+          <md>
+            \sum_{i=2}^9 i^2 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Starting at 2, I replace <m>i</m> with all the numbers up
+          to 9 and then add all these results together.
+          <md>
+            <mrow>
+             \amp \sum_{i=2}^9 i^2 = 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2
+             + 8^2 + 9^2 
+            </mrow>
+            <mrow>
+              \amp = 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write this sum in ordinary notation. 
+          <md>
+            \sum_{i=-3}^{10} (6i-4)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Starting at <m>-3</m>, I replace <m>i</m> with all the
+          numbers up to 10 and then add all these results together. 
+          <md>
+            <mrow>
+              \amp \sum_{i=-3}^{10} (6i-4) = (6(-3) - 4) +  (6(-2) -
+              4) + (6(-1) - 4) +  (6(0) - 4)
+            </mrow>
+            <mrow>
+              \amp + (6(1) - 4) +  
+              (6(2) - 4) +  
+              (6(3) - 4) +  
+              (6(4) - 4) +  
+              (6(5) - 4) 
+            </mrow>
+            <mrow>
+              \amp + (6(6) - 4) +  
+              (6(7) - 4) +  
+              (6(8) - 4) +  
+              (6(9) - 4) +  
+              (6(10) - 4) 
+            </mrow>
+            <mrow>
+              \amp = -22 + (-16) + (-10) + (-4) + 2 + 8 + 14 + 20 + 26
+              + 32
+            </mrow>
+            <mrow>
+              \amp + 38 + 44 + 50 + 56
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write this sum in ordinary notation. 
+          <md>
+            \sum_{i=0}^{15} 2^i
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Starting with 0, I replace <m>i</m> with all the numbers up
+          to 15 and then add all the resulting numbers together. 
+          <md>
+            <mrow>
+              \amp \sum_{i=0}^{15} 2^i = 2^0 + 2^1 + 2^2 + 2^3 + 2^4 +
+              2^5 + 2^6 + 2^7 + 2^8 
+            </mrow>
+            <mrow>
+              \amp + 2^9 + 2^{10} + 2^{11} + 2^{12} + 2^{13}
+              + 2^{14} + 2^{15} 
+            </mrow>
+            <mrow>
+              \amp = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 +
+              1024
+            </mrow>
+            <mrow>
+              \amp + 2048 + 4096 + 8192 + 16384 + 32768
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write this sum in ordinary notation. 
+          <md>
+            \sum_{i=3}^7 (i^2 + 5i - 3^i)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Starting with 3, I replace <m>i</m> will all the number
+          until 7. Then I add up all the resulting numbers. 
+          <md>
+            <mrow>
+              \amp \sum_{i=3}^7 (i^2 + 5i - 3^i) = (3^2 + 5(3) - 3^3)
+              + (4^2 + 5(4) - 3^4) + (5^2 + 5(5) - 3^5)
+            </mrow>
+            <mrow>
+              \amp + (6^2 + 5(6) -
+              3^6) + (7^2 + 5(7) - 3^7) 
+            </mrow>
+            <mrow>
+              \amp = (9 + 15 - 27) + (16 + 20 - 81) + (25 + 25 - 243)
+            </mrow>
+            <mrow>
+              \amp + (36 + 30 - 729) + (49 + 35 - 2187)
+            </mrow>
+            <mrow>
+              \amp = (-3) + (-45) + (-193) + (-663) + (-2103)
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write this sum in sigma notation.
+          <md>
+            1 + 4 + 7 + 10 + 13 + 16 + 19
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need a pattern. This is an arithmetic sequence, where
+          each step is adding 3. I start with a value of 1. Using this,
+          I can start at <m>i=0</m> and describe this pattern as <m>1
+          + 3i</m>. The value of <m>i</m> that gives 19 is <m>i=6</m>,
+          so the sum will end at 6. 
+          <md>
+            1 + 4 + 7 + 10 + 13 + 16 + 19 = \sum_{i=0}^6 (1+3i)
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write this sum in sigma notation.
+          <md>
+            3 + 6 + 12 + 24 + 48 + 96
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need a pattern. This is a geometric sequence, where
+          each steps multiplies by 2. I start with a value of 3. Using
+          this, I can start at <m>i=0</m> and describe this pattern
+          as <m>3(2^i)</m>. The value of <m>i</m> that gives 96 is
+          <m>i = 5</m>, so the sum will end at 6.
+          <md>
+            3 + 6 + 12 + 24 + 48 + 96 = \sum_{i=0}^5 3(2^i)
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write this sum in sigma notation.
+          <md>
+            16 + 14 + 12 + 10 + 8 + 6 + 4 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need a pattern. I have a couple options. I could keep
+          this in ths order is it written in, start from 16, and
+          subtract 2 in each step. I could also change the order and
+          write this as an arithmetic progression starting at 4. I'll
+          chose the first option, starting with <m>i=0</m> and writing
+          <m>16 -2i</m> for the pattern. When <m>i=6</m>, I get the
+          last term, so the sum will end at 6. 
+          <md>
+            16 + 14 + 12 + 10 + 8 + 6 + 4 = \sum_{i=0}^6 (16-2i)
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Use linearity to split this into several sums with constants
+          removed. 
+          <md>
+            \sum_{i=0}^{44} (5i^3 - 2i^2 - 19i + 19)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Linearity splits up the sum over addition and subtraction
+          and allows me to pull out the constants. In each piece, the
+          index and bounds of the sum stay the same. 
+          <md>
+            \sum_{i=0}^{44} (5i^3 - 2i^2 - 19i + 19) = 5
+            \sum_{i=0}^{44} i^3 - 2 \sum_{i=0}^{44} i^2 - 19
+            \sum_{i=0}^{44} i + 19 \sum_{i=0}^{44} 1
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Use linearity to split this into several sums with constants
+          removed. 
+          <md>
+            \sum_{i=4}^{104} (-12i^5 + i^3 - 71i^2 + 4)
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Linearity splits up the sum over addition and subtraction
+          and allows me to pull out the constants. In each piece, the
+          index and bounds of the sum stay the same. 
+          <md>
+            \sum_{i=4}^{104} (-12i^5 + i^3 - 71i^2 + 4) = 
+            -12 \sum_{i=4}^{104} i^5 + \sum_{i=4}^{104} i^3 - 71
+            \sum_{i=4}^{104} i^2 + 4 \sum_{i=4}^{104} 1
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Use linearity to combine this into one sum. 
+          <md>
+            4 \sum_{i=0}^{10} i^3 - 15 \sum_{i=0}^{10} i^2 - 7
+            \sum_{i=0}^{10} i + 9 \sum_{i=0}^{10} i 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The indices and bounds of all the sums are the same, so I
+          can combine them into one sum by taking the constants inside
+          the sums and writing the additions and subtractions inside
+          the sum. Notice there are two <m>i</m> terms, which I can
+          combine into one. 
+          <md>
+            <mrow>
+              4 \sum_{i=0}^{10} i^3 - 15 \sum_{i=0}^{10} i^2 - 7
+              \sum_{i=0}^{10} i + 9 \sum_{i=0}^{10} i \amp =
+              \sum_{i=0}^{10} (4i^3 - 15i^2 - 7i + 9i) 
+            </mrow>
+            <mrow>
+              \amp = \sum_{i=0}^{10} (4i^3 - 15i^2 + 2i)
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Use linearity to combine this into one sum. 
+          <md>
+            19 \sum_{i=4}^{17} i^3 - \sum_{i=4}^{17} i^3 + 2
+            \sum_{i=4}^{17} i^2 - 36 \sum_{i=4}^{17} i 
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The indices and bounds of all the sums are the same, so I
+          can combine them into one sum by taking the constants inside
+          the sums and writing the additions and subtractions inside
+          the sum. Notice there are two <m>i^3</m> terms, which I can
+          combine into one. 
+          <md>
+            <mrow>
+              19 \sum_{i=4}^{17} i^3 - \sum_{i=4}^{17} i^3 + 2
+              \sum_{i=4}^{17} i^2 - 36 \sum_{i=4}^{17} i \amp = 
+              \sum_{i=4}^{17} (19i^3 - i^3 + 2i^2 - 36 i) 
+            </mrow>
+            <mrow>
+              \amp = \sum_{i=4}^{17} (18i^3 + 2i^2 - 36 i)
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-riemann-integral">
+    <title>Calculation Questions: Riemann Integral</title>
+    <activity>
+      <statement>
+        <p>
+          This is a multi-part activity to solve the integral 
+          <md>
+            \int_{-1}^1 (x^2 + 2x + 2)dx
+          </md>
+          by definition using the Reimann definition of the integral.
+          First, write the definition of the integral and replace the
+          general pieces with the specifics of this function.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here is the general form.
+          <md>
+            \int_a^b f(x) dx = \lim_{n \rightarrow \infty}
+            \sum_{k=1}^n f(x_k^*) \left( \frac{b-a}{n} \right) 
+          </md>
+          In this situation, <m>a = -1</m>, <m>b = 1</m> and <m>f(x) =
+          (x^2 + 2x +2)</m>. I put these into the general form. 
+          <md>
+            <mrow>
+              \int_{-1}^1 (x^2 + 2x + 2) dx \amp = \lim_{n
+              \rightarrow \infty} \sum_{k=1}^n \left( (x_k^*)^2 +
+              2x_k^* + 2 \right) \left( \frac{1-(-1)}{n} \right) 
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \sum_{k=1}^n \left(
+              (x_k^*)^2 + 2x_k^* + 2 \right) \left( \frac{2}{n}
+              \right)
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          When write an expression for <m>x_k^*</m> and use it in the
+          expression.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There is a general form for <m>x_k^*</m> that I have been
+          using in the examples. 
+          <md>
+            x_k^* = a + k \frac{b-a}{n} 
+          </md>
+          Now I put in the values for this particular integral.
+          <md>
+            x_k^* = -1 + k \frac{1-(-1)}{n}  = -1 + \frac{2k}{n} 
+          </md>
+          Then I can return to the form from the previous section and
+          replace <m>x_k^*</m> with this new expression. I'll proceed
+          to simplify the polynomial after I've substituted <m>x_k^*</m>.
+          <md>
+            <mrow>
+              \int_{-1}^1 (x^2+2+2) dx \amp = \lim_{n \rightarrow \infty}
+              \sum_{k=1}^n \left( \left( -1 + \frac{2k}{n} \right)^2 +
+              2 \left( -1 + \frac{2k}{n} \right) + 2 \right) \left(
+              \frac{2}{n} \right) 
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \sum_{k=1}^n \left(
+              1 - \frac{4k}{n} + \frac{4k^2}{n^2} + -2  - \frac{4k}{n}
+              + 2 \right) \left( \frac{2}{n} \right) 
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \sum_{k=1}^n \left(
+              1 + \frac{4k^2}{n^2} \right) \left( \frac{2}{n} \right) 
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \sum_{k=1}^n \left(
+              \frac{2}{n} + \frac{8k^2}{n^3} \right) 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Then rearrange and split up the sum using linearity. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are two pieces of this sum from the end of the previous
+          part. I split this into two sums and pull out the
+          constants. Note that <m>k</m> is the index of the sum, so
+          anything that doesn't involve <m>k</m> is a constant. That
+          means that <m>n</m> is a constant as far as the sum is
+          concerned and can be brought outside.
+          <md>
+            <mrow>
+              \int_{-1}^1 (x^2+2x+2) dx \amp = \lim_{n \rightarrow \infty}
+              \sum_{k=1}^n \left( \frac{2}{n} + \frac{8k^2}{n^3}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \left( \sum_{k=1}^n
+              \frac{2}{n} + \sum_{k=1}^n \frac{8k^2}{n^3} \right)
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \left( \frac{2}{n}
+              \sum_{k=1}^n 1+ \frac{8}{n^3} \sum_{k=1}^n k^2 \right)
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Then replace the remaining sums with their values according
+          to the standard sum formulas. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          From the previous step, there are sums with terms 1 and
+          <m>k^2</m>. These are standard sums which can be evaluated.
+          After the replacement, I can simplify the expression a
+          bit.
+          <md>
+            <mrow>
+              \amp \lim_{n \rightarrow \infty} \left( \frac{2}{n}
+              \sum_{k=1}^n 1 + \frac{8}{n^3} \sum_{k=1}^n k^2 \right)
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \left( \frac{2}{n} n + 
+              \frac{8}{n^3} \frac{n(n+1)(2n+1)}{6} \right)
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \left( 2 +
+              \frac{8n(n+1)(2n+1)}{6n^3} \right)
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \left( 2 + \frac{8n(2n^2 +
+              3n + 1)}{6n^3} \right)
+            </mrow>
+            <mrow>
+              \amp = \lim_{n \rightarrow \infty} \left( 2 + \frac{16n^3 +
+              24n^2 + 8n)}{6n^3} \right)
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Finally, use asymptotic analysis to solve the limit. Write
+          the final value of the integral. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The constant term 2 remains unchanged in the limit. The other
+          term is a fraction with <m>n^3</m> in the numerator and
+          denominator. Since these have the same asymptotic order,
+          asymptotic analysis tells that the limit is the ratio of the
+          leading coefficients. 
+          <md>
+            \lim_{n \rightarrow \infty} \left( 2 + \frac{16n^3 +
+            24n^2 + 8n)}{6n^3} \right) = 2 + \frac{16}{6} = 2 +
+            \frac{8}{3} = \frac{14}{3}
+          </md>
+          This completes the integral. The area under the curve
+          described by the original problem is <m>\frac{14}{3}</m>
+          units squared. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>
