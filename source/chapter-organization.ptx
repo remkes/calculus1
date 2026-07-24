@@ -1,6 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
-  xml:id="chapter-organization">
-  <title>Organization</title>
-  <xi:include href="section-structure.ptx" />
-  <xi:include href="section-outcomes.ptx" />
-</chapter>

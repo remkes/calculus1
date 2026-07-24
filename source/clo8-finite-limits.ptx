@@ -258,19 +258,57 @@
           a} f(x))^c
         </mrow>
       </md>
-    </p>
+    The ration</p>
+  </subsection>
+  <subsection xml:id="subsection-three-special-limits">
+    <title>Three Special Limits</title>
     <p>
-      In addition to the limit rules, there are two special limits
-      that are frequently useful. The second limit can be taken as a
-      definition of the exponential base <m>e</m>.
+      In addition to the limit rules, there are three special limits
+      that are frequently useful. The first two are about ratios that
+      involve trigonometry. 
       <md>
         <mrow>
           \lim_{x \rightarrow 0} \frac{\sin x}{x} \amp  = 1
         </mrow>
         <mrow>
-          \lim_{x \rightarrow 0^+} \left( 1 + x \right)^{\frac{1}{x}}
-          \amp  = e
+          \lim_{x \rightarrow 0} \frac{\cos x - 1}{x} \amp  = -
         </mrow>
+      </md>
+    </p>
+    <p>
+      These two trig limit relate to something which make be familiar
+      to you from your high school experience: the small angle
+      approximations. For angles <m>x</m> which are very close to
+      zero, the sine and cosine functions can be approximated by
+      easier functions.
+      <md>
+        <mrow>
+          \amp \sin x \cong x \amp \amp \cos x \cong 1 
+        </mrow>
+      </md>
+      The argument behind the previous limit essentialy come from the
+      the small-angle approxmiation: if I replace sine and cosine with
+      their small angle approximations, both limits can be calculated
+      directly. 
+    </p>
+    <p>
+      Some of you may be in the habit of using the small-angle
+      approximations. In this course, I would ask you not to do so;
+      instead, use these limits. The small angle approximations are,
+      indeed, used in mathematics, but I want to work on the
+      conceptual understanding of the use of limit. Allowing for
+      direct use of the small angle approximations gets around using
+      limits, hence asking you to forgo this technique during the
+      course. 
+    </p>
+    <p>
+      Finally, the third special limit deals with expressions that
+      have a variable in both the base and the exponent. This identity
+      can, if you wish, be taken as a definition of the exponential
+      base <m>e</m>.
+      <md>
+        \lim_{x \rightarrow 0^+} \left( 1 + x \right)^{\frac{1}{x}}
+        \amp  = e
       </md>
     </p>
   </subsection>

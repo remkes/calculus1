@@ -23,25 +23,6 @@
         </p>
       </solution>
     </activity>
-    <activity>
-      <statement>
-        <p>
-          Why does the chain rule help with derivativres of inverse
-          functions?
-        </p>
-      </statement>
-      <solution>
-        <p>
-          An inverse function satisfies this equation.
-          <md>
-            f \circ f^{-1} (x) = x 
-          </md>
-          This is a composition, so I can apply the chain to
-          differentiate the left side. Out of that chain rule, I can
-          isolate the derivative of the inverse function.
-        </p>
-      </solution>
-    </activity>
   </subsection>
   <subsection xml:id="subsection-activity-chain-rule">
     <title>Calculation Questions: Chain Rule</title>

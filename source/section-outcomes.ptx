@@ -3,24 +3,25 @@
   <p>
     This course is organized into learning outcomes, and each
     section of the notes (and each video) reflection one of the
-    learning outcomes. There are three
-    types of these: core learning outcomes (CLOs), stretch learning
-    outcomes (SLOs) and holistic learning outcomes (HLOs). The main
-    content of the course is organized by the CLOs and the SLOs: you
-    will see each section of the course labelled by one of these.
-    The HLOs are major ideas, themes and skills that run throughout
-    the course but are not isolated to any one area. I'll try to
-    point out the development of the HLOs over the whole course. 
+    learning outcomes. There are two types of these: core learning
+    outcomes (CLOs) and stretch learning outcomes (SLOs). Most of the
+    outcomes are CLOs: these are the main material of the course. I've
+    labelled a few outcomes as <sq>stretch</sq> to indicate that they
+    present a bit more difficulty than the majority of the course.
+    These outcomes push the concepts and calculations a bit more than
+    the CLOs. Completing the core outcomes leads to competence in the
+    course, but mastering the stretch outcomes is the path to
+    excellence. 
   </p>
   <p>
-    Here are the learning outcomes for the course. These are all
-    stated with active verbs: a learning outcome is something that a
-    student will be able to do, which can be demonstrated and
+    Here, then, is the list learning outcomes for the course. These
+    are all stated with active verbs: a learning outcome is something
+    that a student will be able to do, which can be demonstrated and
     assessed. You can preface all of these with <sq>A student
     completing this course should be able to <m>\ldots</m></sq>.
   </p>
   <p>
-    Here are the 20 core learning outcomes.  
+    There are 22 core learning outcomes. 
   </p>
   <ol>
     <li>
@@ -64,7 +65,8 @@
     </li>
     <li>
       Describe the derivative as an approximation process calculated
-      by a limit. 
+      by a limit and use the limit definition to calculate simple
+      derivatives. 
     </li>
     <li>
       Use derivative rules for pointwise operations (linearity,
@@ -93,6 +95,10 @@
       Apply the substitution rule to solve integrals. 
     </li>
     <li>
+      Solve separable differential equation and initial value problems
+      using the integration rules covered in the course. 
+    </li>
+    <li>
       Use derivative to find extrema, find intervals of increase and
       decrease, and solve optimzation problems. 
     </li>
@@ -106,13 +112,9 @@
     </li>
   </ol>
   <p>
-    Here are the 5 stretch learning outcomes.  
+    There are NUMBER stretch outcomes. 
   </p>
   <ol>
-    <li>
-      Calculate derivatives using the limit definition of the
-      derivative instead of the usual derivative rules. 
-    </li>
     <li>
       Recount and explain proofs of the derivative rules (power
       rule, product rule, chain rule, inverse derivative,
@@ -127,8 +129,8 @@
       asymptotic order. 
     </li>
     <li>
-      Solve separable differential equations with antiderivatice
-      covered so far in the course, including initial values. 
+      Solve the logistic equation and analyze the behaviour of its
+      solution. 
     </li>
     <li>
       Use the Riemann definition of the integral and common identity
@@ -136,6 +138,7 @@
       functions. 
     </li>
   </ol>
+  <!--
   <p>
     Here are the 5 holistic learning outcomes.
   </p>
@@ -171,4 +174,5 @@
       involved in the core and stretch learning outcomes. 
     </li>
   </ol>
+  -->
 </section>

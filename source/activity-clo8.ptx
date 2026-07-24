@@ -198,6 +198,26 @@
         </p>
       </solution>
     </activity>
+    <activity>
+      <statement>
+        <p>
+          Why did I ask you to avoid using the small-angle trig
+          approximations in this course?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The small-angle approximation can be use to avoid doing some
+          trig limits. I'd prefer you to actually do those trig
+          limits, using the known limits that I mention in <xref
+          ref="subsection-three-special-limits"/>. There is conceptual
+          value in doing these limit and understanding how trig
+          functions work in those limit. Therefore, I'm asking you not
+          to make use of the small angle approximations in this
+          course. 
+        </p>
+      </solution>
+    </activity>
   </subsection>
   <subsection xml:id="subsection-activity-finite-limits">
     <title>Calculation Questions: Finite Limits</title>

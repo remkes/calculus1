@@ -1,0 +1,37 @@
+<section xml:id="section-activity-slo3">
+  <title>Activity for SLO-3</title>
+  <subsection xml:id="subsection-slo3-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          Why is L'Hôpital's rule useful for determining asymptotic
+          order?
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-TOPIC">
+    <title>Calculation Questions: </title>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

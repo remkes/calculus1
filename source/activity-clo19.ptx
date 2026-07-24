@@ -1,0 +1,418 @@
+<section xml:id="section-activity-clo19">
+  <title>Activity for CLO-19</title>
+  <subsection xml:id="subsection-clo19-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is an initial value problem?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An initial value problem is a differential equation along
+          with an initial condition. Solving a differential equation
+          will produce a function, but there will always be an unknown
+          constant. A differential equation shows how a function
+          grows, but where the growth starts. Therefore, an additional
+          piece of information is required: an initial condition. This
+          initial condition is used to solve for the unknown constant
+          in the function. The result, then, is a unique solution to
+          the differential equation determined by the initial
+          condition. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is a separable equation?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A separable equation is a differential equation where the
+          left side is an isolated derivative and the right side is a
+          product of two expressions. One of the expressions only
+          involves the dependent variable and the other only involves
+          the independent variable. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why is the substitution rule required so solve separable
+          equations?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          After the equation has been separated, I integrate both side
+          in the independent variable. However, the left side of the
+          equation is an expression in the dependent variable. I want
+          to change the variable, in order to use the dependent
+          variable as the variable of integration. The substitution
+          rules allows me to do this, changing the variable of
+          integration. The result is just two single-variable
+          integrals with no mixing of the variables. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Why does percentage growth result in an exponential
+          function?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Percentage growth is a differential equation. That
+          differential equation is separable and can be solved. The
+          solution to the differential equation is an exponential
+          function. Therefore, percentage growth results in an
+          exponential growth function.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-separable-equations">
+    <title>Calculation Questions: Separable Equations</title>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = x^2 y^2 
+              \amp \amp y(0) = 1
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          x^2</m> and <m>g(y) = y^2</m>.
+          <md>
+            \int \frac{1}{y^2} dy = \int x^2 dx 
+          </md>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <md>
+            \frac{-1}{y} = \frac{x^3}{3} + c= \frac{x^3+3c}{3} 
+          </md>
+          Then I solve for <m>y</m>.
+          <md>
+            y =  \frac{-3}{x^3+3c} 
+          </md>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <md>
+            1 = \frac{-3}{x + 3c} \implies c = -1 
+          </md>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <md>
+            y = \frac{-3}{x^3 -3} = \frac{3}{3-x^3} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = e^x e^{-y} 
+              \amp \amp y(0) = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          e^x</m> and <m>g(y) = e^{-y}</m>.
+          <md>
+            \int e^y dy = \int e^x dx 
+          </md>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <md>
+            e^y = e^x + c 
+          </md>
+          Then I solve for <m>y</m>.
+          <md>
+            y = \ln (e^x + c) 
+          </md>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <md>
+            1 = \ln (e^0 + c) = \ln (1+c) \implies c = e-1 
+          </md>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <md>
+            y = \ln (e^x + e - 1)
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = \frac{y}{x} 
+              \amp \amp y(3) = 1
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          \frac{1}{x}</m> and <m>g(y) = y</m>.
+          <md>
+            \int \frac{1}{y} dy = \int \frac{1}{x} dx 
+          </md>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <md>
+            \ln |y| = \ln |x| + c 
+          </md>
+          Then I solve for <m>y</m>.
+          <md>
+            y = e^{\ln x + c} = (x)(e^c) 
+          </md>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <md>
+            1 = 3(e^c) \implies (e^c) = \frac{1}{3} \implies c = \ln
+            \frac{1}{3} = -\ln 3 
+          </md>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <md>
+            y = x e^{-\ln 3} = \frac{x}{e^{\ln 3}} = \frac{x}{3}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = \sqrt{\frac{x}{y}} 
+              \amp \amp y(0) = 0 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The expression in the differential equation is not defined
+          for this initial value. Therefore, this IVP cannot be
+          solved. I could do the separable equation, but I won't be
+          able to input the initial conditions.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = y^2 \sin x  
+              \amp \amp y(\pi) = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          \sin x^2</m> and <m>g(y) = y^2</m>.
+          <md>
+            \int \frac{1}{y^2} dy = \int \sin x dx 
+          </md>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <md>
+            \frac{-1}{y} = -\cos x + c 
+          </md>
+          Then I solve for <m>y</m>.
+          <md>
+            y = \frac{-1}{c - \cos x} = \frac{1}{\cos x - c} 
+          </md>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <md>
+            1 = \frac{1}{\cos \pi - c} = \frac{1}{-1 - c} \implies c= -2
+          </md>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <md>
+            y = \frac{1}{\cos x + 2}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = \frac{(x-1)^2}{y} 
+              \amp \amp y(2) = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          (x-1)2</m> and <m>g(y) = \frac{1}{y}</m>.
+          <md>
+            \int y dy = \int (x-1)^2 dx 
+          </md>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <md>
+            \frac{y^2}{2} = \frac{(x-1)^3}{3} + c 
+          </md>
+          Then I solve for <m>y</m>.
+          <md>
+            \frac{y^2}{2} = \frac{(x-1)^3+3c}{3} \implies y =
+            \sqrt{\frac{2(x-1)^3+6c}{3}} 
+          </md>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <md>
+            1 = \sqrt{\frac{2(2-1)^3+6c}{3}} \implies 3 = 2+6c \implies
+            c = \frac{1}{6}
+          </md>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <md>
+            y = \sqrt{ \frac{2(x-1)^3+1}{3}}
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = x^3 y^4 
+              \amp \amp y(1) = -3 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          x^3</m> and <m>g(y) = y^4</m>.
+          <md>
+            \int \frac{1}{y^4} dy = \int x^3 dx 
+          </md>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <md>
+            \frac{-1}{3y^3} = \frac{x^4}{4} + c = \frac{x^4 + 4c}{4}
+          </md>
+          Then I solve for <m>y</m>.
+          <md>
+            -3y^3 = \frac{4}{x^4 + 4c} \implies y^3 =
+            \frac{-4}{3(x^4+4c)} \implies y = \sqrt[3]{\frac{-4}{3x^4 +
+            12c}} 
+          </md>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <md>
+            -3 = \sqrt[3]{\frac{-4}{3(1)^4+ 12c}} \implies -27 =
+            \frac{-4}{3+12c} 
+          </md>
+          <md>
+            \frac{1}{27} = \frac{3+12c}{4} \implies 3+12c =
+            \frac{4}{27} \implies 12c = \frac{-77}{27} \implies c =
+            \frac{-77}{324} = 
+          </md>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <md>
+            y = \sqrt[3]{\frac{-4}{3x^4 + 12\frac{-77}{324}}} =
+            \sqrt[3]{\frac{-4}{3x^2 - \frac{77}{27}}} = 
+            \sqrt{3}{\frac{-108}{81x^2 - 77}} = 
+            \sqrt{3}{\frac{108}{77 - 81x^2}} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this initial value problem.
+          <md>
+            <mrow>
+              \frac{dy}{dx} \amp = y^2 e^x 
+              \amp \amp y(\ln 3) = 2 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I use the form for separable equations, with <m>f(x) =
+          e^x</m> and <m>g(y) = y^2</m>.
+          <md>
+            \int \frac{1}{y^2} dy = \int e^x dx 
+          </md>
+          Then I integrate both sides, add the constant of integration
+          on the right.
+          <md>
+            \frac{-1}{y} = e^x + c 
+          </md>
+          Then I solve for <m>y</m>.
+          <md>
+            y = \frac{-1}{e^x + c} 
+          </md>
+          Now I put the initial condition values in for <m>x</m> and
+          <m>y</m>, to try to solve for the constant of integration.
+          <md>
+            2 = \frac{-1}{3+c} \implies c= \frac{-7}{2} 
+          </md>
+          Finally, having solve for the constant of integration, I
+          replace <m>c</m> with the value solved for to get the final,
+          unique solution.
+          <md>
+            y = \frac{-1}{e^x - \frac{7}{2}} = \frac{2}{7 - 2e^x} 
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>

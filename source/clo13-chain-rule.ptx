@@ -179,63 +179,15 @@
         </p>
       </statement>
     </example>
-  </subsection>
-  <subsection xml:id="subsection-derivatives-inverse-functions">
-    <title>Derivatives of Inverse Functions</title>
-    <p>
-      In the previous examples, I used the rule <m>\frac{d}{dx} \ln x = \frac{1}{x}</m>
-      without justification. What is this justification?  The
-      logarithm is the inverse of the exponential, which leads to
-      thinking about the derivatives of inverse functions. There is a
-      rule for such derivatives. I will write <m>x = f \circ
-      f^{-1}(x)</m>, differentiate both sides using the chain rule,
-      and rearrange to get an expression for <m>\frac{d}{dx}
-      f^{-1}(x)</m>.
-      <md>
-        <mrow>
-          1 \amp = \frac{d}{dx} x = \frac{d}{dx} f \circ f^{-1} =
-          f^\prime ( f^{-1}(x)) \frac{d}{dx} f^{-1}(x)
-        </mrow>
-        <mrow>
-          \frac{d}{dx} f^{-1}(x) \amp =
-          \frac{1}{f^\prime(f^{-1}(x))}
-        </mrow>
-      </md>
-      This is now a reliable method for differentiating inverse
-      functions as long as I know the derivative of the original. I
-      will now use this to differentiate <m>\ln x</m>.
-      <md>
-        \frac{d}{dx} \ln x = \frac{1}{e^{\ln x}} = \frac{1}{x}
-      </md>
-    </p>
-    <p>
-      I can also prove derivative rules for the inverse trig
-      functions using this inverse derivative rule. 
-      <md>
-        <mrow>
-          \frac{d}{dx} \arccos x \amp = \frac{1}{-\sin(\arccos x)} =
-          \frac{-1}{\sqrt{1-\cos^2(\arccos x)}} =
-          \frac{-1}{\sqrt{1-x^2}}
-        </mrow>
-        <mrow>
-          \frac{d}{dx} \arcsin x \amp = \frac{1}{\cos(\arcsin x)} =
-          \frac{1}{\sqrt{1-\sin^2(\arcsin x)}} =
-          \frac{1}{\sqrt{1-x^2}}
-        </mrow>
-        <mrow>
-          \frac{d}{dx} \arctan x \amp = \frac{1}{\sec^2(\arctan x)} =
-          \frac{1}{1+\tan^2(\arctan x)} = \frac{1}{1+x^2}
-        </mrow>
-      </md>
-    </p>
     <example>
       <statement>
         <p>
-          Here are two calculations of chain rule derivatives that make
-          use of some of the inverse derivatives I just calculated. In
-          the first inside function, I need linearity as well. In the
+          In the first inside function, I need linearity. In the
           second inside function, I need both linearity and the
-          product rule to differentiate <m>x  + 3x \arcsin x</m>. 
+          product rule to differentiate <m>x  + 3x \arcsin x</m>. For
+          the derivaitve of the inverse since function, I used the
+          derivative tables. (I'll discuss where these derivatives
+          come from in <xref ref="section-inverse-derivatives"/>.)
           <md>
             <mrow>
               \frac{d}{dx} \ln(x^2+1) \amp = \frac{1}{x^2+1}

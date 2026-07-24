@@ -1,6 +1,8 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
-  xml:id="chapter-introduction">
-  <title>Introduction</title>
+  xml:id="chapter-set-up">
+  <title>Set-Up and Introduction</title>
+  <xi:include href="section-structure.ptx" />
+  <xi:include href="section-outcomes.ptx" />
   <xi:include href="section-what-is-calculus.ptx" />
   <xi:include href="section-motivating-problems.ptx" />
 </chapter>

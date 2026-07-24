@@ -1,7 +1,109 @@
-<section xml:id="section-week10-activity">
-  <title>Week 10 Activity</title>
-  <subsection xml:id="subsection-activity-extrema">
-    <title>Extrema</title>
+<section xml:id="section-activity-clo20">
+  <title>Activity for CLO-20</title>
+  <subsection xml:id="subsection-clo20-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          What is a critical point?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A critical point of a function is a point where the
+          derivative is zero. These are useful in extrema and
+          optimization because extrema are identified by having a
+          derivative value of zero. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What are local extrema?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Extrema are places where a function is at a minimum or a
+          maximum. The word <sq>local</sq> means that the maximum or
+          minimum only applies to other nearby values: at an entirely
+          different part of the domain, the function may exceed the
+          maximum or fall below the minimum. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How to derivatives help to understand and determine extrema?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          At a maximum or minimum, the derivative of a function must
+          be zero, since the tangent line is horizontal. Therefore,
+          finding extrema means finding places where the derivative is
+          zero. After that, classifying extrema also helped by
+          derivative. Derivative determine where the function is
+          increasing and decreasing, and those interval of increase
+          and decrease are then used to classify extrema into maxima,
+          minina, or neither. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What are the intervals of increase and decrease?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The intervals of increase and decrease are a subdivision of
+          the domain of a function into intervals where, on each
+          interval, the function is either always increasing or always
+          decreasing. They are determined by the sign of the
+          derivative: where the derivative is positive, the function
+          is increasing and where the derivative is negative, the
+          function is decreasing. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          What is marginal analysis?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Marginal analysis is a piece of mathematical model from
+          business and economics. It involves two functions: a cost
+          and benefit function. It is concerned with optimization
+          problems. Usually the optimization problem is optimizing net
+          benefit, but other optimization quesitons are also possible. 
+        </p>
+        <p>
+          The terms <sq>marginal cost</sq> and <sq>marginal
+          benefit</sq> refer to the derivatives of cost and benefit,
+          respectively. They are interpreted as the cost of the next
+          unit of production. This makes some sense: the slope is
+          measuing how quickly cost or benefit are increasing, which
+          does determine how much cost or benefit the next unit will
+          incur. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-optimization">
+    <title>Calculation Questions: Optimization</title>
     <activity>
       <statement>
         <p>
@@ -242,9 +344,6 @@
         </p>
       </solution>
     </activity>
-  </subsection>
-  <subsection xml:id="subsection-activity-optimization">
-    <title>Optimization</title>
     <activity>
       <statement>
         <p>
@@ -861,31 +960,5 @@
         </p>
       </solution>
     </activity>
-  </subsection>
-  <subsection xml:id="subsection-week10-concepts">
-    <title>Conceptual Review Questions</title>
-    <p>
-      <ul>
-        <li>
-          Why are derivatives used to find maxima and minima of
-          function?
-        </li>
-        <li>
-          Why are intervals used to test the sign of the derivative
-          on the intervals?
-        </li>
-        <li>
-          What is optimization and why is it part of calculus?
-        </li>
-        <li>
-          What are marginal cost and marginal benefit? Why are they
-          measure by derivatives?
-        </li>
-        <li>
-          Why are there critical points when marginal cost and
-          marginal benefit are equal?
-        </li>
-      </ul>
-    </p>
   </subsection>
 </section>

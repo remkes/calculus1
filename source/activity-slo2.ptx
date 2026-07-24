@@ -1,0 +1,130 @@
+<section xml:id="section-activity-slo2">
+  <title>Activity for SLO-2</title>
+  <subsection xml:id="subsection-slo2-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          Why do we need a unique rule for inverse derivatives?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          None of the other rules help directly with an inverse
+          derivative. The inverse of a function is not an algebriac
+          manipulation like exponents or multiplication, nor it is
+          simply a composition for the chain rule. It is a unique
+          operation, so a unique rule is required. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          How does the chain rule help to calculate the derivatives of
+          inverse functions.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          An inverse function satisfies this equation.
+          <md>
+            f \circ f^{-1} (x) = x 
+          </md>
+          This is a composition, so I can apply the chain to
+          differentiate the left side. Out of that chain rule, I can
+          isolate the derivative of the inverse function.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-inverse-derivatives">
+    <title>Calculation Questions: Inverse Derivatives</title>
+    <activity>
+      <statement>
+        <p>
+          Use the rule for inverse derivative to prove this
+          derivative.
+          <md>
+            \frac{d}{dx} \arccos x = \frac{-1}{\sqrt{1-x^2}} 
+          </md>
+          (You will need to use <m>\sin^2 x + \cos^2 x = 1</m> in a
+          clever way to simplify the expression.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The function I want, to use the rule, is <m>f(x) = \cos
+          x</m> with <m>f^{-1}(x) = \arccos x</m>. Then I apply the
+          rule, using the fact that <m>\frac{d}{dx} \cos x = - \sin
+          x</m>. 
+          <md>
+            \frac{d}{dx} \arccos x = \frac{1}{-\sin(\arccos x)}
+          </md>
+          I can't directly simplify this, since <m>\sin (\arccos
+          x)</m> can't be directly evaluated. However, I can write
+          sine in terms of cosine. If I take the identity <m>\sin^2 x
+          + \cos^2 x = 1</m> and solve for sine, I get this identity. 
+          <md>
+            \sin x = \sqrt{ 1 - \cos^2 x}
+          </md>
+          Now I can reply the sine in the previous expression with
+          this square root. 
+          <md> 
+            \frac{-1}{\sqrt{1-\cos^2(\arccos x)}} =
+            \frac{-1}{\sqrt{1-x^2}}
+          </md>
+          After the replacement, I can evaluate cosine and inverse
+          cosine<mdash/>I just get the variable. This completes the
+          argument. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Use the rule for inverse derivative to prove this
+          derivative.
+          <md>
+            \frac{d}{dx} \arctan x = \frac{1}{1 + x^2} 
+          </md>
+          (You will need to use <m>\tan^2 x + 1 = \sec^2 x </m> in a
+          clever way to simplify the expression.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The function I want, to use the rule, is <m>f(x) = \tan x
+          x</m> with <m>f^{-1}(x) = \arctan x</m>. Then I apply the
+          rule, using the fact that <m>\frac{d}{dx} \tan x = \sec^2
+          x</m>. 
+          <md>
+            \frac{d}{dx} \arctan x = \frac{1}{\sec^2(\arccos x)}
+          </md>
+          I can't directly simplify this, again. But I can again use a
+          trig identity. I use <m>\tan^2 x + 1 = \sec^2 x</m>. If have
+          a secant squared in my expression, so I just isolate secant
+          squared. 
+          <md>
+            \sec^2 x = 1 + \tan^2 x 
+          </md>
+          Now I can reply the secant squarred in the previous
+          expression with this new expression.
+          <md> 
+            \frac{1}{1+\tan^2(\arctan x)} = \frac{1}{1+x^2}
+          </md>
+          After the replacement, I can evaluate tangent and arctanget
+          to again just get the variable back. This completes the 
+          argument. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>
+

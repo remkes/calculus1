@@ -7,6 +7,10 @@
   <xi:include href="activity-clo12.ptx" />
   <xi:include href="clo13-chain-rule.ptx" />
   <xi:include href="activity-clo13.ptx" />
+  <xi:include href="slo1-derivative-proofs.ptx" />
+  <xi:include href="activity-slo1.ptx" />
+  <xi:include href="slo2-inverse-derivatives.ptx" />
+  <xi:include href="activity-slo2.ptx" />
   <xi:include href="clo14-higher-derivatives.ptx" />
   <xi:include href="activity-clo14.ptx" />
   <xi:include href="clo15-hopitals.ptx" />

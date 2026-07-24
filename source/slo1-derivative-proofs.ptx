@@ -1,0 +1,286 @@
+<section xml:id="section-derivative-rules-proofs">
+  <title>SLO 1: Proofs Rules for Differentiation</title>
+  <introduction>
+    <p>
+      <xref ref="section-derivative-rules" /> and 
+      <xref ref="section-chain-rule" /> introduce the main derivative
+      rules. The rules in that section were presented as truth, but
+      without argument. In mathematics, truth is established by proof.
+      If these rules are treated as mathematically true, they must be
+      proven. In this section, I'm going to go over the proofs for the
+      main rule. 
+    </p>
+  </introduction>
+  <subsection xml:id="subsection-proof-sinusoidal-derivative">
+    <title>Derivatives of Sinusoidal Functions</title>
+    <p>
+      I said in <xref ref="section-derivative-rules" /> that the
+      follwing derivatives were true. 
+      <md>
+        <mrow>
+        \frac{d}{dx} \sin x \amp = \cos x \amp \frac{d}{dx} \cos
+        x \amp = -\sin x
+        </mrow>
+      </md>
+      Why are these true? Well, let me use the limit definition of the
+      derivative to prove the first of these. 
+      <md>
+        \frac{d}{dx} \sin x = \lim_{h \rightarrow 0} \frac{\sin (x +
+        h) - \sin x}{h}
+      </md>
+      The difficult here is the sum inside the sine function.
+      Thankfuilly, there is a trig identity that cover this case. I'll
+      use the identity for sine applied to a sum. 
+      <md>
+        = \lim_{h \rightarrow 0} \frac{ \sin x \cos h + \cos x \sin h
+        - \sin x}{h} 
+      </md>
+      Then I can split up this limit and group it into two. 
+      <md>
+        = \lim_{h \rightarrow 0} \frac{ \sin x \cos h - \sin x}{h} 
+        + \lim_{h \rightarrow 0} \frac{ \cos x \sin h }{h} 
+      </md>
+      Then I factor and pull anything out of the limit that doesn't
+      involve the limit variable <m>h</m>. 
+      <md>
+        = \sin x \lim_{h \rightarrow 0} \frac{ \cos h - 1}{h} 
+        + \cos x \lim_{h \rightarrow 0} \frac{ \sin h }{h} 
+      </md>
+      Both of these are exactly the special trig limit fromn <xref
+      ref="subsection-three-special-limits"/>. I can just use those
+      known limits. 
+      <md>
+        = \sin x (0) + \cos x (1) = \cos x 
+      </md>
+      This completes the argument. The proof for cosine is very
+      similar. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-proof-exponential-derivative">
+    <title>Derivatives of Exponential Functions</title>
+    <p>
+      This is the result that I stated for the derivative of an
+      exponential funciton. 
+      <md>
+        \frac{d}{dx} a^x = a^x \ln a 
+      </md>
+      Why is this true? I'll start with the second version of the
+      definition of the derivative and do some algebra with the limit.
+      <md>
+        <mrow>
+          \frac{d}{dx} a^x \amp = \lim_{h \rightarrow 0}
+          \frac{a^{x+h} - a^x}{h} = \lim_{h \rightarrow 0} \frac{a^x
+          a^h - a^x}{h}
+        </mrow>
+        <mrow>
+          \amp = \lim_{h \rightarrow 0} a^x \frac{a^h-1}{h} = a^x
+          \lim_{h \rightarrow 0} \frac{a^h-1}{h} = a^x \left( \left.
+          \frac{d}{dx} a^x \right|_{x=0} \right)
+        </mrow>
+      </md>
+      In the last step, I changed the limit into a derivative using
+      the definition of the derivative at the specific point
+      <m>x=0</m>. The vertical line means <q>evaluated at
+      <m>x=0</m></q>.
+    </p>
+    <p>
+      This formula shows that derivative of <m>a^x</m> is a product of
+      the same function <m>a^x</m> multiplied by its derivative at
+      <m>x=0</m>. Note that all exponentials go through the point
+      <m>(0,1)</m>. <xref ref="figure-four-exponential-functions" />
+      shows the the graphs of several exponential function (for bases
+      <m>a > 1</m>).
+    </p>
+    <figure xml:id="figure-four-exponential-functions">
+      <caption>Four Exponential Functions</caption>
+      <image xml:id="figure49" width="60%">
+        <asymptote>
+          size(10cm,5cm,IgnoreAspect);
+
+          import graph;
+
+          xaxis("$x$");
+          yaxis("$y$");
+
+          real f1(real x) {return 2^x;}
+          real f2(real x) {return 3^x;}
+          real f4(real x) {return 5^x;}
+          real f3(real x) {return 4^x;}
+
+          draw(graph(f1,-3,1));
+          draw(graph(f2,-3,1));
+          draw(graph(f3,-3,1));
+          draw(graph(f4,-3,1));
+
+          label("$2^x$",(1,2),E);
+          label("$3^x$",(1,3),E);
+          label("$4^x$",(1,4),E);
+          label("$5^x$",(1,5),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      The slope at <m>(0,1)</m> determines the derivative. As seen in
+      <xref ref="figure-four-exponential-functions" />, for different
+      choices of the base, there are different slopes of the graph
+      when it passes through the point <m>(0,1)</m>. There is one
+      special base which has slope <m>1</m> at the point <m>(0,1)</m>.
+      That base is the number <m>e</m>. (As I argued before, you can
+      take this as the definition of this number, if you wish.) 
+    </p>
+    <p>
+      Once I identify <m>e</m> as the special number where the
+      exponential with base <m>e</m> has slope, I can actually
+      calculate what this constant in the derivative works out to be.
+      This is a chain rule calculation using solve clever tricks with
+      exponent laws to right any exponential as a base <m>e</m>
+      exponential. The inside function for the chain rule is <m>x \ln
+      a</m>. 
+    </p>
+    <md>
+      \frac{d}{dx} a^x = \frac{d}{dx e^{ln a^x} = \frac{d}{dx} e^{x \ln
+      a} = e^{x \ln a} \frac{d}{dx} x \ln a = a^x \ln a 
+    </md>
+    <p>
+      This completes the proof. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-power-rule-proof">
+    <title>Power Rule</title>
+    <p>
+      Recall the power rule now. 
+      <md>
+        \frac{d}{dx} x^n = nx^{n-1}
+      </md>
+      I can give a proof when <m>n</m> is a positive integer, using
+      the binomial theorem. (The power rule applies for all real
+      exponents, but the general proof is less accessible.) 
+      <md>
+        <mrow>
+          \frac{d}{dx} x^n \amp = \lim_{h \rightarrow 0}
+          \frac{(x+h)^n - x^n}{h} =
+        </mrow>
+        <mrow>
+          \amp = \lim_{h \rightarrow 0} \frac{x^n + nx^{n-1}h +
+          \binom{n}{2} x^{n-2}h^2 + \ldots + nxh^{n-1} + h^n -
+          x^n}{h}
+        </mrow>
+      </md>
+      I've expended the binomial in the numerator by the binomial
+      theorem. After doing this, the first term of the expansion will
+      always cancel with the last term in the numerator. The resulting
+      terms all have <m>h</m> in them, so I can factor that <m>h</m>
+      out, cancel it off, and then evaluate the limit.
+      <md>
+        <mrow>
+          \frac{d}{dx} x^n \amp = \lim_{h \rightarrow 0} \frac{nx^{n-1}h +
+          \binom{n}{2} x^{n-2}h^2 + \ldots + nxh^{n-1} + h^n}{h}
+        </mrow>
+        <mrow>
+          \amp = \lim_{h \rightarrow 0} nx^{n-1} + \binom{n}{2}
+          x^{n-2}h + \ldots + nxh^{n-2} + h^{n-1}
+        </mrow>
+        <mrow>
+          \amp = nx^{n-1}
+        </mrow>
+      </md>
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-derivatives-linearity-proof">
+    <title>Linearity</title>
+    <p>
+      These are the three parts of linearity. 
+      <md>
+        <mrow>
+          \frac{d}{dx} f + g \amp = \frac{df}{dx} + \frac{dg}{dx}
+        </mrow>
+        <mrow>
+          \frac{d}{dx} f - g \amp = \frac{df}{dx} - \frac{dg}{dx}
+        </mrow>
+        <mrow>
+          \frac{d}{dx} cf \amp = c \frac{df}{dx}
+        </mrow>
+      </md>
+    </p>
+    <p>
+      I'll prove the first of these. The proof of linearity is
+      basically just borrowing from the linearity property of limits.
+      Here is the limit definition of the derivative applied to a sum. 
+      <md>
+        \lim_{h \rightarrow 0} \frac{f(x + h) + g(x + h) - (f(x) +
+        g(x))}{h}
+      </md>
+      I just group this number into the two appropriate piece and
+      split up the fraction and the limit. 
+      <md>
+        = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
+        + \lim_{h \rightarrow 0} \frac{g(x + h) - g(x)}{h} =
+        \frac{df}{dx} + \frac{dg}{dx} 
+      </md>
+      That completes the proof. The other two identities are proved
+      similarly. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-leibniz-rule-proof">
+    <title>Leibniz Rule</title>
+    <p>
+      Here is the formal statement of the Leibniz rule and its proof. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>f</m> and <m>g</m> be differentiable functions.
+          <md>
+            \frac{d}{dx} fg = g \frac{df}{dx} + f \frac{dg}{dx}
+          </md>
+        </p>
+      </statement>
+      <proof>
+        <p>
+          I start with the limit definition of the derivative, using
+          the version with <m>h \rightarrow 0</m>.
+          <md>
+            \frac{d}{dx} fg = \lim_{h \rightarrow 0}
+            \frac{f(x+h)g(x+h) - f(x)g(x)}{h}
+          </md>
+          Then I'm going to use a strange but surprisingly common
+          algebraic trick. I want to do some particular kind of
+          factoring in the numerator. To make that work, I add and
+          subtract the same term from the numerator. Adding and
+          subtracting the same thing doesn't change the expression, so
+          equality is preserved. 
+          <md>
+            = \lim_{h \rightarrow 0} \frac{f(x+h)g(x+h) - f(x+h)
+            g(x) + f(x+h) g(x) - f(x)g(x)}{h}
+          </md>
+          Then I'm going to write the first two terms as one limit and
+          the next two terms as another limit. In the first two terms,
+          <m>f(x+h)</m> is a common factor, so I can pull it out of
+          the fraction. In the second two terms, <m>g(x)</m> is a
+          common factor, so I can likewise pull it out of the
+          fraction.
+          <md>
+            = \lim_{h \rightarrow 0} f(x+h)\frac{g(x+h) - g(x)}{h} +
+            \lim_{h \rightarrow 0} g(x) \frac{f(x+h) - f(x)}{h}
+          </md>
+          I can use the limit rules for the first limit. The limit of
+          <m>f(x+h)</m> as <m>h \rightarrow 0</m> is just <m>f(x)</m>,
+          so I'll evaluate that piece of the product and leave the
+          remaining limit. In the second limit, <m>g(x)</m> doesn't
+          involve the variable <m>h</m> at all, so it can simply be
+          pulled out of the limitl.
+          <md>
+            = f(x) \lim_{h \rightarrow 0} \frac{g(x+h) - g(x)}{h} +
+            g(x) \lim_{h \rightarrow 0} \frac{f(x+h) - f(x)}{h}
+          </md>
+          Finally, I can simplify identify these two limits as the
+          definitions of the derivatives of <m>g(x)</m> and
+          <m>f(x)</m>, respectively. 
+          <md>
+            = f(x) \frac{dg}{dx} + g(x) \frac{df}{dx}
+          </md>
+        </p>
+      </proof>
+    </proposition>
+  </subsection>
+</section>

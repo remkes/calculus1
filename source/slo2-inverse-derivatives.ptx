@@ -1,0 +1,30 @@
+<section xml:id="section-inverse-derivatives">
+  <title>SLO 2: Inverse Derivatives</title>
+  <p>
+    In several of the derivative calculations so far in this course,
+    I have used the rule <m>\frac{d}{dx} \ln x = \frac{1}{x}</m>
+    without justification. What is this justification?  The
+    logarithm is the inverse of the exponential, which leads to
+    thinking about the derivatives of inverse functions. There is a
+    rule for such derivatives. I will write <m>x = f \circ
+    f^{-1}(x)</m>, differentiate both sides using the chain rule,
+    and rearrange to get an expression for <m>\frac{d}{dx}
+    f^{-1}(x)</m>.
+    <md>
+      <mrow>
+        1 \amp = \frac{d}{dx} x = \frac{d}{dx} f \circ f^{-1} =
+        f^\prime ( f^{-1}(x)) \frac{d}{dx} f^{-1}(x)
+      </mrow>
+      <mrow>
+        \frac{d}{dx} f^{-1}(x) \amp =
+        \frac{1}{f^\prime(f^{-1}(x))}
+      </mrow>
+    </md>
+    This is now a reliable method for differentiating inverse
+    functions as long as I know the derivative of the original. I
+    will now use this to differentiate <m>\ln x</m>.
+    <md>
+      \frac{d}{dx} \ln x = \frac{1}{e^{\ln x}} = \frac{1}{x}
+    </md>
+  </p>
+</section>

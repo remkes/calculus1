@@ -1,7 +1,10 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-applications">
-  <title>Uses of Integrals and Derivatives</title>
-  <xi:include href="clo18-optimization.ptx" />
-  <xi:include href="clo19-curve-sketching.ptx" />
-  <xi:include href="clo20-model-interpretation.ptx" />
+  <title>Behaviour of Functions</title>
+  <xi:include href="clo20-optimization.ptx" />
+  <xi:include href="activity-clo20.ptx" />
+  <xi:include href="clo21-curve-sketching.ptx" />
+  <xi:include href="activity-clo21.ptx" />
+  <xi:include href="clo22-model-interpretation.ptx" />
+  <xi:include href="activity-clo22.ptx" />
 </chapter>

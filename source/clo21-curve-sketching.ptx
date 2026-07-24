@@ -1,5 +1,65 @@
 <section xml:id="section-curve-sketching">
-  <title>Curve Sketching</title>
+  <title>CLO 21: Curve Sketching</title>
+  <subsection xml:id="subsection-second-derivative">
+    <title>Concavity</title>
+    <p>
+      Before getting to the main topic of this chapter, I have to talk
+      about concavity. Here is the definition. 
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A function is called <term>concave up</term> on an interval
+          if its slope is increasing on that interval. Visually, the
+          shape of the graph is curving upwards. Likewise, a function
+          is called <term>concave down</term> on an interval is its
+          slope is decreasing on that interval. Visually, the shape of
+          the graph is curving downards. A point where the function
+          change from concave up to concave donw, or vice-versa, is
+          called an <term>inflection point</term>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      The definition is based on whether the slope is increasing or
+      decreasing. The slope is the first derivative, so the change in
+      the slope must be the change in the first derivative. This means
+      I need to look at the second derivative. 
+    </p>
+    <p>
+      The process for determining concavity is exactly the same
+      process a for determining extrema. The only difference is that I
+      will use the second derivative instead of the first. 
+      <ul>
+        <li>
+          I calculate the second derivative. 
+        </li>
+        <li>
+          I set the second derivative equal to zero and solve for the
+          independent variable. These solutions are the potential
+          inflection point. (These are the critical point of the
+          second derivative, not of the first derivative). 
+        </li>
+        <li>
+          I look at the intervals between the potential inflection
+          points and classify them by the sign of the first
+          derivative. This gives me the interval of concavity. 
+        </li>
+        <li>
+          If concavity change across a critical point of the second
+          derivative, I label that as an inflection point.
+        </li>
+      </ul>
+    </p>
+    <p>
+      Since this is exactly the same algorithm, there are no new
+      techniques to learn. I'll use the same setup and the same
+      tables. What is new is the interpretation: the first derivative
+      finds extrema and intervals of increase and decreasing, while
+      the second derivative finds inflection points and intervals of
+      concavity. 
+    </p>
+  </subsection>
   <subsection xml:id="subsection-sketching-idea">
     <title>The Idea of Curve Sketching</title>
     <p>

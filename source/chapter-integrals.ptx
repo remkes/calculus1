@@ -1,8 +1,14 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-integrals">
   <title>Integrals</title>
-  <xi:include href="clo15-riemann-integral.ptx" />
-  <xi:include href="clo16-fundamental-theorem.ptx" />
-  <xi:include href="clo17-substitution.ptx" />
-  <xi:include href="slo5-solving-des.ptx" />
+  <xi:include href="clo16-riemann-integral.ptx" />
+  <xi:include href="activity-clo16.ptx" />
+  <xi:include href="clo17-fundamental-theorem.ptx" />
+  <xi:include href="activity-clo17.ptx" />
+  <xi:include href="clo18-substitution.ptx" />
+  <xi:include href="activity-clo18.ptx" />
+  <xi:include href="clo19-solving-des.ptx" />
+  <xi:include href="activity-clo19.ptx" />
+  <xi:include href="slo5-logistic-equation.ptx" />
+  <xi:include href="activity-slo5.ptx" />
 </chapter>

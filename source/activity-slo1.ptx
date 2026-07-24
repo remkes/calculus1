@@ -1,0 +1,121 @@
+<section xml:id="section-activity-slo1">
+  <title>Activity for SLO 1</title>
+  <subsection xml:id="subsection-slo1-review">
+    <title>Conceptual Review</title>
+    <p>
+      You can test your learning from the video (and your own
+      background knowledge) with the following review questions.
+      Conceptual questions on quizes may be taken from these review
+      questions. 
+    </p>
+    <activity>
+      <statement>
+        <p>
+          Why do we want formal proofs of the derivative rules?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In mathematics, the standard of truth is proof. It doesn't
+          matter that a rule <sq>seems to work</sq>. Mathematical
+          ideas aren't considered fact until they have a proof. The
+          derivative rules work and you could just accept them on that
+          practical basis. But, mathematically, there would also be a
+          worry that there is some situation, some special case, where
+          the rule doesn't apply. A proof gets rid of that worry: it
+          is a conclusive argument that, in the logic of mathematics,
+          the rules will absolutely always work. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-derivative-proofs">
+    <title>Calculation Questions: Derivative Proofs</title>
+    <activity>
+      <statement>
+        <p>
+          Prove that the derivative of cosine is negative sine. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I follow the same steps as the proof for sine. I start with
+          the limit definition of the derivative. 
+          <md>
+            \frac{d}{dx} \cos x = \lim_{h \rightarrow 0} \frac{\cos (x
+            + h) - \cos x}{h}
+          </md>
+          Again, I use the trig identity for the cosine of a sum.  
+          <md>
+            = \lim_{h \rightarrow 0} \frac{ \cos x \cos h - \sin x \sin h
+            - \cos x}{h} 
+          </md>
+          Then I can split up this limit and group it into two. I
+          split it so that all the cosine pieces are together. 
+          <md>
+            = \lim_{h \rightarrow 0} \frac{ \cos x \cos h - \cos x}{h} 
+            + \lim_{h \rightarrow 0} \frac{ \sin x \sin h }{h} 
+          </md>
+          Then I factor and pull anything out of the limit that
+          doesn't involve the limit variable <m>h</m>. 
+          <md>
+            = \cos x \lim_{h \rightarrow 0} \frac{ \cos h - 1}{h} 
+            + \sin x \lim_{h \rightarrow 0} \frac{ \sin h }{h} 
+          </md>
+          Then I apply the known limits for ratios with trig
+          functions. 
+          <md>
+            = \cos x (0) - \sin x (1) = - \sin x
+          </md>
+          This completes the argument. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove the other two parts of linearity that weren't proved
+          in the notes. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I follow very similar steps to the proof for the first part
+          in the notes. Here is the limit definition applied to the
+          difference of two functions. 
+          <md>
+            \frac{d}{dx} (f(x) - g(x)) \lim_{h \rightarrow 0}
+            \frac{f(x + h) - g(x + h) - (f(x) - g(x))}{h}
+          </md>
+          I just group this number into the two appropriate piece and
+          split up the fraction and the limit. I am careful to note
+          that when I distribute the negative, two negative will just
+          be a positive. 
+          <md>
+            = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
+            - \lim_{h \rightarrow 0} \frac{g(x + h) - g(x)}{h} =
+            \frac{df}{dx} - \frac{dg}{dx} 
+          </md>
+          That completes the proof for a difference. Now I use the
+          limit definition for a function multiplied by a constant. 
+          <md>
+            \frac{d}{dx} (cf(x)) = \lim_{h \rightarrow 0} \frac{cf(x +
+            h) - (cf(x))}{h} 
+          </md>
+          I can factor the <m>c</m> out of the numerator. 
+          <md>
+            \lim_{h \rightarrow 0} \frac{c(f(x + h) - f(x))}{h}
+          </md>
+          Then, according to the limit laws, I can factor the <m>c</m>
+          out of the limt
+          <md>
+            c \lim_{h \rightarrow 0} \frac{(f(x + h) - f(x))}{h} = c
+            \frac{df}{dx}
+          </md>
+          I'm let with the usual imit definition, so this completes
+          the proof. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+</section>
