@@ -129,13 +129,13 @@
       asymptotic order. 
     </li>
     <li>
-      Solve the logistic equation and analyze the behaviour of its
-      solution. 
-    </li>
-    <li>
       Use the Riemann definition of the integral and common identity
       for finite sums to calculate integrals of polynomial
       functions. 
+    </li>
+    <li>
+      Solve the logistic equation and analyze the behaviour of its
+      solution. 
     </li>
   </ol>
   <!--

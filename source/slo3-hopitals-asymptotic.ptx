@@ -32,14 +32,14 @@
     be used to justify these limits. 
   </p>
   <example>
-    <statment>
+    <statement>
       I claim that the cubie <m>x^3 + 8x + 1</m> grows slover than the
       quartic <m>x^4 + 3x^2 + x - 9</m>. To justify this claim, I need
       to consider this limit. 
       <md>
         \lim_{x \rightarrow \infty} \frac{x^3 + 8x + 1}{x^4 + 3x^2 + x
         - 9} 
-      <\md>
+      </md>
       I'm not going to use asymptotic analysis here: I'm trying to
       prove asymptotic analysis, so using it would be circular
       reasoning. Instead, this is an indeterminate form of type
@@ -62,7 +62,7 @@
       large, so this limit is zero. I have succesfully argued that the
       cubic is, indeed, slower than the quartic. 
     </statement>
-  <example>
+  </example>
   <p>
     Working with examples is fine, but I'd like to have a more general
     justification of the entire order. I'm not going to justify all
@@ -72,27 +72,27 @@
     the proof. 
   </p>
   <proposition>
-    <statment>
+    <statement>
       <p>
         If <m>p(x)</m> and <m>q(x)</m> are polynomials and the degree
-        ot <m>p(x)>/m> is lower than the degree of <m>q(x)</m>, then
+        ot <m>p(x)</m> is lower than the degree of <m>q(x)</m>, then
         <m>p(x)</m> has a lower asymptotic order than <m>q(x)</m>.
       </p>
-    </statment>
+    </statement>
     <proof>
       <p>
         Here is the limit that determines the relative asymptotic
         order.
         <md>
           \lim_{x \rightarrow \infty} \frac{p(x)}{q(x)}
-        <md>
+        </md>
         Assume that the degree of <m>p(x)</m> is some number <m>k</m>.
         Then I can apply L'Hôpital's rule <m>k</m> time, since each
         time the expression will still be an indeterminate form. 
         <md>
           \lim_{x \rightarrow \infty} \frac{\frac{d^k}{dx^k}
           p(x)}{\frac{d^k}{dx^k} q(x)}
-        <md>
+        </md>
         But now, after <m>k</m> derivative, the degree of
         <m>\frac{d^k}{dx^k} p(x)</m> will be zero. Each derivaitve
         drops the degree by once, so starting with degree <m>k</m> and
@@ -107,12 +107,12 @@
     </proof>
   </proposition>
   <proposition>
-    <statment>
+    <statement>
       <p>
         The exponential function <m>f(x) = e^x</m> grows faster than
         any polynomial. 
       </p>
-    </statment>
+    </statement>
     <proof>
       <p>
         Again, I consider the ratio in the limit. I'll let <m>p(x)</m>
@@ -130,7 +130,7 @@
         </md>
         The numerator doesn't change at all: the exponential function
         is unaltered by the derivative. After <m>k</m> derivatives,
-        the denominator (which had degree <m>k<m> to start with)
+        the denominator (which had degree <m>k</m> to start with)
         becomes a constant. Therefore, I have a growing function
         divided by a constant. That lets met conclude the limit must
         be infinity. Since the limit is infinity, the numerator must
@@ -139,32 +139,32 @@
     </proof>
   </proposition>
   <proposition>
-    <statment>
+    <statement>
       <p>
         Let <m>r \gt 0</m> be any real constant. The logarithm
         function <m>f(x) = \ln x</m> grow slower than <m>x^r</m> for
         any constnat <m>r</m>. 
       </p>
-    </statment>
+    </statement>
     <proof>
       <p>
         Again, I setup the appropriate limit. 
         <md>
           \lim_{x \rightarrow \infty} \frac{\ln x}{x^r}
-        <md>
+        </md>
         Both of these are growing functions, to this is an
         indeterminate form of type <m>\frac{\infty}{\infty}</m>. I
         apply L'Hôpital's rule. 
         <md>
           \lim_{x \rightarrow \infty} \frac{\frac{d}{dx} \ln
           x}{\frac{d}{dx} x^r}
-        <md>
+        </md>
         I take the derivatives and simplify the resulting nested
         fraction. 
         <md>
           \lim_{x \rightarrow \infty} \frac{\frac{1}{x}}{(rx^{r-1}} =
           \lim_{x \rightarrow \infty} \frac{1}{rx}
-        <md>
+        </md>
         This is a decaying function and the limit is zero. I conclude
         that the logarithm does, in fact, grow slower than any
         positive power. 

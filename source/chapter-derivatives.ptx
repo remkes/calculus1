@@ -15,4 +15,6 @@
   <xi:include href="activity-clo14.ptx" />
   <xi:include href="clo15-hopitals.ptx" />
   <xi:include href="activity-clo15.ptx" />
+  <xi:include href="slo3-hopitals-asymptotic.ptx" />
+  <xi:include href="activity-slo3.ptx" />
 </chapter>

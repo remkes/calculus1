@@ -17,19 +17,54 @@
       </statement>
       <solution>
         <p>
+          In mathematics, we require proof of statements. We can
+          roughly observe the asymptotic behaviour of functions and
+          make a reasonable guess at the asymptotic orders. But to
+          know something mathematically, we need to prove it.
+          L'Hôpital's rule is a pretty efficient way of proving that
+          one function grows faster than another, at least for the
+          functions we are considering in this course. 
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="subsection-activity-TOPIC">
-    <title>Calculation Questions: </title>
+  <subsection xml:id="subsection-activity-hopitals-asymptotic">
+    <title>Calculation Questions: Proving Asymptotic Orders</title>
     <activity>
       <statement>
         <p>
+          Use L'Hôpital's rule to prove that <m>\ln(\ln x)</m> grows
+          slower than <m>\ln x</m>.
         </p>
       </statement>
       <solution>
         <p>
+          I setup the limit of the ratio of the two functions.
+          <md>
+            \lim_{x \rightarrow \infty} \frac{\ln(\ln x)}{\ln x}
+          </md>
+          This is a limit of type <m>\frac{\infty}{\infty}</m>, so I
+          can use L'Hôpital's rule. 
+          <md>
+            \lim_{x \rightarrow \infty} \frac{\frac{d}{dx} \ln(\ln
+            x)}{\frac{d}{dx} \ln x}
+          </md>
+          I do both derivatives. The numerator derivative is a chain
+          rule derivatie. 
+          <md>
+            \lim_{x \rightarrow \infty} \frac{\frac{1}{\ln x}
+            \frac{1}{x}}{\frac{1}{x}}
+          </md>
+          Then I simplify the nested fraction. The <m>\frac{1}{x}</m>
+          terms cancel each other out. 
+          <md>
+            \lim_{x \rightarrow \infty} \frac{1}{\ln x} = 0 
+          </md>
+          This is a limit where the numerator is fixed and the
+          denominator grows without bound, so the limit is 0. I
+          conclude that, in the original ratio, the numerator grows
+          more slowly. Therefore, <m>\ln (\ln x)</m> grows more slowly
+          than <m>\ln x</m>.
         </p>
       </solution>
     </activity>

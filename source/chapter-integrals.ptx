@@ -3,6 +3,8 @@
   <title>Integrals</title>
   <xi:include href="clo16-riemann-integral.ptx" />
   <xi:include href="activity-clo16.ptx" />
+  <xi:include href="slo4-riemann-integral.ptx" />
+  <xi:include href="activity-slo4.ptx" />
   <xi:include href="clo17-fundamental-theorem.ptx" />
   <xi:include href="activity-clo17.ptx" />
   <xi:include href="clo18-substitution.ptx" />

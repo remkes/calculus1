@@ -135,7 +135,6 @@
       and more rectangles in its approximation.
     </p>
   </subsection>
-
   <subsection xml:id="subsection-writing-sums">
   <title>Sigme Notation: Writing Complicated Sums</title>
     <p>
@@ -182,79 +181,6 @@
           666
         </mrow>
       </md>
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-manipulating-sums">
-    <title>Manipulating Sums</title>
-    <p>
-      There are some important rules for manipulating sigma notation.
-      First, sums are (unsurprisingly) linear, so I can split them up
-      over addition/subtraction and pull out constants. 
-      <md>
-        <mrow>
-          \sum_{k=1}^n 6k \amp = 6 \sum_{k=1}^n k
-        </mrow>
-        <mrow>
-          \sum_{k=1}^n (3k^2 + 9k) \amp = 3 \sum_{k=1}^n k^2 + 9
-          \sum_{k=1}^n k 
-        </mrow>
-      </md>
-      I can combine sums if the indices match.
-      <md>
-        \sum_{k=1}^{15} k^2 + \sum_{k=1}^{15} 4k = \sum_{k=1}^{15}
-        (k^2 + 4k)
-      </md>
-      If I want to combine sums when the indices don't match, I have
-      to adjust the sums. There are two main methods of adjusting the
-      sum. First, I can take out terms.
-      <md>
-        \sum_{k=1}^{15} k^2 + \sum_{k=3}^{15} 4k = 1^2 + 2^2 +
-        \sum_{k=3}^{15} k^2 + \sum_{k=3}^{15} 4k = 5 + \sum_{k=3}^{15}
-        (k^2 + 4k)
-      </md>
-      I can also shift the indices. This might seem tricky, but it's
-      easy to remember if you think of balance: whatever I do to the
-      index, I have to do the opposite to the expression.  Here I
-      shift the index by <m>+2</m>, so the expression is shifted by
-      <m>-2</m>.
-      <md>
-        \sum_{k=3}^{17} 4k = \sum_{k=1}^{15} 4(k+2)
-      </md>
-      I can use these two manipulations to combine sums if the
-      indices don't initially line up.
-      <md>
-        \sum_{k=1}^{15} k^2 + \sum_{k=3}^{17} 4k = \sum_{k=1}^{15}
-        k^2 + \sum_{k=1}^{15} 4(k+2) = \sum_{k=1}^{15} (k^2 + 4k +
-        8)
-      </md>
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-important-sums">
-    <title>Some Important Sums</title>
-    <p>
-      Finally, here are the values for some common sums. These
-      expressions will be used, along with the previously stated
-      rules, to calculate integrals in the next section.
-      <md>
-        <mrow>
-          \sum_{k=1}^n 1 \amp = n
-        </mrow>
-        <mrow>
-          \sum_{k=1}^n k \amp = \frac{n(n+1)}{2}
-        </mrow>
-        <mrow>
-          \sum_{k=1}^n k^2 \amp = \frac{n(n+1)(2n+1)}{6}
-        </mrow>
-        <mrow>
-          \sum_{k=1}^n k^3 \amp = \left(\frac{n(n+1)}{2} \right)^2
-        </mrow>
-      </md>
-    </p>
-    <p>
-      The last sum establishes a interesting result: the sum of the
-      first <m>n</m> cubes is always a square. You are welcome to check
-      for yourself: the first few sums are <m>1</m>, <m>9</m>,
-      <m>36</m>, <m>100</m> and <m>225</m>, all of which are square.
     </p>
   </subsection>
   <subsection xml:id="subsection-integral-definition">
@@ -361,128 +287,9 @@
       the definition was correct and rigorous but difficult to use.
       That comment is also true here, but even more severe. The
       definition of the integral is nearly impossible to use for most
-      functions. I will only try to use the definition for small
-      order polynomials.
+      functions. Actually using the definition to calculate integrals
+      is one of the stretch outcomes for the course. 
     </p>
-    <example>
-      <statement>
-        <p>
-          <md>
-            <mrow>
-              \int_0^3 x^2 dx \amp = \lim_{n \rightarrow \infty}
-              \sum_{k=1}^n (x^*_k)^2 \frac{b-a}{n}
-            </mrow>
-          </md>
-          I start with the setup of the Riemann integral. I need to
-          make a choice for <m>x_k^*</m>. I'll take the standard
-          choice of <m>x_k^* = a + k \frac{b-a}{n}</m>, which in this
-          case is <m>x_k^* = 0 + k \frac{3}{n} = \frac{3k}{n}</m>.
-          <md>
-            <mrow>
-              \amp = \lim_{n \rightarrow \infty} \sum_{k=1}^n \left(
-              \frac{3k}{n} \right)^2 \frac{3}{n}
-            </mrow>
-          </md>
-          Then I apply the square to each piece of the term in
-          brackets. Anything that doesn't involve <m>k</m> is
-          independent of the sum and can be factored out. 
-          <md>
-            <mrow>
-              \amp = \lim_{n \rightarrow \infty} \frac{27}{n^3}
-              \sum_{k=1}^n k^2
-            </mrow>
-          </md>
-          I evaluate the sum, which is one of the standard sums. 
-          <md>
-            <mrow>
-              \amp = \lim_{n \rightarrow \infty} \frac{27}{n^3}
-              \frac{n(n+1)(2n+1)}{6}
-            </mrow>
-          </md>
-          I simplify the expression by expanding the multiplication.
-          Then I can evaluate this as an asymptotic analysis limit.
-          The asymptotic orders are the same, so the limit is the
-          ratio of the leading terms. This will complete the integral. 
-          <md>
-            <mrow>
-              \amp = \lim_{n \rightarrow \infty} \frac{9}{2}
-              \frac{2n^3+3n^2+n}{n^3} = 9
-            </mrow>
-          </md>
-        </p>
-      </statement>
-    </example>
-    <example>
-      <statement>
-        <md>
-          <mrow>
-            \int_2^5 (x^3-x) dx \amp = \lim_{n \rightarrow \infty}
-            \sum_{k=1}^n \left( (x^*_k)^3 - x^*_k \right) 
-            \frac{b-a}{n}
-          </mrow>
-        </md>
-        I start with the setup of the Riemann integral. I need to
-        make a choice for <m>x_k^*</m>. I'll take the standard
-        choice of <m>x_k^* = a + k \frac{b-a}{n}</m>, which in this
-        case is <m>x_k^* = 2 + k \frac{3}{n} = 2 + \frac{3k}{n}</m>.
-        The <m>\frac{b-a}{n}</m> terms becomes <m>\frac{3}{n}</m>.
-        This term doesn't involve <m>k</m>, so it can be factored
-        out of the sum. 
-        <md>
-          <mrow>
-            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
-            \sum_{k=1}^n \left( \left(2 + \frac{3k}{n} \right)^3 -
-            \left(2+ \frac{3k}{n} \right) \right)
-          </mrow>
-        </md>
-        Then I'll expand out the cubed binomial. After doing so,
-        I'll combine like terms (based on the power of <m>n</m> in
-        the denominator). 
-        <md>
-          <mrow>
-            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
-            \sum_{k=1}^n \left( 8 + \frac{36k}{n} + \frac{54k^2}{n^2}
-            + \frac{27k^3}{n^3} - 2 - \frac{3k}{n} \right)
-          </mrow>
-          <mrow>
-            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
-            \sum_{k=1}^n \left( 6 + \frac{33k}{n} + \frac{54k^2}{n^2}
-            + \frac{27k^3}{n^3} \right)
-          </mrow>
-          <mrow>
-            \amp = \lim_{n \rightarrow \infty} \frac{3}{n}
-            \left( 
-            6 \sum_{k=1}^n 1 + 
-            \frac{33}{n} \sum_{k=1}^n k + 
-            \frac{54}{n^2} \sum_{k=1}^n k^2 + 
-            \frac{27}{n^3} \sum_{k=1}^n k^3 \right) 
-          </mrow>
-        </md>
-        I evaluate all four of the sums, since each is one of the
-        standard sums. 
-        <md>
-          <mrow>
-            \amp = \lim_{n \rightarrow \infty} \frac{3}{n} \left( 6n +
-            \frac{33}{n} \frac{n(n+1)}{2} + \frac{54}{n^2}
-            \frac{n(n+1)(2n+1)}{6} + \frac{27}{n^3} \left(
-            \frac{n(n+1)}{2} \right)^2 \right)
-          </mrow>
-        </md>
-        I simplify the expression by expanding the multiplication in
-        each numerator.  Then I can evaluate this as an asymptotic
-        analysis limit.  The asymptotic orders are the same in each
-        term (and I can treat each term independently, since the
-        limits splits up over addition), so the limit is the ratio
-        of the leading terms in each piece of the sum. Adding the
-        various pieces together completes the integral.
-        <md>
-          <mrow>
-            \amp = 18 + \frac{99}{2} + 54 + \frac{81}{4} = \frac{72+
-            199+ 216+ 81}{4} = \frac{567}{4}
-          </mrow>
-        </md>
-      </statement>
-    </example>
   </subsection>
   <subsection xml:id="subsection-integral-properties">
     <title>Properties of the Definite Integral</title>
