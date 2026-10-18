@@ -35,6 +35,21 @@
       sciences, starting in the early modern age and continuing into
       the present. 
     </p>
+    <figure xml:id="figure-test">
+      <caption>Cartesian Coordiantes in <m>\RR^2</m></caption>
+      <image xml:id="figuretest" width="85%">
+        <asymptote>
+          size(100,0);
+          import graph;
+
+          real f(real x) {return exp(-1*(x-5)^2/4);}
+
+          guide g=(0,0)--graph(f,0,10,Spline)--(10,0)--cycle;
+          fill(g,lightgray);
+          draw(g);
+        </asymptote>
+      </image>
+    </figure>
     <figure xml:id="figure-cartesian-coordiantes">
       <caption>Cartesian Coordiantes in <m>\RR^2</m></caption>
       <image xml:id="figure01" width="85%">
